@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+/* --- reset --- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, rem, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, rembed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+
+    -webkit-text-size-adjust: 100%;
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+}
+html, body {
+    height: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    padding-left: 1.25rem;
+}
+iframe {
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+}
+body {
+    cursor: default;
+    font-family: 'IBM Plex Sans', syetem-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    background: #030000 url(bg.jpg) bottom 0 right 0 no-repeat;
+    background-size: 60%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #bbb;
+}
+@supports (-webkit-marquee-repetition: infinite) and (object-fit: fill) {
+    body {
+        letter-spacing: -0.005rem;
+    }
+    strong {
+        letter-spacing: -0.015rem;
+    }
+}
+strong {
+    font-weight: 700;
+}
+h1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+p {
+    margin: 1rem 0;
+}
+a {
+    transition: border .1s ease-in-out;
+    color: #808080;
+    text-decoration: none;
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+img {
+    max-width: 128px;
+}
+
+footer {
+    position: fixed;
+    bottom: 2rem;
+    left: 10rem;
+    font-size: 14px;
+    color: #808080;
+}
+#wrapper {
+    width: 620px;
+    max-width: calc(100% - 2rem);
+    margin: 0 10rem;
+    position: relative;
+    top: 47.5%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 960px) {
+    body {
+        overflow-y: hidden;
+        background-size: 100%;
+        margin: 0 1rem
+    }
+    footer {
+        left: 2rem;
+    }
+    #wrapper {
+        margin: 0 auto 0;
+        top: 40%;
+    }
+}
