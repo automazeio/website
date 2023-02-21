@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -50,8 +49,8 @@ img {
 }
 body {
     cursor: default;
-    font-family: 'IBM Plex Sans', syetem-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 18px;
+    font-family: syetem-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 17px;
     line-height: 1.5;
     font-weight: 400;
     background: #030000 url(bg.jpg) bottom 0 right 0 no-repeat;
@@ -89,14 +88,14 @@ a:hover {
     border-bottom: 1px solid;
 }
 img {
-    max-width: 128px;
+    max-width: 240px;
 }
 
 footer {
     position: fixed;
     bottom: 2rem;
     left: 10rem;
-    font-size: 14px;
+    font-size: 13px;
     color: #808080;
 }
 #wrapper {
