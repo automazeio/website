@@ -88,7 +88,7 @@ a:hover {
     border-bottom: 1px solid;
 }
 img {
-    max-width: 240px;
+    max-height: 48px;
 }
 
 footer {
@@ -119,4 +119,17 @@ footer {
         margin: 0 auto 0;
         top: 40%;
     }
+}
+
+
+a#hiu, a#hiu:hover {
+    text-decoration: none;
+    border: 0;
+    font-size: 14px;
+    color: #e0e0e0
+}
+
+a#hiu:hover strong {
+    border-bottom: 1px solid;
+    color: #1DA1F2
 }
