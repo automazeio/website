@@ -521,9 +521,10 @@ html {
   color: rgb(203 213 225 / var(--tw-text-opacity));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: -0.01rem;
-  /* @apply lg:bg-red-400 xl:bg-blue-500 2xl:bg-green-500; */
 }
 
 body {
@@ -546,13 +547,24 @@ body {
   }
 }
 
-body:before {
-  position: fixed;
-  inset: 0px;
-  content: "";
-  background: #030d1c url(http://localhost/automaze/bg.jpg) left 0 top 50% no-repeat;
-  background-attachment: fixed;
+body {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(3 13 28 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #030d1c var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: #030d1c var(--tw-gradient-to-position);
 }
+
+/* body:before {
+  @apply fixed inset-0;
+  content: "";
+  background: #030d1c url(https://automaze.io/bg.webp) left bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 1280px;
+} */
 
 body > main {
   position: relative;
@@ -716,7 +728,7 @@ body > main {
 }
 
 #about a {
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
@@ -749,10 +761,10 @@ body > main {
 }
 
 #about a svg {
+  margin-top: -1px;
   margin-right: 0.375rem;
   height: 1rem;
   width: 1rem;
-  margin-top: -1px;
 }
 
 @media (min-width: 1280px) {
@@ -765,6 +777,8 @@ body > main {
 #about footer {
   position: absolute;
   bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
   opacity: 0.6;
@@ -773,13 +787,13 @@ body > main {
 @media (min-width: 1024px) {
   #about footer {
     bottom: 2rem;
+    text-align: left;
   }
 }
 
 #portfolio {
-  margin-bottom: 3rem;
-  display: grid;
   column-gap: 2rem;
+  padding-bottom: 4rem;
   padding-top: 2rem;
   line-height: 1.75rem;
 }
@@ -793,7 +807,8 @@ body > main {
 @media (min-width: 1280px) {
   #portfolio {
     grid-column: span 6 / span 6;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    columns: 2;
+    padding-bottom: 2rem;
   }
 }
 
@@ -830,9 +845,19 @@ body > main {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
   #portfolio a {
     background-color: rgb(255 255 255 / .025);
+  }
+}
+
+#portfolio a {
+  break-inside: avoid-column;
+}
+
+@media (min-width: 1280px) {
+  #portfolio > a:first-of-type {
+    margin-top: 11rem;
   }
 }
 
