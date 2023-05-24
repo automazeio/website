@@ -54,15 +54,12 @@ body > main {
 #portfolio {
   @apply gap-x-8 pb-16 pt-8 leading-7 lg:mb-0 xl:col-span-6 xl:columns-2 xl:pb-8;
 }
-#portfolio > div:first-of-type {
-  @apply col-span-1 xl:mt-44;
-}
 #portfolio a {
   @apply mb-8 block rounded-2xl border border-slate-800/70 bg-black/50 p-6 text-[.9125rem] leading-normal shadow-xl transition-all duration-300 hover:border-slate-700 xl:bg-[rgb(255_255_255_/_.025)];
   @apply break-inside-avoid-column;
 }
 #portfolio > a:first-of-type {
-  @apply xl:mt-44;
+  @apply xl:mt-36;
 }
 #portfolio img.favicon {
   @apply mb-5 h-10 w-10 rounded-lg bg-white shadow-sm;

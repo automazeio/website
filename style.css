@@ -812,16 +812,6 @@ body > main {
   }
 }
 
-#portfolio > div:first-of-type {
-  grid-column: span 1 / span 1;
-}
-
-@media (min-width: 1280px) {
-  #portfolio > div:first-of-type {
-    margin-top: 11rem;
-  }
-}
-
 #portfolio a {
   margin-bottom: 2rem;
   display: block;
@@ -857,7 +847,7 @@ body > main {
 
 @media (min-width: 1280px) {
   #portfolio > a:first-of-type {
-    margin-top: 11rem;
+    margin-top: 9rem;
   }
 }
 
