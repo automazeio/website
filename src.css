@@ -42,7 +42,7 @@ h2 + h3 + p {
 .icon-glow-12,
 .icon-glow-20,
 .icon-glow {
-  background: url(https://b872ffd3f1a895035b4780e1cf8ab840.cdn.bubble.io/f1673769606566x220312603092295700/Group%20332.svg)
+  background: url(glow.svg)
     50% no-repeat;
   background-size: contain;
 }
