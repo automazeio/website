@@ -1,98 +1,840 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-  <title>Automaze - Tech creations</title>
-  <link href="./style.min.css" rel="stylesheet" type="text/css" media="all">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css" media="all">
-  <link href="./favicon-light.png" rel="icon" type="image/png" media="(prefers-color-scheme: light)" />
-  <link href="./favicon-dark.png" rel="icon" type="image/png" media="(prefers-color-scheme: dark)" />
+<html lang="en" style="scroll-behavior: smooth">
 
-  <meta name="description" content="A group of software, design, technology, devops, and product experts who are passionate about building great products for developers.">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NKW2LYNSQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+      // gtag('config', 'G-7NKW2LYNSQ');
+  </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+  <title>Automaze // Technical Co‑Founder &amp; CTO as a Service</title>
+  <link href="./assets/style.css?v=3" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/favicon-light.png" rel="icon" type="image/png" media="(prefers-color-scheme: light)" />
+  <link href="./assets/favicon-dark.png" rel="icon" type="image/png" media="(prefers-color-scheme: dark)" />
+
+  <meta name="description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://automaze.io">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Automaze">
-  <meta property="og:description" content="A group of software, design, technology, devops, and product experts who are passionate about building great products for developers.">
-  <meta property="og:image" content="https://automaze.io/card.jpg">
+  <meta property="og:url" content="https://automaze.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Automaze // Technical Co‑Founder &amp; CTO as a Service" />
+  <meta property="og:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
+  <meta property="og:image" content="https://automaze.io/assets/card.webp" />
 
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="tradologics.com">
-  <meta property="twitter:url" content="https://automaze.io">
-  <meta name="twitter:title" content="Automaze">
-  <meta name="twitter:description" content="A group of software, design, technology, devops, and product experts who are passionate about building great products for developers.">
-  <meta name="twitter:image" content="https://automaze.io/card.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="automaze.io" />
+  <meta property="twitter:url" content="https://automaze.io" />
+  <meta name="twitter:title" content="Automaze // Technical Co‑Founder &amp; CTO as a Service" />
+  <meta name="twitter:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
+  <meta name="twitter:image" content="https://automaze.io/assets/card.webp" />
   <meta name="twitter:site" content="@automazehq" />
 </head>
+
 <body>
-
-
-<main>
-  <div id="about">
-    <img src="avatar.png" class="avatar">
-      <h1>Automaze</h1>
-      <h3>We’re a group of software, design, technology, devops, and product experts passionate about building great stuff. </h3>
-      <a href="m&#97;&#105;l&#116;o&#58;&#104;&#101;%6Clo&#64;&#97;ut&#111;maze%&#50;Eio">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <path d="M22 9.5V9V9C22 8.07099 22 7.60649 21.9384 7.21783C21.5996 5.07837 19.9216 3.40042 17.7822 3.06156C17.3935 3 16.929 3 16 3H10C7.19974 3 5.79961 3 4.73005 3.54497C3.78924 4.02433 3.02433 4.78924 2.54497 5.73005C2 6.79961 2 8.19974 2 11V13C2 15.8003 2 17.2004 2.54497 18.27C3.02433 19.2108 3.78924 19.9757 4.73005 20.455C5.79961 21 7.19974 21 10 21H16C16.929 21 17.3935 21 17.7822 20.9384C19.9216 20.5996 21.5996 18.9216 21.9384 16.7822C22 16.3935 22 15.929 22 15V15V14.5M18 8L17 8.66667L16.4376 9.0416C14.8338 10.1108 14.0319 10.6454 13.1652 10.8531C12.3992 11.0366 11.6008 11.0366 10.8348 10.8531C9.96808 10.6454 9.16618 10.1108 7.5624 9.0416L7 8.66667L6 8"></path>
-        </svg>
-        <span>hel&#108;o&#64;a&#117;tomaz&#101;&#46;i&#111;</span>
+  <!-- Header -->
+  <header>
+    <nav aria-label="Global">
+      <a href="#" class="logo">
+        <img loading="lazy" src="./assets/automaze-min.png" alt="Automaze icon" />
       </a>
-      <footer>
-        Copyright &copy; <span id="copy-date"></span> Automaze, Ltd.</footer>
+      <button type="button" class="mobile-button" onclick="document.getElementById('menu').classList.add('opened')">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <ul id="menu">
+        <button type="button" onclick="document.getElementById('menu').classList.remove('opened')">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <li><a href="#how">How</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
+              aria-hidden="true">&rarr;</span></a>
+        </li>
+      </ul>
+      <div class="book">
+        <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
+            aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <div id="hero">
+      <svg aria-hidden="true">
+        <defs>
+          <pattern id="pattern" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#pattern)" />
+      </svg>
+      <div class="ambiance" aria-hidden="true">
+        <div></div>
+      </div>
+
+      <div class="content">
+        <img loading="lazy" src="./assets/automaze-logo-min.png" alt="Automaze logo" />
+        <h1>Technical Co&#8209;Founder &amp; CTO as a Service</h1>
+        <h2 class="intro">
+          The <strong>zero-equity</strong> way for founders to bring their
+          idea to life, attract early users, and achieve product-market fit.
+        </h2>
+        <div class="buttons">
+          <a href="#how" class="button">Learn more</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Schedule a call
+            <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <!-- Logo cloud -->
+      <div class="logos">
+        <div>
+          <img loading="lazy" src="./assets/logos/tradologics.png" alt="Tradologics" />
+          <img loading="lazy" src="./assets/logos/corpus.png" alt="Corpus Chat" />
+          <img loading="lazy" src="./assets/logos/msb.png" alt="MyStrengthBook" />
+          <img loading="lazy" src="./assets/logos/pmb.png" alt="Premarket Bell" />
+          <img loading="lazy" src="./assets/logos/featuredog.png" alt="Feature Dog" />
+        </div>
+      </div>
+    </div>
+
+    <!-- How section -->
+    <div id="how">
+      <div class="ambiance" aria-hidden="true">
+        <div></div>
+      </div>
+      <div class="content">
+        <div class="lg:max-w-lg lg:pr-8 lg:pt-4">
+          <h2>How it works</h2>
+          <h3>A better workflow</h3>
+          <p>
+            Replace unreliable freelancers and costly agencies for a
+            <strong>founder-friendly</strong> team at a fixed fee.
+          </p>
+
+          <dl>
+            <div>
+              <dt>
+                <div class="icon-glow-12 absolute -left-2 -top-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z" />
+                  </svg>
+                </div>
+                Essential MVPs for founders
+              </dt>
+              <dd>
+                No more over-engineered products. We’ll help you build an
+                effective MVP and iterate to product-market fit, reducing
+                capital and time risk.
+              </dd>
+            </div>
+            <div>
+              <dt>
+                <div class="icon-glow-12 absolute -left-2 -top-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                  </svg>
+                </div>
+                Professional CTO
+              </dt>
+              <dd>
+                Avoid paying for unnecessary agency members or wasting time
+                managing freelancers. We’ll help you scale your team when it’s
+                time, and manage the process, and the team, for you.
+              </dd>
+            </div>
+            <div>
+              <dt>
+                <div class="icon-glow-12 absolute -left-2 -top-1.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                </div>
+                You’re in control
+              </dt>
+              <dd>
+                Effortlessly manage your project board asynchronously. Keep
+                track of your active, queued, and completed tasks with utmost
+                convenience.
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <figure>
+          <img loading="lazy" src="./assets/kanban-min.png?v=2" alt="Product screenshot" />
+        </figure>
+      </div>
+    </div>
+
+    <!-- Benefits section -->
+    <div id="benefits">
+      <div>
+        <h2>Membeship benefits</h2>
+        <h3>
+          So good you’ll never need to look anywhere else.
+          <br class="hidden lg:block" />Seriously.
+        </h3>
+      </div>
+
+      <div class="content">
+        <dl>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor">
+                  <path
+                    d="m20.2 1.5c.8 0 1.5.7 1.5 1.5v18c0 .8-.7 1.5-1.5 1.5h-16.4c-.8 0-1.5-.7-1.5-1.5v-18c0-.8.7-1.5 1.5-1.5zm-16.4-1.5c-1.7 0-3 1.3-3 3v18c0 1.7 1.3 3 3 3h16.5c1.7 0 3-1.3 3-3v-18c0-1.7-1.3-3-3-3z" />
+                  <path
+                    d="m9.8 4.5c0-.8.7-1.5 1.5-1.5h1.5c.8 0 1.5.7 1.5 1.5v4.5c0 .8-.7 1.5-1.5 1.5h-1.5c-.8 0-1.5-.7-1.5-1.5zm-6 0c0-.8.6-1.5 1.4-1.5h1.5c.8 0 1.5.7 1.5 1.5v10.5c0 .8-.7 1.5-1.5 1.5h-1.5c-.8 0-1.5-.7-1.5-1.5v-10.5zm12 0c0-.8.7-1.5 1.5-1.5h1.5c.8 0 1.5.7 1.5 1.5v15c0 .8-.7 1.5-1.5 1.5h-1.5c-.8 0-1.5-.7-1.5-1.5z" />
+                </svg>
+              </div>
+              Personal task board
+            </dt>
+            <dd>
+              Add, and keep track of your active, queued, and completed tasks
+              with utmost convenience.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor">
+                  <path
+                    d="m7 12h-2c-.6 0-1 .4-1 1s.4 1 1 1h2c1.7 0 3-1.3 3-3s-1.3-3-3-3c-.6 0-1-.4-1-1s.4-1 1-1h2c.6 0 1-.4 1-1s-.4-1-1-1h-2c-1.7 0-3 1.3-3 3s1.3 3 3 3c.6 0 1 .4 1 1s-.4 1-1 1z" />
+                  <path
+                    d="m23 0h-22c-.6 0-1 .4-1 1v16c0 .6.4 1 1 1h10v5c0 .7.8 1.2 1.4.9l3.6-1.8 3.6 1.8c.7.3 1.4-.2 1.4-.9v-5h2c.6 0 1-.4 1-1v-16c0-.6-.4-1-1-1zm-7 16c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm3 5.4-2.6-1.3c-.3-.1-.6-.1-.9 0l-2.5 1.3v-4.4s.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2.1c.1 0 .1.1.2.1.1 0 .1 0 .2.1.1 0 .1 0 .2.1.1 0 .1 0 .2.1.1 0 .1 0 .2.1h.2.2.2.2.2.2.2s.1 0 .2 0h.2.2.2.2.2.2c.1 0 .1 0 .2-.1.1 0 .1 0 .2-.1.1 0 .1 0 .2-.1.1 0 .1 0 .2-.1.1 0 .1-.1.2-.1.1 0 .1-.1.2-.1s.1-.1.1-.1.1-.1.1-.1.1-.1.1-.1zm3-5.4h-1v-3c0-2.8-2.2-5-5-5s-5 2.2-5 5v3h-9v-14h20z" />
+                </svg>
+              </div>
+              Keep 100% of equity
+            </dt>
+            <dd>
+              No need to part with equity or give out stock options, unless
+              you really want to :-)
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" fill-rule="evenodd">
+                  <path
+                    d="m10.9 5.1h-.9c-.4 0-.8.4-.8.9s.4.9.9.9h.9v.9c0 .5.4.9.9.9s.9-.4.9-.9v-.9h.9c.5 0 .9-.4.9-.9s-.6-.9-1.1-.9h-.9v-.9c0-.5-.4-.9-.9-.9s-.9.4-.9.9z" />
+                  <path
+                    d="m20.9 6v-3.4c0-.7-.3-1.3-.8-1.8-.4-.5-1.1-.8-1.7-.8-3 0-11.5 0-14.4 0-.8 0-1.4.3-1.9.8-.5.4-.7 1.1-.7 1.8v18.9c0 .7.3 1.3.8 1.8.4.4 1 .7 1.7.7h14.4c.5 0 .9-.4.9-.9s-.4-.9-.9-.9c-3.2 0-12.2 0-14.4 0-.2 0-.4-.1-.6-.3s-.3-.4-.3-.6v-18.7c0-.2.1-.4.3-.6s.4-.3.6-.3h14.4c.2 0 .4.1.6.3s.3.4.3.6v3.4c0 .5.4.9.9.9s.8-.4.8-.9z" />
+                  <path
+                    d="m19.2 10.5c-1 .4-1.7 1.3-1.7 2.4 0 1.4 1.1 2.6 2.6 2.6.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9-.4-.9-.9-.9-.9.4-.9.9c0 1.1.7 2.1 1.7 2.4v1c0 .5.4.9.9.9s.9-.4.9-.9v-1c1-.4 1.7-1.3 1.7-2.4 0-1.4-1.2-2.6-2.6-2.6-.5 0-.9-.4-.9-.8 0-.5.4-.9.9-.9s.9.4.9.9c0 .5.4.9.9.9s.9-.4.9-.9c0-1.1-.7-2.1-1.7-2.4v-1c0-.5-.4-.9-.9-.9s-.9.4-.9.9z" />
+                  <path d="m7.5 12.9h6.9c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-6.9c-.5 0-.9.4-.9.9s.4.9.9.9z" />
+                  <path d="m7.5 16.3h6.9c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-6.9c-.5 0-.9.4-.9.9s.4.9.9.9z" />
+                  <path d="m7.5 19.7h6.9c.5 0 .9-.4.9-.9s-.5-.8-.9-.8h-6.9c-.5 0-.9.4-.9.9s.4.8.9.8z" />
+                </svg>
+              </div>
+              Fixed &amp; prefictable pricing
+            </dt>
+            <dd>
+              No more surprises! Extend your runway with a fixed price each
+              month for a boatload of goods.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m23.5 9.7c-.5-1.1-1.2-2-2.2-2.6-.5-.3-1-.6-1.6-.8-.5-.2-1.1-.3-1.7-.3-.8 0-1.6.2-2.3.4-.1 0-.1 0-.2.1-.6.3-1.2.7-1.7 1.1-.2.2-.3.3-.5.5-.3.3-.5.7-.8 1-.1.1-.1.2-.2.2-.1.2-1.6 2.3-1.8 2.6-.1.2-.3.4-.4.6 0 .1-.1.1-.1.2-.3.4-.6.8-.8 1.1-.1.2-.3.3-.4.5-.1.1-.2.3-.3.3-.3.3-.7.6-1.2.7-.3.3-.8.4-1.3.4-.3 0-.7 0-1-.1-.2 0-.3-.1-.5-.2-.7-.3-1.2-.8-1.6-1.3-.2-.3-.4-.6-.5-1-.1-.3-.2-.7-.2-1.1 0-.5.1-1 .3-1.4.3-.7.8-1.2 1.4-1.6.3-.2.6-.4 1-.5.3-.2.7-.2 1.1-.2.5 0 1 .1 1.4.3.4.1.8.4 1.2.7l.3.3c.2.2.5.6.7.9.1.1.2.3.3.4.4-.5 1-1.5 1.4-2-.1-.1-.1-.2-.2-.2-.2-.2-.3-.4-.5-.6s-.3-.3-.5-.5c-.5-.5-1.1-.9-1.8-1.2-.7-.2-1.5-.4-2.3-.4s-1.6.2-2.3.5c-1.1.4-2 1.2-2.7 2.1-.3.5-.6 1-.8 1.6-.1.6-.2 1.2-.2 1.8 0 .8.2 1.6.5 2.3.5 1.1 1.2 2 2.2 2.6.5.3 1 .6 1.6.8.5.2 1.1.3 1.7.3.8 0 1.6-.2 2.3-.4.7-.3 1.3-.7 1.9-1.2.2-.1.3-.3.5-.5.3-.3.5-.7.8-1 .1-.1.1-.1.2-.2.1-.2 2.1-3 2.2-3.3 0-.1.1-.1.1-.2.3-.4.6-.8.8-1.1.1-.2.3-.3.4-.5.1-.1.2-.3.3-.3.3-.3.7-.6 1.2-.7.1 0 .2-.1.3-.1.3-.1.7-.2 1.1-.2.5 0 1 .1 1.4.3.7.3 1.2.8 1.6 1.3.2.3.4.6.5 1 .1.3.2.7.2 1.1 0 .5-.1 1-.3 1.4-.3.7-.8 1.2-1.4 1.6-.3.2-.6.4-1 .5-.3.1-.7.2-1.1.2-.5 0-1-.1-1.4-.3s-.8-.4-1.2-.7c-.1-.1-.2-.2-.3-.3-.2-.2-.5-.6-.7-.9-.1-.1-.2-.3-.3-.4 0 0-.1.1-.1.1-.6.9-1 1.5-1.3 1.9.1.1.1.2.2.2.2.2.3.4.5.6l.5.5c.5.5 1.2.9 1.9 1.2s1.5.4 2.3.4 1.6-.2 2.3-.5c1.1-.5 2-1.2 2.6-2.2.3-.5.6-1 .8-1.6s.3-1.2.3-1.8c-.1-.7-.3-1.5-.6-2.2z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              Unlimited requests
+            </dt>
+            <dd>
+              Add as many requests to your board as you want. We’ll pick them
+              up and handle them as they come in.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m8.7 18h-6m3.2-6h-4.9m7.7-6h-5.5m14.3-3.9-7.2 10.1c-.3.4-.5.7-.5.9s.1.3.2.4.4.1 1 .1h5.4l-1.1 8.2 7.2-10.1c.3-.4.5-.7.5-.9s-.1-.3-.2-.4-.4-.1-1-.1h-5.4z"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="133.3333" />
+                </svg>
+              </div>
+              Fast turnaround
+            </dt>
+            <dd>
+              Get your tasks completed in just a few days on average. We’ll
+              iterate until you’re satisfied.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m1.6 21.7v-1.2c0-3.4 2.7-6.1 6.1-6.1h4.6m5.8 0v4.3m0 0v4.3m0-4.3h4.3m-4.3 0h-4.3m1.2-12.8c0 2.7-2.2 4.9-4.9 4.9s-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9 4.9 2.2 4.9 4.9z"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="133.3333" />
+                </svg>
+              </div>
+              Invite everyone
+            </dt>
+            <dd>
+              Add your team to join in, submit requests, and keep an eye on
+              their progress.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor">
+                  <path
+                    d="m4.4 8.7c0-.6.5-1.1 1.1-1.1h4.4c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1h-1.2v5.5c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1v-5.5h-1c-.6 0-1.1-.5-1.1-1.1z" />
+                  <path
+                    d="m13.9 8c-.3-.4-.8-.5-1.2-.3s-.7.6-.7 1v6.5c0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1v-3.5l.8 1c.2.2.5.4.8.4s.6-.1.8-.4l.8-1v3.5c0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1v-6.5c0-.5-.3-.9-.7-1-.4-.2-.9 0-1.2.3l-1.9 2.3z" />
+                  <path clip-rule="evenodd"
+                    d="m24 12c0 6.6-5.4 12-12 12s-12-5.4-12-12 5.4-12 12-12 12 5.4 12 12zm-21.8 0c0 5.4 4.4 9.8 9.8 9.8s9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8-9.8 4.4-9.8 9.8z"
+                    fill-rule="evenodd" />
+                </svg>
+              </div>
+              Full IP ownership
+            </dt>
+            <dd>
+              We work for you, so you own 100% of the source materials and
+              intelectual property.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="133.3333"
+                  stroke-width="2">
+                  <path
+                    d="m16.4 12c0-.9-1-1.6-3.1-2.8-2.1-1.3-3.1-1.9-3.9-1.4-.7.4-.7 1.7-.7 4.2s0 3.8.8 4.2c.8.5 1.8-.2 3.9-1.4 2-1.2 3-1.9 3-2.8z" />
+                  <path
+                    d="m17.5 2.5c-1.6-1-3.5-1.5-5.5-1.5-6.1 0-11 4.9-11 11 0 1.8.4 3.4 1.1 4.9.2.4.3.8.1 1.3l-.7 2.4c-.3 1.1.7 2 1.8 1.8l2.4-.7c.4-.1.9 0 1.3.1 1.6.8 3.2 1.2 5 1.2 6.1 0 11-4.9 11-11 0-2-.5-3.9-1.5-5.5" />
+                </svg>
+              </div>
+              Ad-Hoc sync calls
+            </dt>
+            <dd>
+              Have a call with a real human to sync, brainstorm, demo, and
+              plan head.
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <div class="icon-glow-20">
+                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" stroke="currentColor" stroke-miterlimit="133.3333" stroke-width="2">
+                  <path
+                    d="m13.1 23c4.5 0 6.8-.1 8.3-1.6 1.6-1.6 1.6-4.2 1.6-9.4s0-7.8-1.6-9.4c-1.6-1.6-4.2-1.6-9.4-1.6s-7.8 0-9.4 1.6c-1.5 1.5-1.6 3.8-1.6 8.3"
+                    stroke-linecap="round" />
+                  <path d="m12 12 5.5-5.5m0 0h-4.1m4.1 0v4.1" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="m1 18.6c0-2.1 0-3.1.6-3.8.6-.6 1.7-.6 3.8-.6s3.1 0 3.8.6c.6.6.6 1.7.6 3.8s0 3.1-.6 3.8c-.7.6-1.7.6-3.8.6s-3.1 0-3.8-.6c-.6-.7-.6-1.7-.6-3.8z" />
+                </svg>
+              </div>
+              Flexible and scaleble
+            </dt>
+            <dd>
+              When its time to grow - we’ll help you find, onboard, and manage
+              dedicated, skilled developers.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <!-- Testimonial section -->
+    <div id="testimonial">
+      <div class="ambiance" aria-hidden="true">
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="client-image">
+          <div style="--client-image: url(./assets/mike.webp)"></div>
+        </div>
+        <div class="tesimonial">
+          <figure>
+            <div class="quote">“</div>
+            <blockquote>
+              The Automaze team did a spectacular job! They were extremely
+              knowledgeable, quick to implement, and, very friendly to work
+              with. I will definitely be working with them again in the
+              future! Highly recommend.
+            </blockquote>
+            <figcaption>
+              <div class="font-semibold">Mike MacDonald</div>
+              <div class="mt-1 text-md opacity-50">
+                Founder &amp; CEO, MyStrengthBook
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scope section -->
+    <div id="scope">
+      <div class="content">
+        <div>
+          <h2>Scope of work</h2>
+          <h3>Everything you need</h3>
+          <p>
+            With 50+ years of combined experience, we've seen it all, done it
+            all, and still have a deep passion for what we do.
+          </p>
+        </div>
+        <div>
+          <h4>Experties</h4>
+          <ul>
+            <li>Website Development</li>
+            <li>SaaS Applications</li>
+            <li>AI &amp; Machine Learning</li>
+            <li>UX/UI Design</li>
+            <li>DevOps</li>
+            <li>Cloud Computing</li>
+            <li>Architecture Design</li>
+            <li>Back-End Systems</li>
+            <li>Front-End Coding</li>
+            <li>Automation</li>
+            <li>Sprint Planning</li>
+            <li>3<sup>rd</sup> Party Integration</li>
+            <li>Messeging</li>
+            <li>CMS Platforms</li>
+            <li>CRM Integration</li>
+            <li>Streaming Services</li>
+            <li>Back-Office Systems</li>
+            <li>Project Management</li>
+          </ul>
+          <h4>Worked with</h4>
+          <ul>
+            <li>Startups</li>
+            <li>Solo-Founders</li>
+            <li>SaaS Platforms</li>
+            <li>Fintech</li>
+            <li>Retail &amp; eCommerce</li>
+            <li>Staff Augmentation</li>
+            <li>and many more</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team section -->
+    <div id="team">
+      <div class="content">
+        <div>
+          <h2>Leadership team</h2>
+          <h3>All-in-one powerhouse</h3>
+          <p>
+            When you become a member, you’ll get an entire team will be
+            working on your project. So why not meet some of them?
+          </p>
+        </div>
+        <ul role="list">
+          <li>
+            <img loading="lazy" src="./assets/avatars/ran-2.webp" alt="Ran" />
+            <h3>
+              Ran
+              <a href="https://twitter.com/aroussi" target="blank"><svg fill="currentColor" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                </svg></a>
+            </h3>
+            <p>CTO &amp; Facilitator</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/alex.webp" alt="Alex" />
+            <h3>Alex</h3>
+            <p>Lead Software Engineer</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/anton.webp" alt="Anton" />
+            <h3>Anton</h3>
+            <p>Lead Software Engineer</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/lily.webp" alt="Lily" />
+            <h3>Lily</h3>
+            <p>Administive Director</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/yulia.webp" alt="Yulia" />
+            <h3>Yulia</h3>
+            <p>Senior Engineer</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/max.webp" alt="Max" />
+            <h3>Max</h3>
+            <p>Software Engineer</p>
+          </li>
+          <li xclass="sm:hidden lg:block">
+            <img loading="lazy" src="./assets/avatars/victor.webp" alt="Victor" />
+            <h3>Victor</h3>
+            <p>Front-End Developer</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/lina.webp" alt="Lina" />
+            <h3>Lina</h3>
+            <p>UI/UX Designer</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/vlad.webp" alt="Vlad" />
+            <h3>Vlad</h3>
+            <p>DevOps Engineer</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/anna.webp" alt="Anna" />
+            <h3>Anna</h3>
+            <p>Project Manager</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/roman.webp" alt="Roman" />
+            <h3>Roman</h3>
+            <p>Automation Lead</p>
+          </li>
+          <li>
+            <img loading="lazy" src="./assets/avatars/michael.webp" alt="Michael" />
+            <h3>Michael</h3>
+            <p>Junior QA Engineer</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pricing section -->
+    <div id="pricing">
+      <div class="ambiance" aria-hidden="true">
+        <div></div>
+      </div>
+
+      <div class="content">
+        <h2>Membership levels</h2>
+        <h3>Choose a plan that's right for you.</h3>
+      </div>
+      <div class="plans">
+        <div class="monthly">
+          <h3>Monthly</h3>
+          <p>No min. commitment</p>
+          <p class="price">$5,975<span>/ mo</span></p>
+          <p class="billing-cycle">Paid monthly</p>
+
+          <a href="https://buy.stripe.com/28o8yF6wR54Pesg5kk" aria-describedby="tier-enterprise" class="button">Get
+            started</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
+
+          <hr />
+          <ul role="list">
+            <li>CTO as a service</li>
+            <li>
+              Software architecture, design, coding, devops and ongoing advice
+            </li>
+            <li>Unlimited projects / brands</li>
+            <li>Unlimited requests<br />(one request at a time)</li>
+            <li>Unlimited revisions</li>
+            <li>Personal task board</li>
+            <li>Ad-Hoc sync calls</li>
+            <li>Easy credit-card payments</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+        </div>
+
+        <div class="quarterly">
+          <h3>Quarterly</h3>
+          <p>Save $500 per month</p>
+          <p class="price">$5,475<span>/ mo</span></p>
+          <p class="billing-cycle">Paid quarterly</p>
+
+          <a href="https://buy.stripe.com/aEUg17g7r7cX4RG289" aria-describedby="tier-enterprise" class="button">Get
+            started</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
+
+          <hr />
+          <ul role="list">
+            <li>CTO as a service</li>
+            <li>
+              Software architecture, design, coding, devops and ongoing advice
+            </li>
+            <li>Unlimited projects / brands</li>
+            <li>Unlimited requests<br />(one request at a time)</li>
+            <li>Unlimited revisions</li>
+            <li>Personal task board</li>
+            <li>Ad-Hoc sync calls</li>
+            <li>Easy credit-card payments</li>
+          </ul>
+        </div>
+
+        <div class="yearly">
+          <h3>Yearly</h3>
+          <p>Save $500 per month</p>
+          <p class="price">$4,975<span>/ mo</span></p>
+          <p class="billing-cycle">Paid annualy</p>
+
+          <a href="https://buy.stripe.com/28o02908tfJt1Fu4gi" aria-describedby="tier-enterprise" class="button">Get
+            started</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
+
+          <hr />
+          <ul role="list">
+            <li>CTO as a service</li>
+            <li>
+              Software architecture, design, coding, devops and ongoing advice
+            </li>
+            <li>Unlimited projects / brands</li>
+            <li>Unlimited requests<br />(one request at a time)</li>
+            <li>Unlimited revisions</li>
+            <li>Personal task board</li>
+            <li>Ad-Hoc sync calls</li>
+            <li>Easy credit-card payments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ section -->
+    <div id="faq">
+      <div class="gradient-spacer"></div>
+
+      <div class="content">
+        <h2>Got questions? We have the answers</h2>
+        <h3>Frequently asked questions</h3>
+        <details>
+          <summary>
+            Why wouldn't I just find a technical co-founder or hire a
+            full-time CTO?
+          </summary>
+          <p>
+            Good question! For starters, the annual cost of a full-time CTO
+            now exceeds $250,000, plus stock options (and good luck finding
+            one available). Not to mention that for a technical co-founder,
+            you'd also have to give up a significant portion of your company.
+            The reailty is that a full-time CTO is overkill for most startups,
+            and you probably don't need one until you actually have a
+            decent-size team.
+          </p>
+          <p>
+            With our service, you get the same level of expertise and
+            experience, at a fraction of the cost, and without giving away any
+            equity. Furthermore, you can cancel or pause your subscription at
+            any time, so you're never locked in.
+          </p>
+        </details>
+        <details>
+          <summary>What happens when I sign up?</summary>
+          <p>
+            Once subscribed, you'll receive an email with a link to your
+            personal task board within one business day. The first task would be
+            sining a confidentiality agreement. We'll also schedule a
+            call to get to know you and your business, and to discuss your
+            first request.
+          </p>
+        </details>
+        <details>
+          <summary>Is there a limit to how many requests I can have?</summary>
+          <p>
+            Once subscribed, you're able to add as many requests to your queue
+            as you'd like, and they will be handled by us one by one.
+          </p>
+        </details>
+        <details>
+          <summary>How fast will tasks be completed?</summary>
+          <p>
+            It really depands on the task itself and how complex it is, but,
+            on average, most requests are completed in 2-3 days.
+          </p>
+        </details>
+        <details>
+          <summary>Who's behind Automaze?</summary>
+          <p>
+            Automaze was founded by Ran Aroussi, a software engineer with over
+            30 years of experience in various industries. Ran has worked with
+            companies of all sizes, from small startups to large enterprises,
+            and has helped them build and scale their products.
+          </p>
+        </details>
+        <details>
+          <summary>How does the pause feature work?</summary>
+          <p>
+            We understand you may not have enough design work to fill up
+            entire month. Perhaps you only have one or two tasks to perform at
+            the moment. That's where pausing your subscription comes in handy.
+          </p>
+          <p>
+            Billing cycles are monthly, based on 5 days a week, or 22 days per
+            month. Let's say you sign up and use the service for 15 days, and
+            then decide to pause your subscription. This means that the
+            billing cycle will be paused and you'll have 7 days of service
+            remaining to be used anytime in the future.
+          </p>
+        </details>
+        <details>
+          <summary>What technologies do you work with?</summary>
+          <p>
+            We've seen it all really. But our most common tech stack uses a
+            compbination of Node.js, Python, PHP, Bash, Go, React, Vue,
+            Alpine.js, Tailwind, Bootstrap, Postgresql, MySQL, MongoDB, Redis,
+            AWS, Google Cloud, Docker, Kubernetes, Jenkins, and GitHub. For
+            UX/UI, we use Figma, Adobe Illustrator, and Photoshop.
+          </p>
+        </details>
+        <details>
+          <summary>How do I put in requests?</summary>
+          <p>
+            When you sign up, you'll get your dedicated task board, where
+            you'll be able to add requests, communicate with us, and track the
+            progress of your requests.
+          </p>
+          <p>
+            Its recommended to add a Google docs, wireframes, or recording a
+            brief Loom video. Basically, if it can be linked to or shared in
+            your task board, it's fair game.
+          </p>
+        </details>
+        <details>
+          <summary>What if I'm not satisfied?</summary>
+          <p>
+            No worries! We'll continue to iterate and revise until you're 100%
+            satisfied.
+          </p>
+        </details>
+        <details>
+          <summary>What if I only have a single request?</summary>
+          <p>
+            That's fine. You can pause your subscription when finished and
+            return when you have additional tasks to perfor. There's no need
+            to let the remainder of your subscription go to waste.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Are there any refunds if I don't like the service?
+          </summary>
+          <p>
+            Due to the high quality nature of the work, there will be no
+            refunds issued.
+          </p>
+        </details>
+      </div>
+    </div>
+
+    <!--  CTA -->
+    <div id="start">
+      <div class="content">
+        <h3>See if Automaze is right for you.</h3>
+        <p class="opacity-60">(it totally is)</p>
+        <p class="outro !opacity-80">
+          Get a guided tour through Automaze, and find out how we can help you
+          achieve success.
+        </p>
+        <a href="#pricing" class="button">&nbsp; Get started →</a>
+      </div>
+
+      <svg viewBox="0 0 1024 1024" aria-hidden="true">
+        <circle cx="512" cy="512" r="512" fill="url(#8d958450-c69f-4251-94bc-4e091a323369)" fill-opacity="0.7" />
+        <defs>
+          <radialgradient id="8d958450-c69f-4251-94bc-4e091a323369">
+            <stop stop-color="#80acff" />
+            <stop offset="1" stop-color="#072450" />
+          </radialgradient>
+        </defs>
+      </svg>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer aria-labelledby="footer-heading">
+    <nav aria-label="Footer">
+      <a href="#pricing">Get Started</a>
+      <a target="blank" href="https://automaze.notion.site/Terms-Conditions-5d4501a9577f4ca791259b0123e2dc49">Terms of Service</a>
+      <a target="blank" href="https://automaze.notion.site/Privacy-Policy-2463d3b5f47e4fc5b3033f98ec3219b5">Privacy Policy</a>
+      <a href="m&#97;&#105;l&#116;o&#58;&#104;&#101;%6Clo&#64;&#97;ut&#111;maze%&#50;Eio">Contact</a>
+      <!-- <a target="blank" href="https://trello.com/login?returnUrl=%2Fw%2Fautomaze">Client Login</a> -->
+    </nav>
+    <p>
+      &copy; <span id="copy-date"></span> Automaze, Ltd. All rights reserved.
+    </p>
+  </footer>
+
+  <div id="loader">
+    <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+      <g transform="translate(1 1)" stroke-width="2">
+          <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+          <path d="M36 18c0-9.94-8.06-18-18-18">
+              <animateTransform
+                  attributeName="transform"
+                  type="rotate"
+                  from="0 18 18"
+                  to="360 18 18"
+                  dur="1s"
+                  repeatCount="indefinite"/>
+          </path>
+      </g>
+    </svg>
   </div>
 
-  <div id="portfolio">
-    <a target="blank" href="https://hireinukraine.com">
-      <img src="https://hireinukraine.com/apple-touch-icon.png" class="favicon">
-      <h3>Hire in Ukraine 🇺🇦</h3>
-      <p>An initiative to help businesses hire vetted, top-tier developers from Ukraine in their time of need.</p>
-      <address>hireinukraine.com</address>
-      <figure><img src="https://hireinukraine.com/images/ogimage.jpg"></figure>
-    </a>
+  <script>
+    // date
+    document.getElementById("copy-date").innerHTML = new Date().getFullYear();
 
-    <a target="blank" href="https://asknaval.ai/">
-      <img src="https://asknaval.ai/static/favicon.png" class="favicon">
-      <h3>Ask Naval</h3>
-      <p>Chat with Naval Ravikant to gain insights on personal growth, philosophy, and investing.</p>
-      <address>asknaval.ai</address>
-      <figure><img src="https://asknaval.ai/static/img/ogimage.jpg"></figure>
-    </a>
+    // scroll
+    window.addEventListener("scroll", (event) => {
+      setTimeout(function () {
+        document.body.classList.toggle("scrolled", window.scrollY > 100);
+      }, 100);
+    });
 
-    <a target="blank" href="https://www.upwork.com/ag/hireinukraine/">
-      <img src="https://www.upwork.com/favicon.ico" class="favicon" style="padding:4px">
-      <h3>UpWork Profile</h3>
-      <p>We look forward to working with you to creating your MPV and drive your business forward.</p>
-      <address>upwork.com</address>
-      <figure><img src="./upwork.jpeg"></figure>
-    </a>
+    // smart quotes
+    document.querySelectorAll("h1,h2,h3,h4,h5,h6,p,summary").forEach((p) => {
+      p.innerHTML = p.innerHTML.replace(/(^|[-\u2014\s(\["])'/g, "$1\u2018").replace(/'/g, "\u2019");
+    });
 
-    <!-- <a target="blank" href="https://corpus.chat">
-      <img src="http://127.0.0.1/corpus/website/public/static/apple-touch-icon.png" class="favicon">
-      <h3>Corpus.Chat</h3>
-      <p>ChatGPT for your website! Increase engagement, reduce wait times, and maximize satisfaction.</p>
-      <address>corpus.chat</address>
-      <figure><img src="http://127.0.0.1/corpus/website/public/static/img/hero-screenshot.webp"></figure>
-    </a> -->
+    // loader
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      for (let i = 0; i <= 10; i++) {
+        setTimeout(() => {
+          (i < 10) ? loader.style.opacity = (10-i)/10 : loader.parentNode.removeChild(loader);
+        }, i*30);
+      }
+    });
+  </script>
 
-    <a target="blank" href="https://premarketbell.com/">
-      <img src="https://premarketbell.com/assets/favicon.png" class="favicon" style="padding:2px">
-      <h3>Premarket Bell</h3>
-      <p>Bite-sized market overview in your inbox every morning before the market opens.</p>
-      <address>premarketbell.com</address>
-      <figure><img src="https://premarketbell.com/assets/card.png"></figure>
-    </a>
-
-  </div>
-</main>
-
-<script>
-  document.getElementById('copy-date').innerHTML = new Date().getFullYear();
-</script>
-
+  <!-- Start of HubSpot Embed Code -->
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/27038758.js"></script> -->
+  <!-- End of HubSpot Embed Code -->
 </body>
 </html>

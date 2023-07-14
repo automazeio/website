@@ -2,80 +2,538 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply m-0 bg-[#030D1C] p-0 text-slate-300 antialiased;
-  font-family: inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: -0.01rem;
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('./Inter-roman.var.woff2?v=3.19') format('woff2');
+  font-named-instance: 'Regular';
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('./Inter-italic.var.woff2?v=3.19') format('woff2');
+  font-named-instance: 'Italic';
+}
+:root {
+  font-family: 'Inter var', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  @apply scroll-smooth;
 }
 body {
-  @apply m-0 px-6 md:px-12 xl:px-20;
-  @apply bg-gradient-to-tr from-black via-[#030d1c] to-[#030d1c];
+  @apply bg-slate-950 text-white antialiased;
 }
-/* body:before {
-  @apply fixed inset-0;
+h2 {
+  @apply text-base font-semibold leading-7 text-indigo-400;
+}
+h3 {
+  @apply mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl;
+}
+img {
+  @apply pointer-events-none select-none;
+}
+p.outro,
+h2 + h3 + p {
+  @apply mt-6 text-lg opacity-60 lg:text-xl;
+}
+.icon-glow-12,
+.icon-glow-20,
+.icon-glow {
+  background: url(https://b872ffd3f1a895035b4780e1cf8ab840.cdn.bubble.io/f1673769606566x220312603092295700/Group%20332.svg)
+    50% no-repeat;
+  background-size: contain;
+}
+.icon-glow-12 {
+  @apply h-12 w-12;
+}
+.icon-glow-12 > svg {
+  @apply mx-auto mt-2 h-6 w-6 text-indigo-300 drop-shadow-sm;
+}
+.icon-glow-20 {
+  @apply -ml-3 -mt-4 h-20 w-20 pt-2;
+}
+.icon-glow-20 > svg {
+  @apply mx-auto mt-3 h-10 w-10 text-indigo-300 drop-shadow-sm;
+}
+
+/* --- header --- */
+body > header {
+  @apply fixed inset-x-0 top-0 z-50;
+}
+body.scrolled > header {
+  @apply bg-slate-950/80 backdrop-blur;
+}
+body > header > nav {
+  @apply flex items-center justify-between p-2 px-6 lg:px-8;
+}
+body > header > nav > .logo {
+  @apply -m-1.5 flex p-1.5 lg:flex-1;
+}
+body > header > nav > .logo img {
+  @apply h-12 w-auto;
+}
+body > header > nav > ul button,
+body > header > nav > button.mobile-button {
+  @apply -m-2.5 flex items-center justify-center rounded-md p-2.5 text-gray-400 lg:hidden;
+}
+body > header > nav > button.mobile-button > svg {
+  @apply h-6 w-6;
+}
+body > header > nav > ul button {
+  @apply fixed right-5 top-4 lg:hidden;
+}
+body > header > nav > ul button > svg {
+  @apply h-8 w-8;
+}
+header > nav > ul {
+  @apply fixed bottom-0 right-0 top-0 hidden w-full max-w-sm bg-slate-900/80 p-6 backdrop-blur;
+  @apply lg:relative lg:flex lg:w-auto lg:max-w-none lg:gap-x-12 lg:bg-transparent lg:p-0 lg:backdrop-blur-none;
+}
+header > nav > ul.opened {
+  @apply isolate block h-screen backdrop-blur lg:flex;
+}
+body.scrolled header > nav > ul.opened {
+  @apply bg-slate-900;
+}
+header > nav li {
+  @apply my-5 lg:m-0;
+}
+header > nav li:last-of-type {
+  @apply mt-12 border-t border-t-slate-700 pt-6 lg:hidden;
+}
+header > nav a {
+  @apply text-sm font-semibold transition-opacity hover:opacity-80;
+}
+header > nav .book {
+  @apply hidden lg:flex lg:flex-1 lg:justify-end;
+}
+header > nav .book a {
+  @apply rounded-full bg-indigo-600 py-1.5 pl-4 pr-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-indigo-600 hover:shadow-xl hover:shadow-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400;
+}
+
+/* --- hero --- */
+#hero {
+  @apply relative isolate overflow-hidden;
+}
+#hero > svg:first-of-type {
+  @apply absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)];
+}
+#hero > div:first-of-type {
+  @apply absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)];
+}
+#hero > div:first-of-type > div {
+  @apply aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80acff] to-[#072450] opacity-20;
+  clip-path: polygon(
+    73.6% 51.7%,
+    91.7% 11.8%,
+    100% 46.4%,
+    97.4% 82.2%,
+    92.5% 84.9%,
+    75.7% 64%,
+    55.3% 47.5%,
+    46.5% 49.4%,
+    45% 62.9%,
+    50.3% 87.2%,
+    21.3% 64.1%,
+    0.1% 100%,
+    5.4% 51.1%,
+    21.4% 63.9%,
+    58.9% 0.2%,
+    73.6% 51.7%
+  );
+}
+#hero > .content {
+  @apply mx-auto max-w-3xl pt-32 text-center sm:pt-48 lg:pt-52;
+}
+#hero > .content > img {
+  @apply mx-auto mb-20 h-7;
+}
+#hero > .content h1 {
+  @apply bg-gradient-to-t from-blue-200 to-white bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-6xl lg:text-7xl;
+}
+#hero > .content h2.intro {
+  @apply mt-6 text-xl font-normal leading-8 text-gray-300 lg:text-2xl;
+}
+#hero > .content .buttons {
+  @apply mt-10 flex items-center justify-center gap-x-6;
+}
+#hero > .content .buttons a.button {
+  @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-indigo-600 hover:shadow-xl hover:shadow-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400;
+}
+#hero > .content .buttons a:not(.button) {
+  @apply text-sm font-semibold transition-opacity hover:opacity-80;
+}
+.logos {
+  @apply bg-gradient-to-b from-transparent to-slate-900/30 py-px;
+}
+.logos > div {
+  @apply mx-auto mb-16 mt-40 grid max-w-lg grid-cols-6 items-center gap-x-3 gap-y-2 px-6 opacity-80 sm:mt-52 sm:grid-cols-6 sm:gap-x-8 md:max-w-4xl md:grid-cols-5 lg:px-8;
+}
+.logos > div > img {
+  @apply col-span-2 h-8 w-full object-contain md:col-span-1 md:h-10;
+}
+.logos > div > img:nth-of-type(4) {
+  @apply col-span-2 col-start-2 h-8 w-full object-contain md:col-span-1 md:h-10;
+}
+.logos > div > img:last-of-type {
+  @apply col-span-2 col-start-auto h-8 w-full object-contain md:col-span-1 md:h-10;
+}
+
+/* --- how --- */
+#how {
+  @apply relative isolate overflow-hidden bg-slate-900/30 pb-16 pt-32 text-white sm:pt-48;
+}
+#how > div:first-of-type {
+  @apply absolute inset-x-0 top-12 -z-10 transform-gpu overflow-hidden px-36 blur-3xl;
+}
+#how > div:first-of-type > div {
+  @apply mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#80acff] to-[#072450] opacity-30;
+  clip-path: polygon(
+    74.1% 44.1%,
+    100% 61.6%,
+    97.5% 26.9%,
+    85.5% 0.1%,
+    80.7% 2%,
+    72.5% 32.5%,
+    60.2% 62.4%,
+    52.4% 68.1%,
+    47.5% 58.3%,
+    45.2% 34.5%,
+    27.5% 76.7%,
+    0.1% 64.9%,
+    17.9% 100%,
+    27.6% 76.8%,
+    76.1% 97.7%,
+    74.1% 44.1%
+  );
+}
+#how > .content {
+  @apply mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 px-6 pb-4 sm:gap-y-20 lg:max-w-7xl lg:grid-cols-2 lg:px-8;
+}
+#how .content > figure {
+  @apply pointer-events-none relative mb-px w-[48rem] max-w-none rounded-xl bg-slate-900/80 shadow-xl shadow-indigo-900/10 ring-1 ring-white/10 drop-shadow-xl sm:w-[57rem] md:-ml-4 lg:-ml-0;
+}
+#how .content > figure img {
+  @apply h-full w-full rounded-xl;
+}
+#how .content > figure:after {
   content: "";
-  background: #030d1c url(https://automaze.io/bg.webp) left bottom no-repeat;
+  @apply absolute -bottom-px -right-px -top-px z-50 w-1/2 bg-gradient-to-r from-transparent via-[#070B1E50] to-[#070B1E] xl:block;
+}
+#how .content dl {
+  @apply mt-10 max-w-xl space-y-5 text-base  text-gray-300 lg:max-w-none;
+}
+#how .content dl > div {
+  @apply relative pl-11;
+}
+#how .content dl > div > dt {
+  @apply mb-2 font-semibold text-white;
+}
+#how .content dl > div > dd {
+  @apply text-md leading-normal opacity-80;
+}
+
+/* --- benefits --- */
+#benefits {
+  @apply bg-slate-900/30 pb-28 pt-20 sm:pb-48 sm:pt-32;
+}
+#benefits > div:first-of-type {
+  @apply mx-auto max-w-7xl px-6  lg:px-12;
+}
+#benefits > div.content {
+  @apply mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-12;
+}
+#benefits dl {
+  @apply grid max-w-xl grid-cols-1 gap-x-8 gap-y-12 sm:max-w-none sm:grid-cols-2 sm:gap-y-16 lg:grid-cols-3;
+}
+#benefits dl > div {
+  @apply flex flex-col;
+}
+#benefits dt {
+  @apply font-semibold;
+}
+#benefits dd {
+  @apply mt-3 text-md opacity-60;
+}
+
+/* --- testimonial --- */
+#testimonial {
+  @apply relative z-10 bg-slate-900/50 pb-20 sm:pb-24 xl:pb-0;
+}
+#testimonial > div:first-of-type {
+  @apply absolute inset-0 overflow-hidden;
+}
+#testimonial > div:first-of-type > div {
+  @apply absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl;
+}
+#testimonial > div:first-of-type > div > div {
+  @apply aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#80acff] to-[#072450] opacity-25;
+  clip-path: polygon(
+    74.1% 44.1%,
+    100% 61.6%,
+    97.5% 26.9%,
+    85.5% 0.1%,
+    80.7% 2%,
+    72.5% 32.5%,
+    60.2% 62.4%,
+    52.4% 68.1%,
+    47.5% 58.3%,
+    45.2% 34.5%,
+    27.5% 76.7%,
+    0.1% 64.9%,
+    17.9% 100%,
+    27.6% 76.8%,
+    76.1% 97.7%,
+    74.1% 44.1%
+  );
+}
+#testimonial .content {
+  @apply mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch;
+}
+#testimonial .content .client-image {
+  @apply -mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none;
+}
+#testimonial .content .client-image > div {
+  @apply relative aspect-[2/1] h-full rounded-2xl shadow-2xl md:-mx-8 xl:mx-0 xl:aspect-auto;
+  background: var(--client-image) 50% no-repeat;
+  background-position-y: 20%;
   background-size: cover;
-  background-attachment: fixed;
-  max-width: 1280px;
-} */
-body > main {
-  @apply relative mx-auto grid max-w-md lg:container lg:grid-cols-2 lg:gap-8 xl:grid-cols-11 xl:gap-x-12 2xl:max-w-[1536px];
+}
+#testimonial .content .tesimonial {
+  @apply w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24;
+}
+#testimonial .content figure {
+  @apply relative isolate pt-6 sm:pt-12;
+}
+#testimonial .content .quote {
+  @apply absolute -left-4 -top-44 -z-10 font-serif text-[30rem] opacity-10;
+}
+#testimonial .content blockquote {
+  @apply text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9;
+}
+#testimonial .content figcaption {
+  @apply mt-8 text-base;
 }
 
-#about {
-  @apply top-0 max-w-xl self-start pt-8 lg:sticky lg:h-screen lg:pt-40 xl:col-span-5 2xl:pt-52;
+/* --- scope --- */
+#scope {
+  @apply bg-slate-900/30 pt-20 sm:pt-56;
+}
+#scope .content {
+  @apply mx-auto grid max-w-6xl grid-cols-1 gap-x-8 gap-y-16 px-6 sm:gap-y-20 lg:grid-cols-5 lg:px-8;
+}
+#scope .content > div:first-of-type {
+  @apply col-span-2;
+}
+#scope .content > div:last-of-type {
+  @apply col-span-3;
+}
+#scope .content > div:last-of-type h4 {
+  @apply mb-4 text-lg font-semibold;
+}
+#scope .content > div:last-of-type h4:not(:first-of-type) {
+  @apply mt-12;
+}
+#scope .content ul {
+  @apply grid grid-cols-2 gap-x-2 gap-y-3 text-base font-medium md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3;
+}
+#scope .content ul li {
+  @apply relative pl-8 text-md text-slate-200 opacity-90;
+}
+#scope .content ul li:before {
+  content: "✓";
+  @apply absolute left-0 top-0 h-5 w-5 text-xl text-indigo-500;
 }
 
-#about img.avatar {
-  @apply h-24 w-24 rounded-full bg-white/10 p-0.5 shadow-2xl lg:h-28 lg:w-28 xl:h-32 xl:w-32;
-  /* @apply 2xl:h-[9rem] 2xl:w-[9rem] */
+/* --- team --- */
+#team {
+  @apply mx-auto bg-slate-900/30 pb-20 pt-28 sm:pt-44;
+}
+#team .content {
+  @apply mx-auto grid max-w-6xl grid-cols-1 gap-x-8 gap-y-16 px-6 sm:gap-y-20 lg:px-8 xl:grid-cols-5;
+}
+#team .content > div {
+  @apply col-span-2;
+}
+#team .content ul {
+  @apply col-span-3 mx-auto grid grid-cols-3 gap-x-4 gap-y-8  md:grid-cols-6;
+}
+#team .content ul img {
+  @apply aspect-square w-full rounded-xl object-cover;
+}
+#team .content ul h3 {
+  @apply mt-6 flex items-center text-base font-semibold tracking-tight;
+}
+#team .content ul h3 a {
+  @apply opacity-50 transition-opacity hover:opacity-90;
+}
+#team .content ul h3 a svg,
+#team .content ul h3 a img {
+  @apply ml-4 h-5 w-5;
+}
+#team .content ul p {
+  @apply text-sm opacity-60;
 }
 
-#about h1 {
-  @apply mt-10 text-3xl font-bold tracking-tight text-white xl:text-4xl 2xl:text-[2.5rem];
+/* --- pricing --- */
+#pricing {
+  @apply relative isolate bg-slate-900/30 pt-20 text-white sm:pt-40;
 }
-#about h3 {
-  @apply my-5 text-lg font-normal leading-normal opacity-80 xl:text-[1.35rem];
-  letter-spacing: -0.02rem;
+#pricing > div:first-of-type {
+  @apply absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl;
 }
-#about a {
-  @apply mb-6 mt-6 flex items-center text-base font-normal text-inherit opacity-80 transition-opacity hover:opacity-100 lg:mt-8 xl:mt-10 xl:text-lg;
+#pricing > div:first-of-type > div {
+  @apply mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#80acff] to-[#072450] opacity-30;
+  clip-path: polygon(
+    74.1% 44.1%,
+    100% 61.6%,
+    97.5% 26.9%,
+    85.5% 0.1%,
+    80.7% 2%,
+    72.5% 32.5%,
+    60.2% 62.4%,
+    52.4% 68.1%,
+    47.5% 58.3%,
+    45.2% 34.5%,
+    27.5% 76.7%,
+    0.1% 64.9%,
+    17.9% 100%,
+    27.6% 76.8%,
+    76.1% 97.7%,
+    74.1% 44.1%
+  );
 }
-#about a svg {
-  @apply -mt-px mr-1.5 h-4 w-4 xl:h-5 xl:w-5;
+#pricing > .content {
+  @apply mx-auto max-w-2xl px-6 text-center lg:max-w-4xl lg:px-8;
 }
-#about footer {
-  @apply absolute bottom-6 w-full text-center text-sm opacity-60 lg:bottom-8 lg:text-left;
+#pricing > .plans {
+  @apply mx-auto mt-12 grid grid-cols-1 items-center gap-y-6 px-6 sm:mt-16  md:max-w-6xl md:grid-cols-3 lg:px-10;
+}
+#pricing > .plans > div:first-of-type {
+  @apply h-full rounded-3xl rounded-t-3xl bg-slate-900/50 p-8 pb-12 ring-1 ring-gray-800 sm:mx-8 md:mx-0 md:rounded-bl-3xl md:rounded-br-none md:rounded-tr-none lg:p-10 lg:pb-14;
+}
+#pricing > .plans > div:nth-of-type(2) {
+  @apply h-full rounded-3xl rounded-t-3xl bg-slate-900/50 p-8 pb-12 ring-1 ring-gray-800 sm:mx-8 md:mx-0 md:rounded-none lg:p-10 lg:pb-14;
+}
+#pricing > .plans > div:last-of-type {
+  @apply h-full rounded-3xl rounded-t-3xl bg-slate-900/50 p-8 pb-12 ring-1 ring-gray-800 sm:mx-8 md:mx-0 md:rounded-bl-none md:rounded-br-3xl md:rounded-tl-none lg:p-10 lg:pb-14;
+}
+#pricing > .plans h3 {
+  @apply text-xl font-semibold leading-7 text-indigo-400;
+}
+#pricing > .plans h3 + p {
+  @apply mb-6 text-md leading-7 opacity-80;
+}
+#pricing > .plans .price {
+  @apply mt-10 flex items-baseline gap-x-2 text-4xl font-bold tracking-tight;
+}
+#pricing > .plans .price span {
+  @apply text-base font-medium opacity-60;
+}
+#pricing > .plans .billing-cycle {
+  @apply text-xs leading-7 opacity-70;
+}
+#pricing .button {
+  @apply mt-8 block rounded-md bg-indigo-600 px-3.5 py-4 text-center text-base font-semibold text-white shadow-sm transition-all hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10;
+}
+#pricing .button + a {
+  @apply mx-auto mt-3 block w-fit border-b text-sm font-medium transition-opacity hover:opacity-80;
+}
+#pricing hr {
+  @apply my-16 opacity-30;
+}
+#pricing ul {
+  @apply my-8 space-y-3 text-md opacity-80;
+}
+#pricing ul li {
+  @apply relative pl-6 opacity-90;
+}
+#pricing ul li:before {
+  content: "✓";
+  @apply absolute -left-0.5 -top-1 h-5 w-5 text-lg text-indigo-500;
 }
 
-#portfolio {
-  @apply gap-x-8 pb-16 pt-8 leading-7 lg:mb-0 xl:col-span-6 xl:columns-2 xl:pb-8;
+/* --- faq --- */
+#faq {
+  @apply mx-auto bg-slate-950 pb-20;
 }
-#portfolio a {
-  @apply mb-8 block rounded-2xl border border-slate-800/70 bg-black/50 p-6 text-[.9125rem] leading-normal shadow-xl transition-all duration-300 hover:border-slate-700 xl:bg-[rgb(255_255_255_/_.025)];
-  @apply break-inside-avoid-column;
+#faq > div:first-of-type {
+  @apply h-32 bg-gradient-to-b from-slate-900/30 to-slate-950 py-px sm:h-44;
 }
-#portfolio > a:first-of-type {
-  @apply xl:mt-36;
+#faq > .content {
+  @apply mx-auto max-w-2xl px-6  lg:max-w-4xl lg:px-8;
 }
-#portfolio img.favicon {
-  @apply mb-5 h-10 w-10 rounded-lg bg-white shadow-sm;
+#faq > .content h3 {
+  @apply mb-12;
 }
-#portfolio figure {
-  @apply mb-1 mt-8;
+#faq details {
+  @apply mt-6 divide-white/10 border-t border-t-white/10 pt-6;
 }
-#portfolio figure img {
-  @apply max-w-full rounded-xl shadow-sm;
+#faq details summary::-webkit-details-marker {
+  display: none;
 }
-#portfolio h3 {
-  @apply text-base font-semibold;
+#faq details summary::marker {
+  display: none;
 }
-#portfolio p {
-  @apply my-2;
+#faq details summary::-moz-list-bullet {
+  list-style-type: none;
 }
-#portfolio address {
-  @apply text-sm not-italic text-inherit opacity-60;
+#faq details summary {
+  @apply flex w-full cursor-pointer items-start justify-between text-lg font-semibold;
+}
+#faq details:not([open]) summary {
+  @apply hover:opacity-80;
+}
+#faq details p {
+  @apply mt-3 pr-12 text-base opacity-70;
+}
+#faq details p:not(:first-of-type) {
+  @apply mt-5;
+}
+#faq details summary:after {
+  content: "";
+  @apply block h-5 w-5 opacity-80 transition-all;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>');
+}
+#faq details[open] summary:after {
+  @apply rotate-90;
+}
+
+/* --- start --- */
+#start {
+  @apply relative isolate overflow-hidden;
+}
+#start .content {
+  @apply mx-auto max-w-2xl px-6 py-24 text-center sm:px-6 sm:py-32 lg:px-8;
+}
+#start .content .button {
+  @apply mt-12 inline-block rounded-full bg-white p-4 text-base font-semibold text-gray-900 shadow-sm transition-all duration-300 hover:bg-indigo-400 hover:text-white hover:shadow-xl hover:shadow-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+}
+#start > svg {
+  @apply absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)];
+}
+
+/* --- footer --- */
+body > footer {
+  @apply mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8;
+}
+body > footer > nav {
+  @apply mx-auto flex w-fit items-center space-x-8;
+}
+body > footer > nav > a {
+  @apply my-0 text-center text-sm leading-6 opacity-50 transition-opacity hover:opacity-90;
+}
+body > footer > p {
+  @apply mt-10 text-center text-sm leading-5 opacity-50;
+}
+
+/* --- loader --- */
+#loader {
+  @apply fixed inset-0 z-50 flex bg-slate-950;
+}
+#loader svg {
+  @apply m-auto block h-16 w-16 opacity-70;
 }
