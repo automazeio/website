@@ -526,36 +526,228 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
 
-.-left-2{
-  left: -0.5rem;
+.relative{
+  position: relative;
 }
 
-.-top-1{
-  top: -0.25rem;
+.inset-0{
+  inset: 0px;
 }
 
-.-top-1\.5{
-  top: -0.375rem;
+.left-1\/2{
+  left: 50%;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
+.flex{
+  display: flex;
 }
 
 .h-6{
   height: 1.5rem;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-6{
   width: 1.5rem;
 }
 
+.max-w-md{
+  max-width: 28rem;
+}
+
+.max-w-none{
+  max-width: none;
+}
+
+.flex-none{
+  flex: none;
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-gray-300\/50 > :not([hidden]) ~ :not([hidden]){
+  border-color: rgb(209 213 219 / 0.5);
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\/img\/grid\.svg\)\]{
+  background-image: url(/img/grid.svg);
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.fill-sky-100{
+  fill: #e0f2fe;
+}
+
+.stroke-sky-500{
+  stroke: #0ea5e9;
+}
+
+.stroke-2{
+  stroke-width: 2;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-sky-500{
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.ring-1{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-gray-900\/5{
+  --tw-ring-color: rgb(17 24 39 / 0.05);
+}
+
+.\[mask-image\:linear-gradient\(180deg\2c white\2c rgba\(255\2c 255\2c 255\2c 0\)\)\]{
+  -webkit-mask-image: linear-gradient(180deg,white,rgba(255,255,255,0));
+          mask-image: linear-gradient(180deg,white,rgba(255,255,255,0));
+}
+
 @font-face {
-  font-family: 'Inter var';
+  font-family: "Inter var";
 
   font-style: normal;
 
@@ -563,13 +755,13 @@ video {
 
   font-display: swap;
 
-  src: url('./Inter-roman.var.woff2?v=3.19') format('woff2');
+  src: url("./Inter-roman.var.woff2?v=3.19") format("woff2");
 
-  font-named-instance: 'Regular';
+  font-named-instance: "Regular";
 }
 
 @font-face {
-  font-family: 'Inter var';
+  font-family: "Inter var";
 
   font-style: italic;
 
@@ -577,13 +769,15 @@ video {
 
   font-display: swap;
 
-  src: url('./Inter-italic.var.woff2?v=3.19') format('woff2');
+  src: url("./Inter-italic.var.woff2?v=3.19") format("woff2");
 
-  font-named-instance: 'Italic';
+  font-named-instance: "Italic";
 }
 
 :root {
-  font-family: 'Inter var', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   scroll-behavior: smooth;
 }
 
@@ -646,8 +840,7 @@ h2 + h3 + p{
 .icon-glow-12,
 .icon-glow-20,
 .icon-glow {
-  background: url(https://b872ffd3f1a895035b4780e1cf8ab840.cdn.bubble.io/f1673769606566x220312603092295700/Group%20332.svg)
-    50% no-repeat;
+  background: url(glow.svg) 50% no-repeat;
   background-size: contain;
 }
 
@@ -1449,6 +1642,33 @@ header > nav .book a:focus-visible{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+#how .content dl > div > dt > div{
+  position: absolute;
+  left: -0.5rem;
+  top: -0.375rem;
+  background: url(glow.svg) 50% no-repeat;
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+
+#how .content dl > div > dt > div > svg{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(165 180 252 / var(--tw-text-opacity));
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+#how .content dl > div > dt > div svg{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 #how .content dl > div > dd{
   font-size: 0.9075rem;
   line-height: 1.6rem;
@@ -1483,6 +1703,17 @@ header > nav .book a:focus-visible{
   #benefits > div:first-of-type{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+#benefits > div:first-of-type h3 > div{
+  margin-top: 0.5rem;
+  display: inline;
+}
+
+@media (min-width: 1024px){
+  #benefits > div:first-of-type h3 > div{
+    display: block;
   }
 }
 
@@ -2670,16 +2901,32 @@ body > footer > p{
   opacity: 0.7;
 }
 
-@media (min-width: 1024px){
-  .lg\:max-w-lg{
+.hover\:text-sky-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:max-w-lg{
     max-width: 32rem;
   }
 
-  .lg\:pr-8{
-    padding-right: 2rem;
+  .sm\:rounded-lg{
+    border-radius: 0.5rem;
   }
 
-  .lg\:pt-4{
-    padding-top: 1rem;
+  .sm\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
