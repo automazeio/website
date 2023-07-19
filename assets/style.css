@@ -1209,6 +1209,8 @@ header > nav .book a:focus-visible{
   margin-left: auto;
   margin-right: auto;
   max-width: 48rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 8rem;
   text-align: center;
 }
@@ -1221,6 +1223,8 @@ header > nav .book a:focus-visible{
 
 @media (min-width: 1024px){
   #hero > .content{
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 13rem;
   }
 }
@@ -1240,8 +1244,8 @@ header > nav .book a:focus-visible{
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
   -webkit-background-clip: text;
           background-clip: text;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 700;
   letter-spacing: -0.025em;
   color: transparent;
@@ -1266,6 +1270,7 @@ header > nav .book a:focus-visible{
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2rem;
+  letter-spacing: -0.025em;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }

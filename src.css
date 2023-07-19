@@ -147,16 +147,16 @@ header > nav .book a {
   );
 }
 #hero > .content {
-  @apply mx-auto max-w-3xl pt-32 text-center sm:pt-48 lg:pt-52;
+  @apply mx-auto max-w-3xl px-6 pt-32 text-center sm:pt-48 lg:px-8 lg:pt-52;
 }
 #hero > .content > img {
   @apply mx-auto mb-20 h-7;
 }
 #hero > .content h1 {
-  @apply bg-gradient-to-t from-blue-200 to-white bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-6xl lg:text-7xl;
+  @apply bg-gradient-to-t from-blue-200 to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl lg:text-7xl;
 }
 #hero > .content h2.intro {
-  @apply mt-6 text-xl font-normal leading-8 text-gray-300 lg:text-2xl;
+  @apply mt-6 text-xl font-normal leading-8 tracking-tight text-gray-300 lg:text-2xl;
 }
 #hero > .content .buttons {
   @apply mt-10 flex items-center justify-center gap-x-6;
@@ -251,7 +251,7 @@ header > nav .book a {
   @apply mx-auto max-w-7xl px-6  lg:px-12;
 }
 #benefits > div:first-of-type h3 > div {
-  @apply inline lg:block mt-2;
+  @apply mt-2 inline lg:block;
 }
 #benefits > div.content {
   @apply mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-12;
