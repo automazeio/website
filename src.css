@@ -599,13 +599,18 @@ body > footer > p {
 #slide-over > div.backdrop {
   @apply fixed inset-0 bg-black/50;
 }
+@keyframes slider-in {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0);}
+}
 #slide-over > div.content {
   @apply fixed bottom-0 right-0 top-0 w-full max-w-sm bg-white;
   @apply transform transition duration-500 ease-in-out sm:duration-700;
-  @apply translate-x-full;
+  /* @apply translate-x-full; */
 }
 #slide-over.open > div.content {
-  @apply translate-x-0;
+  animation-name: slider-in;
+  animation-duration: 0.5s;
 }
 #slide-over > div.content iframe {
   @apply m-0 -mt-2 h-full w-full border-0;
@@ -617,3 +622,4 @@ body > footer > p {
 #slide-over > div.content button svg {
   @apply h-6 w-6;
 }
+

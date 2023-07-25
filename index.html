@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
   <title>Automaze // Technical Co‑Founder &amp; CTO as a Service</title>
-  <link href="./assets/style.min.css?v=4" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/style.min.css?v=5" rel="stylesheet" type="text/css" media="all" />
   <link href="./assets/favicon-light.png" rel="icon" type="image/png" media="(prefers-color-scheme: light)" />
   <link href="./assets/favicon-dark.png" rel="icon" type="image/png" media="(prefers-color-scheme: dark)" />
 
@@ -62,14 +62,15 @@
         <li><a onclick="document.getElementById('menu').classList.remove('opened')" href="#pricing">Pricing</a></li>
         <li><a onclick="document.getElementById('menu').classList.remove('opened')" href="#faq">FAQ</a></li>
         <li>
-          <a onclick="document.getElementById('menu').classList.remove('opened')"
-          onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
+          <a onclick="openSlideOver(event)"
+            href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
             aria-hidden="true">&rarr;</span></a>
         </li>
       </ul>
       <div class="book">
-        <a  onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
-            aria-hidden="true">&rarr;</span></a>
+        <a onclick="openSlideOver(event)"
+          href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
+          aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
   </header>
@@ -98,7 +99,7 @@
         </h2>
         <div class="buttons">
           <a href="#how" class="button">Learn more</a>
-          <a  onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule" onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}">Schedule a call
+          <a onclick="openSlideOver(event)" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Schedule a call
             <span aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -574,9 +575,11 @@
             <p class="pre-price">Plans starting at</p>
             <p class="price">$4,975<span>/ mo</span></p>
             <br>
-            <a onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" aria-describedby="tier-enterprise" class="button">Get
+            <a onclick="openSlideOver(event)"
+              href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule" aria-describedby="tier-enterprise" class="button">Get
               started</a>
-            <a onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
+            <a onclick="openSlideOver(event)"
+              href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
             <p>Let's book a call to so we can learn about your needs and tell you how we can help</p>
           </div></div>
         </div>
@@ -719,7 +722,7 @@
     <div class="backdrop"></div>
     <div class="content">
       <iframe src="https://meetings-eu1.hubspot.com/meetings/automaze/membership" frameborder="0"></iframe>
-      <button type="button" onclick="document.getElementById('slide-over').classList.remove('open')">
+      <button type="button" onclick="document.getElementById('slide-over').classList.remove('open');">
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
@@ -770,6 +773,14 @@
         }, i*30);
       }
     });
+
+    function openSlideOver(event) {
+      if (window.innerWidth <= 1280) {
+        return
+      }
+      event.preventDefault();
+      document.getElementById('slide-over').classList.add('open');
+    }
   </script>
 
   <!-- Start of HubSpot Embed Code -->
