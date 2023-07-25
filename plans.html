@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
   <title>Automaze // Technical Co‑Founder &amp; CTO as a Service</title>
-  <link href="./assets/style.min.css?v=4" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/style.min.css?v=3" rel="stylesheet" type="text/css" media="all" />
   <link href="./assets/favicon-light.png" rel="icon" type="image/png" media="(prefers-color-scheme: light)" />
   <link href="./assets/favicon-dark.png" rel="icon" type="image/png" media="(prefers-color-scheme: dark)" />
 
@@ -63,12 +63,12 @@
         <li><a onclick="document.getElementById('menu').classList.remove('opened')" href="#faq">FAQ</a></li>
         <li>
           <a onclick="document.getElementById('menu').classList.remove('opened')"
-          onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
+            href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
             aria-hidden="true">&rarr;</span></a>
         </li>
       </ul>
       <div class="book">
-        <a  onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
+        <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call <span
             aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
@@ -90,7 +90,7 @@
       </div>
 
       <div class="content">
-        <img loading="lazy" src="./assets/automaze-logo-min.png" alt="Automaze logo"/>
+        <img loading="lazy" src="./assets/automaze-logo-min.png" alt="Automaze logo" />
         <h1>Technical Co&#8209;Founder &amp; CTO as a Service</h1>
         <h2 class="intro">
           The <strong>zero-equity</strong> way for founders to bring their
@@ -98,7 +98,7 @@
         </h2>
         <div class="buttons">
           <a href="#how" class="button">Learn more</a>
-          <a  onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule" onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}">Schedule a call
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Schedule a call
             <span aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -543,43 +543,85 @@
         <div></div>
       </div>
 
-      <div class="single-price-wrapper" data-aos="zoom-in">
-        <div class="single-price">
-          <div>
-            <h2>Membership levels</h2>
-            <h3>Choose a plan that's right for you.</h3>
-            <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis repellendus etur quidem assumenda.</p>
+      <div class="content">
+        <h2>Membership levels</h2>
+        <h3>Choose a plan that's right for you.</h3>
+      </div>
+      <div class="plans" data-aos="zoom-in">
+        <div class="monthly">
+          <h3>Monthly</h3>
+          <p>No min. commitment</p>
+          <p class="price">$5,975<span>/ mo</span></p>
+          <p class="billing-cycle">Paid monthly</p>
 
-            <div class="divide-header">
-              <h4>What’s included</h4><hr>
-            </div>
+          <a href="https://buy.stripe.com/28o8yF6wR54Pesg5kk" aria-describedby="tier-enterprise" class="button">Get
+            started</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
 
-            <ul role="list">
-              <li>CTO as a service</li>
-              <li>First task free with no risk to you</li>
-              <li>
-                Software architecture, design, coding, devops and ongoing advice
-              </li>
-              <li>Unlimited projects / brands</li>
-              <li>Unlimited requests (one at a time)</li>
-              <li>Unlimited revisions</li>
-              <li>Personal task board</li>
-              <li>Ad-Hoc sync calls</li>
-              <li>Easy credit-card payments</li>
-              <li>Global compliance when hiring more developers</li>
-            </ul>
-          </div>
+          <hr />
+          <ul role="list">
+            <li>CTO as a service</li>
+            <li>
+              Software architecture, design, coding, devops and ongoing advice
+            </li>
+            <li>Unlimited projects / brands</li>
+            <li>Unlimited requests<br />(one request at a time)</li>
+            <li>Unlimited revisions</li>
+            <li>Personal task board</li>
+            <li>Ad-Hoc sync calls</li>
+            <li>Easy credit-card payments</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+        </div>
 
-          <div>
-            <div class="">
-            <p class="pre-price">Plans starting at</p>
-            <p class="price">$4,975<span>/ mo</span></p>
-            <br>
-            <a onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" aria-describedby="tier-enterprise" class="button">Get
-              started</a>
-            <a onclick="if(window.innerWidth > 1280){event.preventDefault(); document.getElementById('slide-over').classList.add('open');}" href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
-            <p>Let's book a call to so we can learn about your needs and tell you how we can help</p>
-          </div></div>
+        <div class="quarterly">
+          <h3>Quarterly</h3>
+          <p>Save $500 per month</p>
+          <p class="price">$5,475<span>/ mo</span></p>
+          <p class="billing-cycle">Paid quarterly</p>
+
+          <a href="https://buy.stripe.com/aEUg17g7r7cX4RG289" aria-describedby="tier-enterprise" class="button">Get
+            started</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
+
+          <hr />
+          <ul role="list">
+            <li>CTO as a service</li>
+            <li>
+              Software architecture, design, coding, devops and ongoing advice
+            </li>
+            <li>Unlimited projects / brands</li>
+            <li>Unlimited requests<br />(one request at a time)</li>
+            <li>Unlimited revisions</li>
+            <li>Personal task board</li>
+            <li>Ad-Hoc sync calls</li>
+            <li>Easy credit-card payments</li>
+          </ul>
+        </div>
+
+        <div class="yearly">
+          <h3>Yearly</h3>
+          <p>Save $500 per month</p>
+          <p class="price">$4,975<span>/ mo</span></p>
+          <p class="billing-cycle">Paid annualy</p>
+
+          <a href="https://buy.stripe.com/28o02908tfJt1Fu4gi" aria-describedby="tier-enterprise" class="button">Get
+            started</a>
+          <a href="https://meetings-eu1.hubspot.com/meetings/automaze/membership" target="schedule">Book a call</a>
+
+          <hr />
+          <ul role="list">
+            <li>CTO as a service</li>
+            <li>
+              Software architecture, design, coding, devops and ongoing advice
+            </li>
+            <li>Unlimited projects / brands</li>
+            <li>Unlimited requests<br />(one request at a time)</li>
+            <li>Unlimited revisions</li>
+            <li>Personal task board</li>
+            <li>Ad-Hoc sync calls</li>
+            <li>Easy credit-card payments</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -714,20 +756,6 @@
       &copy; <span id="copy-date"></span> Automaze, Ltd. All rights reserved.
     </p>
   </footer>
-
-
-  <div id="slide-over" role="dialog" aria-modal="true">
-    <div class="backdrop"></div>
-    <div class="content">
-      <iframe src="https://meetings-eu1.hubspot.com/meetings/automaze/membership" frameborder="0"></iframe>
-      <button type="button" onclick="document.getElementById('slide-over').classList.remove('open')">
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
 
   <div id="loader">
     <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">

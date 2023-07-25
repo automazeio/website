@@ -37,6 +37,15 @@ h3 {
 img {
   @apply pointer-events-none select-none;
 }
+.divide-header {
+  @apply mt-12 flex items-center gap-x-4;
+}
+.divide-header > h4 {
+  @apply flex-none text-base font-semibold leading-6 text-indigo-500;
+}
+.divide-header > h4 + hr {
+  @apply !mb-0 !mt-0.5 h-px flex-auto bg-gray-500;
+}
 p.outro,
 h2 + h3 + p {
   @apply mt-6 text-lg opacity-60 lg:text-xl;
@@ -147,10 +156,10 @@ header > nav .book a {
   );
 }
 #hero > .content {
-  @apply mx-auto max-w-3xl px-6 pt-32 text-center sm:pt-48 lg:px-8 lg:pt-52;
+  @apply mx-auto max-w-3xl px-6 pt-28 text-center sm:pt-44 lg:px-8 lg:pt-48;
 }
 #hero > .content > img {
-  @apply mx-auto mb-20 h-7;
+  @apply mx-auto mb-24 h-7;
 }
 #hero > .content h1 {
   @apply bg-gradient-to-t from-blue-200 to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl lg:text-7xl;
@@ -266,7 +275,7 @@ header > nav .book a {
   @apply font-semibold;
 }
 #benefits dd {
-  @apply mt-3 text-md opacity-60;
+  @apply text-md mt-3 opacity-60;
 }
 
 /* --- testimonial --- */
@@ -351,7 +360,7 @@ header > nav .book a {
   @apply grid grid-cols-2 gap-x-2 gap-y-3 text-base font-medium md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3;
 }
 #scope .content ul li {
-  @apply relative pl-8 text-md text-slate-200 opacity-90;
+  @apply text-md relative pl-8 text-slate-200 opacity-90;
 }
 #scope .content ul li:before {
   content: "✓";
@@ -419,6 +428,32 @@ header > nav .book a {
 #pricing > .content {
   @apply mx-auto max-w-2xl px-6 text-center lg:max-w-4xl lg:px-8;
 }
+#pricing .single-price-wrapper {
+  @apply px-6 lg:px-8;
+}
+#pricing .single-price {
+  @apply mx-auto mt-12 grid grid-cols-1 items-center gap-6 sm:mt-16 lg:max-w-6xl lg:grid-cols-8;
+  @apply rounded-3xl bg-slate-900/50 p-4 ring-1 ring-gray-800;
+}
+#pricing .single-price > div:first-of-type {
+  @apply p-6 pt-8 lg:col-span-5;
+}
+#pricing .single-price ul {
+  @apply columns-2 content-start;
+}
+#pricing .single-price > div:last-of-type {
+  @apply h-full rounded-2xl p-6 text-center lg:col-span-3;
+  @apply flex flex-col bg-gradient-to-b from-slate-700/30 to-slate-700/10 shadow-xl;
+}
+#pricing .single-price > div:last-of-type > div {
+  @apply m-auto py-6 lg:pb-20;
+}
+#pricing .single-price > div:last-of-type > div > p:last-of-type {
+  @apply mt-12 opacity-60;
+}
+#pricing .single-price .pre-price {
+  @apply text-md leading-7 opacity-70;
+}
 #pricing > .plans {
   @apply mx-auto mt-12 grid grid-cols-1 items-center gap-y-6 px-6 sm:mt-16  md:max-w-6xl md:grid-cols-3 lg:px-10;
 }
@@ -435,15 +470,21 @@ header > nav .book a {
   @apply text-xl font-semibold leading-7 text-indigo-400;
 }
 #pricing > .plans h3 + p {
-  @apply mb-6 text-md leading-7 opacity-80;
+  @apply text-md mb-6 leading-7 opacity-80;
 }
-#pricing > .plans .price {
+#pricing > .plans .price,
+#pricing .single-price .price {
   @apply mt-10 flex items-baseline gap-x-2 text-4xl font-bold tracking-tight;
 }
-#pricing > .plans .price span {
+#pricing .single-price .price {
+  @apply mx-auto mt-1 w-fit;
+}
+#pricing > .plans .price span,
+#pricing .single-price .price span {
   @apply text-base font-medium opacity-60;
 }
-#pricing > .plans .billing-cycle {
+#pricing > .plans .billing-cycle,
+#pricing .single-price .billing-cycle {
   @apply text-xs leading-7 opacity-70;
 }
 #pricing .button {
@@ -456,10 +497,10 @@ header > nav .book a {
   @apply my-16 opacity-30;
 }
 #pricing ul {
-  @apply my-8 space-y-3 text-md opacity-80;
+  @apply text-md my-8 space-y-3 opacity-80;
 }
 #pricing ul li {
-  @apply relative pl-6 opacity-90;
+  @apply relative !mb-2 !mt-0 pl-6 opacity-90;
 }
 #pricing ul li:before {
   content: "✓";
@@ -546,4 +587,33 @@ body > footer > p {
 }
 #loader svg {
   @apply m-auto block h-16 w-16 opacity-70;
+}
+
+/* --- slider --- */
+#slide-over {
+  @apply relative z-50 hidden;
+}
+#slide-over.open {
+  @apply block;
+}
+#slide-over > div.backdrop {
+  @apply fixed inset-0 bg-black/50;
+}
+#slide-over > div.content {
+  @apply fixed bottom-0 right-0 top-0 w-full max-w-sm bg-white;
+  @apply transform transition duration-500 ease-in-out sm:duration-700;
+  @apply translate-x-full;
+}
+#slide-over.open > div.content {
+  @apply translate-x-0;
+}
+#slide-over > div.content iframe {
+  @apply m-0 -mt-2 h-full w-full border-0;
+}
+#slide-over > div.content button {
+  @apply fixed right-3 top-3;
+  @apply rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+}
+#slide-over > div.content button svg {
+  @apply h-6 w-6;
 }
