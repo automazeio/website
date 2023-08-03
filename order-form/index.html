@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <script>
-    let email;
-    let url = 'https://buy.stripe.com/9AQ7uB7AVbtd0Bq4gk?prefilled_promo_code=LETSGO';
+    const id = (window.location.search.indexOf('id=') > -1) ? window.location.search.split('?id=')[1].split('&')[0] : '9AQ7uB7AVbtd0Bq4gk'; // monthly
+    let url = `https://buy.stripe.com/${id}?prefilled_promo_code=LETSGO`;
     if (window.location.search.indexOf('client=') > -1) {
       url += '&prefilled_email=' + encodeURIComponent(decodeURIComponent(window.location.search.split('?client=')[1].split('&')[0]));
     }
