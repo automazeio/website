@@ -623,3 +623,10 @@ body > footer > p {
   @apply h-6 w-6;
 }
 
+
+.person-name {
+  @apply flex items-center justify-between
+}
+.person-name svg {
+  @apply !w-3.5 !h-3.5 !mt-1 mx-1
+}
