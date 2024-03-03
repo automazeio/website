@@ -2152,13 +2152,13 @@ header > nav .book a:focus-visible{
   padding-top: 7rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
   #team{
     padding-top: 11rem;
   }
 }
 
-#team .content{
+#team .content {
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -2205,7 +2205,7 @@ header > nav .book a:focus-visible{
 
 @media (min-width: 768px){
   #team .content ul{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
@@ -3181,4 +3181,15 @@ body > footer > p{
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+}
+
+
+.team-avatar:not(:hover) {
+  filter: grayscale(100%);
+}
+.team-avatar {
+  pointer-events: all;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: 300ms;
 }
