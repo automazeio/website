@@ -7,8 +7,8 @@
     height: 150px;
     border-radius: 150px;
     position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 2rem;
+    left: 2rem;
     z-index: 1000;
     transition: all 0.25s;
   }
@@ -21,20 +21,6 @@
     width: 417px;
     height: 300px;
   }
-  @media screen and (max-width: 640px){
-    #vidgreet.minimized {
-      width: 100px;
-      height: 100px;
-      border-radius: 100px;
-    }
-    #vidgreet.minimized video {
-      position: absolute;
-      margin-top: -25px;
-      pointer-events: none;
-      width: 278px;
-      height: 200px;
-    }
-  }
 
   #vidgreet.minimized>.buttons {
     display: none;
@@ -43,14 +29,14 @@
   #vidgreet.maximized {
     transition: all 0.25s;
     overflow: hidden;
-    width: 217px;
-    height: 380px;
+    width: 240px;
+    height: 420px;
     border-radius: 12px;
     border: 3px solid #2563EB;
     box-shadow: 0 0 100px rgba(0, 0, 0, .5);
     position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 2rem;
+    left: 2rem;
     z-index: 1000;
   }
 
@@ -107,4 +93,27 @@
 
   #vidgreet.maximized button#volume:not(.muted) svg path:last-of-type {
     display: none;
+  }
+
+  @media screen and (max-width: 640px){
+    #vidgreet.minimized {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      bottom: 1rem;
+      left: 1rem;
+    }
+    #vidgreet.minimized video {
+      position: absolute;
+      margin-top: -25px;
+      pointer-events: none;
+      width: 278px;
+      height: 200px;
+    }
+    #vidgreet.maximized {
+      bottom: 1rem;
+      left: 1rem;
+      width: 217px;
+      height: 380px;
+    }
   }
