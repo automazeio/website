@@ -13,6 +13,11 @@
     transition: all 0.25s;
   }
 
+  #vidgreet.vidgreet-right {
+    right: 2rem !important;
+    left: unset !important;
+  }
+
   #vidgreet.minimized video {
     position: absolute;
     /* margin-left: -92px; */
@@ -29,8 +34,6 @@
   #vidgreet.maximized {
     transition: all 0.25s;
     overflow: hidden;
-    width: 240px;
-    height: 420px;
     border-radius: 12px;
     border: 3px solid #2563EB;
     box-shadow: 0 0 100px rgba(0, 0, 0, .5);
@@ -38,6 +41,26 @@
     bottom: 2rem;
     left: 2rem;
     z-index: 1000;
+  }
+
+  #vidgreet.maximized.vidgreet-portrait {
+    width: 240px;
+    height: 420px;
+  }
+
+  #vidgreet.maximized.vidgreet-landscape {
+    width: 420px;
+    height: 240px;
+  }
+
+  #vidgreet.maximized.vidgreet-square {
+    width: 280px;
+    height: 280px;
+  }
+  #vidgreet.maximized.vidgreet-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
   }
 
   #vidgreet.maximized video {
@@ -51,12 +74,13 @@
     position: absolute;
     z-index: 1001;
     display: flex;
-    width: calc(100% - 0.5rem);
+    width: calc(100% - 2rem);
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem 0.25rem;
+    margin: 0.5rem 1rem;
     left: 0;
-    bottom: 0;
+    right: 0;
+    bottom: 0.25rem;
   }
 
   #vidgreet.maximized button {
@@ -77,6 +101,16 @@
     border: none;
     padding: 0.5rem;
     cursor: pointer;
+  }
+
+  #vidgreet.maximized.vidgreet-circle>.buttons {
+    right: 0;
+    bottom: 0.25rem;
+    margin: 0.5rem auto;
+    width: 54%;
+  }
+  #vidgreet.maximized.vidgreet-circle button:nth-child(2) {
+    margin-top: 28px;
   }
 
   #vidgreet.maximized:hover button {

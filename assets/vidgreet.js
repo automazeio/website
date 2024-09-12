@@ -1,11 +1,13 @@
 (function (vidGreet, undefined) {
-    let bubble, video, _videoStart, _posterStart, _posterEnd;
+    let bubble, video, _videoStart, _posterStart, _posterEnd, _videoLocation, _videoAspectRatio;
 
-    vidGreet.init = (url, { videoStart = 0, posterStart = 0, posterEnd = 2, delay = 0 } = {}) => {
+    vidGreet.init = (url, { videoStart = 0, posterStart = 0, posterEnd = 2, delay = 0, location = 'left', aspectRatio = 'portrait' } = {}) => {
         _posterStart = posterStart;
         _posterStart = posterStart;
         _posterEnd = posterEnd;
         _videoStart = videoStart;
+        _videoLocation = location === 'right' ? 'right' : 'left';
+        _videoAspectRatio = ['portrait', 'landscape', 'square', 'circle'].includes(aspectRatio) ? aspectRatio : 'portrait';
 
         window.addEventListener("load", (event) => {
             setTimeout(() => {
@@ -19,6 +21,8 @@
         ele.id = 'vidgreet';
         ele.style.opacity = .5;
         ele.classList.add('minimized');
+        ele.classList.add('vidgreet-' + _videoLocation);
+        ele.classList.add('vidgreet-' + _videoAspectRatio);
         ele.innerHTML = `
           <div class="buttons">
             <button onclick="vidGreet.restart()"><svg fill="none" height="100%" viewBox="0 0 24 24" width="100%"
