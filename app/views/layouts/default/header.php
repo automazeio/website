@@ -133,11 +133,6 @@
                 <li>
                     <div class="m-6 h-px border-b border-slate-200"></div>
                 </li>
-                <li>
-                    <a href="<?php tiny::homeUrl('/go/app'); ?>" class="m-5 group no-underline py-2 pl-2 pr-2.5 text-center block text-sm font-medium rounded-md transition-all duration-150 cursor-pointer border-b text-white hover:opacity-90 active:opacity-100 shadow-2xs focus:bg-neutral-50 border-indigo-700 bg-indigo-600">
-                        ← Campaign Refinery
-                    </a>
-                </li>
                 <?php /*
                 <li>
                     <a href="<?php tiny::homeUrl('/go/toolbox'); ?>" class="m-5 group no-underline py-2 pl-2 pr-2.5 text-center block text-sm font-medium rounded-md transition-all duration-150 cursor-pointer border-b text-white hover:opacity-90 active:opacity-100 shadow-2xs focus:bg-neutral-50 border-indigo-700 bg-indigo-600">
@@ -150,7 +145,7 @@
                         <div class="m-6 h-px border-b border-slate-200"></div>
                     </li>
                     <li>
-                        <a href="https://app.campaignrefinery.com/admincp/accounts" class="text-[#5667e7] flex items-center space-x-2 px-5 py-2.5 font-medium transition-colors duration-500 hover:text-[#5667e7] group">
+                        <a href="https://automaze.io" class="text-[#5667e7] flex items-center space-x-2 px-5 py-2.5 font-medium transition-colors duration-500 hover:text-[#5667e7] group">
                             <span>←</span>
                             <span class="border-b border-white group-hover:border-inherit">Admin panel</span>
                         </a>
@@ -189,7 +184,7 @@
                     </svg>
                     <div class="mt-1 mb-2.5 text-base text-slate-500">
                     <?php if (tiny::user()->is_admin): ?>
-                        <a href="https://app.campaignrefinery.com/admincp/accounts/edit-account/id/<?php echo tiny::user()->account->id; ?>" target="_blank" class="rounded-sm bg-neutral-100 text-black transition-colors duration-300 hover:bg-[#5667e7] hover:text-white px-2.5 py-1">Admin view</a> &nbsp;
+                        <a href="https://automaze.io/edit-account/id/<?php echo tiny::user()->account->id; ?>" target="_blank" class="rounded-sm bg-neutral-100 text-black transition-colors duration-300 hover:bg-[#5667e7] hover:text-white px-2.5 py-1">Admin view</a> &nbsp;
                         <span class="hidden md:inline"><?php echo tiny::user()->account->login_email; ?> / </span> <?php echo tiny::user()->account->hash; ?>
                     <?php else: ?>
                         <h1 class="-mb-px text-2xl font-bold text-black lg:hidden"><?php echo tiny::layout()->props('title', 'Account'); ?></h1>

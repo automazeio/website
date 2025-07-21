@@ -1,7 +1,7 @@
     </div>
     <?php if (!tiny::layout()->props('emptyLayout')): ?>
     <footer class="p-8 pb-6 text-xs opacity-50 absolute bottom-0">
-        &copy; <?php echo date('Y'); ?> Campaign Refinery
+        &copy; <?php echo date('Y'); ?> Automaze, Ltd.
         ~ Time: <?php echo tiny::timer(true, false); ?> ~ App Version <?php echo $_SERVER['APP_VERSION']; ?>
         ~ Timezone: <?php echo tiny::user()->account->timezone; ?>
     </footer>

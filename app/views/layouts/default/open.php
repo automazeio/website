@@ -19,7 +19,7 @@ tiny::components()->require([
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex">
 
-    <title><?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) . ' - ' : '' ?>Campaign Refinery</title>
+    <title><?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) . ' - ' : '' ?>Automaze</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>?v=" media="all"> -->
     <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/toasts.min.css'); ?>?v=" media="all">
@@ -29,7 +29,7 @@ tiny::components()->require([
     <link href="<?php tiny::staticURL('/favicon.png'); ?>" rel="icon" type="image/png">
     <link rel="apple-touch-icon" sizes="512x512" href="<?php tiny::staticURL('/apple-touch-icon.png'); ?>">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Campaign Refinery">
+    <meta name="apple-mobile-web-app-title" content="Automaze">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#5667e7">
 

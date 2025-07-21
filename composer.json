@@ -1,6 +1,6 @@
 {
-  "name": "ran/account-portal",
-  "description": "Campaign Refinery Account Portal",
+  "name": "automazeio/website",
+  "description": "Automaze Website",
   "type": "project",
   "require": {
     "ext-curl": "*",
