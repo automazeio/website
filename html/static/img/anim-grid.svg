@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="18.5 18.5 203 203" width="203" height="203" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes flicker1 {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes flicker2 {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes flicker3 {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes flicker4 {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes flicker5 {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .dot1 {
+      animation: flicker1 1.3s infinite;
+    }
+
+    .dot2 {
+      animation: flicker2 2.7s infinite;
+    }
+
+    .dot3 {
+      animation: flicker3 3.1s infinite;
+    }
+
+    .dot4 {
+      animation: flicker4 1.9s infinite;
+    }
+
+    .dot5 {
+      animation: flicker5 2.3s infinite;
+    }
+  </style>
+
+  <!-- Row 1 -->
+  <circle class="dot1" cx="20" cy="20" r="1.5" fill="#000" />
+  <circle class="dot2" cx="40" cy="20" r="1.5" fill="#000" />
+  <circle class="dot3" cx="60" cy="20" r="1.5" fill="#000" />
+  <circle class="dot4" cx="80" cy="20" r="1.5" fill="#000" />
+  <circle class="dot5" cx="100" cy="20" r="1.5" fill="#000" />
+  <circle class="dot1" cx="120" cy="20" r="1.5" fill="#000" />
+  <circle class="dot2" cx="140" cy="20" r="1.5" fill="#000" />
+  <circle class="dot3" cx="160" cy="20" r="1.5" fill="#000" />
+  <circle class="dot4" cx="180" cy="20" r="1.5" fill="#000" />
+  <circle class="dot5" cx="200" cy="20" r="1.5" fill="#000" />
+
+  <!-- Row 2 -->
+  <circle class="dot5" cx="20" cy="40" r="1.5" fill="#000" />
+  <circle class="dot4" cx="40" cy="40" r="1.5" fill="#000" />
+  <circle class="dot3" cx="60" cy="40" r="1.5" fill="#000" />
+  <circle class="dot2" cx="80" cy="40" r="1.5" fill="#000" />
+  <circle class="dot1" cx="100" cy="40" r="1.5" fill="#000" />
+  <circle class="dot5" cx="120" cy="40" r="1.5" fill="#000" />
+  <circle class="dot4" cx="140" cy="40" r="1.5" fill="#000" />
+  <circle class="dot3" cx="160" cy="40" r="1.5" fill="#000" />
+  <circle class="dot2" cx="180" cy="40" r="1.5" fill="#000" />
+  <circle class="dot1" cx="200" cy="40" r="1.5" fill="#000" />
+
+  <!-- Row 3 -->
+  <circle class="dot2" cx="20" cy="60" r="1.5" fill="#000" />
+  <circle class="dot1" cx="40" cy="60" r="1.5" fill="#000" />
+  <circle class="dot5" cx="60" cy="60" r="1.5" fill="#000" />
+  <circle class="dot4" cx="80" cy="60" r="1.5" fill="#000" />
+  <circle class="dot3" cx="100" cy="60" r="1.5" fill="#000" />
+  <circle class="dot2" cx="120" cy="60" r="1.5" fill="#000" />
+  <circle class="dot1" cx="140" cy="60" r="1.5" fill="#000" />
+  <circle class="dot5" cx="160" cy="60" r="1.5" fill="#000" />
+  <circle class="dot4" cx="180" cy="60" r="1.5" fill="#000" />
+  <circle class="dot3" cx="200" cy="60" r="1.5" fill="#000" />
+
+  <!-- Row 4 -->
+  <circle class="dot3" cx="20" cy="80" r="1.5" fill="#000" />
+  <circle class="dot2" cx="40" cy="80" r="1.5" fill="#000" />
+  <circle class="dot1" cx="60" cy="80" r="1.5" fill="#000" />
+  <circle class="dot5" cx="80" cy="80" r="1.5" fill="#000" />
+  <circle class="dot4" cx="100" cy="80" r="1.5" fill="#000" />
+  <circle class="dot3" cx="120" cy="80" r="1.5" fill="#000" />
+  <circle class="dot2" cx="140" cy="80" r="1.5" fill="#000" />
+  <circle class="dot1" cx="160" cy="80" r="1.5" fill="#000" />
+  <circle class="dot5" cx="180" cy="80" r="1.5" fill="#000" />
+  <circle class="dot4" cx="200" cy="80" r="1.5" fill="#000" />
+
+  <!-- Row 5 -->
+  <circle class="dot4" cx="20" cy="100" r="1.5" fill="#000" />
+  <circle class="dot3" cx="40" cy="100" r="1.5" fill="#000" />
+  <circle class="dot2" cx="60" cy="100" r="1.5" fill="#000" />
+  <circle class="dot1" cx="80" cy="100" r="1.5" fill="#000" />
+  <circle class="dot5" cx="100" cy="100" r="1.5" fill="#000" />
+  <circle class="dot4" cx="120" cy="100" r="1.5" fill="#000" />
+  <circle class="dot3" cx="140" cy="100" r="1.5" fill="#000" />
+  <circle class="dot2" cx="160" cy="100" r="1.5" fill="#000" />
+  <circle class="dot1" cx="180" cy="100" r="1.5" fill="#000" />
+  <circle class="dot5" cx="200" cy="100" r="1.5" fill="#000" />
+
+  <!-- Continue with more rows to fill the entire SVG -->
+  <!-- Row 6 -->
+  <circle class="dot1" cx="20" cy="120" r="1.5" fill="#000" />
+  <circle class="dot5" cx="40" cy="120" r="1.5" fill="#000" />
+  <circle class="dot4" cx="60" cy="120" r="1.5" fill="#000" />
+  <circle class="dot3" cx="80" cy="120" r="1.5" fill="#000" />
+  <circle class="dot2" cx="100" cy="120" r="1.5" fill="#000" />
+  <circle class="dot1" cx="120" cy="120" r="1.5" fill="#000" />
+  <circle class="dot5" cx="140" cy="120" r="1.5" fill="#000" />
+  <circle class="dot4" cx="160" cy="120" r="1.5" fill="#000" />
+  <circle class="dot3" cx="180" cy="120" r="1.5" fill="#000" />
+  <circle class="dot2" cx="200" cy="120" r="1.5" fill="#000" />
+
+  <!-- Row 7 -->
+  <circle class="dot5" cx="20" cy="140" r="1.5" fill="#000" />
+  <circle class="dot4" cx="40" cy="140" r="1.5" fill="#000" />
+  <circle class="dot3" cx="60" cy="140" r="1.5" fill="#000" />
+  <circle class="dot2" cx="80" cy="140" r="1.5" fill="#000" />
+  <circle class="dot1" cx="100" cy="140" r="1.5" fill="#000" />
+  <circle class="dot5" cx="120" cy="140" r="1.5" fill="#000" />
+  <circle class="dot4" cx="140" cy="140" r="1.5" fill="#000" />
+  <circle class="dot3" cx="160" cy="140" r="1.5" fill="#000" />
+  <circle class="dot2" cx="180" cy="140" r="1.5" fill="#000" />
+  <circle class="dot1" cx="200" cy="140" r="1.5" fill="#000" />
+
+  <!-- Row 8 -->
+  <circle class="dot2" cx="20" cy="160" r="1.5" fill="#000" />
+  <circle class="dot1" cx="40" cy="160" r="1.5" fill="#000" />
+  <circle class="dot5" cx="60" cy="160" r="1.5" fill="#000" />
+  <circle class="dot4" cx="80" cy="160" r="1.5" fill="#000" />
+  <circle class="dot3" cx="100" cy="160" r="1.5" fill="#000" />
+  <circle class="dot2" cx="120" cy="160" r="1.5" fill="#000" />
+  <circle class="dot1" cx="140" cy="160" r="1.5" fill="#000" />
+  <circle class="dot5" cx="160" cy="160" r="1.5" fill="#000" />
+  <circle class="dot4" cx="180" cy="160" r="1.5" fill="#000" />
+  <circle class="dot3" cx="200" cy="160" r="1.5" fill="#000" />
+
+  <!-- Row 9 -->
+  <circle class="dot3" cx="20" cy="180" r="1.5" fill="#000" />
+  <circle class="dot2" cx="40" cy="180" r="1.5" fill="#000" />
+  <circle class="dot1" cx="60" cy="180" r="1.5" fill="#000" />
+  <circle class="dot5" cx="80" cy="180" r="1.5" fill="#000" />
+  <circle class="dot4" cx="100" cy="180" r="1.5" fill="#000" />
+  <circle class="dot3" cx="120" cy="180" r="1.5" fill="#000" />
+  <circle class="dot2" cx="140" cy="180" r="1.5" fill="#000" />
+  <circle class="dot1" cx="160" cy="180" r="1.5" fill="#000" />
+  <circle class="dot5" cx="180" cy="180" r="1.5" fill="#000" />
+  <circle class="dot4" cx="200" cy="180" r="1.5" fill="#000" />
+
+  <!-- Row 10 -->
+  <circle class="dot4" cx="20" cy="200" r="1.5" fill="#000" />
+  <circle class="dot3" cx="40" cy="200" r="1.5" fill="#000" />
+  <circle class="dot2" cx="60" cy="200" r="1.5" fill="#000" />
+  <circle class="dot1" cx="80" cy="200" r="1.5" fill="#000" />
+  <circle class="dot5" cx="100" cy="200" r="1.5" fill="#000" />
+  <circle class="dot4" cx="120" cy="200" r="1.5" fill="#000" />
+  <circle class="dot3" cx="140" cy="200" r="1.5" fill="#000" />
+  <circle class="dot2" cx="160" cy="200" r="1.5" fill="#000" />
+  <circle class="dot1" cx="180" cy="200" r="1.5" fill="#000" />
+  <circle class="dot5" cx="200" cy="200" r="1.5" fill="#000" />
+</svg>

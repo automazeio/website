@@ -103,7 +103,7 @@ body {
 #testimonial-hero:after {
   @apply absolute inset-0 mx-auto block max-w-5xl bg-fixed opacity-80 xl:max-w-6xl;
   content: "";
-  background: url(https://ran.local/automaze-new/anim-grid-large.svg) 50%;
+  background: url(../img/anim-grid-large.svg) 50%;
   background-size: 280px;
   opacity: 30%;
 }
@@ -468,7 +468,7 @@ footer#cta {
 .bleed-content {
   @apply -m-px grid h-full border border-dashed border-indigo-100;
   @apply rounded-lg ring-4 ring-indigo-50/50;
-  background: url(https://ran.local/automaze-new/service-grid.webp) top -1px left 50%;
+  background: url(../img/service-grid.webp) top -1px left 50%;
   background-size: 100px;
 }
 .bleed-content > div {

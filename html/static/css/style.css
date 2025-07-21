@@ -2008,7 +2008,7 @@ body {
     max-width: var(--container-6xl);
   }
   content: "";
-  background: url(https://ran.local/automaze-new/anim-grid-large.svg) 50%;
+  background: url(../img/anim-grid-large.svg) 50%;
   background-size: 280px;
   opacity: 30%;
 }
@@ -2583,7 +2583,7 @@ footer#cta {
   @supports (color: color-mix(in lab, red, red)) {
     --tw-ring-color: color-mix(in oklab, var(--color-indigo-50) 50%, transparent);
   }
-  background: url(https://ran.local/automaze-new/service-grid.webp) top -1px left 50%;
+  background: url(../img/service-grid.webp) top -1px left 50%;
   background-size: 100px;
 }
 .bleed-content > div {

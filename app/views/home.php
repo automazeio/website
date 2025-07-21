@@ -11,7 +11,7 @@
   <meta http-equiv="robots" content="notindex">
   <meta http-equiv="cleartype" content="on">
   <title>Automaze</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo tiny::staticURL('/css/style.css'); ?>" media="all">
+  <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>" media="all">
 
 </head>
 
@@ -333,7 +333,7 @@
               <div class="bleed-content">
                 <div>
                   <div class="service-image">
-                    <img alt="Automaze CTO as a Service" src="service-cto.svg" class="!size-26" />
+                    <img alt="Automaze CTO as a Service" src="<?php tiny::staticURL('img/service-cto.svg'); ?>" class="!size-26" />
                   </div>
                   <h3 class="mt-6 text-xl font-bold">Fractional CTO</h3>
                   <p class="mt-4 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ad minim veniam aliqua.</p>
@@ -348,7 +348,7 @@
               <div class="bleed-content">
                 <div>
                   <div class="service-image">
-                    <img alt="Automaze Software Development" src="service-dev.svg" class="size-27" />
+                    <img alt="Automaze Software Development" src="<?php tiny::staticURL('img/service-dev.svg'); ?>" class="size-27" />
                   </div>
 
                   <h3 class="mt-6 text-xl font-bold">Software Development</h3>
@@ -364,10 +364,10 @@
               <div class="bleed-content">
                 <div>
                   <div class="service-image">
-                    <img alt="Automaze AI Agents" src="service-ai.svg" class="size-44 p-1" />
+                    <img alt="Automaze AI Agents" src="<?php tiny::staticURL('img/service-ai.svg'); ?>" class="size-44 p-1" />
                   </div>
 
-                  <h3 class="mt-6 text-xl font-bold">AI Agents</h3>
+                  <h3 class="mt-6 text-xl font-bold">Custom AI Agents</h3>
                   <p class="mt-4 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ad minim veniam aliqua.</p>
 
                   <button class="mt-6 rounded-full bg-black px-6 pt-2.5 pb-3 leading-none font-medium text-white">Book a call →</button>
@@ -380,7 +380,7 @@
               <div class="bleed-content">
                 <div>
                   <div class="service-image pt-1">
-                    <img alt="Automaze ux" src="service-ux.svg" class="size-27" />
+                    <img alt="Automaze ux" src="<?php tiny::staticURL('img/service-ux.svg'); ?>" class="size-27" />
                   </div>
 
                   <h3 class="mt-6 text-xl font-bold">UX/UI Design</h3>
@@ -396,7 +396,7 @@
               <div class="bleed-content">
                 <div>
                   <div class="service-image">
-                    <img alt="Automaze Product Management" src="service-pm.svg" class="size-27" />
+                    <img alt="Automaze Product Management" src="<?php tiny::staticURL('img/service-pm.svg'); ?>" class="size-27" />
                   </div>
 
                   <h3 class="mt-6 text-xl font-bold">Product Management</h3>
@@ -412,7 +412,7 @@
               <div class="bleed-content">
                 <div>
                   <div class="service-image">
-                    <img alt="Automaze DevOps & Cloud" src="service-devops.svg" class="size-27" />
+                    <img alt="Automaze DevOps & Cloud" src="<?php tiny::staticURL('img/service-devops.svg'); ?>" class="size-27" />
                   </div>
 
                   <h3 class="mt-6 text-xl font-bold">DevOps &amp; Cloud</h3>
@@ -609,7 +609,7 @@ Because when you find a partner that works like you do, you don’t go looking f
       snapTargets.forEach(target => {
         const targetRect = target.getBoundingClientRect();
         // Calculate the horizontal center of the target element
-        const targetCenter = (targetRect.left + targetRect.right) / 2;
+        const targetCenter = (targetRect.left + targetRect.right) / 2 + 2;
 
         // Use toggle with the second parameter to conditionally add/remove class
         target.classList.toggle('in-view', targetCenter >= maskLeft && targetCenter <= maskRight);
