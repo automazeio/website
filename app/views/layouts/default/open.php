@@ -1,13 +1,5 @@
 <?php
 echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
-tiny::components()->require([
-    'Toast',
-    // 'AreYouSure',
-    // 'FormRow',
-    // 'AlertBox',
-    // 'ValidationAlert',
-    // 'FormErrors',
-]);
 ?>
 <!DOCTYPE html>
 <html lang="en" class="relative min-h-full overscroll-none">

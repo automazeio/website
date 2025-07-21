@@ -42,8 +42,8 @@ if ($toast) {
 <?php endif; ?>
 
 <?php
+tiny::components()->require('Toast');
 tiny::components()->Toast();
-// tiny::components()->AreYouSure();
 
 // tiny::components()->require('TinyJS');
 // tiny::components()->TinyJS();
