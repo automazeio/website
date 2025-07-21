@@ -1,8 +1,7 @@
-@import "./htmx.css";
-@import "tailwindcss";
-
 @theme {
 }
+
+@import "./htmx.css";
 
 body {
   @apply text-pretty antialiased;

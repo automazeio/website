@@ -44,3 +44,4 @@ tasks/
 .cursor/mcp.json
 html/re-settlements.php
 deploy.sh
+.claude/settings.local.json

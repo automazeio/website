@@ -11,8 +11,7 @@
   <meta http-equiv="robots" content="notindex">
   <meta http-equiv="cleartype" content="on">
   <title>Automaze</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="<?php echo tiny::staticURL('/css/app.css'); ?>" media="all">
+  <link rel="stylesheet" type="text/css" href="<?php echo tiny::staticURL('/css/style.css'); ?>" media="all">
 
 </head>
 

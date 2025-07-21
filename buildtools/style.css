@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@source "../app/**/*.{html,php,js}";
+@source "../app/views/**/*.php";
+@source "../app/controllers/**/*.php";
+
+/* Import your custom styles */
+@import "../app/static/css/app.css";

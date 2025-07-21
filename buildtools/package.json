@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Build tools for Automaze website",
   "scripts": {
-    "build:css": "tailwindcss -i ../app/static/css/app.css -o ../html/static/css/style.css",
-    "watch:css": "tailwindcss -i ../app/static/css/app.css -o ../html/static/css/style.css --watch"
+    "css:watch": "tailwindcss -i ./style.css -o ../html/static/css/style.css --watch",
+    "css:build": "tailwindcss -i ./style.css -o ../html/static/css/style.css --minify"
   },
   "devDependencies": {
-    "tailwindcss": "^4.0.0-beta.8"
+    "tailwindcss": "^4.1.0"
   }
 }
