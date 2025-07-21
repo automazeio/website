@@ -1,0 +1,133 @@
+.text-size-8xl,
+.text-size-8xl p {
+  @apply text-8xl tracking-normal;
+}
+.text-size-7xl,
+.text-size-7xl p {
+  @apply text-7xl tracking-normal;
+}
+.text-size-6xl,
+.text-size-6xl p {
+  @apply text-6xl tracking-normal;
+}
+.text-size-5xl,
+.text-size-5xl p {
+  @apply text-5xl tracking-normal;
+}
+.text-size-4xl,
+.text-size-4xl p {
+  @apply text-4xl tracking-normal;
+}
+.text-size-3xl,
+.text-size-3xl p {
+  @apply text-3xl tracking-normal;
+}
+.text-size-2xl,
+.text-size-2xl p {
+  @apply text-2xl tracking-normal;
+}
+.text-size-xl,
+.text-size-xl p {
+  @apply text-xl tracking-normal;
+}
+.text-size-lg,
+.text-size-lg p {
+  @apply text-lg;
+}
+.text-size-base,
+.text-size-base p {
+  @apply text-base;
+}
+.text-size-md,
+.text-size-md p {
+  @apply text-sm;
+}
+.text-size-smmd,
+.text-size-smmd p {
+  @apply text-smmd;
+}
+.text-size-sm,
+.text-size-sm p {
+  @apply text-sm;
+}
+.text-size-xssm,
+.text-size-xssm p {
+  @apply text-xssm;
+}
+.text-size-xs,
+.text-size-xs p {
+  @apply text-xs;
+}
+.text-size-xxs,
+.text-size-xxs p {
+  @apply text-xxs;
+}
+
+.screen-3xl .text-size-8xl,
+.screen-3xl .text-size-8xl p {
+  @apply text-8xl;
+}
+.screen-3xl .text-size-7xl,
+.screen-3xl .text-size-7xl p {
+  @apply text-7xl;
+}
+.screen-3xl .text-size-6xl,
+.screen-3xl .text-size-6xl p {
+  @apply text-6xl;
+}
+.screen-3xl .text-size-5xl,
+.screen-3xl .text-size-5xl p {
+  @apply text-5xl;
+}
+.screen-3xl .text-size-4xl,
+.screen-3xl .text-size-4xl p {
+  @apply text-4xl;
+}
+.screen-3xl .lg\:text-size-4xl,
+.screen-3xl .lg\:text-size-4xl p {
+  @apply lg:!text-4xl;
+}
+.screen-3xl .text-size-3xl,
+.screen-3xl .text-size-3xl p {
+  @apply text-3xl;
+}
+.screen-3xl .text-size-2xl,
+.screen-3xl .text-size-2xl p {
+  @apply text-2xl;
+}
+.screen-3xl .text-size-xl,
+.screen-3xl .text-size-xl p {
+  @apply text-xl;
+}
+.screen-3xl .text-size-lg,
+.screen-3xl .text-size-lg p {
+  @apply text-lg;
+}
+.screen-3xl .text-size-base,
+.screen-3xl .text-size-base p {
+  @apply text-base;
+}
+.screen-3xl .text-size-md,
+.screen-3xl .text-size-md p {
+  @apply text-sm;
+}
+.screen-3xl .text-size-smmd,
+.screen-3xl .text-size-smmd p {
+  @apply text-smmd;
+}
+.screen-3xl .text-size-sm,
+.screen-3xl .text-size-sm p {
+  @apply text-sm;
+}
+.screen-3xl .text-size-xssm,
+.screen-3xl .text-size-xssm p {
+  @apply text-xssm;
+}
+.screen-3xl .text-size-xs,
+.screen-3xl .text-size-xs p {
+  @apply text-xs;
+}
+.screen-3xl .text-size-xxs,
+.screen-3xl .text-size-xxs p {
+  @apply text-xxs;
+}

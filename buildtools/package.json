@@ -1,0 +1,12 @@
+{
+  "name": "automaze-buildtools",
+  "version": "1.0.0",
+  "description": "Build tools for Automaze website",
+  "scripts": {
+    "build:css": "tailwindcss -i ../app/static/css/app.css -o ../html/static/css/style.css",
+    "watch:css": "tailwindcss -i ../app/static/css/app.css -o ../html/static/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0-beta.8"
+  }
+}

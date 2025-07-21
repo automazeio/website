@@ -1,0 +1,4 @@
+[submodule "tiny"]
+	path = tiny
+	url = git@github.com:ranaroussi/tiny.git
+	branch = main

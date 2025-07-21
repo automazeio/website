@@ -1,0 +1,104 @@
+#toasts {
+  @apply fixed bottom-0 left-0 z-[1000] sm:bottom-auto sm:left-auto sm:right-6 sm:top-6;
+  @apply w-full max-w-64 flex-1;
+}
+.toast {
+  @apply pointer-events-auto overflow-hidden shadow-lg dark:shadow-xl;
+  @apply bg-white dark:bg-neutral-900;
+  @apply border border-[var(--form-element-border-color)];
+  border-width: 1.25px;
+  @apply py-3 px-3;
+  @apply text-sm font-medium;
+  @apply mb-4 ml-4 mr-2 transform sm:m-0 sm:mb-4;
+  @apply rounded-md transition duration-300 ease-in-out;
+}
+/* .dark .toast {
+  border-width: 1.5px;
+} */
+.toast svg {
+  @apply size-[20px] mt-0.5 -ml-0.5 mr-2 flex-shrink-0 text-neutral-500;
+}
+.toast svg path:first-of-type{
+  @apply opacity-30 dark:opacity-90
+}
+#toasts.leaving .toast {
+  @apply opacity-50;
+}
+#toasts .toast.entering {
+  /* @apply -translate-y-px */
+}
+#toasts.entering .toast:first-of-type {
+  @apply -translate-y-2 opacity-50;
+}
+#toasts.entering .toast:not(:first-of-type) {
+  @apply -translate-y-4 opacity-50;
+}
+.toast-enter-active,
+.toast-leave-active {
+  @apply scale-90 opacity-50;
+}
+.toast-enter-from,
+.toast-leave-to {
+  @apply scale-90 opacity-0;
+}
+.toast-enter-to,
+.toast-leave-from {
+  @apply mt-0 scale-100 opacity-100;
+}
+
+.toast .toast-title {
+  @apply text-base font-semibold;
+}
+.toast .toast-details {
+  @apply text-sm mt-1 font-normal;
+}
+.toast .toast-info {
+  @apply text-sm;
+}
+.toast .toast-id {
+  @apply text-xs mb-1 mt-2.5 font-mono uppercase opacity-60;
+}
+.toast button.close {
+  @apply float-right text-gray-400 hover:text-gray-500 focus:outline-none dark:hover:text-gray-200;
+}
+.toast button.close::after {
+  content: '×';
+  @apply block size-4 bg-neutral-400/80 dark:bg-neutral-600 rounded-full text-center text-white;
+  @apply text-[14px] leading-[14px] hover:opacity-80 transition
+}
+.toast.toast-error {
+  @apply border-red-600/70 text-inherit dark:border-red-900;
+}
+.toast.toast-error svg {
+  @apply text-red-600;
+}
+.toast.toast-error svg path:last-of-type{
+  @apply text-red-800 dark:text-black;
+}
+.toast.toast-warning {
+  @apply border-amber-500/70 text-inherit dark:border-amber-900;
+}
+.toast.toast-warning svg {
+  @apply text-amber-500;
+}
+.toast.toast-warning svg path:last-of-type{
+  @apply text-amber-700 dark:text-black;
+}
+.toast.toast-info {
+  @apply border-indigo-500/70 text-inherit dark:border-indigo-900;
+}
+.toast.toast-info svg {
+  @apply text-indigo-500;
+}
+.toast.toast-info svg path:last-of-type{
+  @apply text-indigo-700 dark:text-black;
+}
+.toast.toast-success {
+  @apply border-green-500/70 text-inherit dark:border-green-900;
+}
+.toast.toast-success svg {
+  @apply text-green-500;
+}
+.toast.toast-success svg path:last-of-type{
+  @apply text-green-700 dark:text-black;
+}

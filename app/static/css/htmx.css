@@ -1,0 +1,39 @@
+@reference "tailwindcss";
+
+#wrapper:before {
+  @apply fixed inset-x-0 top-0 h-0.5 z-[1000] bg-neutral-100 dark:bg-neutral-800;
+}
+#wrapper:after {
+  content: "";
+  @apply absolute inset-0 h-0.5 z-[1001];
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 25%, var(--primary) 75%, transparent 100%);
+  animation: htmx-progress 2s infinite;
+}
+#wrapper:before, #wrapper:after {
+  display: none;
+}
+#wrapper.htmx-request {
+  @apply overflow-x-hidden;
+}
+#wrapper.htmx-request:before, #wrapper.htmx-request:after {
+  display: block;
+}
+#wrapper.htmx-request > #main header h1,
+#wrapper.htmx-request > #main header ~ * {
+  @apply opacity-50 pointer-events-none
+}
+
+@keyframes htmx-progress {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
