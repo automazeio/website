@@ -1,6 +1,6 @@
-<?php // tiny::layout()->default(title: 'Home', emptyLayout: false); ?>
-<?php // tiny::layout()->default('/'); ?>
+<?php tiny::layout()->default(title: 'Home', emptyLayout: false); ?>
 
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,9 +13,9 @@
   <title>Automaze</title>
   <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>" media="all">
 
-</head>
+</head> -->
 
-<body>
+<!-- <body> -->
 
   <!-- testimonial hero -->
   <div class="" id="testimonial-hero">
@@ -622,3 +622,6 @@ Because when you find a partner that works like you do, you don’t go looking f
     // Initial check
     updateVisibility();
   </script>
+
+
+<?php tiny::layout()->default('/'); ?>
