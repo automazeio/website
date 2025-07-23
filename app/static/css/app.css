@@ -1,8 +1,8 @@
 @theme {
 }
 
-@import "./htmx.css";
-
+/* @import "./htmx.css"; */
+@import "./inter.css";
 body {
   @apply text-pretty antialiased;
 }
@@ -715,7 +715,7 @@ footer#cta {
 }
 
 footer#footer {
-  @apply bg-gradient-to-br from-[#0d1326] viafrom-[#0d1326] to-[#121834] relative z-[2147483647];
+  @apply bg-gradient-to-br from-[#0d1326] via-[#0d1326] to-[#121834] relative z-[2147483647];
 }
 footer#footer:before {
   content: "";
@@ -749,4 +749,36 @@ footer#footer nav a {
     -1px 1px 0 #fff,
     1px 1px 0 #fff;
 
+}
+
+.timeline-card {
+  @apply p-6 grid h-full border border-dashed border-indigo-100;
+  @apply rounded-lg ring-4 ring-indigo-50/50;
+  @apply bg-gradient-to-b from-white via-white to-[#fdfdff];
+  @apply relative
+}
+.timeline-card-first:before {
+  content: "";
+  @apply absolute -left-1.5 top-1/2 -mt-1 ml-px;
+  @apply size-2 rounded-full bg-indigo-200 animate-pulse
+}
+.timeline-card-even:before {
+  content: "";
+  @apply absolute left-1/2 -top-1.5 ml-1;
+  @apply size-2 rounded-full bg-indigo-200 animate-pulse
+}
+.timeline-card-even:after {
+  content: "";
+  @apply absolute -left-1.5 top-1/2 -mt-1 ml-px;
+  @apply size-2 rounded-full bg-indigo-200 animate-pulse
+}
+.timeline-card-odd:before {
+  content: "";
+  @apply absolute left-1/2 -top-1.5 -ml-3;
+  @apply size-2 rounded-full bg-indigo-200 animate-pulse
+}
+.timeline-card-odd:after {
+  content: "";
+  @apply absolute -right-1.5 top-1/2 -mt-1 mr-px;
+  @apply size-2 rounded-full bg-indigo-200 animate-pulse
 }

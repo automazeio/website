@@ -8,11 +8,10 @@
 <!-- main -->
 <div id="main-content" class="relative z-10 mt-[100dvh] bg-white">
   <main x-class="mx-8 relative">
-    <?php tiny::render('home/what-we-do'); ?>
-    <?php tiny::render('home/our-process'); ?>
-    <?php tiny::render('home/case-studies'); ?>
+    <?php tiny::render('home/about'); ?>
     <?php tiny::render('home/services'); ?>
-    <?php tiny::render('home/how-it-works'); ?>
+    <?php tiny::render('home/case-studies'); ?>
+    <?php tiny::render('home/process'); ?>
     <?php tiny::render('home/pricing'); ?>
     <?php tiny::render('home/faq'); ?>
     <?php tiny::render('home/cta'); ?>
