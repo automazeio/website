@@ -1,22 +1,18 @@
-    </div>
-    <?php if (!tiny::layout()->props('emptyLayout')): ?>
-    <footer class="p-8 pb-6 text-xs opacity-50 absolute bottom-0">
-        &copy; <?php echo date('Y'); ?> Automaze, Ltd.
-        ~ Time: <?php echo tiny::timer(true, false); ?> ~ App Version <?php echo $_SERVER['APP_VERSION']; ?>
-        ~ Timezone: <?php echo tiny::user()->account->timezone; ?>
-    </footer>
-    <?php endif; ?>
+<?php
+tiny::components()->require('Footer');
+tiny::components()->Footer();
+?>
 
-  <!-- content end -->
+<!-- content end -->
 <?php if (isset(tiny::data()->CSRFError)): ?>
-<script>
+  <script>
     showToast([{
-        level: 'error',
-        title: 'Request check failed',
-        message: 'Your request included an invalid or missing CSRF token. Please refresh the page and try again.',
-        id: '<?php echo tiny::data()->CSRFError; ?>'
+      level: 'error',
+      title: 'Request check failed',
+      message: 'Your request included an invalid or missing CSRF token. Please refresh the page and try again.',
+      id: '<?php echo tiny::data()->CSRFError; ?>'
     }]);
-</script>
+  </script>
 <?php endif; ?>
 
 <?php
@@ -38,7 +34,7 @@ if ($toast) {
 
 <?php if (!tiny::layout()->props('emptyLayout')): ?>
   </main>
-</div>
+  </div>
 <?php endif; ?>
 
 <?php
@@ -49,4 +45,5 @@ tiny::components()->Toast();
 // tiny::components()->TinyJS();
 ?>
 </body>
+
 </html>

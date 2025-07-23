@@ -27,7 +27,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 
     <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
     <!-- <script defer src="<?php tiny::staticURL('/js/alpine.combo.min.js'); ?>"></script> -->
-    <!-- <script src="<?php tiny::staticURL('/js/app.js'); ?>?v=<?php echo @$_SERVER['APP_VERSION']; ?>"></!--> -->
+    <!-- <script src="<?php tiny::staticURL('/js/app.js'); ?>?v=<?php echo @$_SERVER['APP_VERSION']; ?>"></script> -->
 
 <?php if (tiny::layout()->props('scripts')):
         foreach (tiny::layout()->props('scripts') as $script): ?>
