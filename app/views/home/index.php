@@ -1,8 +1,8 @@
 <?php tiny::layout()->default(title: 'Home', emptyLayout: false); ?>
 
 
-<?php tiny::render('home/mike'); ?>
 <?php tiny::render('home/hero-v2'); ?>
+<?php tiny::render('home/mike'); ?>
 
 
 <!-- main -->
@@ -25,7 +25,8 @@
   const mainContent = document.querySelector('#main-content');
   const testimonialHero = document.querySelector('#testimonial-hero');
   const cta = document.querySelector('#cta');
-  const pricing = document.querySelector('#pricing');
+  const about = document.querySelector('#about');
+  const hideCTAEle = document.querySelector('#pricing');
 
   // Cache DOM elements and create cloned content once
   const testimonialHeroContent = testimonialHero.querySelector('div');
@@ -60,9 +61,8 @@
     const splashHeroHeight = splashHeroRect.height;
     const quarterSplashHeroHeight = splashHeroHeight / 4;
 
-    const pricingBottomOffset = window.innerHeight - pricing.getBoundingClientRect().bottom;
-    // console.log(pricingBottomOffset);
-    if (pricingBottomOffset > 0) {
+    const hideCTAEleBottomOffset = window.innerHeight - hideCTAEle.getBoundingClientRect().bottom;
+    if (hideCTAEleBottomOffset > 0) {
       cta.style.opacity = 0;
       // setTimeout(() => {
       //   cta.style.display = 'none';

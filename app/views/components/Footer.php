@@ -5,9 +5,9 @@ tiny::components()->register('Footer', function (...$props) {
     return <<<EOF
     <footer id="footer">
         <div class="mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl text-slate-300/80 text-sm">
-            <div class="flex items-start justify-between px-9 pt-20">
-                <div class="max-w-sm leading-relaxed">
-                    <p><a href="#"><img loading="lazy" src="https://automaze.io/assets/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
+            <div class="md:flex items-start justify-between px-9 pt-20 md:pt-30">
+                <div class="max-w-sm leading-relaxed mb-12">
+                    <p><a href="{$props['rootPath']}"><img loading="lazy" src="https://automaze.io/assets/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
                     <p class="mt-4">At Automaze, we partner with founders to bring their vision to life, scale their business, and optimize for success.</p>
                     <div class="flex items-end space-x-4 mt-6">
                         <a href="http://x.com/intent/follow?screen_name=automazeio" target="_blank" class="text-slate-400 hover:text-slate-200 transition-all"><svg
@@ -27,12 +27,14 @@ tiny::components()->register('Footer', function (...$props) {
                             <path d="M104,208H72a32,32,0,0,1-32-32A32,32,0,0,0,8,144"></path>
                         </svg></a>
                     </div>
-                    <p class="font-mono tracking-tighter mt-8 text-slate-500 text-[13px]">&copy; {$props['year']} Automaze, Ltd.</p>
-                    <p class="font-mono tracking-tighter mt-4 text-[13px] text-slate-500">HQ: 71-75 Shelton Street, WC2H 9JQ, London, UK</p>
-                    <p class="font-mono tracking-tighter text-[13px] text-slate-500">Made with ❤️ <a href="{$props['rootPath']}about" class="border-b border-dotted hover:text-slate-200 transition-all">around the world</a>.</p>
+                    <div class="hidden md:block">
+                        <p class="font-mono tracking-tighter mt-8 text-slate-500 text-[13px]">&copy; {$props['year']} Automaze, Ltd.</p>
+                        <p class="font-mono tracking-tighter mt-4 text-[13px] text-slate-500">HQ: 71-75 Shelton Street, WC2H 9JQ, London, UK</p>
+                        <p class="font-mono tracking-tighter text-[13px] text-slate-500">Made with ❤️ <a href="{$props['rootPath']}about" class="border-b border-dotted hover:text-slate-200 transition-all">around the world</a>.</p>
+                    </div>
                 </div>
 
-                <nav class="flex items-start space-x-8 pt-8">
+                <nav class="grid grid-cols-2 md:flex items-start space-x-8 pt-8">
                     <ul class="w-30">
                         <li><h4>Company</h4></li>
                         <li><a href="{$props['rootPath']}about">About</a></li>
@@ -64,7 +66,13 @@ tiny::components()->register('Footer', function (...$props) {
                     </ul>
                 </nav>
             </div>
-            <div class="col-span-2 text-center leading-none relative -z-10">
+
+            <div class="col-span-2 md:hidden p-9 pt-0 -mt-6 text-center">
+                <p class="font-mono tracking-tighter mt-8 text-slate-500 text-[13px]">&copy; {$props['year']} Automaze, Ltd.</p>
+                <p class="font-mono tracking-tighter text-[13px] text-slate-500">Made with ❤️ <a href="{$props['rootPath']}about" class="border-b border-dotted hover:text-slate-200 transition-all">around the world</a>.</p>
+            </div>
+
+            <div class="col-span-2 text-center leading-none relative -z-10 overflow-x-hidden no-scrollbar">
                 <span class="stroked">automaze</span>
             </div>
         </div>

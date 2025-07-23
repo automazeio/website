@@ -2,7 +2,7 @@
 echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 ?>
 <!DOCTYPE html>
-<html lang="en" class="relative min-h-full overscroll-none">
+<html lang="en" class="relative min-h-full overscroll-none"  style="scroll-behavior: smooth">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
