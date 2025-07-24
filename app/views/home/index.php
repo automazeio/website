@@ -15,7 +15,7 @@
     <?php tiny::render('home/pricing'); ?>
     <?php tiny::render('home/faq'); ?>
     <?php tiny::render('home/cta'); ?>
-
+    <?php tiny::render('home/floating-cta'); ?>
   </main>
 </div>
 

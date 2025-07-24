@@ -3262,6 +3262,12 @@ h3.home-grid-header > span {
 .accordion details:not([open]) summary:hover {
   color: var(--color-gray-400);
 }
+.accordion:has(details[open]) details:not([open]):hover {
+  opacity: 100% !important;
+}
+.accordion:has(details[open]) details:not([open]) summary:hover {
+  color: var(--color-gray-800);
+}
 .accordion details summary:after {
   content: "＋";
   position: absolute;

@@ -977,6 +977,12 @@ h3.home-grid-header > span {
 .accordion details:not([open]) summary:hover {
   @apply text-gray-400;
 }
+.accordion:has(details[open]) details:not([open]):hover {
+  @apply !opacity-100;
+}
+.accordion:has(details[open]) details:not([open]) summary:hover {
+  @apply text-gray-800;
+}
 .accordion details summary:after {
   content: "＋";
   @apply absolute right-0 -mt-2 text-gray-600;
