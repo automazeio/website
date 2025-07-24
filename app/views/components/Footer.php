@@ -3,6 +3,7 @@ tiny::components()->register('Footer', function (...$props) {
     $props['year'] = $props['year'] ?? date('Y');
     $props['rootPath'] = tiny::getHomeURL('/');
     return <<<EOF
+
     <footer id="footer">
         <div class="mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl text-slate-300/80 text-sm">
             <div class="md:flex items-start justify-between px-9 pt-20 md:pt-30">
@@ -39,16 +40,18 @@ tiny::components()->register('Footer', function (...$props) {
                         <li><h4>Company</h4></li>
                         <li><a href="{$props['rootPath']}about">About</a></li>
                         <li><a href="https://secret.automaze.io" target="_blank">Perks for Client</a></li>
+                        <li><a href="{$props['rootPath']}pricing">Pricing</a></li>
                         <li><a href="{$props['rootPath']}podcast">Podcast</a></li>
                         <li><a href="{$props['rootPath']}contact">Contact</a></li>
                     </ul>
                     <ul class="w-40">
                         <li><h4>Services</h4></li>
-                        <li><a href="{$props['rootPath']}services/cto">CTO as a Service</a></li>
+                        <li><a href="{$props['rootPath']}services/cto-as-a-service">CTO as a Service</a></li>
+                        <li><a href="{$props['rootPath']}services/mvp-sprint">MVP Sprint</a></li>
+                        <li><a href="{$props['rootPath']}services/managed-developers">Managed Developers</a></li>
                         <li><a href="{$props['rootPath']}services/ai-agents">Custom AI Agents</a></li>
-                        <li><a href="{$props['rootPath']}services/software-development">Software Development</a></li>
-                        <li><a href="{$props['rootPath']}services/devops">DevOps &amp; Cloud</a></li>
-                        <li><a href="{$props['rootPath']}services/design">UX/UI Design</a></li>
+                        <li><a href="{$props['rootPath']}services/devops-optimization">DevOps &amp; Cloud</a></li>
+                        <li><a href="{$props['rootPath']}services/design-subscription">UX/UI Design</a></li>
                     </ul>
                     <ul class="w-28">
                         <li><h4>Products</h4></li>
@@ -57,7 +60,7 @@ tiny::components()->register('Footer', function (...$props) {
                         <li><a href="https://disputepal.co" target="_blank">DisputePal</a></li>
                         <li><a href="https://corpus.chat" target="_blank">Corpus.Chat</a></li>
                         <li><a href="https://premarketbell.com" target="_blank">Premarket Bell</a></li>
-                        <li><a href="https://premarketbell.com" target="_blank">Moderate.AI</a></li>
+                        <li><a href="https://moderate.ai" target="_blank">Moderate.AI</a></li>
                     </ul>
                     <ul class="w-16 mr-2">
                         <li><h4>Legal</h4></li>

@@ -25,9 +25,9 @@
         </nav>
     </header>
 
-    <section class="hero relative pt-32 text-white">
-        <div class="relative z-10 mx-auto max-w-5xl px-8 py-20 pb-24 xl:max-w-6xl 2xl:max-w-7xl" id="hero-content">
-            <div class="bg-gradient-to-r from-slate-300 via-slate-400 to-slate-400 bg-clip-text py-4.5 text-lg font-semibold text-transparent w-fit"><span class="hidden sm:inline">Technical Co‑Founder &amp; </span>CTO as a Service</div>
+    <section class="hero">
+        <div id="hero-content">
+            <div><span class="hidden sm:inline">Technical Co‑Founder &amp; </span>CTO as a Service</div>
             <div class="max-w-3xl">
                 <h1 class="text-headline my-6">
                     <div class="headline">
@@ -43,17 +43,17 @@
                     </div>
                     Let us do it for you.
                 </h1>
-                <h2 class="my-6 mb-16 max-w-2xl text-lg text-slate-300 opacity-90 sm:text-2xl">Automaze is the <strong>zero-equity</strong> way for founders to bring their idea to life, attract users, and achieve product-market fit.</h2>
+                <h2>Automaze is the <strong>zero-equity</strong> way for founders to bring their idea to life, attract users, and achieve product-market fit.</h2>
 
                 <div class="flex items-center space-x-4">
-                    <a href="#about-us" class="hero-cta-button-glow shadow-2xl shadow-indigo-900/60 hover:shadow-2xl hover:shadow-indigo-700 pb-px">Learn more</a>
-                    <a href="<?php tiny::homeURL('discovery-call'); ?>" class="border-[1.5px] border-indigo-50/20 flex h-[52px] w-50 cursor-pointer items-center justify-center rounded-md text-base leading-0 font-medium transition-opacity group">
-                        <div class="flex items-center relative opacity-90 group-hover:opacity-100">
-                            <img src="https://unavatar.io/alex@automaze.io" alt="Phone" class="size-8 mr-2 rounded-full -ml-3 border-2 border-[#0e1429]">
-                            <img src="https://unavatar.io/anton@automaze.io" alt="Phone" class="size-8 mr-2 rounded-full -ml-6 border-2 border-[#0e1429]">
-                            <img src="https://unavatar.io/ran@automaze.io" alt="Phone" class="size-8 mr-2 rounded-full -ml-6 border-2 border-[#0e1429]">
+                    <a href="#about-us" class="hero-cta-button-glow">Our services</a>
+                    <a href="<?php tiny::homeURL('discovery-call'); ?>" class="hero-cta-button-secondary group">
+                        <div class="avatar-group avatar-group-dark group !-ml-5">
+                            <img src="https://unavatar.io/alex@automaze.io" alt="Alex Burykin">
+                            <img src="https://unavatar.io/anton@automaze.io" alt="Anton Boksha">
+                            <img src="https://unavatar.io/ran@automaze.io" alt="Ran Aroussi">
                         </div>
-                        <span class=" opacity-80 group-hover:opacity-100 font-semibold">Let's talk</span>
+                        <span class="opacity-80 group-hover:opacity-100">Let's talk</span>
                     </a>
                 </div>
             </div>
