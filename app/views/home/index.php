@@ -22,6 +22,7 @@
 
 <script>
   // --------- testimonial + hero ---------
+  const metaThemeColor = document.querySelector("meta[name=theme-color]");
   const splashHero = document.querySelector('#hero-content');
   const mainContent = document.querySelector('#main-content');
   const testimonialHero = document.querySelector('#testimonial-hero');
@@ -94,14 +95,17 @@
       body.classList.add('light-hero');
       if (splashHeroBottomOffset < quarterSplashHeroHeight * 2) {
         body.classList.add('full-light-hero');
+        metaThemeColor.setAttribute('content', '#ffffff');
       } else {
         if (splashHeroBottomOffset < quarterSplashHeroHeight) {
           body.classList.remove('full-light-hero');
+          metaThemeColor.setAttribute('content', '#070914');
         }
       }
     } else {
       body.classList.remove('light-hero');
       body.classList.remove('full-light-hero');
+      metaThemeColor.setAttribute('content', '#070914');
     }
 
     // Handle text reveal animation

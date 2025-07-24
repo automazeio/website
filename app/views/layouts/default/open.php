@@ -19,7 +19,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Automaze">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#5667e7">
+    <meta name="theme-color" content="#070914">
 
     <?php if (@$_SERVER['ENV'] != 'local' && @$_SERVER['SENTRY_FRONTEND']): ?>
     <script src="https://js.sentry-cdn.com/<?php echo $_SERVER['SENTRY_FRONTEND']; ?>.min.js" crossorigin="anonymous"></script>
@@ -41,5 +41,5 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     endif; ?>
 </head>
 
-<body class="text-pretty antialiased bg-slate-50" x-data="app">
+<body class="text-pretty antialiased bg-slate-50">
 

@@ -5,7 +5,7 @@
   <div>
 
 
-    <div class="flex items-start justify-between gap-x-12">
+    <div class="lg:flex items-start justify-between gap-x-12">
       <div>
         <h2 class="-mt-4 mb-4 text-3xl leading-[1.1] font-semibold tracking-tight lg:text-5xl">Simple, no-tricks pricing</h2>
         <p class="max-w-2xl text-2xl text-neutral-500">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
@@ -15,7 +15,7 @@
           </hr>
         </div>
 
-        <ul role="list">
+        <ul role="list" class="lg:columns-2 gap-x-12">
           <li>CTO as a service</li>
           <li>
             Software architecture, design, coding, devops and ongoing advice
@@ -30,8 +30,8 @@
         </ul>
       </div>
 
-      <div class="-mt-2 p-2 lg:w-full lg:max-w-md lg:shrink-0 sticky top-24">
-        <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-gray-900/5 ring-inset lg:flex lg:flex-col lg:justify-center lg:py-16">
+      <div class="mt-12 -mb-10 lg:mb-0 lg:-mt-2 lg:p-2 lg:w-full lg:max-w-md lg:shrink-0 top-24">
+        <div class="rounded-lg bg-gray-50 py-10 text-center ring-1 ring-gray-900/5 ring-inset lg:flex lg:flex-col lg:justify-center lg:py-16">
           <div class="mx-auto max-w-xs px-8">
             <p class="text-base font-semibold text-gray-600">Pay once, own it forever</p>
             <p class="mt-6 flex items-baseline justify-center gap-x-2">

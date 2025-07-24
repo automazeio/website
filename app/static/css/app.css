@@ -1022,7 +1022,7 @@ a.cta-link:hover:after {
 }
 
 ul[role="list"] {
-  @apply my-4 space-y-3 text-[15px] text-neutral-700;
+  @apply my-6 space-y-3 text-[15px] text-neutral-700;
 }
 ul[role="list"] li {
   @apply relative isolate pl-7;
@@ -1031,8 +1031,4 @@ ul[role="list"] li:before {
   content: "✓";
   @apply text-xl  font-medium text-indigo-300;
   @apply float-left -mt-[3px] -ml-7;
-}
-
-#pricing ul[role="list"] {
-  @apply columns-2 gap-x-12;
 }
