@@ -95,11 +95,12 @@
       body.classList.add('light-hero');
       if (splashHeroBottomOffset < quarterSplashHeroHeight * 2) {
         body.classList.add('full-light-hero');
-        metaThemeColor.setAttribute('content', '#ffffff');
       } else {
         if (splashHeroBottomOffset < quarterSplashHeroHeight) {
           body.classList.remove('full-light-hero');
           metaThemeColor.setAttribute('content', '#070914');
+        } else {
+          metaThemeColor.setAttribute('content', '#ffffff');
         }
       }
     } else {
