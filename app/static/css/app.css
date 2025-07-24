@@ -34,7 +34,7 @@ body {
 }
 .has-tooltip .tooltip {
   @apply text-center whitespace-nowrap opacity-0 shadow;
-  @apply absolute -top-14 left-1/2 -ml-2 -translate-x-1/2  rounded-md border border-white bg-slate-950 px-2 py-1.5 text-xs text-white;
+  @apply absolute -top-10 left-1/2 -ml-1 -translate-x-1/2  rounded-md border border-white bg-slate-950 px-2 py-1.5 text-xs text-white;
   @apply pointer-events-none transition-all duration-150;
 }
 .has-tooltip:hover .tooltip {

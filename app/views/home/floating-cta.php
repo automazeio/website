@@ -4,23 +4,23 @@
     <span class="has-tooltip">
       <img src="https://unavatar.io/alex@automaze.io" alt="Alex Burykin">
       <span class="tooltip">
-        <span class="font-semibold">Alex Burykin</span><br>
-        <span class="opacity-80 font-normal">Technical Lead</span>
+        <span class="font-semibold">Alex</span>
+        <span class="opacity-80 font-normal">&bull; Technical Lead</span>
       </span>
     </span>
     </span>
-    <span class="has-tooltip -ml-4">
+    <span class="has-tooltip -ml-5">
       <img src="https://unavatar.io/anton@automaze.io" alt="Anton Boksha">
       <span class="tooltip">
-        <span class="font-semibold">Anton Boksha</span><br>
-        <span class="opacity-80 font-normal">Technical Lead</span>
+        <span class="font-semibold">Anton</span>
+        <span class="opacity-80 font-normal">&bull; Technical Lead</span>
       </span>
     </span>
-    <span class="has-tooltip -ml-4">
+    <span class="has-tooltip -ml-5">
       <img src="https://unavatar.io/ran@automaze.io" alt="Ran Aroussi">
       <span class="tooltip">
-        <span class="font-semibold">Ran Aroussi</span><br>
-        <span class="opacity-80 font-normal">Founder, CTO/CPO</span>
+        <span class="font-semibold">Ran</span>
+        <span class="opacity-80 font-normal">&bull; Founder &amp; CTO</span>
       </span>
     </span>
   </div>
