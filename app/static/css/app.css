@@ -886,7 +886,7 @@ h3.home-grid-header {
   @apply border-y border-dashed border-indigo-200;
 }
 h3.home-grid-header > span {
-  @apply mx-auto block max-w-6xl px-8 py-5.5 font-mono text-sm font-medium uppercase opacity-40 xl:max-w-7xl;
+  @apply mx-auto block max-w-5xl px-8 py-5.5 font-mono text-sm font-medium uppercase opacity-40 xl:max-w-6xl 2xl:max-w-7xl;
 }
 
 #timeline {
@@ -1019,4 +1019,20 @@ a.cta-link:hover:after {
   content: "→";
   font-size: 86%;
   @apply pl-1.5;
+}
+
+ul[role="list"] {
+  @apply my-4 space-y-3 text-[15px] text-neutral-700;
+}
+ul[role="list"] li {
+  @apply relative isolate pl-7;
+}
+ul[role="list"] li:before {
+  content: "✓";
+  @apply text-xl  font-medium text-indigo-300;
+  @apply float-left -mt-[3px] -ml-7;
+}
+
+#pricing ul[role="list"] {
+  @apply columns-2 gap-x-12;
 }
