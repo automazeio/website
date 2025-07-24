@@ -18,6 +18,54 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+[data-tooltip] {
+  @apply relative border;
+}
+[data-tooltip]:hover:before {
+  content: attr(data-tooltip);
+  @apply whitespace-nowrap;
+  @apply absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-indigo-950 px-2 py-1 text-xs text-white;
+}
+
+
+.has-tooltip {
+  @apply relative;
+}
+.has-tooltip .tooltip {
+  @apply text-center whitespace-nowrap opacity-0 shadow;
+  @apply absolute -top-14 left-1/2 -ml-2 -translate-x-1/2  rounded-md border border-white bg-slate-950 px-2 py-1.5 text-xs text-white;
+  @apply pointer-events-none transition-all duration-150;
+}
+.has-tooltip:hover .tooltip {
+  @apply z-100 opacity-100 -rotate-6;
+}
+.has-tooltip:hover .tooltip:before {
+  content: "";
+  @apply absolute -bottom-2 left-1/2 h-0 w-0 -translate-x-1/2;
+  @apply border-l-8 border-l-transparent;
+  @apply border-r-8 border-r-transparent;
+  @apply border-t-8 border-t-white;
+}
+.has-tooltip:hover .tooltip:after {
+  content: "";
+  @apply absolute -bottom-1.5 -mb-px left-1/2 h-0 w-0 -translate-x-1/2;
+  @apply border-l-8 border-l-transparent;
+  @apply border-r-8 border-r-transparent;
+  @apply border-t-8 border-t-slate-950;
+}
+
+.hero .has-tooltip .tooltip {
+  @apply border border-black bg-slate-600 text-slate-200 shadow-sm shadow-slate-800;
+}
+.hero .has-tooltip:hover .tooltip:before {
+  @apply border-t-8 border-t-black;
+}
+.hero .has-tooltip:hover .tooltip:after {
+  @apply border-t-8 border-t-slate-600;
+}
+
+
 @media (width >= 90rem) {
   body.full-light-hero:before {
     content: "";
@@ -407,7 +455,7 @@ section:not(.hero) > div:first-of-type {
   @apply transition-all duration-500;
 }
 .avatar-group img {
-  @apply -ml-4 size-11 rounded-full border-2 border-white;
+  @apply -ml-4 size-11 rounded-full border-2 border-white relative;
 }
 .avatar-group:has(img:hover) img {
   @apply transition-all duration-150;

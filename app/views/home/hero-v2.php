@@ -49,9 +49,28 @@
                     <a href="#about-us" class="hero-cta-button-glow">Our services</a>
                     <a href="<?php tiny::homeURL('discovery-call'); ?>" class="hero-cta-button-secondary group">
                         <div class="avatar-group avatar-group-dark group !-ml-5">
-                            <img src="https://unavatar.io/alex@automaze.io" alt="Alex Burykin">
-                            <img src="https://unavatar.io/anton@automaze.io" alt="Anton Boksha">
-                            <img src="https://unavatar.io/ran@automaze.io" alt="Ran Aroussi">
+                            <span class="has-tooltip">
+                                <img src="https://unavatar.io/alex@automaze.io" alt="Alex Burykin">
+                                <span class="tooltip">
+                                    <span class="font-semibold">Alex Burykin</span><br>
+                                    <span class="opacity-80 font-normal">Technical Lead</span>
+                                </span>
+                            </span>
+                            </span>
+                            <span class="has-tooltip -ml-5">
+                                <img src="https://unavatar.io/anton@automaze.io" alt="Anton Boksha">
+                                <span class="tooltip">
+                                    <span class="font-semibold">Anton Boksha</span><br>
+                                    <span class="opacity-80 font-normal">Technical Lead</span>
+                                </span>
+                            </span>
+                            <span class="has-tooltip -ml-5">
+                                <img src="https://unavatar.io/ran@automaze.io" alt="Ran Aroussi">
+                                <span class="tooltip">
+                                    <span class="font-semibold">Ran Aroussi</span><br>
+                                    <span class="opacity-80 font-normal">Founder, CTO/CPO</span>
+                                </span>
+                            </span>
                         </div>
                         <span class="opacity-80 group-hover:opacity-100">Let's talk</span>
                     </a>
