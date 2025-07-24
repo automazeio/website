@@ -972,7 +972,7 @@ h3.home-grid-header > span {
   @apply !opacity-100;
 }
 .accordion details summary {
-  @apply relative inline-flex w-full cursor-pointer items-center justify-between gap-x-3 py-5 text-start font-semibold text-gray-800 transition focus:outline-hidden md:text-lg;
+  @apply relative inline-flex w-full cursor-pointer items-center justify-between gap-x-3 py-5 text-start font-semibold text-gray-800 transition focus:outline-hidden md:text-lg pr-6;
 }
 .accordion details:not([open]) summary:hover {
   @apply text-gray-400;
@@ -999,7 +999,7 @@ h3.home-grid-header > span {
 }
 .accordion details p {
   @apply mb-4 text-gray-600 opacity-0 transition-opacity duration-500;
-  @apply mr-20 text-[16px] leading-relaxed;
+  @apply md:mr-20 text-[16px] leading-relaxed;
 }
 .accordion details p:last-of-type {
   @apply mb-8;

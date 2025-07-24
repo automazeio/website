@@ -27,7 +27,7 @@
   <button class="z-10 -ml-2 h-11 w-54 cursor-pointer rounded-full border-2 border-white bg-slate-900 px-2.5 py-1.5 pl-6 text-[15px] font-semibold tracking-tight text-white transition-all duration-150 group-hover:bg-black"
     onclick="window.location.href='<?php tiny::homeURL('discovery-call'); ?>'">
     <div class="mx-auto flex w-fit items-center">
-      <span class="transition-all duration-150 group-hover:-ml-3">Talk to the founders</span>
+      <span class="transition-all duration-150 group-hover:-ml-3 whitespace-nowrap">Talk to the founders</span>
       <span class="-mb-px opacity-0 transition-all duration-150 group-hover:translate-x-1 group-hover:opacity-100">→</span>
     </div>
   </button>

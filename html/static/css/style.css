@@ -84,7 +84,6 @@
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
-    --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -430,9 +429,6 @@
   .-mb-10 {
     margin-bottom: calc(var(--spacing) * -10);
   }
-  .-mb-12 {
-    margin-bottom: calc(var(--spacing) * -12);
-  }
   .-mb-px {
     margin-bottom: -1px;
   }
@@ -764,12 +760,6 @@
   }
   .overscroll-none {
     overscroll-behavior: none;
-  }
-  .rounded {
-    border-radius: 0.25rem;
-  }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -1616,6 +1606,11 @@
       width: calc(var(--spacing) * 64);
     }
   }
+  .md\:columns-2 {
+    @media (width >= 48rem) {
+      columns: 2;
+    }
+  }
   .md\:px-6 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -1624,6 +1619,21 @@
   .md\:pt-30 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:pr-8 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:pr-10 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:text-center {
+    @media (width >= 48rem) {
+      text-align: center;
     }
   }
   .lg\:col-start-1 {
@@ -1699,11 +1709,6 @@
   .lg\:shrink-0 {
     @media (width >= 64rem) {
       flex-shrink: 0;
-    }
-  }
-  .lg\:columns-2 {
-    @media (width >= 64rem) {
-      columns: 2;
     }
   }
   .lg\:grid-cols-2 {
@@ -3593,6 +3598,7 @@ h3.home-grid-header > span {
   justify-content: space-between;
   column-gap: calc(var(--spacing) * 3);
   padding-block: calc(var(--spacing) * 5);
+  padding-right: calc(var(--spacing) * 6);
   text-align: start;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
@@ -3653,10 +3659,12 @@ h3.home-grid-header > span {
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   --tw-duration: 500ms;
   transition-duration: 500ms;
-  margin-right: calc(var(--spacing) * 20);
   font-size: 16px;
   --tw-leading: var(--leading-relaxed);
   line-height: var(--leading-relaxed);
+  @media (width >= 48rem) {
+    margin-right: calc(var(--spacing) * 20);
+  }
 }
 .accordion details p:last-of-type {
   margin-bottom: calc(var(--spacing) * 8);

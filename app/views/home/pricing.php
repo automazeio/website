@@ -15,7 +15,7 @@
           </hr>
         </div>
 
-        <ul role="list" class="lg:columns-2 gap-x-12">
+        <ul role="list" class="md:columns-2 gap-x-12">
           <li>CTO as a service</li>
           <li>
             Software architecture, design, coding, devops and ongoing advice

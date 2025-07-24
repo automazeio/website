@@ -31,7 +31,7 @@
                   </span>
                 </span>
               </div>
-              Talk to the founders
+              <span class="whitespace-nowrap">Talk to the founders</span>
             </div>
           </a>
         </div>

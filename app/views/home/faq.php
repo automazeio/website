@@ -4,8 +4,8 @@
   </h3>
   <div>
     <div class="max-w-2xl mx-auto">
-      <h2 class="section-header text-center pr-8">Frequently asked questions</h2>
-      <p class="text-center pr-10">Got some questions? We have the answers!</p>
+      <h2 class="section-header md:text-center md:pr-8">Frequently asked questions</h2>
+      <p class="md:text-center md:pr-10">Got some questions? We have the answers!</p>
 
       <div class="mt-12 accordion" aria-labelledby="faq-heading">
 
@@ -31,7 +31,7 @@
         </details>
 
         <details>
-          <summary>Is there a limit to how many requests I can have?</summary>
+          <summary>Is there a request limit?</summary>
           <p>
             Once subscribed, you can add as many requests to your queue as you’d like, and they will be handled by us one by one.
           </p>
