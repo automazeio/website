@@ -2743,6 +2743,30 @@ section:not(.hero) > div:first-of-type {
     max-width: var(--container-7xl);
   }
 }
+#hero-spline {
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+}
+#hero-spline spline-viewer {
+  display: none;
+
+  @media (width >= 60rem) {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (width >= 80rem) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (width >= 96rem) {
+    width: 500px;
+    height: 500px;
+  }
+}
 .hero > div#hero-content > div:first-of-type {
   width: fit-content;
   --tw-gradient-position: to right in oklab;
