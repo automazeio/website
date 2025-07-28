@@ -1,5 +1,5 @@
 <!-- splash hero -->
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js" defer></script>
 <div id="splash-hero">
     <div class="splash-hero-bg">
         <video autoplay muted loop playsinline>
@@ -78,7 +78,12 @@
                 </div>
             </div>
             <div id="hero-spline" class="absolute">
-             <spline-viewer url="https://prod.spline.design/pgOI6SpSS4Iamiob/scene.splinecode"></spline-viewer>
+                <spline-viewer 
+                  url="https://prod.spline.design/pgOI6SpSS4Iamiob/scene.splinecode"
+                  role="application"
+                  aria-label="Interactive 3D scene"
+                  loading="lazy">
+                </spline-viewer>
             </div>
         </div>
 
