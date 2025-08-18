@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
   entry: '../app/src/app.js',
   output: {
-    path: path.resolve(__dirname, '../public/static/app'),
+    path: path.resolve(__dirname, '../html/static/app'),
     filename: 'app.js',
     chunkFilename: (pathData) => {
-      // Convert chunk names to lowercase
+      // Convert chunk names to lowercase and replace slashes with dashes
       const name = pathData.chunk.name || pathData.chunk.id;
-      const lowerName = name.toString().toLowerCase();
+      const lowerName = name.toString().toLowerCase().replace(/\//g, '-');
       return `${lowerName}.[contenthash].js`;
     },
     publicPath: '/static/app/',
@@ -33,23 +33,5 @@ module.exports = {
         }
       },
     ]
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, '../public'),
-    },
-    proxy: {
-      '/': {
-        target: 'http://localhost:8000',
-        bypass: function(req) {
-          if (req.url.startsWith('/static/')) {
-            return req.url;
-          }
-        }
-      }
-    },
-    port: 3000,
-    open: true,
-    hot: true
   }
 };

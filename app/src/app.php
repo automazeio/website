@@ -26,7 +26,7 @@
     <?php endif; ?>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php echo tiny::staticURL('css/app.css'); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo tiny::staticURL('css/style.css'); ?>"> -->
 
     <!-- React App -->
     <script id="page-data" type="application/json">

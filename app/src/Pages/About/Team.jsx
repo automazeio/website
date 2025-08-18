@@ -7,12 +7,12 @@ export default function Team({ title, description, teamMembers }) {
       <div className="page-content">
         <h1>{title}</h1>
         <p className="page-description">{description}</p>
-        
+
         <div className="team-grid-full">
           {teamMembers.map((member) => (
             <div key={member.id} className="team-card">
-              <img 
-                src={member.image} 
+              <img
+                src={member.image}
                 alt={member.name}
                 className="team-avatar"
               />
@@ -22,7 +22,7 @@ export default function Team({ title, description, teamMembers }) {
                 <p className="team-bio">{member.bio}</p>
                 <div className="social-links">
                   {Object.entries(member.social).map(([platform, url]) => (
-                    <a 
+                    <a
                       key={platform}
                       href={url}
                       target="_blank"
@@ -38,7 +38,7 @@ export default function Team({ title, description, teamMembers }) {
             </div>
           ))}
         </div>
-        
+
         <div className="breadcrumb">
           <a href="/about">← Back to About</a>
         </div>

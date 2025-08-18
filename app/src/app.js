@@ -7,39 +7,37 @@ const pageComponents = {};
 const loadPageComponent = (name) => {
   // Cache the lazy-loaded component
   if (!pageComponents[name]) {
-    // Convert name to lowercase for chunk naming
-    const chunkName = name.toLowerCase().replace(/\//g, '-');
-    
-    pageComponents[name] = lazy(() => 
-      import(
-        /* webpackChunkName: "page-[request]" */
+    pageComponents[name] = lazy(() => {
+      // First try with .jsx extension explicitly
+      return import(
         /* webpackInclude: /\.jsx$/ */
-        `./Pages/${name}`
-      ).catch(() => 
-        import(
-          /* webpackChunkName: "page-[request]" */
+        `./Pages/${name}.jsx`
+      ).catch((error) => {
+        // Then try without extension (for folders)
+        return import(
           /* webpackInclude: /\.jsx$/ */
-          `./Pages/${name}/index`
-        )
-      ).catch(() => {
-        console.error(`Page component "${name}" not found`);
+          `./Pages/${name}`
+        );
+      }).catch((error) => {
+        // Finally try index file
+        return import(
+          /* webpackInclude: /\.jsx$/ */
+          `./Pages/${name}/index.jsx`
+        );
+      }).catch((error) => {
+        console.error(`❌ Component "${name}" not found`);
         return {
           default: () => (
             <div className="error-container">
               <h2>Page Not Found</h2>
               <p>Component "{name}" could not be loaded.</p>
-              <p>Tried:</p>
-              <ul>
-                <li>src/Pages/{name}.jsx</li>
-                <li>src/Pages/{name}/index.jsx</li>
-              </ul>
             </div>
           )
         };
-      })
-    );
+      });
+    });
   }
-  
+
   return pageComponents[name];
 };
 
@@ -148,7 +146,7 @@ function App({ initialPage }) {
     if (e) {
       e.preventDefault();
     }
-
+    
     // Show loading state
     setIsNavigating(true);
 
@@ -163,15 +161,17 @@ function App({ initialPage }) {
 
       if (response.ok) {
         const pageData = await response.json();
-
+        
         // Update current page state
         setCurrentPage(pageData);
 
         // Update browser URL without page reload
         window.history.pushState(pageData, '', url);
+      } else {
+        console.error(`❌ Navigation failed: ${response.status} ${response.statusText}`);
       }
     } catch (error) {
-      console.error('Navigation error:', error);
+      console.error('❌ Navigation error:', error);
     } finally {
       setIsNavigating(false);
     }
