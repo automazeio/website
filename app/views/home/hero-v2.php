@@ -1,4 +1,5 @@
 <!-- splash hero -->
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js" defer></script>
 <div id="splash-hero">
     <div class="splash-hero-bg">
         <video autoplay muted loop playsinline>
@@ -76,8 +77,17 @@
                     </a>
                 </div>
             </div>
+            <div id="hero-spline" class="absolute">
+                <spline-viewer 
+                  url="https://prod.spline.design/pgOI6SpSS4Iamiob/scene.splinecode"
+                  role="application"
+                  aria-label="Interactive 3D scene"
+                  loading="lazy">
+                </spline-viewer>
+            </div>
         </div>
 
+     
 
         <div id="logos" class="overflow-x-hidden">
             <div class="animate-marquee flex items-center invert">
