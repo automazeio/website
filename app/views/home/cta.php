@@ -2,7 +2,10 @@
   <div>
     <div class="px-6 pb-24 sm:px-6 sm:pb-32 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
-        <h2 class="section-header text-balance">Ready to build?</h2>
+        <h2 class="section-header text-balance">
+          See if Automaze is right for you.
+          <div class="opacity-80 font-normal text-2xl tracking-tight">(it totally is)</div>
+        </h2>
         <p>Book a call with our founders and let’s map out how to bring your idea to life ...and take it all the way to scale!</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a href="<?php tiny::homeURL('discovery-call'); ?>" class="rounded-md bg-[#121834] px-5 py-2.5 pb-3 text-[15px] font-semibold text-white shadow-xs transition-all duration-300 hover:-mt-0.5 hover:mb-0.5 hover:bg-[#0d1326] hover:shadow-xl">

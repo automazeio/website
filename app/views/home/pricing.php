@@ -13,7 +13,7 @@
           </hr>
         </div>
 
-        <ul role="list" class="md:columns-2 gap-x-12">
+        <ul role="list" class="md:columns-2 gap-x-12 leading-relaxed mt-6">
           <li>
             Software architecture, design, coding, devops and ongoing advice
           </li>
@@ -33,10 +33,12 @@
             <span>CTO-as-a-Service</span>
             <span><small>from</small> <span class="font-medium">$5K</span><small>/mo</small></span>
           </summary>
-          <p>
-            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
-          </p>
-          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          <div>
+            <p>
+              <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
         </details>
 
         <details name="pricing">
@@ -44,10 +46,12 @@
             <span>MVP Launch</span>
             <span><span class="font-medium">$6K</span><small>/mo</small></span>
           </summary>
-          <p>
-            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
-          </p>
-          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          <div>
+            <p>
+              <strong>A focused 3-month sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters. No fluff, just results.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
         </details>
 
         <details name="pricing">
@@ -55,43 +59,53 @@
             <span>Managed Developers</span>
             <span><small>from</small> <span class="font-medium">$3K</span><small>/mo</small></span>
           </summary>
-          <p>
-            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
-          </p>
-          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          <div>
+            <p>
+              Web, mobile, internal tools - get a team of developers, with <strong>every skill you need</strong> under one roof. No silos, no handoffs. Just startup speed and enterprise quality.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
         </details>
 
         <details name="pricing">
           <summary>
-            <span>Al Agents &amp; Automations</span>
+            <span>Al Agents Development</span>
             <span><span class="font-medium">$1K</span><small>/mo</small></span>
           </summary>
-          <p>
-            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
-          </p>
-          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          <div>
+            <p>
+              <strong>Run like a one-person company.</strong> We build AI agents that automate your daily tasks so you can scale operations without growing your headcount.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
         </details>
 
         <details name="pricing">
           <summary>
-            <span>UX/UI Design</span>
+            <span>Product UX &amp; UI Design</span>
             <span><span class="font-medium">$2K</span><small>/mo</small></span>
           </summary>
-          <p>
-            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
-          </p>
-          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          <div>
+            <p>
+              We'll craft high-retention applications and high-converting marketing sites
+              using our years of product experience and a <strong>user-centered design process</strong>.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
         </details>
 
         <details name="pricing">
           <summary>
             <span>Cloud Optimization</span>
-            <span><span class="font-medium">$1K</span><small>/audit</small></span>
+            <span><small>audit-based</small></span>
           </summary>
-          <p>
-            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
-          </p>
-          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          <div>
+            <p>
+              We'll audit your infrastructure to identify <strong>significant cost-saving opportunities</strong>.
+              If we find any, we'll migrate your infra and pocket the difference over the following 6 months.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
         </details>
 
       </div>

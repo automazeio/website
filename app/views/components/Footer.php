@@ -38,14 +38,14 @@ tiny::components()->register('Footer', function (...$props) {
                     </div>
                 </div>
 
-                <nav class="grid grid-cols-2 md:flex items-start space-x-8 pt-8">
+                <nav class="grid grid-cols-2 md:flex items-start space-x-12 pt-8">
                     <ul class="w-30">
                         <li><h4>Company</h4></li>
                         <li><a href="{$props['rootPath']}about">About</a></li>
                         <li><a href="https://secret.automaze.io" target="_blank">Perks for Client</a></li>
                         <li><a href="{$props['rootPath']}pricing">Pricing</a></li>
-                        <li><a href="{$props['rootPath']}podcast">Podcast</a></li>
-                        <li><a href="{$props['rootPath']}contact">Contact</a></li>
+                        <li><a href="https://oldschoolnewtech.com" target="_blank">Podcast</a></li>
+                        <li><a href="mail&#116;&#111;&#58;h%65&#37;6Clo%4&#48;%61ut&#111;ma&#122;%6&#53;&#46;%&#54;9&#111;&#63;subject=Website%20inquiry">Contact</a></li>
                     </ul>
                     <ul class="w-40">
                         <li><h4>Services</h4></li>

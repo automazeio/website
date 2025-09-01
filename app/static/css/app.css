@@ -784,6 +784,7 @@ footer#cta {
   position: relative;
   overflow: hidden;
   padding-bottom: 2.25rem; /* space for dots overlay */
+  @apply -my-10
 }
 #testimonial-rotator .testimonial-slide {
   position: absolute;
@@ -794,6 +795,7 @@ footer#cta {
   opacity: 0;
   transition: opacity 400ms ease;
   pointer-events: none;
+  @apply pt-14
 }
 #testimonial-rotator .testimonial-slide.active {
   opacity: 1;
@@ -1037,6 +1039,10 @@ h3.home-grid-header > span {
 .accordion details[open] p {
   @apply opacity-100;
 }
+.accordion details[open] > div {
+  @apply max-h-fit;
+  animation: reveal 500ms ease-in-out forwards;
+}
 
 a.cta-link {
   @apply font-semibold text-blue-500 hover:border-b-[1.5px];
@@ -1076,6 +1082,7 @@ ul[role="list"] li:before {
 #pricing details summary {
   @apply flex items-center justify-between relative;
   @apply pt-6 pb-6 px-6 cursor-pointer;
+  @apply transition-all duration-300
 }
 #pricing details:not([open]) summary:after {
   content: "＋";
@@ -1098,8 +1105,6 @@ ul[role="list"] li:before {
   @apply font-bold inline text-slate-900
 }
 #pricing details:not([open]):hover summary span {
-  /* @apply bg-[#f6f8fe]; */
-  /* @apply font-semibold */
   @apply text-slate-900
 }
 #pricing details summary span:last-of-type {
@@ -1110,14 +1115,18 @@ ul[role="list"] li:before {
 }
 #pricing details p {
   @apply text-[15px] mb-4 text-slate-700 px-6;
-  @apply opacity-0 transition-opacity duration-500
 }
-#pricing details[open] p {
-  @apply opacity-100
+#pricing details div {
+  @apply max-h-fit;
+}
+#pricing details[open] div {
+  animation: fadeIn 500ms ease-in-out forwards;
 }
 #pricing details p:last-of-type {
   @apply mb-7;
 }
+
+
 
 .main-nav {
   @apply fixed top-2 left-0 right-0 px-8 py-3 z-[2147483647];
@@ -1132,9 +1141,9 @@ ul[role="list"] li:before {
   @apply -ml-14 hidden md:flex;
 }
 body.scrolled .main-nav {
-  @apply fixed text-slate-900 border border-slate-300;
+  @apply fixed text-slate-900 border border-slate-300 top-4;
   @apply bg-white/50 backdrop-blur-lg rounded-full pl-2.5 pr-3 py-2 shadow-lg;
-  max-width: min(56rem, 96%);
+  max-width: min(48rem, 96%);
   z-index: 2147483647;
 }
 body.scrolled .main-nav ul {
@@ -1151,6 +1160,7 @@ body.scrolled .main-nav .nav-logo {
 }
 .main-nav .nav-button {
   @apply w-fit rounded-full bg-gradient-to-br from-indigo-800 via-indigo-500 to-indigo-800 text-white px-5 py-3 text-center leading-0 font-bold;
+  @apply whitespace-nowrap
 }
 body.scrolled .main-nav .nav-button {
   @apply bg-gradient-to-br from-[#202e6b] via-[#1a2248] to-[#202e6b];
@@ -1164,3 +1174,67 @@ body.scrolled .main-nav .nav-button {
 body.scrolled .nav-logo img {
   @apply hidden
 } */
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 300px;
+    max-height: fit-content;
+  }
+}
+
+@keyframes unreveal {
+  0% {
+    height: 300px;
+    max-height: fit-content;
+  }
+  100% {
+    height: 1px;
+  }
+}
+
+.squircle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0 8px;
+  mask-image: url('data:image/svg+xml,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="m0 100c0-88 12-100 100-100s100 12 100 100-12 100-100 100-100-12-100-100"/></svg>');
+  mask-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.squircle > svg, .squircle > img {
+  @apply size-full;
+  stroke: currentColor;
+}
+
+#vidgreet {
+  border: 3px solid #2563EB;
+  z-index: 2147483640 !important;
+}
+.vidgreet-cta {
+  background: #4f46e5 !important;
+  border: 1px solid rgba(255, 255, 255, 0.5)  !important;
+  color: rgb(255, 255, 255) !important;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 5px !important;
+  padding: 0.75rem 1rem 0.8rem 1.25rem !important;
+}

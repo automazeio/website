@@ -4,7 +4,8 @@
   </h3>
   <div class="mask-scroll-snap">
     <h2 class="mb-4 section-header">We have your back <span class="block sm:inline">(and front, too).</span></h2>
-    <p class="max-w-3xl">With decades of experience under our belts, we’ve “been there / done that”, and we‘re <strong>still passionate</strong> about what we do.</p>
+    <p class="max-w-3xl">
+    With over a hundred years of combined experience, we’ve “been there / done that”, and we‘re <strong>still passionate</strong> about what we do.</p>
     <div class="mt-6 max-w-3xl leading-relaxed text-neutral-700 text-balance">
       <p class="my-4">
         From first sketch to post-launch growth, we handle the full product journey.
@@ -21,7 +22,7 @@
   <div class="scroll-snap relative -mt-24 -mb-0">
 
     <div class="relative max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
-      <div class="flex gap-3 absolute right-7 top-4 z-10 " aria-label="Services carousel controls">
+      <div class="flex gap-3 absolute left-7 lg:left-auto lg:right-7 top-4 z-10 " aria-label="Services carousel controls">
         <button id="services-prev" type="button" class="size-10 cursor-pointer rounded-full border-[1.5px] border-slate-300 bg-white text-lg leading-none text-slate-500 transition-all duration-300 hover:border-slate-400 hover:shadow-md">←</button>
         <button id="services-next" type="button" class="size-10 cursor-pointer rounded-full border-[1.5px] border-slate-300 bg-white text-lg leading-none text-slate-500 transition-all duration-300 hover:border-slate-400 hover:shadow-md">→</button>
       </div>
@@ -108,7 +109,7 @@
             <div class="service-image pt-1">
               <img alt="Automaze ux" src="<?php tiny::staticURL('img/service-ux.svg'); ?>" class="size-27" />
             </div>
-            <h3 class="mt-6 text-xl font-bold">UX/UI Design</h3>
+            <h3 class="mt-6 text-xl font-bold">Product UX &amp; UI Design</h3>
             <p class="mt-4 text-[15px] leading-relaxed">
               We craft intuitive applications and high-converting marketing sites that look great, feel right, read naturally, and <strong>turn users into loyal customers</strong>.
             </p>

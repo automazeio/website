@@ -12,11 +12,10 @@
         <div class="col-span-2 hidden md:block">
           <a href="<?php tiny::homeURL(); ?>" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
         </div>
-        <ul class="col-span-8 flex items-center justify-center space-x-12">
+        <ul class="col-span-8 flex items-center justify-center space-x-8">
             <li><a href="<?php tiny::homeURL('about'); ?>" class="hover:opacity-80 hover:border-b">About</a></li>
             <li><a href="<?php tiny::homeURL('services'); ?>" class="hover:opacity-80 hover:border-b">Services</a></li>
-            <li><a href="<?php tiny::homeURL('podcast'); ?>" class="hover:opacity-80 hover:border-b">Podcast</a></li>
-            <li><a href="<?php tiny::homeURL('perks'); ?>" class="hover:opacity-80 hover:border-b">Perks</a></li>
+            <li><a href="https://secret.automaze.io" target="_blank" class="hover:opacity-80 hover:border-b">Perks</a></li>
             <li><a href="<?php tiny::homeURL('pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
         </ul>
         <div class="col-span-2 text-right">
@@ -41,13 +40,34 @@
 </div>
 
 
+<?php /*
+<link href="https://automaze.io/assets/vidgreet.min.css?20250106230953" rel="stylesheet">
+<script src="https://automaze.io/assets/vidgreet.min.js?20250106230953"></script>
+<script>
+  vidGreet.init('https://d1qje4hvv045h3.cloudfront.net/automaze-wave-621c258a-54cc-445e-98dc-15a2df89c704.mp4', {
+    videoStart: 2.65,
+    posterStart: 2,
+    posterEnd: 10,
+    // delay: 1000,
+    location: 'left',
+    aspectRatio: 'portrait',
+    cta: {
+      text: 'Book a call now →',
+      link: 'javascript:openSlideOver(event);',
+      start: 50,
+      class: 'vidgreet-cta',
+    }
+  })
+</script>
+*/ ?>
+
 <script>
   // --------- tiny load bump ---------
   // Nudge page by 1px down+up on load (helps hide mobile address bar, etc.)
   window.addEventListener('load', () => {
     setTimeout(() => {
       window.scrollBy(0, 1);
-      window.scrollBy(0, 0);
+      window.scrollBy(0, -1);
     }, 100);
   });
 
@@ -252,7 +272,7 @@
     const dots = slides.map((_, i) => {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'h-2.5 w-2.5 rounded-full bg-slate-300 aria-selected:bg-slate-800 aria-selected:w-6 transition-all';
+      btn.className = 'cursor-pointer h-2.5 w-2.5 rounded-full bg-slate-300 aria-selected:bg-slate-800 aria-selected:w-6 transition-all';
       btn.setAttribute('role', 'tab');
       btn.setAttribute('aria-label', `Show testimonial ${i + 1}`);
       btn.addEventListener('click', () => {
@@ -267,7 +287,7 @@
       const active = slides[current];
       if (!active) return;
       // Use the slide's intrinsic content height; slides are absolutely positioned.
-      const h = active.scrollHeight;
+      const h = active.scrollHeight + 80;
       testimonialRotator.style.height = h + 'px';
     }
 
@@ -287,7 +307,7 @@
 
     function start() {
       if (timer) return;
-      timer = setInterval(() => show(current + 1), 2000);
+      timer = setInterval(() => show(current + 1), 6000);
     }
     function stop() {
       if (!timer) return;
@@ -320,10 +340,12 @@
       mobileMenu.scrollPosition = window.scrollY;
       document.getElementById('footer').scrollIntoView({ behavior: "instant"});
       document.getElementById('mobile-menu-close').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
     },
     close: () => {
       window.scrollTo({ top: mobileMenu.scrollPosition, behavior: "instant"});
       document.getElementById('mobile-menu-close').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
     }
   }
 </script>
