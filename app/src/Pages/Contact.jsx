@@ -1,79 +1,63 @@
-import React, { useState } from 'react';
-import Layout from '../Components/Layout';
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
-export default function Contact({ title, email, phone }) {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Form submitted! (This is a demo - no data is actually sent)');
-    setFormData({ name: '', email: '', message: '' });
-  };
-
+export function CardDemo() {
   return (
-    <Layout>
-      <div className="page-content">
-        <h1>{title}</h1>
-        
-        <div className="contact-info">
-          <p><strong>Email:</strong> {email}</p>
-          <p><strong>Phone:</strong> {phone}</p>
-        </div>
-
-        <div className="contact-form">
-          <h2>Send us a message</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input
-                type="email"
+    <Card className="w-full max-w-sm">
+      <CardHeader>
+        <CardTitle>Login to your account</CardTitle>
+        <CardDescription>
+          Enter your email below to login to your account
+        </CardDescription>
+        <CardAction>
+          <Button variant="link">Sign Up</Button>
+        </CardAction>
+      </CardHeader>
+      <CardContent>
+        <form>
+          <div className="flex flex-col gap-6">
+            <div className="grid gap-2">
+              <Label htmlFor="email">Email</Label>
+              <Input
                 id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
+                type="email"
+                placeholder="m@example.com"
                 required
               />
             </div>
-            
-            <div className="form-group">
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="5"
-                required
-              />
+            <div className="grid gap-2">
+              <div className="flex items-center">
+                <Label htmlFor="password">Password</Label>
+                <a
+                  href="#"
+                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+              <Input id="password" type="password" required />
             </div>
-            
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </Layout>
-  );
+          </div>
+        </form>
+      </CardContent>
+      <CardFooter className="flex-col gap-2">
+        <Button type="submit" className="w-full">
+          Login
+        </Button>
+        <Button variant="outline" className="w-full">
+          Login with Google
+        </Button>
+      </CardFooter>
+    </Card>
+  )
 }
