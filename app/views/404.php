@@ -7,22 +7,14 @@
             <?php echo tiny::data()->error; ?>
         </div>
     <?php else: ?>
-        <div class="text-sm text-muted mt-6 mb-4">This page could not be <?php echo (tiny::user()->email) ? 'found' : 'accessed'; ?>.</div>
+        <div class="text-sm text-muted mt-6 mb-4">This page could not be found.</div>
     <?php endif; ?>
 
-    <?php if (tiny::user()->email): ?>
-        <a href="<?php tiny::homeURL('/'); ?>" class="font-medium text-sm block w-fit mx-auto text-indigo-500 hover:text-indigo-500/80" role="button">
-            <span>Back to dashboard ›</span>
-        </a>
-    <?php else: ?>
-        <a href="<?php tiny::homeURL('/auth/login'); ?>" class="font-medium text-sm block w-fit mx-auto text-indigo-500 hover:text-indigo-500/80" role="button">
-            <span>Please login to continue ›</span>
-        </a>
-    <?php endif; ?>
+    <a href="<?php tiny::homeURL('/'); ?>" class="font-medium text-sm block w-fit mx-auto text-blue-500 hover:text-blue-500/80" role="button">
+        <span>Back to homepage ›</span>
+    </a>
 
-    <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-12 w-8">
-        <path d="M24.0012 0C24.0012 0 35.0514 0 36.6799 0C38.3083 0 44.9245 2.03203 44.9245 9.41484C44.9245 16.7977 38.3083 18.6141 36.738 18.6141L48 30H37.5709L26.4043 18.75C26.4043 18.75 15.0446 18.75 14.3467 18.75C13.6488 18.75 11.2829 17.6227 11.2829 15.0398C11.2829 12.457 13.6488 11.25 14.3467 11.25C15.0446 11.25 35.3422 11.25 35.7493 11.25C36.1564 11.25 37.5337 10.8984 37.5337 9.41484C37.5337 7.93125 36.196 7.59844 35.7493 7.59844C35.3027 7.59844 15.0446 7.59844 14.3467 7.59844C13.6488 7.59844 7.5607 8.59453 7.5607 15.0398C7.5607 21.4852 13.6488 22.657 14.3467 22.657C15.0446 22.657 24.3897 22.657 24.3897 22.657L31.6386 29.9602C31.6386 29.9602 15.0446 29.9602 14.3467 29.9602C10.8339 29.9602 0 27.1102 0 15.0398C0 3.2625 10.8572 0 14.3467 0C16.0124 0 24.0012 0 24.0012 0Z" fill="#5667E7" />
-    </svg>
+    <svg class="mt-12 size-12" viewBox="0 0 896.47 768" xmlns="http://www.w3.org/2000/svg"><path d="m886.68 768h-886.68l226.46-392.19.1-.1 216.88-375.51v76.62l-183.71 318.07h.1l-193.2 334.65h386.4v.1h367.22z"/><g fill-rule="evenodd"><path d="m819.35 617.86-296.39-82.01 373.51 215.58-77.12-133.56z" fill="#6e5fa6"/><path d="m507.07 511.47 298.49 82.71-59.44-103.09z" fill="#28bbde"/><path d="m495.18 493.29 240.35-20.58-51.25-88.61z" fill="#36a936"/><path d="m485.49 476.6 189.2-109.19-51.15-88.71-138.06 197.89h.01z" fill="#fac405"/><path d="m475.7 457.12 137.16-196.8-59.44-102.99z" fill="#f1883a"/><path d="m462.62 431.15 77.12-297.59-77.12-133.56z" fill="#e8403f"/></g></svg>
 </div>
 
 <?php tiny::layout()->default('/'); ?>
