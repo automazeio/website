@@ -61,6 +61,9 @@
 </script>
 */ ?>
 
+<link href="<?php tiny::staticURL('css/aos.css'); ?>" rel="stylesheet">
+<script src="<?php tiny::staticURL('js/aos.js'); ?>" onload="AOS.init();"></script>
+
 <script>
   // --------- tiny load bump ---------
   // Nudge page by 1px down+up on load (helps hide mobile address bar, etc.)

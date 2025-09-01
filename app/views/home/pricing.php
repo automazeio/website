@@ -29,7 +29,7 @@
         </ul>
       </div>
 
-      <div class="col-span-5 !mx-4 lg:!mx-px h-full mr-px border-t lg:border-t-0 lg:border-l border-dashed border-indigo-200">
+      <div data-aos="fade-left" class="col-span-5 !mx-4 lg:!mx-px h-full mr-px border-t lg:border-t-0 lg:border-l border-dashed border-indigo-200">
         <details name="pricing" open>
           <summary>
             <span>CTO-as-a-Service</span>

@@ -7,7 +7,7 @@
 
     <ul id="timeline">
       <li class="md:col-span-5">
-        <div class="timeline-card timeline-card-first !ring-red-50 !border-red-200 before:!bg-red-300 after:!bg-red-300">
+        <div data-aos="zoom-in" class="timeline-card timeline-card-first !ring-red-50 !border-red-200 before:!bg-red-300 after:!bg-red-300">
           <h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path opacity="0.1" d="M14 2H10C6.72077 2 5.08116 2 3.91891 2.81382C3.48891 3.1149 3.1149 3.48891 2.81382 3.91891C2 5.08116 2 6.72077 2 10C2 13.2792 2 14.9188 2.81382 16.0811C3.1149 16.5111 3.48891 16.8851 3.91891 17.1862C5.08116 18 6.72077 18 10 18H14C17.2792 18 18.9188 18 20.0811 17.1862C20.5111 16.8851 20.8851 16.5111 21.1862 16.0811C22 14.9188 22 13.2792 22 10C22 6.72077 22 5.08116 21.1862 3.91891C20.8851 3.48891 20.5111 3.1149 20.0811 2.81382C18.9188 2 17.2792 2 14 2Z" fill="currentColor"></path>
@@ -31,7 +31,7 @@
         <div class="line rounded-tl-xl border-l border-t ml-[40%]"></div>
       </li>
       <li class="md:col-span-5 mt-8">
-        <div class="timeline-card timeline-card-even !ring-orange-50 !border-orange-200 before:!bg-orange-300 after:!bg-orange-300">
+        <div data-aos="zoom-in" class="timeline-card timeline-card-even !ring-orange-50 !border-orange-200 before:!bg-orange-300 after:!bg-orange-300">
           <h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path opacity="0.1" d="M3 9C3 5.70017 3 4.05025 4.31802 3.02513C5.63604 2 7.75736 2 12 2C16.2426 2 18.364 2 19.682 3.02513C21 4.05025 21 5.70017 21 9V15C21 18.2998 21 19.9497 19.682 20.9749C18.364 22 16.2426 22 12 22C7.75736 22 5.63604 22 4.31802 20.9749C3 19.9497 3 18.2998 3 15V9Z" fill="currentColor"></path>
@@ -47,7 +47,7 @@
       </li>
 
       <li class="md:col-span-5 mt-8">
-        <div class="timeline-card timeline-card-odd !ring-green-50 !border-green-200 before:!bg-green-300 after:!bg-green-300">
+        <div data-aos="zoom-in" class="timeline-card timeline-card-odd !ring-green-50 !border-green-200 before:!bg-green-300 after:!bg-green-300">
           <h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path opacity="0.1" d="M6.20262 15.2622C8.36865 10.5092 9.46633 5.35455 8.16329 3.45685C5.00453 -1.14342 -1.48155 5.79479 6.20262 15.2622Z" fill="currentColor"></path>
@@ -67,7 +67,7 @@
         <div class="line rounded-tl-xl border-l border-t ml-[40%]"></div>
       </li>
       <li class="md:col-span-5 mt-8">
-        <div class="timeline-card timeline-card-even !ring-sky-50 !border-sky-200 before:!bg-sky-300 after:!bg-sky-300">
+        <div data-aos="zoom-in" class="timeline-card timeline-card-even !ring-sky-50 !border-sky-200 before:!bg-sky-300 after:!bg-sky-300">
           <h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path opacity="0.1" d="M6 11.9144C11.6363 1.40966 18.6544 1.28853 21.4589 2.54105C22.7115 5.3456 22.5903 12.3637 12.0856 18C11.9767 17.3737 11.3708 15.7332 9.81881 14.1812C8.26679 12.6292 6.62626 12.0233 6 11.9144Z" fill="currentColor"></path>
@@ -87,7 +87,7 @@
       </li>
 
       <li class="md:col-span-5 mt-8">
-        <div class="timeline-card timeline-card-last !ring-indigo-50 !border-indigo-200 before:!bg-indigo-300 after:!bg-indigo-300">
+        <div data-aos="zoom-in" class="timeline-card timeline-card-last !ring-indigo-50 !border-indigo-200 before:!bg-indigo-300 after:!bg-indigo-300">
           <h4>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none">
               <rect width="256" height="256" fill="none"></rect>

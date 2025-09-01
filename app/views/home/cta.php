@@ -7,7 +7,7 @@
           <div class="opacity-80 font-normal text-2xl tracking-tight">(it totally is)</div>
         </h2>
         <p>Book a call with our founders and let’s map out how to bring your idea to life ...and take it all the way to scale!</p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
+        <div class="mt-10 flex items-center justify-center gap-x-6" data-aos="fade-up">
           <a href="<?php tiny::homeURL('discovery-call'); ?>" class="rounded-md bg-[#121834] px-5 py-2.5 pb-3 text-[15px] font-semibold text-white shadow-xs transition-all duration-300 hover:-mt-0.5 hover:mb-0.5 hover:bg-[#0d1326] hover:shadow-xl">
             <div class="flex items-center space-x-4 pr-4">
               <div class="avatar-group avatar-group-dark group">

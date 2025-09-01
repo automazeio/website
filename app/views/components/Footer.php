@@ -53,7 +53,7 @@ tiny::components()->register('Footer', function (...$props) {
                         <li><a href="{$props['rootPath']}pricing">Pricing</a></li>
                         <li><a href="https://oldschoolnewtech.com" target="_blank">Podcast</a></li>
                         <li><a href="mail&#116;&#111;&#58;h%65&#37;6Clo%4&#48;%61ut&#111;ma&#122;%6&#53;&#46;%&#54;9&#111;&#63;subject=Website%20inquiry">Contact</a></li>
-                        <li><a class="font-mono text-[13px]" href="{$props['rootPath']}llm.txt">llm.txt</a></li>
+                        <li><a class="font-mono text-[13px] opacity-80" href="{$props['rootPath']}llm.txt">llm.txt</a></li>
                     </ul>
                     <ul class="w-40">
                         <li><h4>Services</h4></li>
