@@ -10,7 +10,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag("js", new Date());
-        gtag('config', 'G-7NKW2LYNSQ');
+        gtag('config', 'G-7NKW2LYNSQ', { 'anonymize_ip': true });
     </script>
 
     <!-- Twitter conversion tracking base code -->
