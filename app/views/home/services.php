@@ -52,7 +52,7 @@
 
       <div class="bleed-frame bleed-frame-first" id="services-mvp">
         <div class="bleed-top"></div>
-        <a href="<?php tiny::homeURL('services/mvp-sprint'); ?>" class="bleed-content group">
+        <a href="<?php tiny::homeURL('services/mvp-launch'); ?>" class="bleed-content group">
           <div>
             <div class="service-image">
               <img alt="Build your MVP" src="<?php tiny::staticURL('img/service-pm.svg'); ?>" class="size-28"/>
