@@ -1138,7 +1138,7 @@ ul[role="list"] li:before {
   @apply grid w-full grid-cols-4 md:grid-cols-12 items-center;
 }
 .main-nav ul {
-  @apply -ml-14 hidden md:flex;
+  @apply -ml-12 hidden md:flex;
 }
 body.scrolled .main-nav {
   @apply fixed text-slate-900 border border-slate-300 top-4;
