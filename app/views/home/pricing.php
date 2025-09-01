@@ -4,7 +4,7 @@
   </h3>
   <div class="!p-0">
     <div class="lg:grid grid-cols-11 items-start justify-between gap-x-12">
-      <div class="col-span-6 mt-24 mb-16 mx-8">
+      <div class="col-span-6 mt-24 mb-10 ml-8">
         <h2 class="-mt-4 mb-4 section-header">We've got great plans for you.</h2>
         <p class="max-w-2xl">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
         <div class="mt-10 flex items-center gap-x-4">
@@ -14,16 +14,18 @@
         </div>
 
         <ul role="list" class="md:columns-2 gap-x-12 leading-relaxed mt-6">
-          <li>
-            Software architecture, design, coding, devops and ongoing advice
-          </li>
           <li>Unlimited projects / brands</li>
-          <li>Unlimited requests (one at a time)</li>
+          <li>Shared Slack channel</li>
+          <li>Unlimited requests</li>
           <li>Unlimited revisions</li>
-          <li>Personal task board</li>
+          <li>Personal project board</li>
+          <li>Bi-weekly sync calls</li>
           <li>Ad-Hoc sync calls</li>
           <li>Easy credit-card payments</li>
-          <li>Global compliance when hiring more developers</li>
+          <li>Keep 100% of equity</li>
+          <li>Full IP-ownership</li>
+          <li>Global compliance</li>
+          <li>Cancel anytime</li>
         </ul>
       </div>
 
