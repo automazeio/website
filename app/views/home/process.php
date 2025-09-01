@@ -18,7 +18,7 @@
               <path d="M7 22H17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
               <path d="M8 14C9.83846 11.4046 14.1188 11.263 16 14M14 8C14 9.10457 13.1046 10 12 10C10.8954 10 10 9.10457 10 8C10 6.89543 10.8954 6 12 6C13.1046 6 14 6.89543 14 8Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
             </svg>
-            <span>Step 1: Book your intro call</span>
+            <span><span class="text-slate-500">Step 1:</span> Book your intro call</span>
           </h4>
           <p>Walk us through your project. This isn’t a sales pitch - it’s a chance to understand your goals and explore how we can help.</p>
         </div>
@@ -40,7 +40,7 @@
               <path d="M8 12H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
               <path d="M21 20.6471L21 17C21 15.5706 19.6569 14 18 14C16.3431 14 15 15.5706 15 17L15 20.5C15 21.2797 15.7326 22 16.6364 22C17.5401 22 18.2727 21.2797 18.2727 20.5L18.2727 17.7647" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
             </svg>
-            <span>Step 2: Get your proposal</span>
+            <span><span class="text-slate-500">Step 2:</span> Get your proposal</span>
           </h4>
           <p>Within 24 hours, you’ll get a tailored proposal and an invite to a shared Slack channel so we can stay connected while you decide.</p>
         </div>
@@ -54,7 +54,7 @@
               <path d="M22 12.6344C18 16.1465 17.4279 10.621 15.3496 11.0165C13 11.4637 11.5 16.4445 13 16.4445C14.5 16.4445 12.5 10.5 10.5 12.5556C8.5 14.6111 7.85936 17.2946 6.23526 15.3025C-1.5 5.81446 4.99998 -1.14994 8.16322 3.45685C10.1653 6.37256 6.5 16.9769 2 22" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
               <path d="M9 21H19" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <span>Step 3: Sign & onboard</span>
+            <span><span class="text-slate-500">Step 3:</span> Sign & onboard</span>
           </h4>
           <p>Once you’re ready, we set up billing, share a quick onboarding form, and introduce your delivery manager and technical lead.</p>
         </div>
@@ -80,7 +80,7 @@
               <path d="M5.35342 15.2342C4.78472 15.8029 3.81792 17.4522 4.50037 19.4995C6.5477 20.182 8.19694 19.2152 8.76564 18.6465" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
               <path d="M18 8C18 6.89543 17.1046 6 16 6C14.8954 6 14 6.89543 14 8C14 9.10457 14.8954 10 16 10C17.1046 10 18 9.10457 18 8Z" stroke="currentColor" stroke-width="1.2"></path>
             </svg>
-            <span>Step 4: Kickoff & build</span>
+            <span><span class="text-slate-500">Step 4:</span> Kickoff & build</span>
           </h4>
           <p>Your project board goes live, our team plugs into your tools, and we start shipping. Clear priorities, weekly check-ins, real progress.</p>
         </div>
@@ -99,7 +99,7 @@
               <line x1="144.28" y1="111.72" x2="104" y2="152" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></line>
               <line x1="97.98" y1="113.98" x2="120" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></line>
             </svg>
-            <span>Step 5: Grow with us</span>
+            <span><span class="text-slate-500">Step 5:</span> Grow with us</span>
           </h4>
           <p>Need to scale, shift priorities, or spin up new workstreams? No problem. No drama. We’re built to flex as your needs evolve.</p>
         </div>

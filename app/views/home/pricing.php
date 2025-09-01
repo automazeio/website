@@ -2,13 +2,11 @@
   <h3 class="home-grid-header">
     <span>05 / Pricing</span>
   </h3>
-  <div>
-
-
-    <div class="lg:flex items-start justify-between gap-x-12">
-      <div>
-        <h2 class="-mt-4 mb-4 text-3xl leading-[1.1] font-semibold tracking-tight lg:text-5xl">Simple, no-tricks pricing</h2>
-        <p class="max-w-2xl text-2xl text-neutral-500">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
+  <div class="!p-0">
+    <div class="lg:grid grid-cols-11 items-start justify-between gap-x-12">
+      <div class="col-span-6 mt-24 mb-16 mx-8">
+        <h2 class="-mt-4 mb-4 section-header">We've got great plans for you.</h2>
+        <p class="max-w-2xl">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
         <div class="mt-10 flex items-center gap-x-4">
           <h4 class="flex-none text-sm/6 font-semibold text-slate-600">What’s included</h4>
           <hr class="h-px flex-auto border-t border-dashed border-indigo-200">
@@ -16,7 +14,6 @@
         </div>
 
         <ul role="list" class="md:columns-2 gap-x-12">
-          <li>CTO as a service</li>
           <li>
             Software architecture, design, coding, devops and ongoing advice
           </li>
@@ -30,18 +27,73 @@
         </ul>
       </div>
 
-      <div class="mt-12 -mb-10 lg:mb-0 lg:-mt-2 lg:p-2 lg:w-full lg:max-w-md lg:shrink-0 top-24">
-        <div class="rounded-lg bg-gray-50 py-10 text-center ring-1 ring-gray-900/5 ring-inset lg:flex lg:flex-col lg:justify-center lg:py-16">
-          <div class="mx-auto max-w-xs px-8">
-            <p class="text-base font-semibold text-gray-600">Pay once, own it forever</p>
-            <p class="mt-6 flex items-baseline justify-center gap-x-2">
-              <span class="text-5xl font-semibold tracking-tight text-gray-900">$349</span>
-              <span class="text-sm/6 font-semibold tracking-wide text-gray-600">USD</span>
-            </p>
-            <a href="#" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get access</a>
-            <p class="mt-6 text-xs/5 text-gray-600">Invoices and receipts available for easy company reimbursement</p>
-          </div>
-        </div>
+      <div class="col-span-5 !mx-4 lg:!mx-px h-full mr-px border-t lg:border-t-0 lg:border-l border-dashed border-indigo-200">
+        <details name="pricing" open>
+          <summary>
+            <span>CTO-as-a-Service</span>
+            <span><small>from</small> <span class="font-medium">$5K</span><small>/mo</small></span>
+          </summary>
+          <p>
+            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+          </p>
+          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>MVP Launch</span>
+            <span><span class="font-medium">$6K</span><small>/mo</small></span>
+          </summary>
+          <p>
+            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+          </p>
+          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>Managed Developers</span>
+            <span><small>from</small> <span class="font-medium">$3K</span><small>/mo</small></span>
+          </summary>
+          <p>
+            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+          </p>
+          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>Al Agents &amp; Automations</span>
+            <span><span class="font-medium">$1K</span><small>/mo</small></span>
+          </summary>
+          <p>
+            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+          </p>
+          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>UX/UI Design</span>
+            <span><span class="font-medium">$2K</span><small>/mo</small></span>
+          </summary>
+          <p>
+            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+          </p>
+          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>Cloud Optimization</span>
+            <span><span class="font-medium">$1K</span><small>/audit</small></span>
+          </summary>
+          <p>
+            <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+          </p>
+          <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+        </details>
+
       </div>
 
     </div>

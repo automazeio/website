@@ -8,23 +8,6 @@
         <div class="video-mask"></div>
     </div>
 
-    <header class="absolute inset-x-0 z-3 px-8 py-6">
-        <nav class="mx-auto grid w-full grid-cols-12 items-center font-semibold text-white">
-            <div class="col-span-2">
-                <a href="<?php tiny::homeURL(); ?>"><img loading="lazy" src="https://automaze.io/assets/automaze-min.png" alt="Automaze logo" class="size-12" /></a>
-            </div>
-            <!-- <ul class="col-span-8 flex items-center justify-center space-x-12">
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Pricing</a></li>
-            </ul>
-            <div class="col-span-2 text-right">
-                <a href="#" class="w-fit rounded-full bg-gradient-to-br from-indigo-600 via-indigo-500 to-indigo-600 px-5 py-3 text-center leading-0 font-bold">Book a Call</a>
-            </div> -->
-        </nav>
-    </header>
-
     <section class="hero">
         <div id="hero-content">
             <div><span class="hidden sm:inline">Technical Co‑Founder &amp; </span>CTO as a Service</div>
@@ -46,7 +29,7 @@
                 <h2>Automaze is the <strong>zero-equity</strong> way for founders to bring their idea to life, attract users, and achieve product-market fit.</h2>
 
                 <div class="flex items-center space-x-4">
-                    <a href="#about-us" class="hero-cta-button-glow">Our services</a>
+                    <a href="#scope-of-services" class="hero-cta-button-glow">Our services</a>
                     <a href="<?php tiny::homeURL('discovery-call'); ?>" class="hero-cta-button-secondary group">
                         <div class="avatar-group avatar-group-dark group !-ml-5">
                             <span class="has-tooltip">

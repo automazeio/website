@@ -9,7 +9,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
 
-    <title><?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) . ' - ' : '' ?>Automaze</title>
+    <title>Automaze / <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder & CTO as a Service' ?></title>
 
     <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>" media="all">
 

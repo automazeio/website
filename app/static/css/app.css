@@ -96,8 +96,8 @@ body {
     @apply border-indigo-900/60;
   }
 
-  body.light-hero:before,
-  body.light-hero:after {
+  body.scrolled:before,
+  body.scrolled:after {
     @apply border-indigo-200;
   }
 
@@ -169,7 +169,7 @@ body {
 }
 
 #splash-hero {
-  @apply relative z-[2147483647] min-h-screen overflow-hidden shadow-2xl;
+  @apply relative z-[2147483645] min-h-screen overflow-hidden shadow-2xl;
 }
 #splash-hero .splash-hero-bg {
   @apply min-h-screen bg-gradient-to-b from-[#070914] to-[#121b35];
@@ -183,7 +183,7 @@ body {
   @apply absolute -top-full -left-[110%] h-[250vh] w-[200vw] -rotate-30 bg-gradient-to-b from-[#07091490] via-black/70 to-indigo-900 lg:-left-1/3 xl:-left-1/4;
 }
 
-body.light-hero #splash-hero .splash-hero-bg {
+body.scrolled #splash-hero .splash-hero-bg {
   /* @apply bg-gradient-to-b from-[#070914] to-[#919297]; */
   @apply min-h-auto;
   background-image: linear-gradient(
@@ -211,7 +211,7 @@ body.full-light-hero #splash-hero .splash-hero-bg {
   @apply transition-opacity duration-500;
 }
 
-body.light-hero #splash-hero .splash-hero-bg svg {
+body.scrolled #splash-hero .splash-hero-bg svg {
   opacity: 0;
 }
 
@@ -226,20 +226,20 @@ body.light-hero #splash-hero .splash-hero-bg svg {
   @apply relative mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl;
 }
 
-body.light-hero #logos svg {
+body.scrolled #logos svg {
   filter: invert(1);
   opacity: 0.5;
 }
 body.full-light-hero #logos svg {
   opacity: 0.05;
 }
-body.light-hero #logos {
+body.scrolled #logos {
   /* @apply bg-gradient-to-b from-[#86868c] to-white; */
   /* @apply h-40 -mt-16 */
   /* margin-top: 100px; */
   @apply h-[100px] md:h-[160px];
 }
-body.light-hero #logos > div {
+body.scrolled #logos > div {
   height: 100px;
   /* @apply py-10 */
 }
@@ -317,11 +317,11 @@ body.full-light-hero #logos {
     @apply fixed inset-y-0 left-1/2 w-full max-w-5xl -translate-x-1/2 xl:max-w-6xl 2xl:max-w-7xl;
   }
 
-  body.light-hero #splash-hero .vertical-lines-hero {
+  body.scrolled #splash-hero .vertical-lines-hero {
     @apply border-indigo-200;
   }
 
-  body.light-hero #splash-hero .vertical-lines-hero:before {
+  body.scrolled #splash-hero .vertical-lines-hero:before {
     @apply border-indigo-100;
   }
 }
@@ -352,8 +352,8 @@ body.full-light-hero #logos {
   @apply -bottom-16 block h-16;
 }
 
-body.light-hero #hero-video-wrapper .pattern:last-of-type:before,
-body.light-hero #hero-video-wrapper .pattern:last-of-type:after {
+body.scrolled #hero-video-wrapper .pattern:last-of-type:before,
+body.scrolled #hero-video-wrapper .pattern:last-of-type:after {
   --pattern-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -366,9 +366,9 @@ body.full-light-hero #hero-video-wrapper .pattern:last-of-type:after {
   @apply -my-16;
 }
 
-body.light-hero #splash-hero #hero-video-wrapper:before,
-body.light-hero #splash-hero #hero-video-wrapper:after,
-body.light-hero #splash-hero #hero-video-wrapper {
+body.scrolled #splash-hero #hero-video-wrapper:before,
+body.scrolled #splash-hero #hero-video-wrapper:after,
+body.scrolled #splash-hero #hero-video-wrapper {
   @apply border-indigo-100;
 }
 
@@ -376,7 +376,7 @@ body.light-hero #splash-hero #hero-video-wrapper {
   @apply relative inset-0 z-3 mx-0 aspect-video max-w-5xl rounded-xl bg-black ring-3 ring-white/20 sm:ring-5 xl:max-w-6xl 2xl:max-w-7xl;
 }
 
-body.light-hero #splash-hero #hero-video-wrapper .video {
+body.scrolled #splash-hero #hero-video-wrapper .video {
   @apply ring-black/10;
 }
 
@@ -779,6 +779,36 @@ footer#cta {
   }
 }
 
+/* Testimonial rotator */
+#testimonial-rotator {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2.25rem; /* space for dots overlay */
+}
+#testimonial-rotator .testimonial-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 400ms ease;
+  pointer-events: none;
+}
+#testimonial-rotator .testimonial-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+#testimonial-rotator .testimonial-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 @keyframes rollup {
   0%,
   25%,
@@ -963,7 +993,7 @@ h3.home-grid-header > span {
 
 .accordion details {
   @apply w-full overflow-hidden transition-[height] duration-300;
-  @apply border-b border-slate-900/10;
+  @apply border-b border-indigo-100;
 }
 #faq:has(details[open]) details {
   @apply opacity-60;
@@ -1032,3 +1062,105 @@ ul[role="list"] li:before {
   @apply text-xl  font-medium text-indigo-300;
   @apply float-left -mt-[3px] -ml-7;
 }
+
+#pricing details {
+  @apply bg-[#fcfcff] border-b border-dashed border-indigo-100 hover:bg-[#f6f8fe];
+  @apply transition-all duration-300 overflow-hidden
+}
+#pricing details:last-of-type {
+  @apply border-b-0;
+}
+#pricing details[open] {
+  @apply bg-white shadow-xs;
+}
+#pricing details summary {
+  @apply flex items-center justify-between relative;
+  @apply pt-6 pb-6 px-6 cursor-pointer;
+}
+#pricing details:not([open]) summary:after {
+  content: "＋";
+  @apply absolute right-8 text-indigo-300
+}
+#pricing details[open] summary:before {
+  content: "";
+  @apply border-b border-dotted border-neutral-300 mx-6 absolute bottom-7.5 left-0 right-0 block;
+}
+#pricing details summary span {
+  @apply pr-2 font-semibold relative text-slate-700
+}
+#pricing details[open] summary {
+  @apply pointer-events-none pt-8
+}
+#pricing details summary span:last-of-type {
+  @apply hidden;
+}
+#pricing details[open] summary span {
+  @apply font-bold inline text-slate-900
+}
+#pricing details:not([open]):hover summary span {
+  /* @apply bg-[#f6f8fe]; */
+  /* @apply font-semibold */
+  @apply text-slate-900
+}
+#pricing details summary span:last-of-type {
+  @apply pl-1 text-right font-mono subpixel-antialiased text-slate-700 font-normal;
+}
+#pricing details[open] summary span {
+  @apply bg-white;
+}
+#pricing details p {
+  @apply text-[15px] mb-4 text-slate-700 px-6;
+  @apply opacity-0 transition-opacity duration-500
+}
+#pricing details[open] p {
+  @apply opacity-100
+}
+#pricing details p:last-of-type {
+  @apply mb-7;
+}
+
+.main-nav {
+  @apply fixed top-2 left-0 right-0 px-8 py-3 z-[2147483647];
+  @apply font-medium text-white/70;
+  @apply mx-auto transition-all duration-700 ease-in-out;
+  max-width: 100%
+}
+.main-nav nav {
+  @apply grid w-full grid-cols-4 md:grid-cols-12 items-center;
+}
+.main-nav ul {
+  @apply -ml-14 hidden md:flex;
+}
+body.scrolled .main-nav {
+  @apply fixed text-slate-900 border border-slate-300;
+  @apply bg-white/50 backdrop-blur-lg rounded-full pl-2.5 pr-3 py-2 shadow-lg;
+  max-width: min(56rem, 96%);
+  z-index: 2147483647;
+}
+body.scrolled .main-nav ul {
+  @apply -ml-9;
+}
+/* Logo sizing with smooth transition */
+.main-nav .nav-logo {
+  @apply block size-12 transition-all duration-700 ease-in-out hover:opacity-90;
+}
+body.scrolled .main-nav .nav-logo {
+  @apply size-full;
+  @apply w-12 h-12 bg-black rounded-full p-2;
+  @apply transition-all duration-500 ease-in-out ring ring-white hover:shadow-lg hover:shadow-indigo-500/50
+}
+.main-nav .nav-button {
+  @apply w-fit rounded-full bg-gradient-to-br from-indigo-800 via-indigo-500 to-indigo-800 text-white px-5 py-3 text-center leading-0 font-bold;
+}
+body.scrolled .main-nav .nav-button {
+  @apply bg-gradient-to-br from-[#202e6b] via-[#1a2248] to-[#202e6b];
+  @apply transition-all duration-500 ease-in-out ring ring-white hover:shadow-lg hover:shadow-indigo-500/50
+}
+/* body.scrolled .main-nav .nav-logo {
+  @apply size-11 -mt-0.5;
+  background: url('../img/logo.svg') no-repeat center center;
+  background-size: 100% 100%;
+}
+body.scrolled .nav-logo img {
+  @apply hidden
+} */

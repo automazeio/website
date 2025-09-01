@@ -1,10 +1,10 @@
-  <section id="scope-of-services">
+<section id="scope-of-services">
   <h3 class="home-grid-header">
     <span>02 / Our Services</span>
   </h3>
   <div class="mask-scroll-snap">
-    <h2 class="mb-4 text-3xl leading-[1.1] font-semibold tracking-tight lg:text-5xl">We have your back <span class="block sm:inline">(and front, too).</span></h2>
-    <p class="max-w-3xl text-2xl text-neutral-500">With decades of experience under our belts, we’ve “been there / done that”, and we‘re <strong>still passionate</strong> about what we do.</p>
+    <h2 class="mb-4 section-header">We have your back <span class="block sm:inline">(and front, too).</span></h2>
+    <p class="max-w-3xl">With decades of experience under our belts, we’ve “been there / done that”, and we‘re <strong>still passionate</strong> about what we do.</p>
     <div class="mt-6 max-w-3xl leading-relaxed text-neutral-700 text-balance">
       <p class="my-4">
         From first sketch to post-launch growth, we handle the full product journey.
@@ -16,15 +16,21 @@
         Our job is to move fast, stay aligned, and deliver results that compound.
       </p>
     </div>
-
   </div>
 
-  <div class="scroll-snap relative -mt-24 -mb-0 ">
+  <div class="scroll-snap relative -mt-24 -mb-0">
+
+    <div class="relative max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto">
+      <div class="flex gap-3 absolute right-7 top-4 z-10 " aria-label="Services carousel controls">
+        <button id="services-prev" type="button" class="size-10 cursor-pointer rounded-full border-[1.5px] border-slate-300 bg-white text-lg leading-none text-slate-500 transition-all duration-300 hover:border-slate-400 hover:shadow-md">←</button>
+        <button id="services-next" type="button" class="size-10 cursor-pointer rounded-full border-[1.5px] border-slate-300 bg-white text-lg leading-none text-slate-500 transition-all duration-300 hover:border-slate-400 hover:shadow-md">→</button>
+      </div>
+    </div>
+
+
     <div class="bleed-wrapper no-scrollbar" id="services-scroller">
       <!-- spacer -->
       <div class="scroll-snap-spacer"></div>
-
-
 
 
       <div class="bleed-frame bleed-frame-first" id="services-cto">
@@ -51,7 +57,7 @@
             <div class="service-image">
               <img alt="Build your MVP" src="<?php tiny::staticURL('img/service-pm.svg'); ?>" class="size-28"/>
             </div>
-            <h3 class="mt-6 text-xl font-bold">MVP Sprint</h3>
+            <h3 class="mt-6 text-xl font-bold">MVP Launch</h3>
             <p class="mt-4 text-[15px] leading-relaxed">
               <strong>A focused 3-month sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters. No fluff, just results.
             </p>

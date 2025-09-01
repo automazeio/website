@@ -1,8 +1,29 @@
-<?php tiny::layout()->default(title: 'Home', emptyLayout: false); ?>
+<?php tiny::layout()->default(title: 'Technical Co-Founder & CTO as a Service', emptyLayout: false); ?>
 
 
-<?php tiny::render('home/hero-v2'); ?>
+<?php tiny::render('home/hero'); ?>
 <?php tiny::render('home/mike'); ?>
+
+<header class="main-nav">
+    <nav class="">
+        <div class="col-span-2 md:hidden">
+          <a href="javascript:mobileMenu.open();" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
+        </div>
+        <div class="col-span-2 hidden md:block">
+          <a href="<?php tiny::homeURL(); ?>" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
+        </div>
+        <ul class="col-span-8 flex items-center justify-center space-x-12">
+            <li><a href="<?php tiny::homeURL('about'); ?>" class="hover:opacity-80 hover:border-b">About</a></li>
+            <li><a href="<?php tiny::homeURL('services'); ?>" class="hover:opacity-80 hover:border-b">Services</a></li>
+            <li><a href="<?php tiny::homeURL('podcast'); ?>" class="hover:opacity-80 hover:border-b">Podcast</a></li>
+            <li><a href="<?php tiny::homeURL('perks'); ?>" class="hover:opacity-80 hover:border-b">Perks</a></li>
+            <li><a href="<?php tiny::homeURL('pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
+        </ul>
+        <div class="col-span-2 text-right">
+            <a href="<?php tiny::homeURL('discovery-call'); ?>" class="nav-button">Book a Call</a>
+        </div>
+    </nav>
+</header>
 
 
 <!-- main -->
@@ -21,6 +42,15 @@
 
 
 <script>
+  // --------- tiny load bump ---------
+  // Nudge page by 1px down+up on load (helps hide mobile address bar, etc.)
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      window.scrollBy(0, 1);
+      window.scrollBy(0, 0);
+    }, 100);
+  });
+
   // --------- testimonial + hero ---------
   const metaThemeColor = document.querySelector("meta[name=theme-color]");
   const splashHero = document.querySelector('#hero-content');
@@ -92,7 +122,7 @@
 
     // Handle hero visibility classes
     if (splashHeroTopOffset < -quarterSplashHeroHeight) {
-      body.classList.add('light-hero');
+      body.classList.add('scrolled');
       if (splashHeroBottomOffset < quarterSplashHeroHeight * 2) {
         body.classList.add('full-light-hero');
       } else {
@@ -104,7 +134,7 @@
         }
       }
     } else {
-      body.classList.remove('light-hero');
+      body.classList.remove('scrolled');
       body.classList.remove('full-light-hero');
       metaThemeColor.setAttribute('content', '#070914');
     }
@@ -158,6 +188,144 @@
 
   // Initial check
   updateVisibility();
+
+  // Prev/Next controls for services scroller
+  const prevBtn = document.querySelector('#services-prev');
+  const nextBtn = document.querySelector('#services-next');
+
+  function getCurrentIndex() {
+    const maskRect = maskElement.getBoundingClientRect();
+    const maskCenter = (maskRect.left + maskRect.right) / 2;
+    let bestIdx = 0;
+    let bestDist = Infinity;
+    for (let i = 0; i < snapTargets.length; i++) {
+      const r = snapTargets[i].getBoundingClientRect();
+      const center = (r.left + r.right) / 2;
+      const d = Math.abs(center - maskCenter);
+      if (d < bestDist) { bestDist = d; bestIdx = i; }
+    }
+    return bestIdx;
+  }
+
+  function scrollToIndex(idx) {
+    const clamped = Math.max(0, Math.min(idx, snapTargets.length - 1));
+    snapTargets[clamped].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+  }
+
+  function updateNavButtons() {
+    if (!prevBtn && !nextBtn) return;
+    const maxScrollLeft = Math.max(0, scrollingElem.scrollWidth - scrollingElem.clientWidth);
+    const atStart = scrollingElem.scrollLeft <= 1; // allow tiny rounding
+    const atEnd = scrollingElem.scrollLeft >= maxScrollLeft - 1;
+    if (prevBtn) prevBtn.disabled = atStart || maxScrollLeft === 0;
+    if (nextBtn) nextBtn.disabled = atEnd || maxScrollLeft === 0;
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      const idx = getCurrentIndex();
+      scrollToIndex(idx - 1);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const idx = getCurrentIndex();
+      scrollToIndex(idx + 1);
+    });
+  }
+
+  // Keep buttons state in sync
+  scrollingElem.addEventListener('scroll', () => requestAnimationFrame(updateNavButtons));
+  window.addEventListener('resize', () => requestAnimationFrame(updateNavButtons));
+  updateNavButtons();
+
+  // --------- testimonials rotator ---------
+  const testimonialRotator = document.querySelector('#testimonial-rotator');
+  if (testimonialRotator) {
+    const slides = Array.from(testimonialRotator.querySelectorAll('.testimonial-slide'));
+    const dotsWrap = document.querySelector('#testimonial-dots');
+    let current = 0;
+    let timer = null;
+
+    // create dots
+    const dots = slides.map((_, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'h-2.5 w-2.5 rounded-full bg-slate-300 aria-selected:bg-slate-800 aria-selected:w-6 transition-all';
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-label', `Show testimonial ${i + 1}`);
+      btn.addEventListener('click', () => {
+        show(i);
+        restart();
+      });
+      dotsWrap && dotsWrap.appendChild(btn);
+      return btn;
+    });
+
+    function setHeight() {
+      const active = slides[current];
+      if (!active) return;
+      // Use the slide's intrinsic content height; slides are absolutely positioned.
+      const h = active.scrollHeight;
+      testimonialRotator.style.height = h + 'px';
+    }
+
+    function show(index) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((el, i) => el.classList.toggle('active', i === current));
+      dots.forEach((d, i) => {
+        const selected = i === current;
+        d.setAttribute('aria-selected', selected ? 'true' : 'false');
+        d.classList.toggle('bg-slate-800', selected);
+        d.classList.toggle('bg-slate-300', !selected);
+        d.classList.toggle('w-6', selected);
+        d.classList.toggle('w-2.5', !selected);
+      });
+      setHeight();
+    }
+
+    function start() {
+      if (timer) return;
+      timer = setInterval(() => show(current + 1), 2000);
+    }
+    function stop() {
+      if (!timer) return;
+      clearInterval(timer); timer = null;
+    }
+    function restart() { stop(); start(); }
+
+    testimonialRotator.addEventListener('mouseenter', stop);
+    testimonialRotator.addEventListener('mouseleave', start);
+    testimonialRotator.addEventListener('focusin', stop);
+    testimonialRotator.addEventListener('focusout', start);
+    window.addEventListener('resize', () => requestAnimationFrame(setHeight));
+
+    // Keep height in sync when slide contents load (images)
+    const imgs = testimonialRotator.querySelectorAll('img');
+    imgs.forEach(img => {
+      if (img.complete) return;
+      img.addEventListener('load', () => requestAnimationFrame(setHeight), { once: true });
+    });
+
+    // init
+    show(0);
+    window.addEventListener('load', () => requestAnimationFrame(setHeight));
+    start();
+  }
+
+  const mobileMenu = {
+    scrollPosition: 0,
+    open: () => {
+      mobileMenu.scrollPosition = window.scrollY;
+      document.getElementById('footer').scrollIntoView({ behavior: "instant"});
+      document.getElementById('mobile-menu-close').classList.remove('hidden');
+    },
+    close: () => {
+      window.scrollTo({ top: mobileMenu.scrollPosition, behavior: "instant"});
+      document.getElementById('mobile-menu-close').classList.add('hidden');
+    }
+  }
 </script>
 
 

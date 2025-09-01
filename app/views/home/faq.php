@@ -9,7 +9,7 @@
 
       <div class="mt-12 accordion" aria-labelledby="faq-heading">
 
-        <details>
+        <details name="faq">
           <summary>
             Why wouldn't I just hire a full-time CTO?
           </summary>
@@ -22,7 +22,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>What happens when I sign up?</summary>
           <p>
             When you subscribe, you’ll receive an email with a link to your personal task board within one business day. The first task would be signing a confidentiality agreement. We’ll also schedule a call to get to know you and your business and to discuss your first request.
@@ -30,7 +30,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>Is there a request limit?</summary>
           <p>
             Once subscribed, you can add as many requests to your queue as you’d like, and they will be handled by us one by one.
@@ -38,7 +38,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>How fast will tasks be completed?</summary>
           <p>
             It depends on the task and its complexity, but on average, most requests will be completed in 2-3 days.
@@ -46,7 +46,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>Who's behind Automaze?</summary>
           <p>
             Automaze was founded by Ran Aroussi, a software engineer with over
@@ -57,7 +57,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>How does the pause feature work?</summary>
           <p>
             We understand you may not have enough design work to fill up an entire month. You may only have one or two tasks to perform at the moment. That’s where pausing your subscription comes in handy.
@@ -68,7 +68,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>What technologies do you work with?</summary>
           <p>
             We’ve seen and done it all, but our most common tech stack uses a combination of Node.js, Python, PHP, Bash, Go, React, Vue, Alpine.js, Tailwind, Bootstrap, Postgresql, MySQL, MongoDB, Redis, AWS, Google Cloud, Docker, Kubernetes, Jenkins, and GitHub. For UX/UI, we use Figma, Adobe Illustrator, and Photoshop.
@@ -76,7 +76,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>How do I put in requests?</summary>
           <p>
             When you sign up, you’ll get your dedicated task board, where you’ll be able to add requests, communicate with us, and track the progress of your requests.
@@ -87,7 +87,7 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>What if I'm not satisfied?</summary>
           <p>
             No worries! We'll continue to iterate and revise until you're 100% satisfied.
@@ -95,14 +95,14 @@
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>What if I only have a single request?</summary>
           That’s fine. You can pause your subscription when finished and return when you have additional tasks to perform. There’s no need to let the remainder of your subscription go to waste.
           </p>
           <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
         </details>
 
-        <details>
+        <details name="faq">
           <summary>
             Are there any refunds if I don't like the service?
           </summary>

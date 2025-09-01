@@ -6,6 +6,9 @@ tiny::components()->register('Footer', function (...$props) {
 
     <footer id="footer">
         <div class="mx-auto max-w-5xl xl:max-w-6xl 2xl:max-w-7xl text-slate-300/80 text-sm">
+
+            <button onclick="mobileMenu.close()" id="mobile-menu-close" class="hidden absolute right-7 top-5 text-3xl">🆇</button>
+
             <div class="md:flex items-start justify-between px-9 pt-20 md:pt-30">
                 <div class="max-w-sm leading-relaxed mb-12">
                     <p><a href="{$props['rootPath']}"><img loading="lazy" src="https://automaze.io/assets/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
@@ -47,21 +50,13 @@ tiny::components()->register('Footer', function (...$props) {
                     <ul class="w-40">
                         <li><h4>Services</h4></li>
                         <li><a href="{$props['rootPath']}services/cto-as-a-service">CTO as a Service</a></li>
-                        <li><a href="{$props['rootPath']}services/mvp-sprint">MVP Sprint</a></li>
+                        <li><a href="{$props['rootPath']}services/mvp-sprint">MVP Launch</a></li>
                         <li><a href="{$props['rootPath']}services/managed-developers">Managed Developers</a></li>
                         <li><a href="{$props['rootPath']}services/ai-agents">Custom AI Agents</a></li>
                         <li><a href="{$props['rootPath']}services/devops-optimization">DevOps &amp; Cloud</a></li>
                         <li><a href="{$props['rootPath']}services/design-subscription">UX/UI Design</a></li>
                     </ul>
-                    <ul class="w-28">
-                        <li><h4>Products</h4></li>
-                        <li><a href="https://asynchq.com" target="_blank">AsyncHQ</a></li>
-                        <li><a href="https://refund.now" target="_blank">Refund.now</a></li>
-                        <li><a href="https://disputepal.co" target="_blank">DisputePal</a></li>
-                        <li><a href="https://corpus.chat" target="_blank">Corpus.Chat</a></li>
-                        <li><a href="https://premarketbell.com" target="_blank">Premarket Bell</a></li>
-                        <li><a href="https://moderate.ai" target="_blank">Moderate.AI</a></li>
-                    </ul>
+
                     <ul class="w-16 mr-2">
                         <li><h4>Legal</h4></li>
                         <li><a href="{$props['rootPath']}privacy">Privacy</a></li>
@@ -82,3 +77,15 @@ tiny::components()->register('Footer', function (...$props) {
     </footer>
     EOF;
 });
+
+/*
+                    <ul class="w-28 md:hidden">
+                        <li><h4>Products</h4></li>
+                        <li><a href="https://asynchq.com" target="_blank">AsyncHQ</a></li>
+                        <li><a href="https://refund.now" target="_blank">Refund.now</a></li>
+                        <li><a href="https://disputepal.co" target="_blank">DisputePal</a></li>
+                        <li><a href="https://corpus.chat" target="_blank">Corpus.Chat</a></li>
+                        <li><a href="https://premarketbell.com" target="_blank">Premarket Bell</a></li>
+                        <li><a href="https://moderate.ai" target="_blank">Moderate.AI</a></li>
+                    </ul>
+*/
