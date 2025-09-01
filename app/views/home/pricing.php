@@ -4,7 +4,7 @@
   </h3>
   <div class="!p-0">
     <div class="lg:grid grid-cols-11 items-start justify-between gap-x-12">
-      <div class="col-span-6 mt-24 mb-10 ml-8">
+      <div class="col-span-6 mt-24 mb-10 mx-8 lg:mr-0">
         <h2 class="-mt-4 mb-4 section-header">We've got great plans for you.</h2>
         <p class="max-w-2xl">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
         <div class="mt-10 flex items-center gap-x-4">
