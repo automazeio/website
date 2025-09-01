@@ -12,6 +12,18 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
         gtag("js", new Date());
         gtag('config', 'G-7NKW2LYNSQ');
     </script>
+
+    <!-- Twitter conversion tracking base code -->
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('config','out85');
+    </script>
+
+    <!-- rb2b -->
+    <script>!function () {var reb2b = window.reb2b = window.reb2b || [];if (reb2b.invoked) return;reb2b.invoked = true;reb2b.methods = ["identify", "collect"];reb2b.factory = function (method) {return function () {var args = Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for (var i = 0; i < reb2b.methods.length; i++) {var key = reb2b.methods[i];reb2b[key] = reb2b.factory(key);}reb2b.load = function (key) {var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" + key + "/reb2b.js.gz";var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};reb2b.SNIPPET_VERSION = "1.0.1";reb2b.load("R6G5YHZ47765");}();</script>
+
     <!-- <script src="https://js.sentry-cdn.com/<?php echo $_SERVER['SENTRY_FRONTEND']; ?>.min.js" crossorigin="anonymous"></script> -->
 <?php endif; ?>
     <meta charset="utf-8">
@@ -30,6 +42,24 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="apple-mobile-web-app-title" content="Automaze">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#070914">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://automaze.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Automaze // Technical Co‑Founder &amp; CTO as a Service" />
+    <meta property="og:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
+    <meta property="og:image" content="<?php tiny::staticURL('img/card.webp'); ?>" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="automaze.io" />
+    <meta property="twitter:site" content="@automazeio" />
+    <meta property="twitter:creator" content="@aroussi" />
+    <meta property="twitter:url" content="https://automaze.io" />
+    <meta name="twitter:title" content="Automaze // Technical Co‑Founder &amp; CTO as a Service" />
+    <meta name="twitter:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
+    <meta name="twitter:image" content="<?php tiny::staticURL('img/card.webp'); ?>" />
+    <meta name="twitter:site" content="@automazeio" />
 
     <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script>
 
