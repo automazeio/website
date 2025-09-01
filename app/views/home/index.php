@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'Technical Co-Founder & CTO as a Service', emptyLayout: false); ?>
+<?php tiny::layout()->default(title: 'Technical Co-Founder &amp; CTO as a Service', emptyLayout: false); ?>
 
 
 <?php tiny::render('home/hero'); ?>
