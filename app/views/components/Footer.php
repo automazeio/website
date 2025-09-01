@@ -10,7 +10,7 @@ tiny::components()->register('Footer', function (...$props) {
             <button onclick="mobileMenu.close()" id="mobile-menu-close" class="hidden absolute right-7 top-5 text-3xl">🆇</button>
 
             <div class="md:flex items-start justify-between px-9 pt-20 md:pt-30">
-                <div class="max-w-sm leading-relaxed mb-12">
+                <div id="footer-lead" class="max-w-sm leading-relaxed mb-12">
                     <p><a href="{$props['rootPath']}"><img loading="lazy" src="https://automaze.io/assets/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
                     <p class="mt-4">At Automaze, we partner with founders to bring their vision to life, scale their business, and optimize for success.</p>
                     <div class="flex items-end space-x-4 mt-6">
@@ -38,7 +38,7 @@ tiny::components()->register('Footer', function (...$props) {
                     </div>
                 </div>
 
-                <nav class="grid grid-cols-2 md:flex items-start space-x-12 pt-8">
+                <nav class="grid grid-cols-2 md:flex items-start space-x-12 pt-8" hx-boost="true" hx-target="body" hx-swap="outerHTML">
                     <ul class="w-30">
                         <li><h4>Company</h4></li>
                         <li><a href="{$props['rootPath']}about">About</a></li>

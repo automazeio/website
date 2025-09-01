@@ -29,7 +29,7 @@
     </div>
 
 
-    <div class="bleed-wrapper no-scrollbar" id="services-scroller">
+    <div class="bleed-wrapper no-scrollbar" id="services-scroller" hx-boost="true" hx-target="body" hx-swap="outerHTML">
       <!-- spacer -->
       <div class="scroll-snap-spacer"></div>
 

@@ -1,4 +1,4 @@
-<section id="pricing">
+<section id="pricing" hx-boost="true" hx-target="body" hx-swap="outerHTML">
   <h3 class="home-grid-header">
     <span>05 / Pricing</span>
   </h3>

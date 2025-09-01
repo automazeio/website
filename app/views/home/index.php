@@ -5,7 +5,7 @@
 <?php tiny::render('home/mike'); ?>
 
 <header class="main-nav">
-    <nav class="">
+    <nav hx-boost="true" hx-target="body" hx-swap="outerHTML">
         <div class="col-span-2 md:hidden">
           <a href="javascript:mobileMenu.open();" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
         </div>

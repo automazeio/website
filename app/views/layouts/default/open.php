@@ -4,6 +4,16 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 <!DOCTYPE html>
 <html lang="en" class="relative min-h-full overscroll-none"  style="scroll-behavior: smooth">
 <head>
+<?php if (@$_SERVER['ENV'] != 'local' && @$_SERVER['SENTRY_FRONTEND']): ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NKW2LYNSQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag('config', 'G-7NKW2LYNSQ');
+    </script>
+    <!-- <script src="https://js.sentry-cdn.com/<?php echo $_SERVER['SENTRY_FRONTEND']; ?>.min.js" crossorigin="anonymous"></script> -->
+<?php endif; ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,13 +31,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#070914">
 
-    <?php if (@$_SERVER['ENV'] != 'local' && @$_SERVER['SENTRY_FRONTEND']): ?>
-    <script src="https://js.sentry-cdn.com/<?php echo $_SERVER['SENTRY_FRONTEND']; ?>.min.js" crossorigin="anonymous"></script>
-    <?php endif; ?>
-
-    <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
-    <!-- <script defer src="<?php tiny::staticURL('/js/alpine.combo.min.js'); ?>"></script> -->
-    <!-- <script src="<?php tiny::staticURL('/js/app.js'); ?>?v=<?php echo @$_SERVER['APP_VERSION']; ?>"></script> -->
+    <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script>
 
 <?php if (tiny::layout()->props('scripts')):
         foreach (tiny::layout()->props('scripts') as $script): ?>
