@@ -61,7 +61,7 @@
             </div>
         </div>
 
-
+        <?php /*
         <div id="logos" class="overflow-x-hidden">
             <div class="animate-marquee flex items-center invert">
                 <!-- Brands -->
@@ -227,6 +227,8 @@
                 <!-- End Brands -->
             </div>
         </div>
+        */ ?>
 
     </section>
+    <button onclick="window.scrollBy(0, window.innerHeight);" class="scroll-hint"></button>
 </div>

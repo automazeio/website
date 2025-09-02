@@ -1,5 +1,5 @@
 <section id="faq">
-  <h3 class="home-grid-header">
+  <h3 class="home-grid-header <?php echo tiny::layout()->props('isHome') ? '' : 'hidden'; ?>">
     <span class="mx-auto block max-w-5xl px-8 py-5.5 font-mono text-sm font-medium uppercase opacity-40 xl:max-w-6xl">06 / FAQ</span>
   </h3>
   <div>

@@ -31,7 +31,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
 
-    <title>Automaze / <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder & CTO as a Service' ?></title>
+    <title>Automaze / <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?></title>
 
     <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>" media="all">
 
@@ -46,9 +46,9 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://automaze.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Automaze // Technical Co‑Founder &amp; CTO as a Service" />
+    <meta property="og:title" content="Automaze <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?>" />
     <meta property="og:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
-    <meta property="og:image" content="<?php tiny::staticURL('img/card.webp'); ?>" />
+    <meta property="og:image" content="<?php tiny::layout()->props('ogImage') ?? tiny::staticURL('img/card.webp'); ?>" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -56,12 +56,14 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta property="twitter:site" content="@automazeio" />
     <meta property="twitter:creator" content="@aroussi" />
     <meta property="twitter:url" content="https://automaze.io" />
-    <meta name="twitter:title" content="Automaze // Technical Co‑Founder &amp; CTO as a Service" />
+    <meta name="twitter:title" content="Automaze <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?>" />
     <meta name="twitter:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
-    <meta name="twitter:image" content="<?php tiny::staticURL('img/card.webp'); ?>" />
+    <meta name="twitter:image" content="<?php tiny::layout()->props('ogImage') ?? tiny::staticURL('img/card.webp'); ?>" />
     <meta name="twitter:site" content="@automazeio" />
 
-    <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script>
+    <?php if (tiny::layout()->props('emptyLayout') === false): ?>
+    <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
+    <?php endif; ?>
 
 <?php if (tiny::layout()->props('scripts')):
         foreach (tiny::layout()->props('scripts') as $script): ?>
@@ -75,5 +77,25 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     endif; ?>
 </head>
 
-<body class="text-pretty antialiased bg-slate-50">
+<body class="text-pretty antialiased bg-slate-50 <?php echo tiny::layout()->props('isHome') === true ? 'home' : ''; ?>">
 
+
+<header class="main-nav">
+    <nav hx-boost="true" hx-target="body" hx-swap="outerHTML">
+        <div class="col-span-2 md:hidden">
+          <a href="javascript:mobileMenu.open();" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
+        </div>
+        <div class="col-span-2 hidden md:block">
+          <a href="<?php tiny::homeURL(); ?>" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
+        </div>
+        <ul class="col-span-8 flex items-center justify-center space-x-8">
+            <li><a href="<?php tiny::homeURL('about'); ?>" class="hover:opacity-80 hover:border-b">About</a></li>
+            <li><a href="<?php tiny::homeURL('services'); ?>" class="hover:opacity-80 hover:border-b">Services</a></li>
+            <li><a href="https://secret.automaze.io" target="_blank" class="hover:opacity-80 hover:border-b">Perks</a></li>
+            <li><a href="<?php tiny::homeURL('pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
+        </ul>
+        <div class="col-span-2 text-right">
+            <a href="<?php tiny::homeURL('discovery-call'); ?>" class="nav-button">Book a Call</a>
+        </div>
+    </nav>
+</header>

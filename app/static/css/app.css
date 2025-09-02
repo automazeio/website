@@ -1140,20 +1140,23 @@ ul[role="list"] li:before {
 .main-nav ul {
   @apply -ml-12 hidden md:flex;
 }
-body.scrolled .main-nav {
+body.scrolled .main-nav,
+body:not(.home) .main-nav {
   @apply fixed text-slate-900 border border-slate-300 top-4;
   @apply bg-white/50 backdrop-blur-lg rounded-full pl-2.5 pr-3 py-2 shadow-lg;
   max-width: min(48rem, 96%);
   z-index: 2147483647;
 }
-body.scrolled .main-nav ul {
+body.scrolled .main-nav ul,
+body:not(.home) .main-nav ul {
   @apply -ml-9;
 }
 /* Logo sizing with smooth transition */
 .main-nav .nav-logo {
   @apply block size-12 transition-all duration-700 ease-in-out hover:opacity-90;
 }
-body.scrolled .main-nav .nav-logo {
+body.scrolled .main-nav .nav-logo,
+body:not(.home) .main-nav .nav-logo {
   @apply size-full;
   @apply w-12 h-12 bg-black rounded-full p-2;
   @apply transition-all duration-500 ease-in-out ring ring-white hover:shadow-lg hover:shadow-indigo-500/50
@@ -1162,18 +1165,12 @@ body.scrolled .main-nav .nav-logo {
   @apply w-fit rounded-full bg-gradient-to-br from-indigo-800 via-indigo-500 to-indigo-800 text-white px-5 py-3 text-center leading-0 font-bold;
   @apply whitespace-nowrap
 }
-body.scrolled .main-nav .nav-button {
+body.scrolled .main-nav .nav-button,
+body:not(.home) .main-nav .nav-button {
   @apply bg-gradient-to-br from-[#202e6b] via-[#1a2248] to-[#202e6b];
   @apply transition-all duration-500 ease-in-out ring ring-white hover:shadow-lg hover:shadow-indigo-500/50
 }
-/* body.scrolled .main-nav .nav-logo {
-  @apply size-11 -mt-0.5;
-  background: url('../img/logo.svg') no-repeat center center;
-  background-size: 100% 100%;
-}
-body.scrolled .nav-logo img {
-  @apply hidden
-} */
+
 
 
 @keyframes fadeIn {
@@ -1237,4 +1234,48 @@ body.scrolled .nav-logo img {
   color: rgb(255, 255, 255) !important;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 5px !important;
   padding: 0.75rem 1rem 0.8rem 1.25rem !important;
+}
+
+.scroll-hint {
+  @apply w-8 h-12 rounded-full block mx-auto absolute bottom-20 border border-white/25 shadow-sm;
+  @apply left-1/2 -ml-4 cursor-pointer;
+  @apply bg-white/10 hover:bg-white/80;
+  @apply transition-all duration-1000;
+}
+.scroll-hint:after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2;
+  @apply bg-indigo-500 rounded-full w-0.5 h-2 top-2;
+}
+.scroll-hint:hover:after {
+  animation: scroll-hint 2s ease-in-out infinite;
+}
+
+
+@keyframes scroll-hint {
+  0% {
+    height: 0.5rem;
+    max-height: calc(100% - 1rem);
+    opacity: 1;
+  }
+  25% {
+    height: calc(100% - 1rem);
+  }
+  50% {
+    top: auto;
+    bottom: 0.5rem;
+    height: 0.5rem;
+  }
+  100% {
+    /* hold the last state for the “pause” */
+    top: auto;
+    bottom: 0.5rem;
+    height: 0.5rem;
+  }
+}
+
+.text-mask {
+  background: var(--bg-image) 50% no-repeat;
+  background-clip: text;
+  color: transparent;
 }

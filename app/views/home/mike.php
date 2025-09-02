@@ -1,5 +1,5 @@
 <!-- testimonial hero -->
-<div id="testimonial-hero">
+<div id="testimonial-hero" class="bg-gradient-to-b from-indigo-50/10 to-white">
   <div class="max-w-4xl px-8 text-center">
     <div class="mb-4 text-2xl text-amber-400">★★★★★</div>
     <h2 class="sticky-color">

@@ -67,8 +67,8 @@ tiny::components()->register('Footer', function (...$props) {
 
                     <ul class="w-16 mr-2">
                         <li><h4>Legal</h4></li>
-                        <li><a href="{$props['rootPath']}privacy">Privacy</a></li>
-                        <li><a href="{$props['rootPath']}terms">Terms</a></li>
+                        <li><a href="{$props['rootPath']}legal/privacy">Privacy</a></li>
+                        <li><a href="{$props['rootPath']}legal/terms">Terms</a></li>
                     </ul>
                 </nav>
             </div>

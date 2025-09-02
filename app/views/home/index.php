@@ -1,29 +1,7 @@
-<?php tiny::layout()->default(title: 'Technical Co-Founder &amp; CTO as a Service', emptyLayout: false); ?>
-
+<?php tiny::layout()->default(title: 'Technical Co-Founder &amp; CTO as a Service', emptyLayout: false, isHome: true); ?>
 
 <?php tiny::render('home/hero'); ?>
 <?php tiny::render('home/mike'); ?>
-
-<header class="main-nav">
-    <nav hx-boost="true" hx-target="body" hx-swap="outerHTML">
-        <div class="col-span-2 md:hidden">
-          <a href="javascript:mobileMenu.open();" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
-        </div>
-        <div class="col-span-2 hidden md:block">
-          <a href="<?php tiny::homeURL(); ?>" class="nav-logo"><img loading="lazy" src="<?php tiny::staticURL('img/logo-light.svg'); ?>" alt="Automaze logo" /></a>
-        </div>
-        <ul class="col-span-8 flex items-center justify-center space-x-8">
-            <li><a href="<?php tiny::homeURL('about'); ?>" class="hover:opacity-80 hover:border-b">About</a></li>
-            <li><a href="<?php tiny::homeURL('services'); ?>" class="hover:opacity-80 hover:border-b">Services</a></li>
-            <li><a href="https://secret.automaze.io" target="_blank" class="hover:opacity-80 hover:border-b">Perks</a></li>
-            <li><a href="<?php tiny::homeURL('pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
-        </ul>
-        <div class="col-span-2 text-right">
-            <a href="<?php tiny::homeURL('discovery-call'); ?>" class="nav-button">Book a Call</a>
-        </div>
-    </nav>
-</header>
-
 
 <!-- main -->
 <div id="main-content" class="relative z-10 mt-[100dvh] bg-white">
@@ -61,19 +39,7 @@
 </script>
 */ ?>
 
-<link href="<?php tiny::staticURL('css/aos.css'); ?>" rel="stylesheet">
-<script src="<?php tiny::staticURL('js/aos.js'); ?>" onload="AOS.init();"></script>
-
 <script>
-  // --------- tiny load bump ---------
-  // Nudge page by 1px down+up on load (helps hide mobile address bar, etc.)
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-    }, 100);
-  });
-
   // --------- testimonial + hero ---------
   const metaThemeColor = document.querySelector("meta[name=theme-color]");
   const splashHero = document.querySelector('#hero-content');
@@ -337,20 +303,6 @@
     start();
   }
 
-  const mobileMenu = {
-    scrollPosition: 0,
-    open: () => {
-      mobileMenu.scrollPosition = window.scrollY;
-      document.getElementById('footer').scrollIntoView({ behavior: "instant"});
-      document.getElementById('mobile-menu-close').classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
-    },
-    close: () => {
-      window.scrollTo({ top: mobileMenu.scrollPosition, behavior: "instant"});
-      document.getElementById('mobile-menu-close').classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-    }
-  }
 </script>
 
 
