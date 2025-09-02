@@ -11,16 +11,15 @@
                     </h1>
                     <h2 class="text-2xl lg:text-[1.8rem] mt-4 text-slate-700">
                         Automaze is a full-service technology partner for startups and businesses that need more than just code.
-                        <br>
-                        We act as your CTO, your dev team, and your product strategist – all rolled into one.
+
+                        We act as your CTO, <span class="hidden lg:inline">your</span> dev team, and <span class="hidden lg:inline">your</span> product strategist – all rolled into one.
                     </h2>
                 </div>
 
-                <div class="max-w-xl mx-auto text-xl lg:text-2xl grid gap-y-8 mt-20 tracking-tight leading-relaxed text-slate-800 scroll-highlight">
+                <div class="max-w-xl mx-auto text-xl lg:text-[1.4rem] grid gap-y-8 mt-20 tracking-tighters leading-relaxed text-slate-800 scroll-highlight">
                     <p>
-                      Here’s the thing... 🤔
-                    </p>
-                    <p>
+                      Here’s the thing... <span class="pop text-4xl -mt-1">🤔</span>
+
                       Startups don’t fail because of bad code.
                       They fail because they build the wrong thing, at the wrong time, with the wrong approach.
                     </p>
@@ -31,20 +30,24 @@
                     <p>
                       We’ve been in the trenches. We’ve built platforms that serve millions.
                       We’ve rescued projects from the brink.
-                      And yes, we’ve also crashed and burned a few times – which taught us more than any success ever could.
+                      And yes, we’ve also crashed and burned a few times <span class="pop text-4xl -mt-1">🙈</span> – which taught us more than any success ever could.
                     </p>
 
                     <h4 class="font-bold text-3xl text-black">The Problem With “Normal” Dev Shops</h4>
 
                     <p>
-                      Most agencies work like this: You brief them, they disappear for six weeks, then they deliver
+                      Most agencies work like this:
+                      </p>
+                    <p>
+
+                      You brief them, they disappear for six weeks, then they deliver
                       something that sort of matches what you asked for.
                     </p>
                     <p>
                       If it breaks? That’s <em><strong>your</strong></em> problem now.
                     </p>
                     <p>
-                      Need a small change? That’ll be another project.
+                      Need a small change? That’ll be <em><strong>another</strong></em> project.
                     </p>
 
                     <p>
@@ -99,11 +102,15 @@
                     </p>
 
                     <p>
-                      <strong>One team, global coverage.</strong><br>20+ professionals across the UK, Ukraine, Poland, Israel, France, and Germany. While you sleep, we’re shipping. Same standards, same processes, same commitment to excellence.
+                      <strong>One team, global coverage.</strong><br>20+ professionals from
+                      <span class="pop text-4xl -mt-1">🇬🇧</span><span class="pop text-4xl -mt-1 -ml-4">🇺🇦</span><span class="pop text-4xl -mt-1 -ml-4">🇵🇱</span><span class="pop text-4xl -mt-1 -ml-4">🇩🇪</span><span class="pop text-4xl -mt-1 -ml-4">🇵🇹</span><span class="pop text-4xl -mt-1 -ml-4">🇮🇱</span><span class="pop text-4xl -mt-1 -ml-4">🇳🇬</span>
+                      across the globe.
+                      <!-- UK, Ukraine, Poland, Israel, France, and Germany -->
+                      While you sleep, we’re shipping. Same standards, same processes, same commitment to excellence.
                     </p>
 
                     <p>
-                      <strong>Transparent everything.</strong><br>Clear pricing. Open processes. Constant communication. No black boxes, no surprises, no &quot;trust us, we’re the experts&quot; nonsense.
+                      <strong>Transparent everything.</strong><br>Clear pricing. Open processes. Constant communication. No black boxes, no surprises, no “trust us, we’re the experts” nonsense.
                     </p>
 
                     <h4 class="font-bold text-3xl text-black">What You Actually Get</h4>
@@ -173,7 +180,7 @@
     </main>
 </div>
 
-<div id="cuttoff-point" class="fixed inset-x-0 top-3/4 lg:top-2/3 lg:-mt-4 z-[2147483647]"></div>
+<div id="cuttoff-point" class="fixed inset-x-0 top-3/4 -mt-6 lg:top-2/3 lg:-mt-12 z-[2147483647]"></div>
 <style>
     /* Per-word highlight on scroll (stays highlighted once triggered) */
     .scroll-highlight {
@@ -185,6 +192,7 @@
         transition: all 300ms ease;
         opacity: .4;
       }
+      /* .scroll-highlight p:first-of-type .word, */
       .scroll-highlight .word.is-on {
         -webkit-font-smoothing: subpixel-antialiased;
         opacity: .9;
@@ -203,7 +211,7 @@
     /* Images/SVGs hidden by default; appear as inline-block when highlighted */
     .scroll-highlight img,
     .scroll-highlight svg,
-    .scroll-highlight div.pop {
+    .scroll-highlight .pop {
       display: inline-block; /* transform-friendly and stays in flow */
       opacity: 0;
       visibility: hidden;
@@ -214,7 +222,7 @@
     }
     .scroll-highlight img:not(.is-on),
     .scroll-highlight svg:not(.is-on),
-    .scroll-highlight div.pop:not(.is-on) {
+    .scroll-highlight .pop:not(.is-on) {
       width: 0;
       height: 0;
       margin: 0;
@@ -222,7 +230,7 @@
     }
     .scroll-highlight img.is-on,
     .scroll-highlight svg.is-on,
-    .scroll-highlight div.pop.is-on {
+    .scroll-highlight .pop.is-on {
       transition: all 300ms ease;
       display: inline-block; /* remains inline-block when highlighted */
       opacity: 1;
@@ -266,7 +274,7 @@
   // Rule: words above the midline are highlighted.
   // For the line intersecting the midline, only highlight the left half of its words.
   // Media (img/svg) use hysteresis to avoid flicker and do not participate in the half-line rule.
-  const tokens = Array.from(root.querySelectorAll('.word, img, svg'));
+  const tokens = Array.from(root.querySelectorAll('.word, img, svg, .pop'));
   let ticking = false;
   const recalc = () => {
     const vh = window.innerHeight || document.documentElement.clientHeight;
@@ -279,7 +287,7 @@
       const r = el.getBoundingClientRect();
       const top = r.top;
       const bottom = r.bottom;
-      if (el.tagName === 'IMG' || el.tagName === 'SVG') {
+      if (el.tagName === 'IMG' || el.tagName === 'SVG' || el.classList.contains('pop')) {
         const h = 12; // px hysteresis band for media
         if (bottom < mid - h) {
           el.classList.add('is-on');
@@ -319,8 +327,7 @@
   };
 
   window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', () => { setShrinkScale(); recalc(); });
-  setShrinkScale();
+  window.addEventListener('resize', () => { recalc(); });
   recalc();
 })();
 </script>

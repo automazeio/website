@@ -40,6 +40,12 @@
 */ ?>
 
 <script>
+  function scrollFromHero() {
+    let offset = window.innerHeight + 160;
+    window.innerWidth > 768 && (offset = window.innerHeight + 180);
+    window.scrollBy(0, offset);
+  }
+
   // --------- testimonial + hero ---------
   const metaThemeColor = document.querySelector("meta[name=theme-color]");
   const splashHero = document.querySelector('#hero-content');

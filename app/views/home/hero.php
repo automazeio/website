@@ -28,7 +28,7 @@
                 </h1>
                 <h2>Automaze is the <strong>zero-equity</strong> way for founders to bring their idea to life, attract users, and achieve product-market fit.</h2>
 
-                <div class="flex items-center space-x-4">
+                <div class="grid lg:flex items-center space-x-4 gap-y-6">
                     <a href="#scope-of-services" class="hero-cta-button-glow">Our services</a>
                     <a href="<?php tiny::homeURL('discovery-call'); ?>" class="hero-cta-button-secondary group">
                         <div class="avatar-group avatar-group-dark group !-ml-5">
@@ -230,5 +230,5 @@
         */ ?>
 
     </section>
-    <button onclick="window.scrollBy(0, window.innerHeight);" class="scroll-hint"></button>
+    <button onclick="scrollFromHero()" class="scroll-hint"></button>
 </div>

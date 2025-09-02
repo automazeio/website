@@ -5,7 +5,7 @@
 @import "./inter.css";
 
 body {
-  @apply text-pretty antialiased;
+  @apply text-pretty antialiased overflow-x-hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -479,16 +479,17 @@ section:not(.hero) > div:first-of-type {
   @apply relative pt-32 text-white;
 }
 .hero > div#hero-content {
-  @apply relative z-10 mx-auto max-w-5xl px-8 py-20 pb-24 xl:max-w-6xl 2xl:max-w-7xl;
+  @apply relative z-10 mx-auto max-w-5xl px-8 pt-10 lg:pt-20 pb-24 xl:max-w-6xl 2xl:max-w-7xl;
 }
 .hero > div#hero-content > div:first-of-type {
   @apply w-fit bg-gradient-to-r from-slate-300 via-slate-400 to-slate-400 bg-clip-text py-4.5 text-lg font-semibold text-transparent;
 }
 .hero h2 {
-  @apply my-6 mb-16 max-w-2xl text-lg text-slate-300 opacity-90 sm:text-2xl;
+  @apply my-6 mb-16 max-w-2xl text-xl lg:text-2xl text-slate-300 opacity-90;
 }
 .hero-cta-button-secondary {
-  @apply flex h-[52px] w-50 cursor-pointer items-center justify-center rounded-md border-[1.5px] border-indigo-50/20 text-base leading-0 font-semibold transition-opacity;
+  @apply flex h-14 w-full lg:w-50 cursor-pointer items-center justify-center rounded-md border-[1.5px] border-indigo-50/20 text-base leading-0 font-semibold transition-opacity;
+  @apply pr-3 lg:pr-0;
 }
 .avatar-group-dark {
   @apply relative mr-1 flex items-center -ml-1;
@@ -503,8 +504,7 @@ section:not(.hero) > div:first-of-type {
   --outer-radius: 8px;
   --inner-padding: 1.5px;
   --inner-radius: calc(var(--outer-radius) - var(--inner-padding));
-  width: 146px;
-  height: 52px;
+  @apply w-full lg:w-[146px] h-14;
   border-radius: var(--outer-radius);
   z-index: 2;
   @apply relative flex cursor-pointer items-center justify-center overflow-hidden border-0 bg-indigo-800 text-base font-bold transition-all duration-500;
@@ -541,11 +541,17 @@ section:not(.hero) > div:first-of-type {
   width: 40px;
   height: 10px;
   background: linear-gradient(90deg, transparent, #00b4d8, #90e0ef, transparent);
-  offset-path: path("M 0,0 L 140,0 L 140,56 L 0,56 Z");
+  /* Follow the element's own box (adapts to width/height) */
+  offset-path: inset(0 round var(--outer-radius));
   offset-anchor: 100% 50%;
-  animation: trail 5s infinite linear;
+  animation: trail 8s infinite linear;
   filter: blur(3px);
   z-index: -2;
+}
+@media (width >= 64rem) {
+  .hero-cta-button-glow:before {
+    animation: trail 5s infinite linear;
+  }
 }
 
 @keyframes trail {
