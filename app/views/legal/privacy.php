@@ -1,6 +1,6 @@
 <?php tiny::layout()->default(title: 'Privacy Policy', emptyLayout: false); ?>
 
-<div id="main-content" class="relative z-10 bg-gradient-to-b via-indigo-50/5 from-white to-white min-h-screen ">
+<div id="main-content" class="relative z-10 bg-gradient-to-b from-indigo-50/5 via-white to-white min-h-screen ">
     <main x-class="mx-8 relative">
         <section class="pt-16 max-w-2xl mx-auto">
             <div>
@@ -12,7 +12,7 @@
                 <p class="my-4 text-[15px] text-slate-700">We may collect personal information from you when you register for an account, contact us, or use our services. The types of personal information we may collect include your name, email address, and any other information you provide to us.</p>
                 <h2 class="mt-6 font-bold">2. How We Use Your Information</h2>
                 <p class="my-4 text-[15px] text-slate-700">We may use your personal information to:</p>
-                <ul class="list-disc ml-5">
+                <ul class="list-disc ml-5 text-[15px] text-slate-700">
                     <li>Provide and improve our services</li>
                     <li>Respond to your inquiries and requests</li>
                     <li>Send you important notifications and updates</li>

@@ -1,6 +1,6 @@
 <?php tiny::layout()->default(title: 'AI Agents &amp; Automations', emptyLayout: false); ?>
 
-<div id="main-content" class="relative z-10 bg-gradient-to-b via-indigo-50/5 from-white to-white min-h-screen ">
+<div id="main-content" class="relative z-10 bg-gradient-to-b from-indigo-50/5 via-white to-white min-h-screen ">
     <main x-class="mx-8 relative">
         <section class="pt-16">
             <div>

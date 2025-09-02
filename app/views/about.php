@@ -1,6 +1,6 @@
 <?php tiny::layout()->default(title: 'About Us', emptyLayout: false); ?>
 
-<div id="main-content" class="relative z-10 bg-gradient-to-b via-indigo-50/5 from-white to-white min-h-screen ">
+<div id="main-content" class="relative z-10 bg-gradient-to-b from-indigo-50/5 via-white to-white min-h-screen ">
     <main x-class="mx-8 relative">
         <section class="pt-16 max-w-3xl mx-auto">
             <div>
@@ -80,7 +80,7 @@
                     </p>
 
                     <p>
-                      <strong>Automaze</strong> was founded by <a href="https://x.com/aroussi" target="_blank" class="font-serif italic tracking-normal"><img src="https://unavatar.io/ran@automaze.io" class="shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Ran Aroussi</a>, who has been coding since the late ’80s.
+                      <strong>Automaze</strong> was founded by <a href="https://x.com/aroussi" target="_blank" class="font-serif italic tracking-normal group"><img src="https://unavatar.io/ran@automaze.io" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Ran Aroussi</a>, who has been coding since the late ’80s.
                         He’s built and scaled multiple ventures, created <a href="https://github.com/ranaroussi" target="_blank" class="font-serif italic tracking-normal">open-source tools</a> used by millions, and learned the hard way what actually works in tech. That experience shapes everything we do at Automaze.
                     </p>
 
