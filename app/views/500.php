@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'Application Error', emptyLayout: true); ?>
+<?php tiny::layout()->default(title: 'Application Error', emptyLayout: true, robots: 'noindex, follow'); ?>
 
 <div class="flex flex-col items-center justify-center h-screen">
     <h2 class="text-2xl font-bold"><?php echo tiny::layout()->props('code') ?: 501; ?></h2>

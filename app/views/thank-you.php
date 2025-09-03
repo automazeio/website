@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'Thank You', emptyLayout: false); ?>
+<?php tiny::layout()->default(title: 'Thank You', emptyLayout: false, robots: 'noindex, follow'); ?>
 
 <div class="flex flex-col items-center justify-center h-[70vh] bg-gradient-to-b from-[#090d1c] to-[#0d1326] text-white pt-56">
     <svg class="-mt-6 mb-12 size-12" viewBox="0 0 896.47 768" xmlns="http://www.w3.org/2000/svg">

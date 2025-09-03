@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'Page not found', emptyLayout: true); ?>
+<?php tiny::layout()->default(title: 'Page not found', emptyLayout: true, robots: 'noindex, follow'); ?>
 
 <div class="flex flex-col items-center justify-center h-screen">
     <h2 class="text-2xl font-bold">404</h2>

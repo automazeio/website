@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'SSE', emptyLayout: true); ?>
+<?php tiny::layout()->default(title: 'SSE', emptyLayout: true, robots: 'noindex, follow'); ?>
 
 
 <code id="results"></code>

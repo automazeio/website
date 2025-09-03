@@ -16,6 +16,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
         <title>MUXI (by Automaze) AI Agents</title>
 
+        <meta name="robots" content="noindex, nofollow" />
+
         <link href="<?php tiny::staticURL('/favicon.ico'); ?>" rel="icon" type="image/x-icon">
         <link href="<?php tiny::staticURL('/favicon.png'); ?>" rel="icon" type="image/png">
         <link rel="apple-touch-icon" sizes="512x512" href="<?php tiny::staticURL('/apple-touch-icon.png'); ?>">

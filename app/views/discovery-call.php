@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'Book a Discovery Call', emptyLayout: true); ?>
+<?php tiny::layout()->default(title: 'Book a Discovery Call', emptyLayout: true, robots: 'noindex, follow'); ?>
 <style>
     html, body {
         background: #0a0e1e !important;

@@ -31,6 +31,8 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
 
+    <meta name="robots" content="<?php echo tiny::layout()->props('robots') ? strip_tags(tiny::layout()->props('robots')) : 'index, follow' ?>">
+
     <title>Automaze / <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?></title>
 
     <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>" media="all">
@@ -79,7 +81,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 
 <body class="text-pretty antialiased bg-slate-50 <?php echo tiny::layout()->props('isHome') === true ? 'home' : ''; ?>">
 
-
+<?php if (tiny::layout()->props('emptyLayout') === false) { ?>
 <header class="main-nav">
     <nav hx-boost="true" hx-target="body" hx-swap="outerHTML">
         <div class="col-span-2 md:hidden">
@@ -99,3 +101,4 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
         </div>
     </nav>
 </header>
+<?php } ?>
