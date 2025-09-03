@@ -70,9 +70,9 @@
             <a href="#" class="hero-cta-button-glow shadow-2xl shadow-indigo-900/60 hover:shadow-2xl hover:shadow-indigo-700 pb-px">Our Services</a>
             <a href="#" class="border-[1.5px] border-indigo-50/20 flex h-[52px] w-50 cursor-pointer items-center justify-center rounded-md text-base leading-0 font-medium transition-opacity group">
               <div class="flex items-center relative opacity-90 group-hover:opacity-100">
-                <img src="https://unavatar.io/alex@automaze.io" alt="Phone" class="size-8 mr-2 rounded-full -ml-3 border-2 border-[#0e1429]">
-                <img src="https://unavatar.io/anton@automaze.io" alt="Phone" class="size-8 mr-2 rounded-full -ml-6 border-2 border-[#0e1429]">
-                <img src="https://unavatar.io/ran@automaze.io" alt="Phone" class="size-8 mr-2 rounded-full -ml-6 border-2 border-[#0e1429]">
+                <img src="<?php tiny::staticURL('img/alex-avatar.webp') ?>" alt="Phone" class="size-8 mr-2 rounded-full -ml-3 border-2 border-[#0e1429]">
+                <img src="<?php tiny::staticURL('img/anton-avatar.webp') ?>" alt="Phone" class="size-8 mr-2 rounded-full -ml-6 border-2 border-[#0e1429]">
+                <img src="<?php tiny::staticURL('img/ran-avatar.webp') ?>" alt="Phone" class="size-8 mr-2 rounded-full -ml-6 border-2 border-[#0e1429]">
               </div>
               <span class=" opacity-80 group-hover:opacity-100 font-semibold">Let's talk</span>
             </a>

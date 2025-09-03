@@ -47,25 +47,25 @@
                       If it breaks? That’s <em><strong>your</strong></em> problem now.
                     </p>
                     <p>
-                      Need a small change? That’ll be <em><strong>another</strong></em> project.
+                      Need a small change? That’ll be <em><strong>another</strong></em> project<span class="pop text-4xl -mt-1">🤑</span>.
                     </p>
 
                     <p>
-                      We’ve seen this movie too many times. Startups don’t need vendors – they need partners who think like owners, act like team members, and stick around when things get complicated.
+                      We’ve seen this movie too many times. Startups don’t need vendors – they need partners <span class="pop text-4xl -mt-1">🤝</span> who think like owners, act like team members, and stick around when things get complicated.
                     </p>
 
                     <h4 class="font-bold text-3xl text-black">We’re Built Different</h4>
 
                     <p>
-                      <strong class="">We don’t do drive-by development.</strong><br>Every client relationship is long-term by design. We’re not interested in building your MVP and vanishing. We want to be there when you scale to 100,000 users, when you raise your Series A, when you expand to new markets.
+                      <strong class="">We don’t do drive-by development.</strong><br>Every client relationship is long-term by design. We’re not interested in building your MVP and vanishing. We want to be there when you scale to 100,000 users<span class="pop text-4xl -mt-1">🚀</span>, when you raise your Series A, when you expand to new markets.
                     </p>
 
                     <p>
-                      <strong>We embed, not just deliver.</strong><br>We join your Slack channels, sync with your project management tools, and work alongside you every single day. Your standups are our standups. Your wins are our wins.
+                      <strong>We embed, not just deliver.</strong><br>We join your Slack channels<span class="pop text-4xl -mt-1">💬</span>, sync with your project management tools, and work alongside you every single day. Your standups are our standups. Your wins are our wins.
                     </p>
 
                     <p>
-                      <strong>We’re a partner, not a vendor.</strong><br>No one-off projects. No throwing code over the wall. We form long-term relationships because building great products takes time, iteration, and a deep understanding of your business.
+                      <strong>We’re a partner, not a vendor.</strong><br>No one-off projects. No throwing code over the wall. We form long-term relationships because building great products takes time, iteration, and a deep understanding of your business<span class="pop text-4xl -mt-1">💪</span>.
                     </p>
 
                     <p>
@@ -83,12 +83,12 @@
                     </p>
 
                     <p>
-                      <strong>Automaze</strong> was founded by <a href="https://x.com/aroussi" target="_blank" class="font-serif italic tracking-normal group"><img src="https://unavatar.io/ran@automaze.io" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Ran Aroussi</a>, who has been coding since the late ’80s.
-                        He’s built and scaled multiple ventures, created <a href="https://github.com/ranaroussi" target="_blank" class="font-serif italic tracking-normal">open-source tools</a> used by millions, and learned the hard way what actually works in tech. That experience shapes everything we do at Automaze.
+                      <strong>Automaze</strong> was founded by <a href="https://x.com/aroussi" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/ran-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Ran Aroussi</a>, who has been coding since the late ’80s.
+                        He’s built and scaled multiple ventures, created <a href="https://github.com/ranaroussi" target="_blank" class="font-serif italic tracking-normal bg-yellow-50 rounded text-pink-500">open-source tools</a> used by millions, and learned the hard way what actually works in tech. That experience shapes everything we do at Automaze.
                     </p>
 
                     <p>
-                      Together with <a href="https://x.com/lexburykin" target="_blank">Alex Burykin</a> and <a href="https://x.com/antonboksha" target="_blank">Anton Boksha</a>, who lead our development team, we’ve built a culture where senior expertise meets hands-on execution. They’re in the code, in the architecture discussions, and in your Slack channels, making sure every line of code serves your business goals.
+                      Together with <a href="https://x.com/lexburykin" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/alex-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Alex Burykin</a> and <a href="https://x.com/antonboksha" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/anton-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Anton Boksha</a>, who lead our development team, we’ve built a culture where senior expertise meets hands-on execution. They’re in the code, in the architecture discussions, and in your Slack channels, making sure every line of code serves your business goals.
                     </p>
 
                     <p>
@@ -98,7 +98,7 @@
                     <h4 class="font-bold text-3xl text-black">How We Actually Work</h4>
 
                     <p>
-                      <strong>Monthly fee, lifetime relationships.</strong><br>We work on monthly retainers because it keeps us accountable. 92% of our clients have never left and have instead increased and deepened their partnership with us, because we consistently deliver value.
+                      <strong>Monthly fee, lifetime relationships.</strong><br>We work on monthly retainers because it keeps us accountable. 92% of our clients have never left <span class="pop text-4xl -mt-1">🤩</span> and have instead increased and deepened their partnership with us, because we consistently deliver value.
                     </p>
 
                     <p>
@@ -120,19 +120,19 @@
                     </p>
 
                     <p>
-                      <strong>Strategic thinking:</strong> We challenge assumptions, validate ideas, and help you build what users actually want
+                      <strong>Strategic thinking:<span class="pop text-4xl -mt-1">🧠</span></strong> We challenge assumptions, validate ideas, and help you build what users actually want
                     </p>
 
                     <p>
-                      <strong>Continuous delivery:</strong> Daily commits, weekly demos, monthly impact – not quarterly surprises
+                      <strong>Continuous delivery:<span class="pop text-4xl -mt-1">🚄</span></strong> Daily commits, weekly demos, monthly impact – not quarterly surprises
                     </p>
 
                     <p>
-                      <strong>Full-stack expertise:</strong> Frontend, backend, DevOps, design, product management – all under one roof
+                      <strong>Full-stack expertise:<span class="pop text-4xl -mt-1">💻</span></strong> Frontend, backend, DevOps, design, product management – all under one roof
                     </p>
 
                     <p>
-                      <strong>Business partnership:</strong> We think ROI, user retention, and growth metrics – not just clean code
+                      <strong>Business partnership:<span class="pop text-4xl -mt-1">🤜🤛</span></strong> We think ROI, user retention, and growth metrics – not just clean code
                     </p>
 
                     <p>
@@ -154,7 +154,7 @@
                     </p>
 
                     <p>
-                      But if you want a technical partner who thinks like a founder, acts like an owner, and delivers like their equity depends on it – we should talk.
+                      But if you want a technical partner who thinks like a founder, acts like an owner, and delivers like their equity depends on it – <a href="<?php tiny::homeURL('/discovery-call') ?>" class="font-serif italic tracking-normal text-slate-500 group">we should talk<span class="pop text-4xl -mt-1">🤙</span></a>.
                     </p>
 
                     <h4 class="font-bold text-3xl text-black">The Bottom Line</h4>
@@ -164,7 +164,11 @@
                     </p>
 
                     <p>
-                      Ready to build something extraordinary? Let’s join forces and get to work.
+                      Ready to build something extraordinary?
+                    </p>
+
+                    <p>
+                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link"><span class="pop text-4xl -mt-1">🗓️</span> Book a call with us</a>
                     </p>
 
                 </div>
@@ -201,7 +205,6 @@
         text-shadow: 0 0 0 rgba(0,0,0,0); /* enable subpixel antialias consistency */
     }
     .scroll-highlight a .word.is-on {
-      color: #808080 !important;
       padding-right: 2px;
     }
     .scroll-highlight a:hover .word.is-on {
