@@ -1,22 +1,19 @@
 <?php tiny::layout()->default(title: 'About Us', emptyLayout: false); ?>
 
-<div id="main-content" class="relative z-10 bg-gradient-to-b from-indigo-50/5 via-white to-white min-h-screen ">
+<div id="main-content" class="relative z-10 bg-gradient-to-b from-[#0d1326] to-[#1c2657] min-h-screen">
     <main x-class="mx-8 relative">
         <section class="pt-16 max-w-3xl mx-auto">
             <div>
                 <div class="text-center">
-                    <h1 class="text-5xl lg:text-8xl font-extrabold tracking-tight">
+                    <h1 class="text-white text-5xl lg:text-8xl font-extrabold tracking-tight">
                         What makes us<br>
                         <span class="text-mask text-[5rem] lg:text-[9rem]" style="--bg-image: url('https://radiant.tailwindui.com/company/1.jpg')">different</span>
                     </h1>
-                    <h2 class="text-2xl lg:text-[1.8rem] mt-4 text-slate-700">
-                        Automaze is a full-service technology partner for startups and businesses that need more than just code.
 
-                        We act as your CTO, <span class="hidden lg:inline">your</span> dev team, and <span class="hidden lg:inline">your</span> product strategist – all rolled into one.
-                    </h2>
                 </div>
 
-                <div class="max-w-xl mx-auto text-xl lg:text-[1.4rem] grid gap-y-8 mt-20 tracking-tighters leading-relaxed text-slate-800 scroll-highlight">
+                <!-- <div class="max-w-xl mx-auto text-xl lg:text-[1.4rem] grid gap-y-8 mt-20 tracking-tighters leading-relaxed text-slate-800 scroll-highlight"> -->
+                <div class="max-w-2xl text-center font-serif mx-auto text-xl text-balance lg:text-3xl grid gap-y-8 mt-20 tracking-tight leading-relaxed text-slate-300 scroll-highlight">
                     <p>
                       Here’s the thing... <span class="pop text-4xl -mt-1">🤔</span>
 
@@ -33,7 +30,7 @@
                       And yes, we’ve also crashed and burned a few times <span class="pop text-4xl -mt-1">🙈</span> – which taught us more than any success ever could.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">The Problem With “Normal” Dev Shops</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">The Problem With “Normal” Dev Shops</h4>
 
                     <p>
                       Most agencies work like this:
@@ -54,18 +51,18 @@
                       We’ve seen this movie too many times. Startups don’t need vendors – they need partners <span class="pop text-4xl -mt-1">🤝</span> who think like owners, act like team members, and stick around when things get complicated.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">We’re Built Different</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">We’re Built Different</h4>
 
                     <p>
-                      <strong class="">We don’t do drive-by development.</strong><br>Every client relationship is long-term by design. We’re not interested in building your MVP and vanishing. We want to be there when you scale to 100,000 users<span class="pop text-4xl -mt-1">🚀</span>, when you raise your Series A, when you expand to new markets.
+                      <strong class="">We don’t do drive-by development.</strong><br>Every client relationship is long-term by design. We’re not interested in building your MVP and vanishing. We want to be there when you scale to 100,000 users <span class="pop text-4xl -mt-1">🚀</span>, when you raise your Series A, when you expand to new markets.
                     </p>
 
                     <p>
-                      <strong>We embed, not just deliver.</strong><br>We join your Slack channels<span class="pop text-4xl -mt-1">💬</span>, sync with your project management tools, and work alongside you every single day. Your standups are our standups. Your wins are our wins.
+                      <strong>We embed, not just deliver.</strong><br>We join your Slack channels <span class="pop text-4xl -mt-1">💬</span>, sync with your project management tools, and work alongside you every single day. Your standups are our standups. Your wins are our wins.
                     </p>
 
                     <p>
-                      <strong>We’re a partner, not a vendor.</strong><br>No one-off projects. No throwing code over the wall. We form long-term relationships because building great products takes time, iteration, and a deep understanding of your business<span class="pop text-4xl -mt-1">💪</span>.
+                      <strong>We’re a partner, not a vendor.</strong><br>No one-off projects. No throwing code over the wall. We form long-term relationships because building great products takes time, iteration, and a deep understanding of your business <span class="pop text-4xl -mt-1">💪</span>.
                     </p>
 
                     <p>
@@ -76,70 +73,70 @@
                       <strong>We’re proactive.</strong> When we say something will be done, it’s done. When there’s a problem, you’ll know immediately – along with three potential solutions.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">We’re Grown-Ups</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">We’re Grown-Ups</h4>
 
                     <p>
                       We act like the technical co-founder you wish you had. The one who’s been there before, who knows what’s about to break before it does, and who isn’t afraid to tell you when you’re about to make an expensive mistake.
                     </p>
 
                     <p>
-                      <strong>Automaze</strong> was founded by <a href="https://x.com/aroussi" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/ran-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Ran Aroussi</a>, who has been coding since the late ’80s.
-                        He’s built and scaled multiple ventures, created <a href="https://github.com/ranaroussi" target="_blank" class="font-serif italic tracking-normal bg-yellow-50 rounded text-pink-500">open-source tools</a> used by millions, and learned the hard way what actually works in tech. That experience shapes everything we do at Automaze.
+                      <strong>Automaze</strong> was founded by <a href="https://x.com/aroussi" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/ran-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-2 rounded-full" />Ran Aroussi</a>, who has been coding since the late ’80s.
+                        He’s built and scaled multiple ventures, created <a href="https://github.com/ranaroussi" target="_blank" class="font-serif italic tracking-normal bg-black/50 px-2.5 inline-block leading-none max-h-10 pb-1.5 rounded-full text-pink-500">open-source tools</a> used by millions, and learned the hard way what actually works in tech. That experience shapes everything we do at Automaze.
                     </p>
 
                     <p>
-                      Together with <a href="https://x.com/lexburykin" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/alex-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Alex Burykin</a> and <a href="https://x.com/antonboksha" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/anton-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-1 rounded-full" />Anton Boksha</a>, who lead our development team, we’ve built a culture where senior expertise meets hands-on execution. They’re in the code, in the architecture discussions, and in your Slack channels, making sure every line of code serves your business goals.
+                      Together with <a href="https://x.com/lexburykin" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/alex-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-2 rounded-full" />Alex Burykin</a> and <a href="https://x.com/antonboksha" target="_blank" class="font-serif italic tracking-normal text-slate-500 group"><img src="<?php tiny::staticURL('img/anton-avatar.webp') ?>" class="group-hover:!opacity-90 shadow-md ring-[1.5px] ring-white size-12 -mt-1.5 mr-2 rounded-full" />Anton Boksha</a>, who lead our development team, we’ve built a culture where senior expertise meets hands-on execution. They’re in the code, in the architecture discussions, and in your Slack channels, making sure every line of code serves your business goals.
                     </p>
 
                     <p>
                       But this isn’t about our journey. It’s about bringing that hard-won expertise to your team.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">How We Actually Work</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">How We Actually Work</h4>
 
                     <p>
-                      <strong>Monthly fee, lifetime relationships.</strong><br>We work on monthly retainers because it keeps us accountable. 92% of our clients have never left <span class="pop text-4xl -mt-1">🤩</span> and have instead increased and deepened their partnership with us, because we consistently deliver value.
+                      <strong><em>Monthly fee, lifetime relationships.</em></strong><br>We work on monthly retainers because it keeps us accountable. 92% of our clients have never left <span class="pop text-4xl -mt-1">🤩</span> and have instead increased and deepened their partnership with us, because we consistently deliver value.
                     </p>
 
                     <p>
-                      <strong>One team, global coverage.</strong><br>20+ professionals from
-                      <span class="pop text-4xl -mt-1">🇬🇧</span><span class="pop text-4xl -mt-1 -ml-4">🇺🇦</span><span class="pop text-4xl -mt-1 -ml-4">🇵🇱</span><span class="pop text-4xl -mt-1 -ml-4">🇩🇪</span><span class="pop text-4xl -mt-1 -ml-4">🇵🇹</span><span class="pop text-4xl -mt-1 -ml-4">🇮🇱</span><span class="pop text-4xl -mt-1 -ml-4">🇳🇬</span>
+                      <strong><em>One team, global coverage.</em></strong><br>20+ professionals from
+                      <span class="pop text-4xl -mt-1">🇬🇧</span><span class="pop text-4xl -mt-1 -ml-3">🇺🇦</span><span class="pop text-4xl -mt-1 -ml-3">🇵🇱</span><span class="pop text-4xl -mt-1 -ml-3">🇩🇪</span><span class="pop text-4xl -mt-1 -ml-3">🇵🇹</span><span class="pop text-4xl -mt-1 -ml-3">🇮🇱</span><span class="pop text-4xl -mt-1 -ml-3">🇳🇬</span>
                       across the globe.
                       <!-- UK, Ukraine, Poland, Israel, France, and Germany -->
                       While you sleep, we’re shipping. Same standards, same processes, same commitment to excellence.
                     </p>
 
                     <p>
-                      <strong>Transparent everything.</strong><br>Clear pricing. Open processes. Constant communication. No black boxes, no surprises, no “trust us, we’re the experts” nonsense.
+                      <strong><em>Transparent everything.</em></strong><br>Clear pricing. Open processes. Constant communication. No black boxes, no surprises, no “trust us, we’re the experts” nonsense.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">What You Actually Get</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">What You Actually Get</h4>
 
                     <p>
                       When you work with Automaze, you’re not hiring contractors. You’re getting:
                     </p>
 
                     <p>
-                      <strong>Strategic thinking:<span class="pop text-4xl -mt-1">🧠</span></strong> We challenge assumptions, validate ideas, and help you build what users actually want
+                      <strong>Strategic thinking: <span class="pop text-4xl -mt-1">🧠</span></strong> We challenge assumptions, validate ideas, and help you build what users actually want
                     </p>
 
                     <p>
-                      <strong>Continuous delivery:<span class="pop text-4xl -mt-1">🚄</span></strong> Daily commits, weekly demos, monthly impact – not quarterly surprises
+                      <strong>Continuous delivery: <span class="pop text-4xl -mt-1">🚄</span></strong> Daily commits, weekly demos, monthly impact – not quarterly surprises
                     </p>
 
                     <p>
-                      <strong>Full-stack expertise:<span class="pop text-4xl -mt-1">💻</span></strong> Frontend, backend, DevOps, design, product management – all under one roof
+                      <strong>Full-stack expertise: <span class="pop text-4xl -mt-1">💻</span></strong> Frontend, backend, DevOps, design, product management – all under one roof
                     </p>
 
                     <p>
-                      <strong>Business partnership:<span class="pop text-4xl -mt-1">🤜🤛</span></strong> We think ROI, user retention, and growth metrics – not just clean code
+                      <strong>Business partnership: <span class="pop text-4xl -mt-1">🤜🤛</span></strong> We think ROI, user retention, and growth metrics – not just clean code
                     </p>
 
                     <p>
                       We become an extension of your team, using your tools, joining your meetings, and caring about your metrics as much as you do.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">Why This Matters</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">Why This Matters</h4>
 
                     <p>
                       Every startup founder knows the feeling: You need senior technical leadership, but you can’t afford a full-time CTO. You need a reliable development team, but managing freelancers can be a nightmare. You need a product strategy, but agencies don’t understand your business.
@@ -157,35 +154,44 @@
                       But if you want a technical partner who thinks like a founder, acts like an owner, and delivers like their equity depends on it – <a href="<?php tiny::homeURL('/discovery-call') ?>" class="font-serif italic tracking-normal text-slate-500 group">we should talk<span class="pop text-4xl -mt-1">🤙</span></a>.
                     </p>
 
-                    <h4 class="font-bold text-3xl text-black">The Bottom Line</h4>
+                    <h4 class="mt-6 font-bold border-b border-dotted border-slate-700 text-4lg font-sans text-white">The Bottom Line</h4>
 
                     <p>
                       Your product deserves better than another vendor. It deserves a partner who’s been there, done that, and knows what it takes to win.
                     </p>
 
                     <p>
-                      Ready to build something extraordinary?
+                      <strong>Ready to build something extraordinary?</strong>
                     </p>
 
                     <p>
-                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link"><span class="pop text-4xl -mt-1">🗓️</span> Book a call with us</a>
+                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link"><span class="pop text-4xl -mt-1">🗓️</span> <em>Book a call with us</em></a>
                     </p>
 
                 </div>
             </div>
         </section>
 
-        <section>
-            <h3 class="home-grid-header mt-24 mb-16 text-center">
-                <span>Let's talk</span>
-            </h3>
+        <div class="h-px text-center shadow-xl !p-5 -mt-10 absolute inset-x-0 z-50"></div>
+        <section class="bg-white pt-20">
             <?php tiny::render('home/cta'); ?>
         </section>
     </main>
 </div>
 
-<div id="cuttoff-point" class="fixed inset-x-0 top-3/4 -mt-6 lg:top-2/3 lg:-mt-12 z-[2147483647]"></div>
+<div id="cuttoff-point" class="fixed inset-x-0 top-3/4 -mt-6 lg:top-2/3 lg:mt-14 z-[2147483647]"></div>
 <style>
+  main:before, main:after {
+    display: none;
+  }
+  .font-serif {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+}
+.font-serif strong {
+  font-weight: 600;
+}
+
     /* Per-word highlight on scroll (stays highlighted once triggered) */
     .scroll-highlight {
       --word-on: #1d2553;
@@ -194,15 +200,17 @@
     .scroll-highlight .word {
         color: inherit; /* starts from container color */
         transition: all 300ms ease;
-        opacity: .4;
+        opacity: .2;
+        filter: blur(0.5px);
       }
       /* .scroll-highlight p:first-of-type .word, */
       .scroll-highlight .word.is-on {
-        -webkit-font-smoothing: subpixel-antialiased;
+        /* -webkit-font-smoothing: subpixel-antialiased; */
         opacity: .9;
         /* color: var(--word-on); */
         opacity: .96;
         text-shadow: 0 0 0 rgba(0,0,0,0); /* enable subpixel antialias consistency */
+        filter: blur(0px);
     }
     .scroll-highlight a .word.is-on {
       padding-right: 2px;

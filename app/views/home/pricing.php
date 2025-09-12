@@ -4,7 +4,7 @@
   </h3>
   <div class="!p-0">
     <div class="lg:grid grid-cols-11 items-start justify-between gap-x-12">
-      <div class="col-span-6 mt-24 mb-10 mx-8 lg:mr-0">
+      <div class="col-span-6 mt-22 mb-4 mx-8 lg:mr-0">
         <h2 class="-mt-4 mb-4 section-header">We've got great plans for you.</h2>
         <p class="max-w-2xl">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
         <div class="mt-10 flex items-center gap-x-4">
@@ -76,7 +76,9 @@
           </summary>
           <div>
             <p>
-              <strong>Run like a one-person company.</strong> We build AI agents that automate your daily tasks so you can scale operations without growing your headcount.
+              <strong>Run like a one-person company.</strong>
+              We build custom AI agents, tailored to your business needs, that automate your daily tasks so you can scale operations without growing your headcount.
+
             </p>
             <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
           </div>
@@ -98,7 +100,7 @@
 
         <details name="pricing">
           <summary>
-            <span>Cloud Optimization</span>
+            <span>DevOps Optimization</span>
             <span><small>audit-based</small></span>
           </summary>
           <div>
@@ -107,6 +109,20 @@
               If we find any, we'll migrate your infra and pocket the difference over the following 6 months.
             </p>
             <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+          </div>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>One-Stop Shop</span>
+            <span><small>from</small> <span class="font-medium">$8K</span><small>/mo</small></span>
+          </summary>
+          <div>
+            <p>
+              <strong>The “don't worry about it” plan</strong>. We'll handle everything from A to Z.
+              This includes planning, development, design, automation, infrastructure, and everything in between.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/one-stop-shop') ?>" class="cta-link">Learn more</a></p>
           </div>
         </details>
 

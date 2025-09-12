@@ -63,6 +63,9 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="twitter:image" content="<?php tiny::layout()->props('ogImage') ?? tiny::staticURL('img/card.webp'); ?>" />
     <meta name="twitter:site" content="@automazeio" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <?php if (tiny::layout()->props('emptyLayout') === false): ?>
     <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
     <?php endif; ?>
