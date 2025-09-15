@@ -1331,6 +1331,9 @@
   .text-pretty {
     text-wrap: pretty;
   }
+  .whitespace-normal {
+    white-space: normal;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -1697,6 +1700,14 @@
       }
     }
   }
+  .hover\:\!border-0 {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style) !important;
+        border-width: 0px !important;
+      }
+    }
+  }
   .hover\:border-b {
     &:hover {
       @media (hover: hover) {
@@ -1743,6 +1754,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-slate-200);
+      }
+    }
+  }
+  .hover\:\!no-underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: none !important;
       }
     }
   }

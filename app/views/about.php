@@ -165,7 +165,7 @@
                     </p>
 
                     <p>
-                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link"><span class="pop text-4xl -mt-1">🗓️</span> <em>Book a call with us</em></a>
+                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="whitespace-nowrap"><span class="pop text-4xl -mt-1">🗓️</span> <em>Book a call with us ›</em></a>
                     </p>
 
                 </div>
@@ -182,7 +182,8 @@
 <div id="cuttoff-point" class="fixed inset-x-0 top-3/4 -mt-6 lg:top-2/3 lg:mt-14 z-[2147483647]"></div>
 <style>
   main:before, main:after {
-    display: none;
+    /* display: none; */
+    opacity: .1;
   }
   .font-serif {
   font-family: "Gentium Book Plus", serif;
