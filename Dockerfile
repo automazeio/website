@@ -12,49 +12,49 @@ RUN apk add --no-cache \
   nano \
   nginx \
   dcron \
-  php84 \
-  php84-bcmath \
-  php84-bz2 \
-  php84-cgi \
-  php84-cli \
-  php84-common \
-  php84-ctype \
-  php84-curl \
-  php84-dba \
-  php84-dev \
-  php84-dom \
-  php84-enchant \
-  php84-fpm \
-  php84-fileinfo \
-  php84-gd \
-  php84-gmp \
-  php84-imap \
-  php84-intl \
-  php84-ldap \
-  php84-mbstring \
-  php84-mysqli \
-  php84-odbc \
-  php84-opcache \
-  php84-openssl \
-  php84-pdo \
-  php84-pdo_mysql \
-  php84-pgsql \
-  php84-phar \
-  php84-phpdbg \
-  php84-session \
-  php84-snmp \
-  php84-soap \
-  php84-sqlite3 \
-  php84-tidy \
-  php84-xml \
-  php84-simplexml \
-  php84-xmlreader \
-  php84-xsl \
-  php84-zip \
-  php84-pecl-memcached \
-  php84-pecl-imagick \
-  php84-pecl-apcu \
-  php84-pecl-excimer \
+  php85 \
+  php85-bcmath \
+  php85-bz2 \
+  php85-cgi \
+  php85-cli \
+  php85-common \
+  php85-ctype \
+  php85-curl \
+  php85-dba \
+  php85-dev \
+  php85-dom \
+  php85-enchant \
+  php85-fpm \
+  php85-fileinfo \
+  php85-gd \
+  php85-gmp \
+  php85-imap \
+  php85-intl \
+  php85-ldap \
+  php85-mbstring \
+  php85-mysqli \
+  php85-odbc \
+  php85-opcache \
+  php85-openssl \
+  php85-pdo \
+  php85-pdo_mysql \
+  php85-pgsql \
+  php85-phar \
+  php85-phpdbg \
+  php85-session \
+  php85-snmp \
+  php85-soap \
+  php85-sqlite3 \
+  php85-tidy \
+  php85-xml \
+  php85-simplexml \
+  php85-xmlreader \
+  php85-xsl \
+  php85-zip \
+  php85-pecl-memcached \
+  php85-pecl-imagick \
+  php85-pecl-apcu \
+  php85-pecl-excimer \
   supervisor \
   imagemagick \
   imagemagick-dev
@@ -66,9 +66,9 @@ COPY server-config/nginx.conf /etc/nginx/nginx.conf
 COPY server-config/conf.d /etc/nginx/conf.d/
 
 # Configure PHP-FPM
-COPY server-config/fpm-www.conf /etc/php84/php-fpm.d/www.conf
-COPY server-config/php.ini /etc/php84/conf.d/custom.ini
-RUN ln -s /usr/bin/php84 /usr/bin/php
+COPY server-config/fpm-www.conf /etc/php85/php-fpm.d/www.conf
+COPY server-config/php.ini /etc/php85/conf.d/custom.ini
+RUN ln -s /usr/bin/php85 /usr/bin/php
 
 # Configure supervisord
 COPY server-config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
@@ -109,7 +109,7 @@ COPY server-config/crontab.txt /etc/crontabs/root
 RUN chmod 600 /etc/crontabs/root
 
 # Set all permissions
-RUN chown -R nobody:nginx /var/www /run /var/lib/nginx /var/log/nginx /etc/nginx /etc/php84 && \
+RUN chown -R nobody:nginx /var/www /run /var/lib/nginx /var/log/nginx /etc/nginx /etc/php85 && \
     chmod 755 /run && \
     chmod -R 755 /var/www/html && \
     chmod -R 755 /var/log/nginx && \

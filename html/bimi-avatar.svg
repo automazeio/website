@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+<title>Automaze Logo</title>
+<rect height="900" rx="174.6" width="900"/>
+<path d="m792.5 717.6h-692.7l176.9-306.4s169.4-293.4 169.4-293.4v59.9l-143.5 248.5-150.9 261.4h301.9 286.9l51.9 30z" fill="#fff"/>
+<g fill-rule="evenodd">
+<path d="m739.9 600.3-231.6-64.1 291.8 168.4z" fill="#6e5fa6"/>
+<path d="m496 517.2 233.2 64.6-46.4-80.5z" fill="#28bbde"/>
+<path d="m486.7 503 187.8-16.1-40-69.2-147.7 85.3z" fill="#36a936"/>
+<path d="m479.1 490 147.8-85.3-40-69.3-107.9 154.6z" fill="#fac405"/>
+<path d="m471.5 474.8 107.2-153.7-46.4-80.5-60.7 234.2z" fill="#f1883a"/>
+<path d="m461.2 454.5 60.2-232.5-60.2-104.3z" fill="#e8403f"/>
+</g>
+</svg>

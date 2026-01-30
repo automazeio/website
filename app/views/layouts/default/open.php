@@ -66,6 +66,36 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <script type="speculationrules">
+    {
+        "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }],
+        "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
+    }
+    </script>
+    <script>
+    if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('speculationrules')) {
+        const preloadedUrls = {};
+
+        function pointerenterHandler () {
+            if (!preloadedUrls[this.href]) {
+                preloadedUrls[this.href] = true;
+
+                const prefetcher = document.createElement('link');
+
+                prefetcher.as = prefetcher.relList.supports('prefetch') ? 'document' : 'fetch';
+                prefetcher.rel = prefetcher.relList.supports('prefetch') ? 'prefetch' : 'preload';
+                prefetcher.href = this.href;
+
+                document.head.appendChild(prefetcher);
+            }
+        }
+
+        document.querySelectorAll('a[href^="/"]').forEach(item => {
+            item.addEventListener('pointerenter', pointerenterHandler);
+        });
+    }
+    </script>
+
     <?php if (tiny::layout()->props('emptyLayout') === false): ?>
     <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
     <?php endif; ?>
