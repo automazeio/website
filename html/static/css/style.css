@@ -4716,10 +4716,10 @@ body.scrolled .main-nav .nav-button, body:not(.home) .main-nav .nav-button {
   background-clip: text;
   color: transparent;
 }
-section[id] p:not([class]) {
-  font-size: 15.5px;
-  --tw-leading: 1.8;
-  line-height: 1.8;
+section[id] > div > div > p {
+  font-size: 16px;
+  --tw-leading: 2;
+  line-height: 2;
   text-wrap: pretty;
   letter-spacing: -1%;
 }

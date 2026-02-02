@@ -1338,7 +1338,7 @@ body:not(.home) .main-nav .nav-button {
 }
 
 
-section[id] p:not([class]) {
-  @apply text-[15.5px] text-pretty leading-[1.8];
+section[id] > div > div > p {
+  @apply text-[16px] text-pretty leading-[2];
   letter-spacing: -1%;
 }
