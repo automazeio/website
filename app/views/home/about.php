@@ -3,7 +3,7 @@
         <span class="mx-auto block max-w-5xl px-8 py-5.5 font-mono text-sm font-medium uppercase opacity-40 xl:max-w-7xl">01 / About us</span>
     </h3>
     <div>
-        <h2 class="section-header -mt-6 md:-mt-4">An <strike class="font-medium opacity-20">agency</strike> partner you can trust.</h2>
+        <h2 class="section-header -mt-6 md:-mt-4">A <strike class="font-medium opacity-20">agency</strike> <span class="font-semibold underline">partner</span> you can trust.</h2>
         <p class="max-w-xl mt-4">We partner with founders to bring their vision to life, scale their business, and optimize for success.</p>
 
         <div class="lg:flex justify-between gap-12">
@@ -33,6 +33,8 @@
                 <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32"><img alt="" src="<?php tiny::staticURL('img/team1.webp'); ?>" class="block size-full object-cover"></div>
                 <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10"><img alt="" src="<?php tiny::staticURL('img/team3.webp'); ?>" class="block size-full object-cover"></div>
                 <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32"><img alt="" src="<?php tiny::staticURL('img/team4.webp'); ?>" class="block size-full object-cover"></div>
+
+                <p class="text-xs opacity-50 col-span-2 text-center mt-4 lg:mt-0">* AI generated images (we're not that good looking)</p>
             </div>
 
 

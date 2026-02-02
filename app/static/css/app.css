@@ -485,7 +485,7 @@ section:not(.hero) > div:first-of-type {
   @apply w-fit bg-gradient-to-r from-slate-300 via-slate-400 to-slate-400 bg-clip-text py-4.5 text-lg font-semibold text-transparent;
 }
 .hero h2 {
-  @apply my-6 mb-16 max-w-2xl text-xl lg:text-2xl text-slate-300 opacity-90;
+  @apply my-6 mb-16 max-w-2xl text-xl lg:text-2xl text-slate-300 opacity-90 leading-[1.5];
 }
 .hero-cta-button-secondary {
   @apply flex h-14 w-full lg:w-50 cursor-pointer items-center justify-center rounded-md border-[1.5px] border-indigo-50/20 text-base leading-0 font-semibold transition-opacity;
@@ -966,7 +966,7 @@ footer#footer nav a {
 }
 
 h2.section-header {
-  @apply mb-4 text-4xl leading-[1.1] font-semibold tracking-tight lg:text-5xl;
+  @apply mb-4 text-4xl leading-[1.1] font-semibold tracking-tight lg:text-[44px];
 }
 h2.section-header + p {
   @apply text-xl text-neutral-500 subpixel-antialiased lg:text-2xl lg:antialiased;
@@ -1335,4 +1335,10 @@ body:not(.home) .main-nav .nav-button {
   background: var(--bg-image) 50% no-repeat;
   background-clip: text;
   color: transparent;
+}
+
+
+section[id] p:not([class]) {
+  @apply text-[15.5px] text-pretty leading-[1.8];
+  letter-spacing: -1%;
 }

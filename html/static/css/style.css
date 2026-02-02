@@ -1281,6 +1281,10 @@
     font-size: var(--text-xl);
     line-height: calc(var(--spacing) * 8);
   }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
   .text-\[5rem\] {
     font-size: 5rem;
   }
@@ -1430,6 +1434,9 @@
   }
   .italic {
     font-style: italic;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .antialiased {
     -webkit-font-smoothing: antialiased;
@@ -2058,6 +2065,11 @@
   .lg\:-mt-32 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * -32);
+    }
+  }
+  .lg\:mt-0 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .lg\:mt-14 {
@@ -3180,6 +3192,8 @@ section:not(.hero) > div:first-of-type {
   max-width: var(--container-2xl);
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
+  --tw-leading: 1.5;
+  line-height: 1.5;
   color: var(--color-slate-300);
   opacity: 90%;
   @media (width >= 64rem) {
@@ -3898,8 +3912,7 @@ h2.section-header {
   --tw-tracking: var(--tracking-tight);
   letter-spacing: var(--tracking-tight);
   @media (width >= 64rem) {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    font-size: 44px;
   }
 }
 h2.section-header + p {
@@ -4702,6 +4715,13 @@ body.scrolled .main-nav .nav-button, body:not(.home) .main-nav .nav-button {
   background: var(--bg-image) 50% no-repeat;
   background-clip: text;
   color: transparent;
+}
+section[id] p:not([class]) {
+  font-size: 15.5px;
+  --tw-leading: 1.8;
+  line-height: 1.8;
+  text-wrap: pretty;
+  letter-spacing: -1%;
 }
 @property --tw-translate-x {
   syntax: "*";

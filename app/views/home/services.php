@@ -3,7 +3,7 @@
     <span>02 / Our Services</span>
   </h3>
   <div class="mask-scroll-snap">
-    <h2 class="mb-4 section-header">We have your back <span class="block sm:inline">(and front, too).</span></h2>
+    <h2 class="mb-4 section-header">We have your back. <span class="block sm:inline">And front, too.</span></h2>
     <p class="max-w-3xl">
     With over a hundred years of combined experience, we’ve “been there / done that”, and we‘re <strong>still passionate</strong> about what we do.</p>
     <div class="mt-6 max-w-3xl leading-relaxed text-neutral-700 text-balance">
