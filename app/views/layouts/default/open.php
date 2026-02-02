@@ -2,7 +2,8 @@
 echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 ?>
 <!DOCTYPE html>
-<html lang="en" class="relative min-h-full overscroll-none"  style="scroll-behavior: smooth">
+<html lang="en" class="relative min-h-full overscroll-none"  style="scroll-behavior: smooth"
+    x-data="{ expandedService: null }">
 <head>
 <?php if (@$_SERVER['ENV'] != 'local' && @$_SERVER['SENTRY_FRONTEND']): ?>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NKW2LYNSQ"></script>
@@ -97,7 +98,8 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     </script>
 
     <?php if (tiny::layout()->props('emptyLayout') === false): ?>
-    <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
+        <script defer src="<?php tiny::staticURL('/js/alpine.combo.min.js'); ?>"></script>
+        <!-- <script src="<?php tiny::staticURL('/js/htmx.min.js'); ?>"></script> -->
     <?php endif; ?>
 
 <?php if (tiny::layout()->props('scripts')):
@@ -125,9 +127,9 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
         </div>
         <ul class="col-span-8 flex items-center justify-center space-x-8">
             <li><a href="<?php tiny::homeURL('about'); ?>" class="hover:opacity-80 hover:border-b">About</a></li>
-            <li><a href="<?php tiny::homeURL('services'); ?>" class="hover:opacity-80 hover:border-b">Services</a></li>
+            <li><a href="<?php tiny::homeURL('/#services'); ?>" class="hover:opacity-80 hover:border-b">Services</a></li>
             <li><a href="https://secret.automaze.io" target="_blank" class="hover:opacity-80 hover:border-b">Perks</a></li>
-            <li><a href="<?php tiny::homeURL('pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
+            <li><a href="<?php tiny::homeURL('/#pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
         </ul>
         <div class="col-span-2 text-right">
             <a href="<?php tiny::homeURL('discovery-call'); ?>" class="nav-button">Book a Call</a>

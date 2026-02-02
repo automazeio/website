@@ -5,7 +5,7 @@
   <div class="!p-0">
     <div class="lg:grid grid-cols-11 items-start justify-between gap-x-12">
       <div class="col-span-6 mt-22 mb-4 mx-8 lg:mr-0">
-        <h2 class="-mt-4 mb-4 section-header">We've got great plans for you.</h2>
+        <h2 class="-mt-4 mb-4 section-header">We've got big plans for you.</h2>
         <p class="max-w-2xl">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
         <div class="mt-10 flex items-center gap-x-4">
           <h4 class="flex-none text-sm/6 font-semibold text-slate-600">What’s included</h4>
@@ -33,7 +33,7 @@
         <details name="pricing" open>
           <summary>
             <span>CTO-as-a-Service</span>
-            <span><small>from</small> <span class="font-medium">$5K</span><small>/mo</small></span>
+            <span><small>from</small> <span class="font-medium!">$6K</span><small>/mo</small></span>
           </summary>
           <div>
             <p>
@@ -46,24 +46,11 @@
         <details name="pricing">
           <summary>
             <span>MVP Launch</span>
-            <span><span class="font-medium">$6K</span><small>/mo</small></span>
+            <span><small>from</small> <span class="font-medium!">$8K</span></span>
           </summary>
           <div>
             <p>
-              <strong>A focused 3-month sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters. No fluff, just results.
-            </p>
-            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
-          </div>
-        </details>
-
-        <details name="pricing">
-          <summary>
-            <span>Managed Developers</span>
-            <span><small>from</small> <span class="font-medium">$3K</span><small>/mo</small></span>
-          </summary>
-          <div>
-            <p>
-              Web, mobile, internal tools - get a team of developers, with <strong>every skill you need</strong> under one roof. No silos, no handoffs. Just startup speed and enterprise quality.
+              <strong>A focused sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters. No fluff, just results.
             </p>
             <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
           </div>
@@ -72,7 +59,7 @@
         <details name="pricing">
           <summary>
             <span>Al Agents Development</span>
-            <span><span class="font-medium">$1K</span><small>/mo</small></span>
+            <span><small>from</small> <span class="font-medium!">$1K</span><small>/mo</small></span>
           </summary>
           <div>
             <p>
@@ -86,13 +73,26 @@
 
         <details name="pricing">
           <summary>
-            <span>Product UX &amp; UI Design</span>
-            <span><span class="font-medium">$2K</span><small>/mo</small></span>
+            <span>Tech Leadership &amp; Consulting</span>
+            <span><span class="font-medium!">$500</span><small>/hr</small></span>
           </summary>
           <div>
             <p>
               We'll craft high-retention applications and high-converting marketing sites
               using our years of product experience and a <strong>user-centered design process</strong>.
+            </p>
+            <p><a href="<?php tiny::homeURL('/services/consulting') ?>" class="cta-link">Learn more</a></p>
+          </div>
+        </details>
+
+        <details name="pricing">
+          <summary>
+            <span>Managed Developers</span>
+            <span><small>from</small> <span class="font-medium!">$3K</span><small>/mo</small></span>
+          </summary>
+          <div>
+            <p>
+              Senior technical leadership to help founders make confident architecture, hiring, and delivery decisions, keeping teams focused and products moving forward.
             </p>
             <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
           </div>
@@ -115,7 +115,7 @@
         <details name="pricing">
           <summary>
             <span>One-Stop Shop</span>
-            <span><small>from</small> <span class="font-medium">$8K</span><small>/mo</small></span>
+            <span><small>from</small> <span class="font-medium!">$8K</span><small>/mo</small></span>
           </summary>
           <div>
             <p>

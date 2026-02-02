@@ -4,7 +4,6 @@
 if (file_exists('../.version')) {
     $_SERVER['APP_VERSION'] = trim(file_get_contents('../.version').'') ?? 'latest';
 }
-
 /* ----------------------------------- */
 // Check if tiny framework exists
 if (!file_exists('../tiny/tiny.php')) {

@@ -1,4 +1,4 @@
-<section id="scope-of-services">
+<section id="services">
   <h3 class="home-grid-header">
     <span>02 / Our Services</span>
   </h3>

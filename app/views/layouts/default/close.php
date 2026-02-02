@@ -47,12 +47,22 @@ if (tiny::layout()->props('emptyLayout') === false) {
 <script src="<?php tiny::staticURL('js/aos.js'); ?>" onload="AOS.init();"></script>
 
 <script>
-    // --------- tiny load bump ---------
+  // --------- tiny load bump ---------
   // Nudge page by 1px down+up on load (helps hide mobile address bar, etc.)
   window.addEventListener('load', () => {
     setTimeout(() => {
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
+      if (window.location.hash == '#services') {
+        document.getElementById('services').scrollIntoView({
+          behavior: "smooth"
+        });
+      } else if (window.location.hash == '#pricing') {
+        document.getElementById('pricing').scrollIntoView({
+          behavior: "smooth"
+        });
+      } else {
+        window.scrollBy(0, 1);
+        window.scrollBy(0, -1);
+      }
     }, 100);
   });
 
@@ -61,12 +71,17 @@ if (tiny::layout()->props('emptyLayout') === false) {
     open: () => {
       mobileMenu.scrollPosition = window.scrollY;
       document.getElementById('footer').classList.add('min-h-screen');
-      document.getElementById('footer').scrollIntoView({ behavior: "instant"});
+      document.getElementById('footer').scrollIntoView({
+        behavior: "instant"
+      });
       document.getElementById('mobile-menu-close').classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
     },
     close: () => {
-      window.scrollTo({ top: mobileMenu.scrollPosition, behavior: "instant"});
+      window.scrollTo({
+        top: mobileMenu.scrollPosition,
+        behavior: "instant"
+      });
       document.getElementById('mobile-menu-close').classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
       document.getElementById('footer').classList.remove('min-h-screen');
@@ -79,4 +94,5 @@ if (tiny::layout()->props('emptyLayout') === false) {
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gulzar&family=Gupter:wght@400;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </body>
+
 </html>

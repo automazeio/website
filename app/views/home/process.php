@@ -40,9 +40,9 @@
               <path d="M8 12H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
               <path d="M21 20.6471L21 17C21 15.5706 19.6569 14 18 14C16.3431 14 15 15.5706 15 17L15 20.5C15 21.2797 15.7326 22 16.6364 22C17.5401 22 18.2727 21.2797 18.2727 20.5L18.2727 17.7647" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
             </svg>
-            <span><span class="text-slate-500">Step 2:</span> Get your proposal</span>
+            <span><span class="text-slate-500">Step 2:</span> We prepare the plan</span>
           </h4>
-          <p>Within 24 hours, you’ll get a tailored proposal and an invite to a shared Slack channel so we can stay connected while you decide.</p>
+          <p>Within 48 hours, you’ll get a tailored proposal and an invite to a shared Slack channel so we can stay connected while you decide.</p>
         </div>
       </li>
 
@@ -56,7 +56,7 @@
             </svg>
             <span><span class="text-slate-500">Step 3:</span> Sign & onboard</span>
           </h4>
-          <p>Once you’re ready, we set up billing, share a quick onboarding form, and introduce your delivery manager and technical lead.</p>
+          <p>Once you’re ready, we set up your account, onboard you as s customer, and introduce your delivery manager and technical lead.</p>
         </div>
       </li>
       <li class="md:col-span-6 hidden md:block">

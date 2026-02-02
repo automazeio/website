@@ -32,7 +32,7 @@
                     We act as your CTO, dev team, and product strategist – all rolled into one.
                 </h2>
                 <div class="grid lg:flex items-center space-x-4 gap-y-6">
-                    <a href="#scope-of-services" class="hero-cta-button-glow">Learn more ↓</a>
+                    <a href="#services" class="hero-cta-button-glow">Learn more ↓</a>
                     <a href="<?php tiny::homeURL('discovery-call'); ?>" class="hero-cta-button-secondary group">
                         <div class="avatar-group avatar-group-dark group !-ml-5">
                             <span class="has-tooltip">
