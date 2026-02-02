@@ -29,10 +29,10 @@
             </div>
 
             <div data-aos="fade-up" class="lg:max-w-md -mb-6 lg:mb-0 mt-24 lg:-mt-13 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-                <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10"><img alt="" src="https://radiant.tailwindui.com/company/1.jpg" class="block size-full object-cover"></div>
-                <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32"><img alt="" src="https://radiant.tailwindui.com/company/2.jpg" class="block size-full object-cover"></div>
-                <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10"><img alt="" src="https://radiant.tailwindui.com/company/3.jpg" class="block size-full object-cover"></div>
-                <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32"><img alt="" src="https://radiant.tailwindui.com/company/4.jpg" class="block size-full object-cover"></div>
+                <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10"><img alt="" src="<?php tiny::staticURL('img/team2.webp'); ?>" class="block size-full object-cover"></div>
+                <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32"><img alt="" src="<?php tiny::staticURL('img/team1.webp'); ?>" class="block size-full object-cover"></div>
+                <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10"><img alt="" src="<?php tiny::staticURL('img/team3.webp'); ?>" class="block size-full object-cover"></div>
+                <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32"><img alt="" src="<?php tiny::staticURL('img/team4.webp'); ?>" class="block size-full object-cover"></div>
             </div>
 
 
