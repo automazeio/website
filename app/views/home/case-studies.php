@@ -21,8 +21,8 @@
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Judith Black</div>
-          <div class="mt-1 text-gray-500">CEO, Workcation</div>
+          <div class="font-semibold text-gray-900">Adib Bemieh</div>
+          <div class="mt-1 text-gray-500">Founder, Bamboo Orchard</div>
         </figcaption>
       </figure>
 
@@ -43,8 +43,8 @@
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Marcus Lee</div>
-          <div class="mt-1 text-gray-500">Product Lead, Fold</div>
+          <div class="font-semibold text-gray-900">Sean Peterson</div>
+          <div class="mt-1 text-gray-500">CEO, CorssGen AI</div>
         </figcaption>
       </figure>
 
@@ -65,8 +65,8 @@
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Priya Sharma</div>
-          <div class="mt-1 text-gray-500">Founder, Novum</div>
+          <div class="font-semibold text-gray-900">Simon Knapp</div>
+          <div class="mt-1 text-gray-500">Founder, Pixmoto</div>
         </figcaption>
       </figure>
 
@@ -87,8 +87,8 @@
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Sofia Nguyen</div>
-          <div class="mt-1 text-gray-500">COO, Stellar</div>
+          <div class="font-semibold text-gray-900">Phillip Qeag</div>
+          <div class="mt-1 text-gray-500">Co-founder, IONKOL</div>
         </figcaption>
       </figure>
 
