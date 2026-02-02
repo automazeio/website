@@ -960,6 +960,9 @@
   .border-\[\#0e1429\] {
     border-color: #0e1429;
   }
+  .border-black {
+    border-color: var(--color-black);
+  }
   .border-indigo-50\/20 {
     border-color: color-mix(in srgb, oklch(96.2% 0.018 272.314) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -989,6 +992,12 @@
   }
   .border-white {
     border-color: var(--color-white);
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
   }
   .\!bg-\[var\(--secondary-hover\)\] {
     background-color: var(--secondary-hover) !important;
@@ -1028,6 +1037,18 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-white\/10 {
+    background-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-white\/20 {
+    background-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -1732,6 +1753,16 @@
     &:hover {
       @media (hover: hover) {
         margin-bottom: calc(var(--spacing) * 0.5);
+      }
+    }
+  }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
   }
