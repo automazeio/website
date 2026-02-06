@@ -21,7 +21,7 @@
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-simon.webp'); ?>" alt="" class="grayscale-20" />
+            <img src="<?php tiny::staticURL('img/client-simon.webp'); ?>" alt="" class="grayscale-10" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
@@ -43,7 +43,7 @@
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-jeff.webp'); ?>" alt="" class="grayscale-20" />
+            <img src="<?php tiny::staticURL('img/client-jeff.webp'); ?>" alt="" class="grayscale-10" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
@@ -65,7 +65,7 @@
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-joshua.webp'); ?>" alt="" class="grayscale-20" />
+            <img src="<?php tiny::staticURL('img/client-joshua.webp'); ?>" alt="" class="grayscale-10" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
@@ -89,7 +89,7 @@
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-adib.webp'); ?>" alt="" class="grayscale-20" />
+            <img src="<?php tiny::staticURL('img/client-adib.webp'); ?>" alt="" class="grayscale-10" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
@@ -114,7 +114,7 @@
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-brian.webp'); ?>" alt="" class="grayscale-20" />
+            <img src="<?php tiny::staticURL('img/client-brian.webp'); ?>" alt="" class="grayscale-10" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
@@ -138,7 +138,7 @@
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-phillip.webp'); ?>" alt="" class="grayscale-20" />
+            <img src="<?php tiny::staticURL('img/client-phillip.webp'); ?>" alt="" class="grayscale-10" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
