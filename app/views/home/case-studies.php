@@ -13,20 +13,20 @@
           </svg>
           <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
             <p>
-                The CTO-as-a-service model Ran and his team have built is the future of product development. They delivered two complex projects in parallel, within an impossible timeline and at a fraction of the traditional cost.
-                They are now an integral part of our ongoing success.
+                The CTO-as-a-service model is the future of product development.
+                They delivered two complex projects in parallel, within an impossible timeline, and
+                they are now an integral part of our ongoing success.
             </p>
-            <!-- <p>Automaze helped us ship faster than ever. Their team integrated seamlessly and delivered quality without compromise.</p> -->
           </blockquote>
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="<?php tiny::staticURL('img/client-simon.webp'); ?>" alt="" />
+            <img src="<?php tiny::staticURL('img/client-simon.webp'); ?>" alt="" class="grayscale-20" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
           <div class="font-semibold text-gray-900">Simon Knapp</div>
-          <div class="mt-1 text-gray-500">Founder, Pixmoto</div>
+          <div class="mt-1 text-gray-500">Founder @ Pixmoto</div>
         </figcaption>
       </figure>
 
@@ -38,17 +38,17 @@
             <use x="86" href="#quote-a" />
           </svg>
           <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-            <p>The MVP sprint was exactly what we needed—clear scope, smooth delivery, and a product we could put in customers’ hands.</p>
+            <p>Working with Automaze is a great experience! Super knowledgeable, very responsive, and a really nice team to work with.</p>
           </blockquote>
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=576&h=576&q=80&fit=facearea&auto=format" alt="" />
+            <img src="<?php tiny::staticURL('img/client-jeff.webp'); ?>" alt="" class="grayscale-20" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Sean Peterson</div>
-          <div class="mt-1 text-gray-500">CEO, CorssGen AI</div>
+          <div class="font-semibold text-gray-900">Jeff Shenk</div>
+          <div class="mt-1 text-gray-500">COO @ PLG</div>
         </figcaption>
       </figure>
 
@@ -60,17 +60,17 @@
             <use x="86" href="#quote-a" />
           </svg>
           <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-            <p>Their CTO-as-a-Service gave us clarity and confidence. We cut waste, focused the roadmap, and accelerated delivery.</p>
+            <p>If you're looking for a team of people who aren't just knowledgeable but also genuinely care, you found them.</p>
           </blockquote>
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=576&h=576&q=80&fit=facearea&auto=format" alt="" />
+            <img src="<?php tiny::staticURL('img/client-joshua.webp'); ?>" alt="" class="grayscale-20" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Adib Bemieh</div>
-          <div class="mt-1 text-gray-500">Founder, Bamboo Orchard</div>
+          <div class="font-semibold text-gray-900">Joshua Arabian</div>
+          <div class="mt-1 text-gray-500">CEO @ Home Medix</div>
         </figcaption>
       </figure>
 
@@ -82,19 +82,73 @@
             <use x="86" href="#quote-a" />
           </svg>
           <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-            <p>From design to DevOps, Automaze handled everything with care and speed. We scaled reliably and saved on cloud costs.</p>
+            <p>
+              I love working with Automaze. Their dedication to problem-solving and going beyond my expectations is the reason we keep growing our business with them.
+            </p>
           </blockquote>
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=576&h=576&q=80&fit=facearea&auto=format" alt="" />
+            <img src="<?php tiny::staticURL('img/client-adib.webp'); ?>" alt="" class="grayscale-20" />
+          </div>
+        </div>
+        <figcaption class="text-base lg:col-start-1 lg:row-start-3">
+          <div class="font-semibold text-gray-900">Adib Bemyeh</div>
+          <div class="mt-1 text-gray-500">Founder @ Bamboo Orchard</div>
+        </figcaption>
+      </figure>
+
+      <!-- Slide 5 -->
+      <figure class="testimonial-slide m-1 p-2 grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
+        <div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
+          <svg viewBox="0 0 162 128" fill="none" aria-hidden="true" class="absolute -top-12 left-0 -z-10 h-32 stroke-gray-900/10">
+            <path d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
+            <use x="86" href="#quote-a" />
+          </svg>
+          <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+            <p>
+            The team's ability to “read between the lines” is extremely helpful.
+            I always look forward to our checkins, where I know the team will overdeliver on improvements and solutions that we may not have come up with otherwise.
+            </p>
+          </blockquote>
+        </div>
+        <div class="col-end-1 lg:row-span-4 -ml-2">
+          <div class="squircle size-20 lg:size-64">
+            <img src="<?php tiny::staticURL('img/client-brian.webp'); ?>" alt="" class="grayscale-20" />
+          </div>
+        </div>
+        <figcaption class="text-base lg:col-start-1 lg:row-start-3">
+          <div class="font-semibold text-gray-900">Brian Atwood</div>
+          <div class="mt-1 text-gray-500">Founder @ Sindarin</div>
+        </figcaption>
+      </figure>
+
+      <!-- Slide 6 -->
+      <figure class="testimonial-slide m-1 p-2 grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
+        <div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
+          <svg viewBox="0 0 162 128" fill="none" aria-hidden="true" class="absolute -top-12 left-0 -z-10 h-32 stroke-gray-900/10">
+            <path d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
+            <use x="86" href="#quote-a" />
+          </svg>
+          <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+            <p>
+            The team's workmanship is highly applaudable. We do not have any second doubts about choosing to work with Automaze, and would recommend them to anyone without a second thought.
+            </p>
+          </blockquote>
+        </div>
+        <div class="col-end-1 lg:row-span-4 -ml-2">
+          <div class="squircle size-20 lg:size-64">
+            <img src="<?php tiny::staticURL('img/client-phillip.webp'); ?>" alt="" class="grayscale-20" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
           <div class="font-semibold text-gray-900">Phillip Qeag</div>
-          <div class="mt-1 text-gray-500">Co-founder, IONKOL</div>
+          <div class="mt-1 text-gray-500">Co-founder @ IONKOL</div>
         </figcaption>
       </figure>
+
+
+
 
       <!-- Dots -->
       <div id="testimonial-dots" class="testimonial-dots" role="tablist" aria-label="Testimonials navigation"></div>
