@@ -12,17 +12,21 @@
             <use x="86" href="#quote-a" />
           </svg>
           <blockquote class="text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-            <p>Automaze helped us ship faster than ever. Their team integrated seamlessly and delivered quality without compromise.</p>
+            <p>
+                The CTO-as-a-service model Ran and his team have built is the future of product development. They delivered two complex projects in parallel, within an impossible timeline and at a fraction of the traditional cost.
+                They are now an integral part of our ongoing success.
+            </p>
+            <!-- <p>Automaze helped us ship faster than ever. Their team integrated seamlessly and delivered quality without compromise.</p> -->
           </blockquote>
         </div>
         <div class="col-end-1 lg:row-span-4 -ml-2">
           <div class="squircle size-20 lg:size-64">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=576&h=576&q=80&fit=facearea&auto=format" alt="" />
+            <img src="<?php tiny::staticURL('img/client-simon.webp'); ?>" alt="" />
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Adib Bemieh</div>
-          <div class="mt-1 text-gray-500">Founder, Bamboo Orchard</div>
+          <div class="font-semibold text-gray-900">Simon Knapp</div>
+          <div class="mt-1 text-gray-500">Founder, Pixmoto</div>
         </figcaption>
       </figure>
 
@@ -65,8 +69,8 @@
           </div>
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
-          <div class="font-semibold text-gray-900">Simon Knapp</div>
-          <div class="mt-1 text-gray-500">Founder, Pixmoto</div>
+          <div class="font-semibold text-gray-900">Adib Bemieh</div>
+          <div class="mt-1 text-gray-500">Founder, Bamboo Orchard</div>
         </figcaption>
       </figure>
 

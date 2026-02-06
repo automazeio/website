@@ -150,6 +150,7 @@
             <div class="bleed-bottom"></div>
         </div>
 
+        <?php /*
         <div class="bleed-frame" :class="expandedService == 'consulting' ? 'bleed-frame-expanded' : 'bleed-frame-closed'" id="services-consulting"
             @click="expandedService == 'consulting' ? expandedService = null : (expandedService = 'consulting', $nextTick(() => $el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })))">
             <div class="bleed-top"></div>
@@ -187,6 +188,7 @@
             </div>
             <div class="bleed-bottom"></div>
         </div>
+        */ ?>
 
         <div class="bleed-frame" :class="expandedService == 'devops' ? 'bleed-frame-expanded' : 'bleed-frame-closed'" id="services-devops"
             @click="expandedService == 'devops' ? expandedService = null : (expandedService = 'devops', $nextTick(() => $el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })))">

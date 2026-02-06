@@ -4,16 +4,16 @@
   </h3>
   <div class="!p-0">
     <div class="lg:grid grid-cols-11 items-start justify-between gap-x-12">
-      <div class="col-span-6 mt-22 mb-4 mx-8 lg:mr-0">
-        <h2 class="-mt-4 mb-4 section-header">We've got big plans for you.</h2>
-        <p class="max-w-2xl">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
+      <div class="col-span-6 mt-22 mb-2 mx-8 lg:mr-0">
+        <h2 class="-mt-8 mb-4 section-header scale-95 origin-left">We've got big plans for you.</h2>
+        <p class="max-w-2xl scale-90 origin-left">Whether you’re just starting out or already an established business, we’ll create a plan to maximize your ROI.</p>
         <div class="mt-10 flex items-center gap-x-4">
           <h4 class="flex-none text-sm/6 font-semibold text-slate-600">What’s included</h4>
           <hr class="h-px flex-auto border-t border-dashed border-indigo-200">
           </hr>
         </div>
 
-        <ul role="list" class="md:columns-2 gap-x-12 leading-relaxed mt-6">
+        <ul role="list" class="md:columns-2 gap-x-12 leading-relaxed mt-6 [&>li]:my-2!">
           <li>Unlimited projects / brands</li>
           <li>Shared Slack channel</li>
           <li>Unlimited requests</li>
@@ -25,11 +25,11 @@
           <li>Keep 100% of equity</li>
           <li>Full IP-ownership</li>
           <li>Global compliance</li>
-          <li>Cancel anytime</li>
+          <li>Rolling 3-mo agreement</li>
         </ul>
       </div>
 
-      <div data-aos="fade-left" class="col-span-5 !mx-4 lg:!mx-px h-full mr-px border-t lg:border-t-0 lg:border-l border-dashed border-indigo-200">
+      <div id="pricing-wrapper" data-aos="fade-left" class="col-span-5 !mx-4 lg:!mx-px h-full mr-px border-t lg:border-t-0 lg:border-l border-dashed border-indigo-200">
         <details name="pricing" open>
           <summary>
             <span>CTO-as-a-Service</span>
@@ -56,6 +56,7 @@
           </div>
         </details>
 
+        <?php /*
         <details name="pricing">
           <summary>
             <span>Al Agents Development</span>
@@ -84,6 +85,7 @@
             <p><a href="<?php tiny::homeURL('/services/consulting') ?>" class="cta-link">Learn more</a></p>
           </div>
         </details>
+        */ ?>
 
         <details name="pricing">
           <summary>
@@ -114,7 +116,7 @@
 
         <details name="pricing">
           <summary>
-            <span>One-Stop Shop</span>
+            <span class="flex items-center my-0"><strong class="font-bold">One-Stop Shop</strong> <mark class="bg-sky-300/80 text-white rounded-full text-[8px] font-medium px-1 py-px mt-0.5 ml-1">POPULAR</mark></span>
             <span><small>from</small> <span class="font-medium!">$8K</span><small>/mo</small></span>
           </summary>
           <div>

@@ -51,7 +51,6 @@ tiny::components()->register('Footer', function (...$props) {
                         <li><a href="{$props['rootPath']}about">About</a></li>
                         <li><a href="https://secret.automaze.io" target="_blank">Perks for Client</a></li>
                         <li><a href="{$props['rootPath']}pricing">Pricing</a></li>
-                        <li><a href="https://oldschoolnewtech.com" target="_blank">Podcast</a></li>
                         <li><a href="mail&#116;&#111;&#58;h%65&#37;6Clo%4&#48;%61ut&#111;ma&#122;%6&#53;&#46;%&#54;9&#111;&#63;subject=Website%20inquiry">Contact</a></li>
                         <li><a class="font-mono text-[13px] opacity-80" href="{$props['rootPath']}llm.txt">llm.txt</a></li>
                     </ul>
@@ -59,8 +58,6 @@ tiny::components()->register('Footer', function (...$props) {
                         <li><h4>Services</h4></li>
                         <li><a href="{$props['rootPath']}services">CTO as a Service</a></li>
                         <li><a href="{$props['rootPath']}services">MVP Launch</a></li>
-                        <li><a href="{$props['rootPath']}services">Custom AI Agents</a></li>
-                        <li><a href="{$props['rootPath']}services">Tech Consulting</a></li>
                         <li><a href="{$props['rootPath']}services">Managed Developers</a></li>
                         <li><a href="{$props['rootPath']}services">DevOps &amp; Cloud</a></li>
                         <li><a href="{$props['rootPath']}services">One-Stop Shop</a></li>

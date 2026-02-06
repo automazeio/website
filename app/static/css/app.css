@@ -1126,6 +1126,9 @@ ul[role="list"] li:before {
   @apply float-left -mt-[3px] -ml-7;
 }
 
+#pricing-wrapper {
+  @apply grid content-evenly
+}
 #pricing details {
   @apply bg-[#fcfcff] border-b border-dashed border-indigo-100 hover:bg-[#f6f8fe];
   @apply transition-all duration-300 overflow-hidden
@@ -1138,7 +1141,7 @@ ul[role="list"] li:before {
 }
 #pricing details summary {
   @apply flex items-center justify-between relative;
-  @apply pt-4 pb-4 px-6 cursor-pointer;
+  @apply py-6 px-6 cursor-pointer;
   @apply transition-all duration-300
 }
 #pricing details:not([open]) summary:after {
