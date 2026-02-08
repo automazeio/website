@@ -50,7 +50,7 @@
           </summary>
           <div>
             <p>
-              <strong>A focused sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters. No fluff, just results.
+              <strong>A focused sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters in record time. No fluff, just results.
             </p>
             <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
           </div>

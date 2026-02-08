@@ -312,4 +312,39 @@
 </script>
 
 
+<style>
+    #vidgreet {
+      border: 3px solid #2563EB;
+    }
+    .vidgreet-cta {
+      background: #4f46e5 !important;
+      border: 1px solid rgba(255, 255, 255, 0.5)  !important;
+      color: rgb(255, 255, 255) !important;
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 5px !important;
+      padding: 0.75rem 1rem 0.8rem 1.25rem !important;
+    }
+    #vidgreet.maximized.vidgreet-custom {
+      width: 323px;
+      height: 400px;
+    }
+  </style>
+  <link href="<?php tiny::staticURL('vidgreet.min.css'); ?>" rel="stylesheet">
+  <script src="<?php tiny::staticURL('vidgreet.min.js'); ?>"></script>
+  <script>
+    vidGreet.init('/automaze-wave-intro.mp4', {
+      videoStart: 1.8,
+      posterStart: 0,
+      posterEnd: 10,
+      delay: 1000,
+      location: 'right',
+      aspectRatio: 'custom',
+      cta: {
+        text: 'Book a call now →',
+        link: '/discovery-call',
+        start: 10,
+        class: 'vidgreet-cta',
+      }
+    })
+    </script>
+
 <?php tiny::layout()->default('/'); ?>

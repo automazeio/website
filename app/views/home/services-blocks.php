@@ -48,7 +48,7 @@
                     <template x-if="expandedService != 'mvp'">
                         <div>
                             <p class="mt-4 text-[15px] leading-relaxed">
-                                <strong>A focused sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters. No fluff, just results.
+                                <strong>A focused sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters in record time. No fluff, just results.
                             </p>
                             <div class="w-fit text-[14px] mt-6 rounded-md group-hover:shadow-xs border border-transparent group-hover:pl-4 group-hover:pr-3 py-3 leading-none font-medium text-slate-600 group-hover:!border-indigo-100 group-hover:!bg-indigo-50/25 transition-all duration-400">Learn more →</div>
                         </div>

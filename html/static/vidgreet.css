@@ -1,0 +1,187 @@
+
+  #vidgreet.minimized {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 2147483647 !important;
+    transition: all 0.25s;
+  }
+
+  #vidgreet.vidgreet-right {
+    right: 2rem !important;
+    left: unset !important;
+  }
+
+  #vidgreet.minimized video {
+    position: absolute;
+    /* margin-left: -92px; */
+    margin-top: -40px;
+    pointer-events: none;
+    width: 320px;
+    height: 220px;
+  }
+
+  #vidgreet.minimized>.buttons {
+    display: none;
+  }
+
+  #vidgreet.maximized {
+    transition: all 0.25s;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .5);
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 2147483647 !important;
+  }
+
+  #vidgreet.maximized.vidgreet-portrait {
+    width: 240px;
+    height: 420px;
+  }
+
+  #vidgreet.maximized.vidgreet-landscape {
+    width: 420px;
+    height: 240px;
+  }
+
+  #vidgreet.maximized.vidgreet-square {
+    width: 280px;
+    height: 280px;
+  }
+  #vidgreet.maximized.vidgreet-circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+  }
+
+  #vidgreet.maximized video {
+    position: absolute;
+    pointer-events: none;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+  }
+
+  #vidgreet.maximized>.buttons {
+    position: absolute;
+    z-index: 1001;
+    display: flex;
+    width: calc(100% - 2rem);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0.25rem;
+  }
+
+  #vidgreet.maximized a[role="button"],
+  #vidgreet.maximized button {
+    transition: all 0.25s;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .5);
+    opacity: .5;
+    margin: 0 0.15rem;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 100%;
+    color: #000;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  #vidgreet.maximized.vidgreet-circle>.buttons {
+    right: 0;
+    bottom: 0.25rem;
+    margin: 0.5rem auto;
+    width: 54%;
+  }
+  #vidgreet.maximized.vidgreet-circle button:nth-child(2) {
+    margin-top: 28px;
+  }
+
+  #vidgreet.maximized:hover button {
+    opacity: .7;
+  }
+
+  #vidgreet.maximized:hover button:hover {
+    opacity: 1;
+  }
+
+  #vidgreet.maximized button#volume.muted svg path:first-of-type {
+    display: none;
+  }
+
+  #vidgreet.maximized button#volume:not(.muted) svg path:last-of-type {
+    display: none;
+  }
+
+  #vidgreet.maximized a[role="button"]#vidgreet-cta {
+    min-width: fit-content;
+    border-radius: 1000px;
+    padding: 0.75rem 1.25rem 0.8rem;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    z-index: 100;
+    opacity: 0.9;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    bottom: 0rem;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    pointer-events: all;
+    text-decoration: none;
+  }
+  #vidgreet.maximized a[role="button"]#vidgreet-cta:hover {
+    bottom: 0;
+    opacity: 1;
+  }
+  #vidgreet.maximized.vidgreet-custom a[role="button"]#vidgreet-cta,
+  #vidgreet.maximized.vidgreet-circle a[role="button"]#vidgreet-cta,
+  #vidgreet.maximized.vidgreet-portrait a[role="button"]#vidgreet-cta {
+    bottom: 4rem;
+  }
+  #vidgreet.maximized.vidgreet-circle a[role="button"]#vidgreet-cta:hover,
+  #vidgreet.maximized.vidgreet-portrait a[role="button"]#vidgreet-cta:hover {
+    bottom: 4.2rem;
+  }
+
+  @media screen and (max-width: 640px){
+    #vidgreet.minimized {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      bottom: 1rem;
+      left: 1rem;
+    }
+    #vidgreet.minimized video {
+      position: absolute;
+      margin-top: -25px;
+      pointer-events: none;
+      width: 278px;
+      height: 200px;
+    }
+    #vidgreet.maximized {
+      bottom: 1rem;
+      left: 1rem;
+      width: 217px;
+      height: 380px;
+    }
+  }
