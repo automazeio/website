@@ -17,18 +17,8 @@
     "ext-zip": "*",
     "ext-zlib": "*",
     "vlucas/phpdotenv": "^5.5",
-    "dragonmantank/cron-expression": "^3.3",
-    "hybridauth/hybridauth": "^3.9",
-    "stripe/stripe-php": "^10.9",
     "theiconic/name-parser": "^1.2",
-    "adnanhussainturki/microsoft-api-php": "*",
-    "aws/aws-sdk-php": "^3.321",
-    "sentry/sentry": "^4.9",
-    "twilio/sdk": "^5.0",
-    "mailgun/mailgun-php": "^4.3",
-    "symfony/http-client": "^7.2",
-    "nyholm/psr7": "^1.8",
-    "setasign/fpdf": "^1.8"
+    "sentry/sentry": "^4.9"
   },
   "config": {
     "allow-plugins": {
