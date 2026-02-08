@@ -114,7 +114,7 @@ RUN chown -R nobody:nginx /var/www /run /var/lib/nginx /var/log/nginx /etc/nginx
     chmod -R 755 /var/www/html && \
     chmod -R 755 /var/log/nginx && \
     chmod -R 755 /var/lib/nginx && \
-    chmod 755 /etc/php84/php-fpm.d/www.conf && \
+    chmod 755 /etc/php85/php-fpm.d/www.conf && \
     mkdir -p /var/log/php && \
     touch /var/log/php/php-errors.log && \
     chmod 777 /var/log/php/php-errors.log
