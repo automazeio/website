@@ -11,7 +11,7 @@ tiny::components()->register('Footer', function (...$props) {
 
             <div class="md:flex items-start justify-between px-9 pt-20 md:pt-30">
                 <div id="footer-lead" class="max-w-sm leading-relaxed mb-12">
-                    <p><a href="{$props['rootPath']}"><img loading="lazy" src="https://automaze.io/assets/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
+                    <p><a href="{$props['rootPath']}"><img loading="lazy" src="{$props['rootPath']}static/img/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
                     <p class="mt-4">At Automaze, we partner with founders to bring their vision to life, scale their business, and optimize for success.</p>
                     <div class="flex items-end space-x-4 mt-6">
                         <a href="http://x.com/intent/follow?screen_name=automazeio" target="_blank" class="text-slate-400 hover:text-slate-200 transition-all"><svg
