@@ -1297,7 +1297,7 @@ body:not(.home) .main-nav .nav-button {
 }
 
 .scroll-hint {
-  @apply w-8 h-12 rounded-full block mx-auto absolute bottom-20 border border-white/25 shadow-sm;
+  @apply w-8 h-12 rounded-full mx-auto absolute bottom-20 border border-white/25 shadow-sm hidden sm:block;
   @apply left-1/2 -ml-4 cursor-pointer;
   @apply bg-white/10 hover:bg-white/80;
   @apply transition-all duration-1000;

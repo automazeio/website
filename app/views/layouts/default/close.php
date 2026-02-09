@@ -69,6 +69,10 @@ if (tiny::layout()->props('emptyLayout') === false) {
   window.mobileMenu = window.mobileMenu || {
     scrollPosition: 0,
     open: () => {
+      if (window.location.pathname !== '/') {
+        window.location.href = '/';
+        return;
+      }
       mobileMenu.scrollPosition = window.scrollY;
       document.getElementById('footer').classList.add('min-h-screen');
       document.getElementById('footer').scrollIntoView({
