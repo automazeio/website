@@ -11,9 +11,17 @@
  class Class404 extends TinyController
 {
     private const REDIR_URLS = [
+        'twitter'  => '/?ref=twitter&utm_source=twitter_profile&utm_medium=social',
         'x'  => '/?ref=twitter&utm_source=twitter_profile&utm_medium=social',
+        'linkedin'  => '/?ref=linkedin&utm_source=linkedin_profile&utm_medium=social',
+        'li'  => '/?ref=linkedin&utm_source=linkedin_profile&utm_medium=social',
+        'github' => '/?ref=github&utm_source=github_profile&utm_medium=social',
         'gh' => '/?ref=github&utm_source=github_profile&utm_medium=social',
+        'instagram'   => '/?ref=instagram&utm_source=instagram_profile&utm_medium=social',
         'ig'   => '/?ref=instagram&utm_source=instagram_profile&utm_medium=social',
+        'youtube'   => '/?ref=youtube&utm_source=youtube_profile&utm_medium=social',
+        'yt'   => '/?ref=youtube&utm_source=youtube_profile&utm_medium=social',
+        'luma'   => '/?ref=luma&utm_source=luma_profile&utm_medium=social',
     ];
 
     /**
