@@ -143,7 +143,7 @@
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
           <div class="font-semibold text-gray-900">Phillip Qeag</div>
-          <div class="mt-1 text-gray-500">Co-founder @ IONKOL</div>
+          <div class="mt-1 text-gray-500">Co-founder @ Stelth</div>
         </figcaption>
       </figure>
 
