@@ -3,16 +3,16 @@
 class Schedule extends TinyController
 {
     private const ACTION_URLS = [
-        'followup'  => 'https://meetings-eu1.hubspot.com/meetings/automaze/call',
-        'interview' => 'https://meetings-eu1.hubspot.com/meetings/automaze/interview',
-        'kickoff'   => 'https://meetings-eu1.hubspot.com/meetings/automaze/workshop',
-        'workshop'  => 'https://meetings-eu1.hubspot.com/meetings/automaze/workshop',
-        'ran'       => 'https://meetings-eu1.hubspot.com/meetings/automaze/ran',
-        'sync'      => 'https://meetings-eu1.hubspot.com/meetings/automaze/call',
-        'team'      => 'https://meetings-eu1.hubspot.com/meetings/automaze/team',
+        'followup'  => 'https://cal.com/automaze/sync?duration=30',
+        'interview' => 'https://cal.com/automaze/interview',
+        'kickoff'   => 'https://cal.com/automaze/sync?duration=45',
+        'workshop'  => 'https://cal.com/automaze/sync?duration=45',
+        'ran'       => 'https://cal.com/automaze/consultation',
+        'sync'      => 'https://cal.com/automaze/sync',
+        'team'      => 'https://cal.com/automaze/sync',
     ];
 
-    private const DEFAULT_URL = 'https://meetings-eu1.hubspot.com/meetings/automaze/call';
+    private const DEFAULT_URL = 'https://cal.com/automaze/intro';
 
     public function get($request, $response)
     {
