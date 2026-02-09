@@ -16,8 +16,6 @@ RUN apk add --no-cache \
   php85-bcmath \
   php85-bz2 \
   php85-cgi \
-  php85-cli \
-  php85-common \
   php85-ctype \
   php85-curl \
   php85-dba \
@@ -28,7 +26,7 @@ RUN apk add --no-cache \
   php85-fileinfo \
   php85-gd \
   php85-gmp \
-  php85-imap \
+  php85-pecl-imap \
   php85-intl \
   php85-ldap \
   php85-mbstring \
@@ -37,6 +35,8 @@ RUN apk add --no-cache \
   php85-openssl \
   php85-pdo \
   php85-pdo_mysql \
+  php85-pdo_pgsql \
+  php85-pdo_sqlite \
   php85-pgsql \
   php85-phar \
   php85-phpdbg \
@@ -115,8 +115,8 @@ RUN chown -R nobody:nginx /var/www /run /var/lib/nginx /var/log/nginx /etc/nginx
     chmod -R 755 /var/lib/nginx && \
     chmod 755 /etc/php85/php-fpm.d/www.conf && \
     mkdir -p /var/log/php && \
-    touch /var/log/php/php-errors.log && \
-    chmod 777 /var/log/php/php-errors.log
+    touch /var/log/php/php-errors.log /var/log/php/php-slow.log && \
+    chmod 777 /var/log/php/php-errors.log /var/log/php/php-slow.log
 
 # Install dependencies
 RUN composer install --working-dir=/var/www --no-dev --ignore-platform-reqs --optimize-autoloader --no-cache
