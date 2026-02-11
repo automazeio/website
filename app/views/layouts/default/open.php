@@ -27,6 +27,51 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 
     <!-- <script src="https://js.sentry-cdn.com/<?php echo $_SERVER['SENTRY_FRONTEND']; ?>.min.js" crossorigin="anonymous"></script> -->
 <?php endif; ?>
+    <script>
+        window.trackDiscoveryCallClick = function (location) {
+            if (typeof window.gtag !== 'function') {
+                return;
+            }
+
+            window.gtag('event', 'click_discovery_call', {
+                click_location: location || 'unknown',
+                page_path: window.location.pathname,
+                transport_type: 'beacon'
+            });
+        };
+
+        document.addEventListener('click', function (event) {
+            const clickTarget = event.target;
+            if (!(clickTarget instanceof Element)) {
+                return;
+            }
+
+            const link = clickTarget.closest('a[href]');
+            if (!link) {
+                return;
+            }
+
+            let linkURL;
+
+            try {
+                linkURL = new URL(link.href, window.location.origin);
+            } catch (error) {
+                return;
+            }
+
+            if (!linkURL.pathname.startsWith('/discovery-call')) {
+                return;
+            }
+
+            const location =
+                link.dataset.discoveryLocation
+                || (link.id === 'vidgreet-cta' ? 'vidgreet cta button' : '')
+                || link.textContent.trim().replace(/\s+/g, ' ').slice(0, 120)
+                || 'unknown';
+
+            window.trackDiscoveryCallClick(location);
+        });
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -132,7 +177,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
             <li><a href="<?php tiny::homeURL('/#pricing'); ?>" class="hover:opacity-80 hover:border-b">Pricing</a></li>
         </ul>
         <div class="col-span-2 text-right">
-            <a href="<?php tiny::homeURL('discovery-call'); ?>" class="nav-button">Book a Call</a>
+            <a href="<?php tiny::homeURL('discovery-call'); ?>" class="nav-button" data-discovery-location="button Book a Call in nav">Book a Call</a>
         </div>
     </nav>
 </header>

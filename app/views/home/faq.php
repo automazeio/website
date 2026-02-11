@@ -20,7 +20,7 @@
             <p>
               With our service, you get the same expertise and experience at a fraction of the cost without giving away any equity. Furthermore, you can cancel or pause your subscription anytime, so you’re never locked in.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq why not hire full-time cto">Let's talk</a></p>
           </div>
         </details>
 
@@ -30,7 +30,7 @@
             <p>
               When you subscribe, you’ll receive an email with a link to your personal task board within one business day. The first task would be signing a confidentiality agreement. We’ll also schedule a call to get to know you and your business and to discuss your first request.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq what happens when i sign up">Let's talk</a></p>
           </div>
         </details>
 
@@ -40,7 +40,7 @@
             <p>
               Once subscribed, you can add as many requests to your queue as you’d like, and they will be handled by us one by one.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq is there a request limit">Let's talk</a></p>
           </div>
         </details>
 
@@ -50,7 +50,7 @@
             <p>
               It depends on the task and its complexity, but on average, most requests will be completed in 2-3 days.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq how fast will tasks be completed">Let's talk</a></p>
           </div>
         </details>
 
@@ -63,7 +63,7 @@
               companies of all sizes, from small startups to large enterprises,
               and has helped them build and scale their products.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq whos behind automaze">Let's talk</a></p>
           </div>
         </details>
 
@@ -76,7 +76,7 @@
             <p>
               Billing cycles are monthly, based on five days a week or 22 days per month. Let’s say you sign up, use the service for 15 days, and then decide to pause your subscription. This means that the billing cycle will be paused, and you’ll have seven days of service remaining to be used anytime in the future.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq how does pause feature work">Let's talk</a></p>
           </div>
         </details>
 
@@ -86,7 +86,7 @@
             <p>
               We’ve seen and done it all, but our most common tech stack uses a combination of Node.js, Python, PHP, Bash, Go, React, Vue, Alpine.js, Tailwind, Bootstrap, Postgresql, MySQL, MongoDB, Redis, AWS, Google Cloud, Docker, Kubernetes, Jenkins, and GitHub. For UX/UI, we use Figma, Adobe Illustrator, and Photoshop.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq what technologies do you work with">Let's talk</a></p>
           </div>
         </details>
 
@@ -99,7 +99,7 @@
             <p>
               Adding a Google doc, wireframes, or recording a brief Loom video is recommended. If it can be linked to or shared in your task board, it’s fair game.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq how do i put in requests">Let's talk</a></p>
           </div>
         </details>
 
@@ -109,7 +109,7 @@
             <p>
               No worries! We'll continue to iterate and revise until you're 100% satisfied.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq what if im not satisfied">Let's talk</a></p>
           </div>
         </details>
 
@@ -118,7 +118,7 @@
           <div>
             That’s fine. You can pause your subscription when finished and return when you have additional tasks to perform. There’s no need to let the remainder of your subscription go to waste.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq what if i only have a single request">Let's talk</a></p>
           </div>
         </details>
 
@@ -131,7 +131,7 @@
               Due to the high quality nature of the work, there will be no
               refunds issued.
             </p>
-            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Let's talk</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link" data-discovery-location="faq are there any refunds">Let's talk</a></p>
           </div>
         </details>
       </div>

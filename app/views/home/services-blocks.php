@@ -27,7 +27,7 @@
                                 You stay focused on the business. We own the tech.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all">Book a call →</a>
+                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services cto">Book a call →</a>
                             </p>
                         </section>
                     </template>
@@ -65,7 +65,7 @@
                                 Launch fast. Learn faster.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all">Book a call →</a>
+                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services mvp">Book a call →</a>
                             </p>
                         </section>
                     </template>
@@ -103,7 +103,7 @@
                                 Think leverage, not automation theatre.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all">Book a call →</a>
+                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services ai">Book a call →</a>
                             </p>
                         </section>
                     </template>
@@ -141,7 +141,7 @@
                                 Your developers build. We make sure it all makes sense.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all">Book a call →</a>
+                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services managed developers">Book a call →</a>
                             </p>
                         </section>
                     </template>
@@ -180,7 +180,7 @@
                                 No slides. No theory. Just practical leadership and clear decisions.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all">Book a call →</a>
+                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services consulting">Book a call →</a>
                             </p>
                         </section>
                     </template>
@@ -219,7 +219,7 @@
                                 If we don't save you money, you don't pay.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all">Book a call →</a>
+                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services devops">Book a call →</a>
                             </p>
                         </section>
                     </template>

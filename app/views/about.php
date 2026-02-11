@@ -153,7 +153,7 @@
                     </p>
 
                     <p>
-                      But if you want a technical partner who thinks like a founder, acts like an owner, and delivers like their equity depends on it – <a href="<?php tiny::homeURL('/discovery-call') ?>" class="font-serif font-bold! italic tracking-normal text-slate-500 group">we should talk<span class="pop text-4xl -mt-1">🤙</span></a>.<br>
+                      But if you want a technical partner who thinks like a founder, acts like an owner, and delivers like their equity depends on it – <a href="<?php tiny::homeURL('/discovery-call') ?>" class="font-serif font-bold! italic tracking-normal text-slate-500 group" data-discovery-location="link we should talk in about page">we should talk<span class="pop text-4xl -mt-1">🤙</span></a>.<br>
                     </p>
 
                     <h4 class="w-fit mt-6 font-bold! text-3xl border-b border-dotted border-slate-600 font-serif text-white">The Bottom Line</h4>
@@ -167,7 +167,7 @@
                     </p>
 
                     <p>
-                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="whitespace-nowrap"><span class="pop text-4xl -mt-1">🗓️</span> <em>Book a call with us ›</em></a><br>
+                      <a href="<?php tiny::homeURL('/discovery-call') ?>" class="whitespace-nowrap" data-discovery-location="link Book a call with us in about page"><span class="pop text-4xl -mt-1">🗓️</span> <em>Book a call with us ›</em></a><br>
                     </p>
 
                 </div>
