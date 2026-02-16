@@ -14,7 +14,7 @@ tiny::components()->register('Footer', function (...$props) {
                     <p><a href="{$props['rootPath']}"><img loading="lazy" src="{$props['rootPath']}static/img/automaze-min.png" alt="Automaze logo" class="size-12" /></a></p>
                     <p class="mt-4">At Automaze, we partner with founders to bring their vision to life, scale their business, and optimize for success.</p>
                     <div class="flex items-end space-x-4 mt-6">
-                        <a href="http://x.com/intent/follow?screen_name=automazeio" target="_blank" class="text-slate-400 hover:text-slate-200 transition-all"><svg
+                        <a href="http://x.com/intent/follow?screen_name=automaze" target="_blank" class="text-slate-400 hover:text-slate-200 transition-all"><svg
                           viewBox="0 0 1200 1227" ill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="size-4 mb-0.5 " fill="currentColor">
                             <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
                         </svg></a>

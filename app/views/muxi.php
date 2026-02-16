@@ -41,13 +41,13 @@
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="automaze.io" />
-        <meta property="twitter:site" content="@automazeio" />
+        <meta property="twitter:site" content="@automaze" />
         <meta property="twitter:creator" content="@aroussi" />
         <meta property="twitter:url" content="https://automaze.io" />
         <meta name="twitter:title" content="MUXI (by Automaze) AI Agents" />
         <meta name="twitter:description" content="Tailor-made AI agents for founders, built around your business and workflow." />
         <meta name="twitter:image" content="<?php tiny::staticURL('img/muxi-card.webp'); ?>" />
-        <meta name="twitter:site" content="@automazeio" />
+        <meta name="twitter:site" content="@automaze" />
 
         <link rel="dns-prefetch" href="https://forms.automaze.io/" />
         <style>
