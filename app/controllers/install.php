@@ -59,7 +59,7 @@ class Install extends TinyController
         }
 
         // Serve bash script for curl/wget clients or explicit Linux/macOS views
-        elseif ($clientType === 'curl' || $clientType === 'wget' || $view === 'linux' || $view === 'macos') {
+        else {//if ($clientType === 'curl' || $clientType === 'wget' || $view === 'linux' || $view === 'macos') {
             // Serve bash script
             header('Content-Type: text/plain; charset=utf-8');
             echo tiny::cache()->remember($request->path->section . ':install.sh', $this->cacheTTL, function () use ($repo_install_url, $context) {
@@ -68,10 +68,10 @@ class Install extends TinyController
             exit;
         }
         // Redirect browsers to documentation page
-        else {
-            // Redirect browsers to documentation
-            $response->redirect('https://github.com/' . $repo_url, 302);
-        }
+        // else {
+        //     // Redirect browsers to documentation
+        //     $response->redirect('https://github.com/' . $repo_url, 302);
+        // }
     }
 
 
