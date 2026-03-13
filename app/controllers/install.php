@@ -41,21 +41,29 @@ class Install extends TinyController
         // Supports: 'browser', 'windows', 'linux', 'macos'
         $view = $request->path->section ?? 'browser';
 
+        $context = stream_context_create(array(
+            'http' => array(
+                'method' => 'GET',
+                'header' => "Accept: application/vnd.github.raw\r\n"
+            )
+        ));
+
         // Serve PowerShell script for Windows clients or explicit Windows view
         if ($clientType === 'powershell' || $view === 'windows') {
             // Serve PowerShell script
             header('Content-Type: text/plain; charset=utf-8');
-            echo tiny::cache()->remember($request->path->section . ':install.ps1', $this->cacheTTL, function () use ($repo_install_url) {
-                return file_get_contents('https://raw.githubusercontent.com/' . $repo_install_url . 'install.ps1');
+            echo tiny::cache()->remember($request->path->section . ':install.ps1', $this->cacheTTL, function () use ($repo_install_url, $context) {
+                return file_get_contents('https://raw.githubusercontent.com/' . $repo_install_url . 'install.ps1', false, $context);
             });
             exit;
         }
+
         // Serve bash script for curl/wget clients or explicit Linux/macOS views
         elseif ($clientType === 'curl' || $clientType === 'wget' || $view === 'linux' || $view === 'macos') {
             // Serve bash script
             header('Content-Type: text/plain; charset=utf-8');
-            echo tiny::cache()->remember($request->path->section . ':install.sh', $this->cacheTTL, function () use ($repo_install_url) {
-                return file_get_contents('https://raw.githubusercontent.com/' . $repo_install_url . 'install.sh');
+            echo tiny::cache()->remember($request->path->section . ':install.sh', $this->cacheTTL, function () use ($repo_install_url, $context) {
+                return file_get_contents('https://raw.githubusercontent.com/' . $repo_install_url . 'install.sh', false, $context);
             });
             exit;
         }
