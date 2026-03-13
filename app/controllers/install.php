@@ -61,6 +61,8 @@ class Install extends TinyController
         // Serve bash script for curl/wget clients or explicit Linux/macOS views
         else {//if ($clientType === 'curl' || $clientType === 'wget' || $view === 'linux' || $view === 'macos') {
             // Serve bash script
+            $response->redirect('https://raw.githubusercontent.com/' . $repo_install_url . 'install.sh', 302);
+            return;
             header('Content-Type: text/plain; charset=utf-8');
             echo tiny::cache()->remember($request->path->section . ':install.sh', $this->cacheTTL, function () use ($repo_install_url, $context) {
                 return file_get_contents('https://raw.githubusercontent.com/' . $repo_install_url . 'install.sh', false, $context);
