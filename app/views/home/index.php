@@ -18,27 +18,6 @@
 </div>
 
 
-<?php /*
-<link href="https://automaze.io/assets/vidgreet.min.css?20250106230953" rel="stylesheet">
-<script src="https://automaze.io/assets/vidgreet.min.js?20250106230953"></script>
-<script>
-  vidGreet.init('https://d1qje4hvv045h3.cloudfront.net/automaze-wave-621c258a-54cc-445e-98dc-15a2df89c704.mp4', {
-    videoStart: 2.65,
-    posterStart: 2,
-    posterEnd: 10,
-    // delay: 1000,
-    location: 'left',
-    aspectRatio: 'portrait',
-    cta: {
-      text: 'Book a call now →',
-      link: 'javascript:openSlideOver(event);',
-      start: 50,
-      class: 'vidgreet-cta',
-    }
-  })
-</script>
-*/ ?>
-
 <script>
   function scrollFromHero() {
     let offset = window.innerHeight + 160;
@@ -312,7 +291,7 @@
 </script>
 
 
-
+<?php /*
   <script src="<?php tiny::staticURL('vidgreet.min.js'); ?>"></script>
   <link href="<?php tiny::staticURL('vidgreet.min.css'); ?>" rel="stylesheet">
   <style>
@@ -340,5 +319,6 @@
       }
     })
     </script>
+*/ ?>
 
 <?php tiny::layout()->default('/'); ?>
