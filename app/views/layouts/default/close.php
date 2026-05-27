@@ -98,6 +98,12 @@ if (tiny::layout()->props('emptyLayout') === false) {
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Gulzar&family=Gupter:wght@400;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <!-- iClosed Lift Widget begin -->
+<style>
+  #iclosed-cta-container {
+    position: relative;
+    z-index: 2147483647;
+  }
+</style>
 <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" data-cta-widget="OM9-xbYkVdiS" async></script>
 <!-- iClosed Lift Widget end -->
 
