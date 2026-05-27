@@ -103,12 +103,6 @@ if (tiny::layout()->props('emptyLayout') === false) {
     position: relative;
     z-index: 2147483647;
   }
-  #iclosed-cta-container .iclosed-cta-widget p:has(a[noopener]) {
-    border: 0 !important;
- }
-  #iclosed-cta-container .iclosed-cta-widget p:has(a[noopener]) a[noopener] {
-    display: none !important;
-  }
 </style>
 <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" data-cta-widget="OM9-xbYkVdiS" async></script>
 <!-- iClosed Lift Widget end -->
