@@ -12,11 +12,18 @@
             <path d="m462.62 431.15 77.12-297.59-77.12-133.56z" fill="#e8403f" />
         </g>
     </svg>
-    <h2 class="text-3xl font-medium">Booking Confirmed</h2>
+
+
+    <!-- iClosed widget begin -->
+    <div class="call-details-widget" data-url="https://app.iclosed.io/embed" style="width: 100%; height: 340px"></div>
+    <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
+    <!-- iClosed widget end -->
+
+    <!-- <h2 class="text-3xl font-medium">Booking Confirmed</h2>
     <div class="text-lg text-slate-300 mt-6 mb-12 text-center">
         Thank you for booking your call with us.<br>
         A calendar invitation has been emailed to you.
-    </div>
+    </div> -->
 
     <a href="<?php tiny::homeURL('/'); ?>"  hx-boost="true" hx-target="body" hx-swap="outerHTML"
         class="font-medium text-sm block w-fit mx-auto text-blue-500 hover:text-blue-500/80" role="button">

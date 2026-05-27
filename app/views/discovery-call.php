@@ -1,4 +1,4 @@
-<?php tiny::layout()->default(title: 'Book a Discovery Call', emptyLayout: true, robots: 'noindex, follow'); ?>
+<?php tiny::layout()->default(title: 'Book a Discovery Call', emptyLayout: true, robots: 'index, follow'); ?>
 <style>
     html, body {
         height: 100%;
