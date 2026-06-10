@@ -96,7 +96,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Automaze <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?>" />
     <meta property="og:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
-    <meta property="og:image" content="<?php tiny::layout()->props('ogImage') ?? tiny::staticURL('img/card.webp'); ?>" />
+    <meta property="og:image" content="<?php echo tiny::layout()->props('ogImage') ?: tiny::staticURL('img/ogimage.webp', true); ?>" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -106,7 +106,7 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta property="twitter:url" content="https://automaze.io" />
     <meta name="twitter:title" content="Automaze <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?>" />
     <meta name="twitter:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
-    <meta name="twitter:image" content="<?php tiny::layout()->props('ogImage') ?? tiny::staticURL('img/card.webp'); ?>" />
+    <meta name="twitter:image" content="<?php echo tiny::layout()->props('ogImage') ?: tiny::staticURL('img/ogimage.webp', true); ?>" />
     <meta name="twitter:site" content="@automaze" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
