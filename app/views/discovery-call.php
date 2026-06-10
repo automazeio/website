@@ -1,4 +1,10 @@
-<?php tiny::layout()->default(title: 'Book a Discovery Call', emptyLayout: true, robots: 'index, follow'); ?>
+<?php tiny::layout()->default(
+    title: 'Book a Discovery Call',
+    emptyLayout: true,
+    robots: 'index, follow',
+    ogImage: tiny::staticURL('/img/discovery-call-ogimage.webp', true)
+);
+?>
 <style>
     html, body {
         height: 100%;
