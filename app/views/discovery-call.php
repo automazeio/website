@@ -2,7 +2,7 @@
     title: 'Book a Discovery Call',
     emptyLayout: true,
     robots: 'index, follow',
-    ogImage: tiny::staticURL('/img/discovery-call-ogimage.webp', true)
+    ogImage: tiny::getStaticURL('/img/discovery-call-ogimage.webp', true)
 );
 ?>
 <style>
