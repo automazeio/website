@@ -27,6 +27,24 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
         <script src="https://js.sentry-cdn.com/<?php echo $_SERVER['SENTRY_FRONTEND']; ?>.min.js" crossorigin="anonymous"></script>
     <?php endif; ?>
 <?php endif; ?>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://automaze.io/#organization",
+        "name": "Automaze",
+        "url": "https://automaze.io",
+        "description": "CTO-as-a-Service: embedded technical leadership for founders and companies, without taking equity.",
+        "founder": {
+            "@type": "Person",
+            "@id": "https://aroussi.com/#person",
+            "name": "Ran Aroussi",
+            "url": "https://aroussi.com"
+        }
+    }
+    </script>
+
     <script>
         window.trackDiscoveryCallClick = function (location) {
             if (typeof window.gtag !== 'function') {
