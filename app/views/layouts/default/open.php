@@ -44,7 +44,10 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
         },
         "sameAs": [
             "https://www.wikidata.org/wiki/Q140196004",
-            "https://www.crunchbase.com/organization/automaze"
+            "https://www.crunchbase.com/organization/automaze",
+            "https://x.com/automaze",
+            "https://github.com/automazeio",
+            "https://www.linkedin.com/company/automazeio"
         ]
     }
     </script>
