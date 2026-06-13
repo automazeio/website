@@ -41,7 +41,11 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
             "@id": "https://aroussi.com/#person",
             "name": "Ran Aroussi",
             "url": "https://aroussi.com"
-        }
+        },
+        "sameAs": [
+            "https://www.wikidata.org/wiki/Q140196004",
+            "https://www.crunchbase.com/organization/automaze"
+        ]
     }
     </script>
 
