@@ -62,6 +62,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://automaze.io/services/cloud-audit</loc>
+        <lastmod>2026-09-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://automaze.io/pricing</loc>
         <lastmod>2025-09-03</lastmod>
         <changefreq>weekly</changefreq>

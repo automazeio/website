@@ -104,7 +104,21 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
 
     <meta name="robots" content="<?php echo tiny::layout()->props('robots') ? strip_tags(tiny::layout()->props('robots')) : 'index, follow' ?>">
 
-    <title>Automaze / <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?></title>
+<?php
+    $pageName = tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service';
+    // `pageTitle` replaces the whole title tag; `title` keeps the "Automaze / …" pattern.
+    $metaTitle = tiny::layout()->props('pageTitle') ? strip_tags(tiny::layout()->props('pageTitle')) : 'Automaze / ' . $pageName;
+    $socialTitle = tiny::layout()->props('pageTitle') ? strip_tags(tiny::layout()->props('pageTitle')) : 'Automaze ' . $pageName;
+    $metaDescription = tiny::layout()->props('description')
+        ? strip_tags(tiny::layout()->props('description'))
+        : 'The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit.';
+    $canonicalURL = tiny::layout()->props('canonical') ?: 'https://automaze.io';
+?>
+    <title><?php echo $metaTitle; ?></title>
+    <meta name="description" content="<?php echo $metaDescription; ?>" />
+<?php if (tiny::layout()->props('canonical')): ?>
+    <link rel="canonical" href="<?php echo $canonicalURL; ?>" />
+<?php endif; ?>
 
     <link rel="stylesheet" type="text/css" href="<?php tiny::staticURL('/css/style.css'); ?>" media="all">
 
@@ -117,10 +131,10 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta name="theme-color" content="#070914">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://automaze.io" />
+    <meta property="og:url" content="<?php echo $canonicalURL; ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Automaze <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?>" />
-    <meta property="og:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
+    <meta property="og:title" content="<?php echo $socialTitle; ?>" />
+    <meta property="og:description" content="<?php echo $metaDescription; ?>" />
     <meta property="og:image" content="<?php echo tiny::layout()->props('ogImage') ?: tiny::staticURL('img/ogimage.webp', true); ?>" />
 
     <!-- Twitter Meta Tags -->
@@ -128,9 +142,9 @@ echo '<!-- v. '. $_SERVER['APP_VERSION'] ." -->\n";
     <meta property="twitter:domain" content="automaze.io" />
     <meta property="twitter:site" content="@automaze" />
     <meta property="twitter:creator" content="@aroussi" />
-    <meta property="twitter:url" content="https://automaze.io" />
-    <meta name="twitter:title" content="Automaze <?php echo tiny::layout()->props('title') ? strip_tags(tiny::layout()->props('title')) : 'Technical Co-Founder &amp; CTO as a Service' ?>" />
-    <meta name="twitter:description" content="The zero-equity way for founders to bring their idea to life, attract early users, and achieve product-market fit." />
+    <meta property="twitter:url" content="<?php echo $canonicalURL; ?>" />
+    <meta name="twitter:title" content="<?php echo $socialTitle; ?>" />
+    <meta name="twitter:description" content="<?php echo $metaDescription; ?>" />
     <meta name="twitter:image" content="<?php echo tiny::layout()->props('ogImage') ?: tiny::staticURL('img/ogimage.webp', true); ?>" />
     <meta name="twitter:site" content="@automaze" />
 

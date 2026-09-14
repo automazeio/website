@@ -1345,3 +1345,75 @@ section[id] > div > div > p {
   @apply text-[16px] text-pretty leading-[2];
   letter-spacing: -1%;
 }
+
+
+/* ---------------------------------------------------------------------------
+   Cloud audit page decorations
+   - .cost-curve-path: draws the hero's descending cost line on page load.
+   - [data-aos="reveal"] / [data-aos="bar-grow"]: custom AOS animations gated
+     on .aos-init, so elements stay fully visible when JS is disabled.
+--------------------------------------------------------------------------- */
+
+.cost-curve-path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: cost-curve-draw 2.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards;
+}
+
+@keyframes cost-curve-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+[data-aos="reveal"].aos-init {
+  opacity: 0;
+  transform: translateY(22px);
+  transition-property: opacity, transform;
+}
+[data-aos="reveal"].aos-init.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="bar-grow"].aos-init {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition-property: transform;
+}
+[data-aos="bar-grow"].aos-init.aos-animate {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cost-curve-path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  [data-aos="reveal"].aos-init,
+  [data-aos="reveal"].aos-init.aos-animate {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  [data-aos="bar-grow"].aos-init,
+  [data-aos="bar-grow"].aos-init.aos-animate {
+    transform: none;
+    transition: none;
+  }
+}
+
+/*
+ * Two-step qualify form (/services/cloud-audit).
+ *
+ * The steps are a JS enhancement: without JS both panels render as one long
+ * form that submits in a single POST. The rule below collapses step 2 between
+ * first paint and Alpine booting (Alpine is deferred), so JS visitors never see
+ * the second step flash past. It is scoped to .js-on - a class the view sets
+ * inline via script - so a visitor without JS is never affected, and it stops
+ * applying as soon as Alpine marks the panel data-step-ready and takes over
+ * the toggling itself.
+ */
+.js-on [data-step-panel="2"]:not([data-step-ready]) {
+  display: none;
+}
