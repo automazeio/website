@@ -1,0 +1,7 @@
+# pnpm 10+ blocks dependency build scripts unless they are allowed here.
+# Both of these ship native binaries that Tailwind's CLI needs:
+#   @tailwindcss/oxide - the content scanner
+#   @parcel/watcher    - file watching for `npm run css:watch`
+allowBuilds:
+  '@parcel/watcher': true
+  '@tailwindcss/oxide': true
