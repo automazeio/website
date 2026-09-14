@@ -33,11 +33,11 @@
         <details name="pricing" open>
           <summary>
             <span>CTO-as-a-Service</span>
-            <span><small>from</small> <span class="font-medium!">$6K</span><small>/mo</small></span>
+            <span><small>from</small> <span class="font-medium!">$5K</span><small>/mo</small></span>
           </summary>
           <div>
             <p>
-              <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+              <strong>What a technical co-founder gives you, without the equity.</strong> Architecture, technical direction, and a pipeline that builds it - running in your environment, reviewed by us before anything ships.
             </p>
             <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
           </div>
@@ -52,7 +52,7 @@
             <p>
               <strong>A focused sprint</strong> to turn your idea into a working product. We set tight scope, move fast, and launch what truly matters in record time. No fluff, just results.
             </p>
-            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Book a call</a></p>
           </div>
         </details>
 
@@ -68,7 +68,7 @@
               We build custom AI agents, tailored to your business needs, that automate your daily tasks so you can scale operations without growing your headcount.
 
             </p>
-            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Book a call</a></p>
           </div>
         </details>
 
@@ -96,13 +96,13 @@
             <p>
               Senior technical leadership to help founders make confident architecture, hiring, and delivery decisions, keeping teams focused and products moving forward.
             </p>
-            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Book a call</a></p>
           </div>
         </details>
 
         <details name="pricing">
           <summary>
-            <span>DevOps Optimization</span>
+            <span>Cloud Cost Reduction</span>
             <span><small>audit-based</small></span>
           </summary>
           <div>
@@ -110,13 +110,13 @@
               We'll audit your infrastructure to identify <strong>significant cost-saving opportunities</strong>.
               If we find any, we'll migrate your infra and pocket the difference over the following 6 months.
             </p>
-            <p><a href="<?php tiny::homeURL('/services/cto-as-a-service') ?>" class="cta-link">Learn more</a></p>
+            <p><a href="<?php tiny::homeURL('/services/cloud-audit') ?>" class="cta-link">Learn more</a></p>
           </div>
         </details>
 
         <details name="pricing">
           <summary>
-            <span class="flex items-center my-0"><strong class="font-bold">One-Stop Shop</strong> <mark class="bg-sky-300/80 text-white rounded-full text-[8px] font-medium px-1 py-px mt-0.5 ml-1">POPULAR</mark></span>
+            <span class="flex items-center my-0"><strong class="font-semibold">One-Stop Shop</strong> <mark class="bg-sky-300/80 text-white rounded-full text-[8px] font-medium px-1 py-px mt-0.5 ml-1">POPULAR</mark></span>
             <span><small>from</small> <span class="font-medium!">$8K</span><small>/mo</small></span>
           </summary>
           <div>
@@ -124,7 +124,7 @@
               <strong>The “don't worry about it” plan</strong>. We'll handle everything from A to Z.
               This includes planning, development, design, automation, infrastructure, and everything in between.
             </p>
-            <p><a href="<?php tiny::homeURL('/services/one-stop-shop') ?>" class="cta-link">Learn more</a></p>
+            <p><a href="<?php tiny::homeURL('/discovery-call') ?>" class="cta-link">Book a call</a></p>
           </div>
         </details>
 

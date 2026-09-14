@@ -10,7 +10,7 @@
                     <template x-if="expandedService != 'cto'">
                         <div>
                             <p class="mt-4 text-[15px] leading-relaxed">
-                                <strong>Strategic tech leadership</strong> without a full-time hire. Get expert technical planning and product architecture that turn your vision into a clear, buildable roadmap.
+                                Technical leadership, architecture, and a pipeline that turn your ideas into specs and then builds it - managed end-to-end, reviewed by us before anything ships.
                             </p>
                             <div x-show="expandedService != 'cto'" class="w-fit text-[14px] mt-6 rounded-md group-hover:shadow-xs border border-transparent group-hover:pl-4 group-hover:pr-3 py-3 leading-none font-medium text-slate-600 group-hover:!border-indigo-100 group-hover:!bg-indigo-50/25 transition-all duration-400">Learn more →</div>
                         </div>
@@ -21,13 +21,18 @@
                                 Senior technical leadership without the full-time commitment.
                             </p>
                             <p class="leading-relaxed mb-4">
-                                We step in as your CTO, owning technical direction, product architecture, and execution standards from day one. From early product decisions to scaling challenges, we make sure what you build is sound, scalable, and aligned with your business goals.
+                                We own technical direction, product architecture, and execution standards. You describe what you want. We turn it into a specification worth building, and our development pipeline builds it, under a process we monitor.
                             </p>
+                            <?php /*
+                            <p class="leading-relaxed mb-4">
+                                Every change lands on a sandboxed environment before it goes to production. We review it and decide if it's shippable or needs fixing.
+                            </p>
+                            */ ?>
                             <p class="leading-relaxed mb-6">
                                 You stay focused on the business. We own the tech.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services cto">Book a call →</a>
+                                <a href="/services/cto-as-a-service" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services cto">Learn more →</a>
                             </p>
                         </section>
                     </template>
@@ -198,7 +203,7 @@
                     <div class="service-image">
                         <img alt="Automaze DevOps & Cloud" src="<?php tiny::staticURL('img/service-devops.svg'); ?>" class="size-27" />
                     </div>
-                    <h3 class="mt-6 font-bold" :class="expandedService == 'devops' ? 'text-2xl' : 'text-xl'">DevOps &amp; Cloud</h3>
+                    <h3 class="mt-6 font-bold" :class="expandedService == 'devops' ? 'text-2xl' : 'text-xl'">Cloud Cost Reduction</h3>
                     <template x-if="expandedService != 'devops'">
                         <div>
                             <p class="mt-4 text-[15px] leading-relaxed">
@@ -219,7 +224,7 @@
                                 If we don't save you money, you don't pay.
                             </p>
                             <p>
-                                <a href="/discovery-call" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link Book a call in services devops">Book a call →</a>
+                                <a href="/services/cloud-audit" class="text-[14px] font-medium text-sky-500 hover:font-bold hover:border-b hover:border-slate-200 pb-0.5 transition-all" data-discovery-location="link to learn more">Learn more →</a>
                             </p>
                         </section>
                     </template>
