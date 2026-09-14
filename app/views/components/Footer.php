@@ -56,10 +56,11 @@ tiny::components()->register('Footer', function (...$props) {
                     </ul>
                     <ul class="w-40">
                         <li><h4>Services</h4></li>
-                        <li><a href="{$props['rootPath']}services">CTO as a Service</a></li>
-                        <li><a href="{$props['rootPath']}services">MVP Launch</a></li>
-                        <li><a href="{$props['rootPath']}services">Managed Developers</a></li>
-                        <li><a href="{$props['rootPath']}services">DevOps &amp; Cloud</a></li>
+                        <li><a href="{$props['rootPath']}services/cto-as-a-service">CTO as a Service</a></li>
+                        <li><a href="{$props['rootPath']}services/cto-as-a-service">Managed Factory</a></li>
+                        <li><a href="{$props['rootPath']}services/managed-developers">Managed Developers</a></li>
+                        <li><a href="{$props['rootPath']}services/mvp-launch">MVP Launch</a></li>
+                        <li><a href="{$props['rootPath']}services/cloud-audit">Cloud Cost Reduction</a></li>
                         <li><a href="{$props['rootPath']}services">One-Stop Shop</a></li>
                     </ul>
 
