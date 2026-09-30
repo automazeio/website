@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Automaze // Factory</title>
+    <script src="./vendor/react.js"></script>
+    <script src="./vendor/react-dom.js"></script>
+    <script src="./support.js"></script>
+</head>
+
+<body>
+    <x-dc>
+        <helmet>
+            <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+            <style>
+                body {
+                    margin: 0;
+                    font-family: "Schibsted Grotesk", system-ui, sans-serif;
+                    background: #f3f2ec;
+                    color: #0f1a4a
+                }
+
+                a {
+                    color: inherit
+                }
+
+                a:hover {
+                    color: inherit
+                }
+
+                .blue {
+                    background-color: #1f3fe0;
+                    color: #fff;
+                    background-image: linear-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .07) 1px, transparent 1px);
+                    background-size: 32px 32px
+                }
+
+                .cream {
+                    background: #f3f2ec;
+                    color: #0f1a4a
+                }
+
+                .sec {
+                    position: relative;
+                    padding: 120px 176px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 48px
+                }
+
+                .rail {
+                    position: absolute;
+                    left: 36px;
+                    top: 124px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 14px
+                }
+
+                .num {
+                    width: 22px;
+                    height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font: 600 10px/1 "IBM Plex Mono", monospace;
+                    background: #ffd43b;
+                    color: #0f1a4a
+                }
+
+                .num.o {
+                    background: transparent;
+                    border: 1px solid #1f3fe0;
+                    color: #1f3fe0
+                }
+
+                .railtxt {
+                    writing-mode: vertical-rl;
+                    font: 500 9px/1 "IBM Plex Mono", monospace;
+                    letter-spacing: .14em;
+                    text-transform: uppercase;
+                    opacity: .7
+                }
+
+                .mono {
+                    font-family: "IBM Plex Mono", monospace
+                }
+
+                .lbl {
+                    font: 500 11px/1.2 "IBM Plex Mono", monospace;
+                    letter-spacing: .1em;
+                    text-transform: uppercase
+                }
+
+                .h1 {
+                    margin: 0;
+                    font-size: 92px;
+                    line-height: .98;
+                    font-weight: 700;
+                    letter-spacing: -.045em
+                }
+
+                .h2 {
+                    margin: 0;
+                    font-size: 60px;
+                    line-height: 1.02;
+                    font-weight: 700;
+                    letter-spacing: -.04em
+                }
+
+                .acc {
+                    color: #1f3fe0
+                }
+
+                .yel {
+                    color: #ffd43b
+                }
+
+                .lead {
+                    margin: 0;
+                    font-size: 19px;
+                    line-height: 1.55
+                }
+
+                .p {
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.55
+                }
+
+                .muted {
+                    color: #4b5478
+                }
+
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    gap: 64px
+                }
+
+                .aside {
+                    max-width: 360px;
+                    font-size: 15px;
+                    line-height: 1.55;
+                    color: #4b5478;
+                    margin: 0
+                }
+
+                .btn {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    min-height: 48px;
+                    padding: 0 22px;
+                    background: #ffd43b;
+                    color: #0f1a4a;
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-decoration: none;
+                    border: 1px solid #ffd43b
+                }
+
+                .btn.ghost {
+                    background: transparent;
+                    color: #fff;
+                    border: 1px solid rgba(255, 255, 255, .55)
+                }
+
+                .btn.line {
+                    background: transparent;
+                    color: #1f3fe0;
+                    border: 1px solid #1f3fe0;
+                    justify-content: center
+                }
+
+                .tbl {
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 1px solid #c9cde4
+                }
+
+                .tbl th {
+                    font: 500 10px/1 "IBM Plex Mono", monospace;
+                    letter-spacing: .1em;
+                    text-transform: uppercase;
+                    text-align: left;
+                    padding: 14px 16px;
+                    background: #e6e8f5;
+                    color: #4b5478;
+                    border: 1px solid #c9cde4
+                }
+
+                .tbl td {
+                    padding: 18px 16px;
+                    border: 1px solid #d9dcec;
+                    font-size: 16px
+                }
+
+                .tbl .ref {
+                    font: 500 11px/1 "IBM Plex Mono", monospace;
+                    color: #1f3fe0;
+                    width: 70px
+                }
+
+                .tbl .dim {
+                    color: #8a90ad
+                }
+
+                .tbl tr.hl td {
+                    background: #1f3fe0;
+                    color: #fff;
+                    font-weight: 600;
+                    border-color: #1f3fe0
+                }
+
+                .card {
+                    flex: 1;
+                    border: 1px solid #c9cde4;
+                    background: #f3f2ec;
+                    display: flex;
+                    flex-direction: column
+                }
+
+                .card .art {
+                    height: 170px;
+                    border-bottom: 1px solid #c9cde4;
+                    background-color: #e6e8f5;
+                    background-image: linear-gradient(rgba(31, 63, 224, .08) 1px, transparent 1px), linear-gradient(90deg, rgba(31, 63, 224, .08) 1px, transparent 1px);
+                    background-size: 16px 16px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+
+                .card .code {
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    font: 500 10px/1 "IBM Plex Mono", monospace;
+                    color: #1f3fe0
+                }
+
+                .card .body {
+                    padding: 22px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    flex: 1
+                }
+
+                .card h3 {
+                    margin: 0;
+                    font-size: 22px;
+                    font-weight: 600;
+                    letter-spacing: -.02em
+                }
+
+                .kv {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 9px 0;
+                    border-top: 1px solid #d9dcec;
+                    font-size: 13px
+                }
+
+                .kv span:first-child {
+                    font: 500 10px/1.6 "IBM Plex Mono", monospace;
+                    letter-spacing: .1em;
+                    text-transform: uppercase;
+                    color: #8a90ad
+                }
+
+                .node {
+                    border: 1px solid rgba(255, 255, 255, .7);
+                    padding: 10px 14px;
+                    background: rgba(255, 255, 255, .06);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    min-width: 190px
+                }
+
+                .node.hot {
+                    border-color: #ffd43b;
+                    background: rgba(255, 212, 59, .12)
+                }
+
+                .node .t {
+                    font-size: 15px;
+                    font-weight: 600
+                }
+
+                .node .s {
+                    font: 400 10px/1.3 "IBM Plex Mono", monospace;
+                    opacity: .75;
+                    letter-spacing: .06em;
+                    text-transform: uppercase
+                }
+
+                .vline {
+                    width: 1px;
+                    height: 26px;
+                    background: rgba(255, 255, 255, .6);
+                    margin: 0 auto
+                }
+
+                .strip {
+                    display: flex;
+                    border: 1px solid rgba(255, 255, 255, .35)
+                }
+
+                .strip div {
+                    flex: 1;
+                    padding: 14px 16px;
+                    border-right: 1px solid rgba(255, 255, 255, .35);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px
+                }
+
+                .strip div:last-child {
+                    border-right: none
+                }
+
+                .strip .k {
+                    font: 500 9px/1 "IBM Plex Mono", monospace;
+                    letter-spacing: .14em;
+                    text-transform: uppercase;
+                    opacity: .65
+                }
+
+                .strip .v {
+                    font-size: 17px;
+                    font-weight: 500
+                }
+
+                .layer {
+                    display: flex;
+                    gap: 16px;
+                    padding: 16px 0;
+                    border-top: 1px solid rgba(255, 255, 255, .3)
+                }
+
+                .circ {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    border: 1px solid rgba(255, 255, 255, .7);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font: 500 10px/1 "IBM Plex Mono", monospace;
+                    flex: none
+                }
+
+                .step {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px
+                }
+
+                .dot {
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    border: 1px solid #1f3fe0;
+                    background: #f3f2ec;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font: 600 10px/1 "IBM Plex Mono", monospace;
+                    color: #1f3fe0;
+                    position: relative;
+                    z-index: 1
+                }
+
+                .dot.on {
+                    background: #ffd43b;
+                    border-color: #c9a800;
+                    color: #0f1a4a
+                }
+
+                .tag {
+                    font: 500 10px/1 "IBM Plex Mono", monospace;
+                    border: 1px solid #c9cde4;
+                    padding: 5px 7px;
+                    color: #4b5478;
+                    display: inline-block
+                }
+
+                .plan {
+                    flex: 1;
+                    border: 1px solid #c9cde4;
+                    padding: 28px 26px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px
+                }
+
+                .plan.feat {
+                    background: #1f3fe0;
+                    color: #fff;
+                    border-color: #1f3fe0
+                }
+
+                .price {
+                    font-size: 54px;
+                    font-weight: 600;
+                    letter-spacing: -.03em;
+                    line-height: 1
+                }
+
+                .li {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 14px;
+                    padding: 9px 0;
+                    border-top: 1px solid #d9dcec
+                }
+
+                .plan.feat .li {
+                    border-color: rgba(255, 255, 255, .25)
+                }
+
+                .faq {
+                    display: flex;
+                    gap: 18px;
+                    align-items: flex-start;
+                    padding: 20px 0;
+                    border-top: 1px solid #c9cde4
+                }
+
+                .faq .q {
+                    flex: 1;
+                    font-size: 19px;
+                    font-weight: 500
+                }
+
+                .ui {
+                    background: #fff;
+                    border: 1px solid #c9cde4;
+                    color: #0f1a4a
+                }
+            </style>
+        </helmet>
+        <div style="overflow: hidden; background: #f3f2ec; display: flex; flex-direction: column;margin:auto">
+
+            <!-- HERO -->
+            <div class="blue"
+                style="position: relative; padding: 28px 176px 64px; display: flex; flex-direction: column; gap: 72px">
+                <div class="rail" style="top: 150px;">
+                    <div class="num">00</div>
+                    <div class="railtxt">Hero</div>
+                </div>
+                <div style="width: 1280px; margin-inline:auto;display: flex; align-items: center; justify-content: space-between">
+                    <div
+                        style="display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -.02em">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#fff" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M11 1v20M1 11h20"></path>
+                        </svg>
+                        Automaze<span class="mono"
+                            style="font-size: 11px; font-weight: 500; opacity: .7; margin-left: 6px">/ factory</span>
+                    </div>
+                    <div style="display: flex; gap: 32px; font-size: 14px">
+                        <a href="#how" style="text-decoration: none">How it works</a>
+                        <a href="#ladybug" style="text-decoration: none">Ladybug</a>
+                        <a href="#plans" style="text-decoration: none">Plans</a>
+                        <a href="#faq" style="text-decoration: none">FAQ</a>
+                    </div>
+                    <a href="#call" class="btn" style="min-height: 40px; font-size: 14px;white-space: nowrap">Book a factory call ↗</a>
+                </div>
+                <div style="width: 1280px; margin-inline:auto; display: flex; gap: 72px; align-items: center">
+                    <div style="flex: 1.15; display: flex; flex-direction: column; gap: 28px">
+                        <div class="lbl" style="opacity: .8">CTO as a Service · Human judgment, machine execution</div>
+                        <h1 class="h1">Build with AI. Ship like a senior team<span class="yel">.</span></h1>
+                        <p class="lead" style="max-width: 560px; opacity: .9">A governed software factory with a CTO in
+                            the loop. The product stays yours – we sign off every plan and review every change before it
+                            ships.</p>
+                        <div style="display: flex; gap: 14px">
+                            <a href="#call" class="btn">Book a factory call ↗</a>
+                            <a href="#how" class="btn ghost">See how it works</a>
+                        </div>
+                    </div>
+                    <div style="flex: 1; position: relative; padding: 22px; border: 1px dashed rgba(255,255,255,.35)">
+                        <div class="lbl"
+                            style="position: absolute; top: -8px; left: 16px; background: #1f3fe0; padding: 0 6px; font-size: 9px; opacity: .8">
+                            Fig. 00 · Ticket AMZ-142</div>
+                        <div style="display: flex; flex-direction: column; align-items: center">
+                            <div class="node">
+                                <div class="s">01 · Request</div>
+                                <div class="t">Add Google sign-in</div>
+                            </div>
+                            <div class="vline"></div>
+                            <div class="node">
+                                <div class="s">02 · Technical sign-off</div>
+                                <div class="t">PRD signed by senior</div>
+                            </div>
+                            <div class="vline"></div>
+                            <div class="node hot" style="min-width: 260px">
+                                <div class="s" style="color: #ffd43b; opacity: 1">03 · Factory</div>
+                                <div class="t">Building against the plan</div>
+                                <div style="height: 4px; background: rgba(255,255,255,.2); margin-top: 6px">
+                                    <div style="width: 68%; height: 4px; background: #ffd43b"></div>
+                                </div>
+                            </div>
+                            <div class="vline"></div>
+                            <div style="display: flex; gap: 14px">
+                                <div class="node" style="min-width: 150px">
+                                    <div class="s">04 · Staging</div>
+                                    <div class="t">Live preview</div>
+                                </div>
+                                <div class="node" style="min-width: 150px">
+                                    <div class="s">05 · Proof</div>
+                                    <div class="t">▶ Video 01:24</div>
+                                </div>
+                            </div>
+                            <div class="vline"></div>
+                            <div class="node">
+                                <div class="s">06 · Technical Review</div>
+                                <div class="t">Verdict: ready</div>
+                            </div>
+                            <div class="vline"></div>
+                            <div class="node" style="border-style: dashed">
+                                <div class="s">07 · You approve</div>
+                                <div class="t">Shipped ✓</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strip" style="width: 1280px; margin-inline:auto; ">
+                    <div><span class="k">Offer</span><span class="v">Governed software factory</span></div>
+                    <div><span class="k">From</span><span class="v">$1,000 / mo</span></div>
+                    <div><span class="k">Scope of work</span><span class="v">The queue is the scope</span></div>
+                    <div><span class="k">Developers to hire</span><span class="v">0</span></div>
+                    <div><span class="k">Sheet</span><span class="v">00 / 09</span></div>
+                </div>
+            </div>
+
+            <!-- 01 PROBLEM -->
+            <div class="sec cream" style="width: 1280px; margin-inline:auto; ">
+                <div class="rail">
+                    <div class="num">01</div>
+                    <div class="railtxt" style="color: #1f3fe0">Problem</div>
+                </div>
+                <div class="head">
+                    <h2 class="h2">AI made code cheap.<br><span class="acc">Judgment is still scarce.</span></h2>
+                    <p class="aside">A model can write working code in minutes. Deciding what to build, how it should
+                        fit, and whether it's safe to ship still takes experience. Here's how the options compare.</p>
+                </div>
+                <table class="tbl">
+                    <tr>
+                        <th>Ref</th>
+                        <th>Option</th>
+                        <th>Who writes the code</th>
+                        <th>Who checks it</th>
+                        <th>To get started</th>
+                        <th>Scope of work</th>
+                    </tr>
+                    <tr>
+                        <td class="ref">OPT-01</td>
+                        <td>Hire an engineering team</td>
+                        <td class="dim">Your hires</td>
+                        <td class="dim">Whoever you hire next</td>
+                        <td class="dim">Months of recruiting</td>
+                        <td class="dim">Your job</td>
+                    </tr>
+                    <tr>
+                        <td class="ref">OPT-02</td>
+                        <td>Agency or freelancers</td>
+                        <td class="dim">Their developers</td>
+                        <td class="dim">Their developers</td>
+                        <td class="dim">Weeks of scoping</td>
+                        <td class="dim">Required, fixed</td>
+                    </tr>
+                    <tr>
+                        <td class="ref">OPT-03</td>
+                        <td>AI tools on your own</td>
+                        <td class="dim">The AI</td>
+                        <td class="dim">Nobody</td>
+                        <td class="dim">Today</td>
+                        <td class="dim">None</td>
+                    </tr>
+                    <tr class="hl">
+                        <td class="ref" style="color: #ffd43b">AMZ</td>
+                        <td>Automaze governed factory</td>
+                        <td>The factory</td>
+                        <td>Senior engineers, every change</td>
+                        <td>After factory readiness</td>
+                        <td>None – the queue</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 02 HOW IT WORKS -->
+            <div class="sec cream" id="how"  style="width: 1280px; margin-inline:auto; padding-top: 40px">
+                <div class="rail" style="top: 44px">
+                    <div class="num o">02</div>
+                    <div class="railtxt" style="color: #1f3fe0">Process</div>
+                </div>
+                <div class="head">
+                    <h2 class="h2">Four stages,<br><span class="acc">two human gates.</span></h2>
+                    <p class="aside">You decide what gets built and what ships. Senior engineers make the engineering
+                        calls. The factory does the typing.</p>
+                </div>
+                <div style="display: flex; gap: 12px">
+                    <div class="card">
+                        <div class="art"><span class="code">ST-01</span><svg width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" stroke="#1f3fe0" stroke-width="1.5">
+                                <rect x="14" y="8" width="36" height="48"></rect>
+                                <path d="M22 20h20M22 28h20M22 36h12"></path>
+                            </svg></div>
+                        <div class="body">
+                            <h3>You decide</h3>
+                            <p class="p muted">Raise a ticket in plain words. The factory drafts a feature spec. You
+                                shape it and approve it.</p>
+                            <div style="margin-top: auto">
+                                <div class="kv"><span>Input</span><span>Your idea</span></div>
+                                <div class="kv"><span>Output</span><span>Approved feature spec</span></div>
+                                <div class="kv"><span>Owner</span><span>You</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="art"><span class="code">ST-02</span><svg width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" stroke="#1f3fe0" stroke-width="1.5">
+                                <rect x="10" y="10" width="44" height="44"></rect>
+                                <path d="M20 33l8 8 16-18"></path>
+                            </svg></div>
+                        <div class="body">
+                            <h3>We sign off</h3>
+                            <p class="p muted">A senior engineer checks the technical plan and signs it – before a line
+                                of code is written.</p>
+                            <div style="margin-top: auto">
+                                <div class="kv"><span>Input</span><span>Feature spec</span></div>
+                                <div class="kv"><span>Output</span><span>Signed technical PRD</span></div>
+                                <div class="kv"><span>SLA</span><span>1 business day</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="art"><span class="code">ST-03</span><svg width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" stroke="#1f3fe0" stroke-width="1.5">
+                                <path d="M32 8l20 12v24L32 56 12 44V20z"></path>
+                                <path d="M12 20l20 12 20-12M32 32v24"></path>
+                            </svg></div>
+                        <div class="body">
+                            <h3>Factory builds</h3>
+                            <p class="p muted">The factory builds against the signed plan, tests it, and deploys it to
+                                its own staging environment.</p>
+                            <div style="margin-top: auto">
+                                <div class="kv"><span>Input</span><span>Signed PRD</span></div>
+                                <div class="kv"><span>Output</span><span>Staging + proof video</span></div>
+                                <div class="kv"><span>Owner</span><span>The factory</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="art"><span class="code">ST-04</span><svg width="64" height="64" viewBox="0 0 64 64"
+                                fill="none" stroke="#1f3fe0" stroke-width="1.5">
+                                <circle cx="28" cy="28" r="16"></circle>
+                                <path d="M40 40l14 14M21 28l5 5 9-10"></path>
+                            </svg></div>
+                        <div class="body">
+                            <h3>We review, you ship</h3>
+                            <p class="p muted">A senior reviews the result and gives a written verdict. You test it,
+                                approve it, and the factory deploys.</p>
+                            <div style="margin-top: auto">
+                                <div class="kv"><span>Input</span><span>Staging + proof</span></div>
+                                <div class="kv"><span>Output</span><span>Verdict, then release</span></div>
+                                <div class="kv"><span>SLA</span><span>2 business days</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="p muted mono" style="font-size: 12px">Risky operations – auth, billing, data migrations,
+                    secrets – need an extra explicit approval. Every release runs health checks and rolls back if they
+                    fail.</p>
+            </div>
+
+            <!-- 03 ANATOMY -->
+            <div class="sec blue" style="width: 1280px; margin-inline:auto; ">
+                <div class="rail">
+                    <div class="num o" style="border-color: #fff; color: #fff">03</div>
+                    <div class="railtxt">Anatomy</div>
+                </div>
+                <div style="display: flex; gap: 80px; align-items: center">
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 36px">
+                        <h2 class="h2">Anatomy of<br><span class="yel">a release.</span></h2>
+                        <svg width="460" height="420" viewBox="0 0 460 420" fill="none" stroke="#fff"
+                            stroke-width="1.2">
+                            <g opacity=".95">
+                                <polygon points="230,20 400,75 230,130 60,75"></polygon>
+                                <path d="M60 75v10l170 55 170-55V75" opacity=".6"></path>
+                            </g>
+                            <g opacity=".85">
+                                <polygon points="230,95 400,150 230,205 60,150"></polygon>
+                                <path d="M60 150v10l170 55 170-55v-10" opacity=".6"></path>
+                            </g>
+                            <g opacity=".75">
+                                <polygon points="230,170 400,225 230,280 60,225"></polygon>
+                                <path d="M60 225v10l170 55 170-55v-10" opacity=".6"></path>
+                            </g>
+                            <g opacity=".65">
+                                <polygon points="230,245 400,300 230,355 60,300"></polygon>
+                                <path d="M60 300v10l170 55 170-55v-10" opacity=".6"></path>
+                            </g>
+                            <g stroke="#ffd43b">
+                                <polygon points="230,305 400,360 230,415 60,360" fill="rgba(255,212,59,.12)"></polygon>
+                            </g>
+                            <g font-family="IBM Plex Mono" font-size="10" fill="#fff" stroke="none"><text x="10"
+                                    y="79">01</text><text x="10" y="154">02</text><text x="10" y="229">03</text><text
+                                    x="10" y="304">04</text><text x="10" y="364" fill="#ffd43b">05</text></g>
+                        </svg>
+                    </div>
+                    <div style="flex: 1; display: flex; flex-direction: column">
+                        <p class="lead" style="opacity: .85; margin-bottom: 28px">Every change ships with the same five
+                            layers – so you approve the actual thing, not a description of it, and six months later
+                            anyone can see why it shipped.</p>
+                        <div class="layer">
+                            <div class="circ">01</div>
+                            <div>
+                                <div style="font-size: 18px; font-weight: 600">Feature spec</div>
+                                <p class="p" style="opacity: .75">What it does, in plain words. Approved by you.</p>
+                            </div>
+                        </div>
+                        <div class="layer">
+                            <div class="circ">02</div>
+                            <div>
+                                <div style="font-size: 18px; font-weight: 600">Technical PRD</div>
+                                <p class="p" style="opacity: .75">How it's built. Signed by a senior engineer.</p>
+                            </div>
+                        </div>
+                        <div class="layer">
+                            <div class="circ">03</div>
+                            <div>
+                                <div style="font-size: 18px; font-weight: 600">Working staging</div>
+                                <p class="p" style="opacity: .75">Its own live environment you can click through.</p>
+                            </div>
+                        </div>
+                        <div class="layer">
+                            <div class="circ">04</div>
+                            <div>
+                                <div style="font-size: 18px; font-weight: 600">Proof-of-work video</div>
+                                <p class="p" style="opacity: .75">The agent records the change working.</p>
+                            </div>
+                        </div>
+                        <div class="layer" style="border-bottom: 1px solid rgba(255,255,255,.3)">
+                            <div class="circ" style="background: #ffd43b; color: #0f1a4a; border-color: #ffd43b">05
+                            </div>
+                            <div>
+                                <div style="font-size: 18px; font-weight: 600">Release verdict</div>
+                                <p class="p" style="opacity: .75">Tests, security review, caveats, reviewer, date.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 LADYBUG -->
+            <div class="sec cream" id="ladybug" style="width: 1280px; margin-inline:auto; ">
+                <div class="rail">
+                    <div class="num">04</div>
+                    <div class="railtxt" style="color: #1f3fe0">Ladybug</div>
+                </div>
+                <div class="head">
+                    <h2 class="h2">The factory doesn't stop<br><span class="acc">at deployment.</span></h2>
+                    <p class="aside">Ladybug watches production for real-world bugs. When an issue keeps coming back, it
+                        investigates and prepares a fix – which then goes through the same review as everything else.
+                    </p>
+                </div>
+                <div style="position: relative; display: flex; gap: 24px">
+                    <div
+                        style="position: absolute; left: 14px; right: 14px; top: 14px; height: 1px; background: #1f3fe0">
+                    </div>
+                    <div class="step">
+                        <div class="dot on">01</div>
+                        <div class="lbl acc" style="font-size: 10px">Detect</div>
+                        <div style="font-size: 21px; font-weight: 600">Production error</div>
+                        <p class="p muted">Real users hit a bug or an edge case.</p>
+                    </div>
+                    <div class="step">
+                        <div class="dot">02</div>
+                        <div class="lbl acc" style="font-size: 10px">Group</div>
+                        <div style="font-size: 21px; font-weight: 600">Dedupe</div>
+                        <p class="p muted">Duplicate events become one issue.</p>
+                    </div>
+                    <div class="step">
+                        <div class="dot">03</div>
+                        <div class="lbl acc" style="font-size: 10px">Filter</div>
+                        <div style="font-size: 21px; font-weight: 600">Recurring?</div>
+                        <p class="p muted">One-offs are filtered out. Recurring ones qualify.</p>
+                    </div>
+                    <div class="step">
+                        <div class="dot">04</div>
+                        <div class="lbl acc" style="font-size: 10px">Investigate</div>
+                        <div style="font-size: 21px; font-weight: 600">Root cause</div>
+                        <p class="p muted">Ladybug traces it and attempts a fix.</p>
+                    </div>
+                    <div class="step">
+                        <div class="dot">05</div>
+                        <div class="lbl acc" style="font-size: 10px">Govern</div>
+                        <div style="font-size: 21px; font-weight: 600">Fix PR, reviewed</div>
+                        <p class="p muted">Senior review and your approval. Never auto-shipped.</p>
+                    </div>
+                </div>
+                <div class="ui" style="display: flex; align-items: center; gap: 32px; padding: 24px 28px">
+                    <div class="lbl"
+                        style="color: #8a90ad; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 9px">
+                        Example</div>
+                    <div style="flex: 1.4; display: flex; flex-direction: column; gap: 6px">
+                        <div class="mono" style="font-size: 11px; color: #1f3fe0">LB-031 · Detected by Ladybug</div>
+                        <div style="font-size: 20px; font-weight: 600">Checkout times out on Safari</div>
+                        <div class="p muted">Recurring · grouped from repeated events</div>
+                    </div>
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 8px; font-size: 13px">
+                        <div>✓ Root cause found</div>
+                        <div>✓ Fix PR prepared</div>
+                        <div>✓ Staging + proof ready</div>
+                    </div>
+                    <div
+                        style="padding: 10px 14px; background: #fff7d1; border: 1px solid #e3c53a; font-size: 13px; font-weight: 600">
+                        Waiting for review</div>
+                </div>
+                <div
+                    style="background: #1f3fe0; color: #fff; padding: 36px 40px; display: flex; justify-content: space-between; align-items: center; gap: 40px">
+                    <div style="font-size: 30px; font-weight: 600; letter-spacing: -.02em; max-width: 760px">By the time
+                        you know there's a problem, the fix may already be <span class="yel">waiting for review.</span>
+                    </div>
+                    <div class="mono" style="font-size: 11px; opacity: .75; max-width: 260px">No autonomous production
+                        changes. Every Ladybug fix goes through senior review and your ship approval.</div>
+                </div>
+            </div>
+
+            <!-- 05 PROOF -->
+            <div class="sec cream"  style="width: 1280px; margin-inline:auto; padding-top: 20px">
+                <div class="rail" style="top: 24px">
+                    <div class="num o">05</div>
+                    <div class="railtxt" style="color: #1f3fe0">Proof</div>
+                </div>
+                <div class="head">
+                    <h2 class="h2">Every ticket ends with<br><span class="acc">something you can see.</span></h2>
+                    <a href="#plans" class="btn line" style="min-height: 40px; font-size: 14px">See what's included
+                        →</a>
+                </div>
+                <div style="display: flex; gap: 20px">
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 14px">
+                        <div class="blue"
+                            style="height: 250px; position: relative; display: flex; align-items: center; justify-content: center; gap: 12px">
+                            <span class="lbl"
+                                style="position: absolute; top: 12px; left: 12px; font-size: 9px; background: #f3f2ec; color: #1f3fe0; padding: 4px 6px">Staging</span>
+                            <div class="node" style="min-width: 70px; text-align: center">
+                                <div class="t" style="font-size: 12px">App</div>
+                            </div>
+                            <div style="width: 24px; height: 1px; background: #fff"></div>
+                            <div class="node" style="min-width: 70px; text-align: center">
+                                <div class="t" style="font-size: 12px">API</div>
+                            </div>
+                            <div style="width: 24px; height: 1px; background: #fff"></div>
+                            <div class="node" style="min-width: 70px; text-align: center">
+                                <div class="t" style="font-size: 12px">DB</div>
+                            </div>
+                        </div>
+                        <div class="mono" style="font-size: 10px; color: #1f3fe0">FIG. 05A</div>
+                        <div style="font-size: 21px; font-weight: 600">Working staging</div>
+                        <p class="p muted">Every completed ticket gets its own live environment. Click through the real
+                            thing.</p>
+                    </div>
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 14px">
+                        <div class="blue"
+                            style="height: 250px; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+                            <span class="lbl"
+                                style="position: absolute; top: 12px; left: 12px; font-size: 9px; background: #f3f2ec; color: #1f3fe0; padding: 4px 6px">Proof
+                                of work</span>
+                            <div
+                                style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid #ffd43b; display: flex; align-items: center; justify-content: center; color: #ffd43b; font-size: 22px">
+                                ▶</div>
+                            <div class="mono" style="font-size: 11px; opacity: .8">AMZ-142 · 01:24</div>
+                        </div>
+                        <div class="mono" style="font-size: 10px; color: #1f3fe0">FIG. 05B</div>
+                        <div style="font-size: 21px; font-weight: 600">Proof-of-work video</div>
+                        <p class="p muted">The agent records the change working in staging, so you see it before you
+                            ship it.</p>
+                    </div>
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 14px">
+                        <div class="blue"
+                            style="height: 250px; position: relative; display: flex; align-items: center; justify-content: center">
+                            <span class="lbl"
+                                style="position: absolute; top: 12px; left: 12px; font-size: 9px; background: #f3f2ec; color: #1f3fe0; padding: 4px 6px">Verdict</span>
+                            <div class="ui"
+                                style="width: 240px; padding: 16px; display: flex; flex-direction: column; gap: 8px; font-size: 12px">
+                                <div class="lbl" style="font-size: 9px; color: #8a90ad">Release verdict · AMZ-142</div>
+                                <div>✓ Tests passed</div>
+                                <div>✓ Security review passed</div>
+                                <div>✓ Matches signed spec</div>
+                                <div
+                                    style="background: #1f3fe0; color: #fff; padding: 8px; text-align: center; font-weight: 600">
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="mono" style="font-size: 10px; color: #1f3fe0">FIG. 05C</div>
+                        <div style="font-size: 21px; font-weight: 600">Written verdict</div>
+                        <p class="p muted">A senior's dated sign-off: what was checked, what's known, and why it's safe
+                            to ship.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 06 FOUNDER / ANALOGY -->
+            <div class="sec blue" style="width: 1280px; margin-inline:auto; ">
+                <div class="rail">
+                    <div class="num">06</div>
+                    <div class="railtxt">Founder</div>
+                </div>
+                <div style="display: flex; gap: 72px; align-items: center">
+                    <div
+                        style="width: 380px; height: 470px; flex: none; position: relative; border: 1px solid rgba(255,255,255,.5); background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center">
+                        <span class="mono" style="font-size: 11px; opacity: .6">[PHOTO – duotone portrait]</span>
+                        <span class="lbl"
+                            style="position: absolute; left: 0; bottom: 0; background: #f3f2ec; color: #0f1a4a; padding: 6px 10px; font-size: 9px">Fig.
+                            06 · Client name, founder</span>
+                    </div>
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 28px">
+                        <div style="font-size: 40px; line-height: 1.18; font-weight: 500; letter-spacing: -.025em">
+                            “Buying a table saw doesn't make you a carpenter. Having Claude Code doesn't make you a
+                            software engineer. <span class="yel">But a carpenter with a table saw builds in a day what
+                                used to take a week.</span>”</div>
+                        <div>
+                            <div style="font-weight: 600">Client name</div>
+                            <div class="p" style="opacity: .75">Founder, Company</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 07 PLANS -->
+            <div class="sec cream" id="plans" style="width: 1280px; margin-inline:auto; ">
+                <div class="rail">
+                    <div class="num">07</div>
+                    <div class="railtxt" style="color: #1f3fe0">Plans</div>
+                </div>
+                <div class="head">
+                    <h2 class="h2">No scope of work.<br><span class="acc">The queue is the scope.</span></h2>
+                    <p class="aside">Two plans for two different needs – not a ladder. Both run on the same governed
+                        factory, with the same review on every change.</p>
+                </div>
+                <div style="display: flex; gap: 0">
+                    <div class="plan">
+                        <div class="mono" style="font-size: 10px; color: #8a90ad">PL-01 · “I have something important
+                            running”</div>
+                        <div style="font-size: 24px; font-weight: 600">Steady</div>
+                        <div><span class="price">$1,000</span> <span class="muted">/ month</span></div>
+                        <p class="p muted">Engineering backup for a working product. Active builds the product. Steady
+                            watches its back.</p>
+                        <div style="display: flex; flex-direction: column">
+                            <div class="li"><span class="acc">+</span>Ladybug production monitoring</div>
+                            <div class="li"><span class="acc">+</span>Investigated issues become fix PRs</div>
+                            <div class="li"><span class="acc">+</span>Bug fixes, security updates, occasional features
+                            </div>
+                            <div class="li"><span class="acc">+</span>Senior sign-off and review on every change</div>
+                            <div class="li"><span class="acc">+</span>Staging and proof video on every ticket</div>
+                        </div>
+                        <a href="#call" class="btn line" style="margin-top: auto">Talk about Steady →</a>
+                    </div>
+                    <div class="plan feat">
+                        <div style="display: flex; justify-content: space-between"><span class="mono"
+                                style="font-size: 10px; opacity: .75">PL-02 · “I have things I want built”</span><span
+                                class="mono"
+                                style="font-size: 9px; background: #ffd43b; color: #0f1a4a; padding: 3px 6px">WITH
+                                CTO</span></div>
+                        <div style="font-size: 24px; font-weight: 600">Active</div>
+                        <div><span class="price">$5,000</span> <span style="opacity: .75">/ month</span></div>
+                        <p class="p" style="opacity: .8">Continuous development with a CTO in your corner. No developers
+                            to hire.</p>
+                        <div style="display: flex; flex-direction: column">
+                            <div class="li"><span class="yel">+</span>Weekly CTO sync – product, architecture, UX</div>
+                            <div class="li"><span class="yel">+</span>2 extra CTO hours every month</div>
+                            <div class="li"><span class="yel">+</span>Continuous factory execution</div>
+                            <div class="li"><span class="yel">+</span>Faster sign-off – 1 business day</div>
+                            <div class="li"><span class="yel">+</span>Ladybug, staging and proof included</div>
+                        </div>
+                        <a href="#call" class="btn" style="margin-top: auto; justify-content: center">Book a factory
+                            call →</a>
+                    </div>
+                    <div class="plan" style="border-left: none; background: #eceae1">
+                        <div class="mono" style="font-size: 10px; color: #8a90ad">PL-00 · Before either plan</div>
+                        <div style="font-size: 24px; font-weight: 600">Factory Readiness</div>
+                        <div><span class="price" style="font-size: 40px">from $5,000</span> <span
+                                class="muted">one-time</span></div>
+                        <p class="p muted">We make your product factory-ready – or build the foundation of a new one.
+                            Your plan starts when the first ticket runs.</p>
+                        <div style="display: flex; flex-direction: column">
+                            <div class="li"><span class="acc">+</span>Docs, tests, CI/CD and staging</div>
+                            <div class="li"><span class="acc">+</span>A design system the factory builds UI from</div>
+                            <div class="li"><span class="acc">+</span>Ladybug connected to production</div>
+                            <div class="li"><span class="acc">+</span>Complex or new products: $10–15k, scoped first
+                            </div>
+                        </div>
+                        <a href="#call" class="btn line" style="margin-top: auto">Get a readiness check →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 08 FAQ -->
+            <div class="sec cream" id="faq"  style="width: 1280px; margin-inline:auto; padding-top: 20px; flex-direction: row; gap: 96px">
+                <div class="rail" style="top: 24px">
+                    <div class="num o">08</div>
+                    <div class="railtxt" style="color: #1f3fe0">Notes</div>
+                </div>
+                <div style="width: 330px; flex: none; display: flex; flex-direction: column; gap: 18px">
+                    <h2 class="h2">Spec<br><span class="acc">notes.</span></h2>
+                    <p class="p muted">Anything else? Book a call – a senior engineer answers, not sales.</p>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column">
+                    <div class="faq"><span class="mono acc" style="font-size: 11px; padding-top: 5px">N.01</span>
+                        <div class="q">Who decides what ships?<p class="p muted" style="margin-top: 8px">You do. You own
+                                product and business decisions. We own the engineering decisions that follow – and we
+                                advise on yours.</p>
+                        </div><span style="font-size: 22px">−</span>
+                    </div>
+                    <div class="faq"><span class="mono acc" style="font-size: 11px; padding-top: 5px">N.02</span>
+                        <div class="q">Is AI-written code safe?</div><span style="font-size: 22px">+</span>
+                    </div>
+                    <div class="faq"><span class="mono acc" style="font-size: 11px; padding-top: 5px">N.03</span>
+                        <div class="q">Does Ladybug change production by itself?</div><span
+                            style="font-size: 22px">+</span>
+                    </div>
+                    <div class="faq"><span class="mono acc" style="font-size: 11px; padding-top: 5px">N.04</span>
+                        <div class="q">Where does the factory run? Who owns the code?</div><span
+                            style="font-size: 22px">+</span>
+                    </div>
+                    <div class="faq"><span class="mono acc" style="font-size: 11px; padding-top: 5px">N.05</span>
+                        <div class="q">What happens during Factory Readiness?</div><span
+                            style="font-size: 22px">+</span>
+                    </div>
+                    <div class="faq" style="border-bottom: 1px solid #c9cde4"><span class="mono acc"
+                            style="font-size: 11px; padding-top: 5px">N.06</span>
+                        <div class="q">Why not just hire a developer?</div><span style="font-size: 22px">+</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 09 CTA -->
+            <div class="blue" id="call"
+                style="position: relative; padding: 110px 176px; display: flex; align-items: flex-end; justify-content: space-between; gap: 60px">
+                <div class="rail"  style="top: 114px">
+                    <div class="num o" style="border-color: #fff; color: #fff">09</div>
+                    <div class="railtxt">Contact</div>
+                </div>
+                <div style="width: 1280px; margin-inline:auto;">
+                    <div  style="display: flex; flex-direction: column; gap: 24px">
+                        <h2 class="h1" style="font-size: 84px">Bring us what<br>you're building<span class="yel">.</span>
+                        </h2>
+                        <p class="lead" style="max-width: 520px; opacity: .85">30 minutes with a senior engineer. We'll look
+                            at where your product is and tell you which plan fits – or if neither does.</p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px; margin-top:-90px">
+                        <span class="mono" style="font-size: 10px; opacity: .7">OUTPUT · 01</span>
+                        <a href="#call" class="btn" style="min-height: 60px; font-size: 18px; padding: 0 28px;white-space: nowrap">Book a
+                            factory call ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div style="padding: 48px 176px 28px; display: flex; flex-direction: column; gap: 24px">
+                <div style="width: 1280px; margin-inline:auto; display: flex; border: 1px solid #c9cde4">
+                    <div
+                        style="flex: 1.4; padding: 22px; border-right: 1px solid #c9cde4; display: flex; flex-direction: column; gap: 10px">
+                        <span class="lbl" style="font-size: 9px; color: #1f3fe0">Studio</span>
+                        <div style="font-size: 30px; font-weight: 700; letter-spacing: -.03em">Automaze</div>
+                        <p class="p muted">Technical Co-Founder &amp; CTO as a Service.</p>
+                    </div>
+                    <div
+                        style="flex: 1; padding: 22px; border-right: 1px solid #c9cde4; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+                        <span class="lbl" style="font-size: 9px; color: #1f3fe0">Sheets</span><a href="#how">How it
+                            works</a><a href="#ladybug">Ladybug</a><a href="#plans">Plans</a><a href="#faq">FAQ</a>
+                    </div>
+                    <div
+                        style="flex: 1; padding: 22px; border-right: 1px solid #c9cde4; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+                        <span class="lbl" style="font-size: 9px; color: #1f3fe0">Contact</span><span>[EMAIL]</span><a
+                            href="https://automaze.io">automaze.io</a></div>
+                    <div style="flex: 1.6; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span
+                            class="lbl" style="font-size: 9px; color: #1f3fe0">Field notes – monthly</span>
+                        <p class="p muted">One real factory ticket, taken apart, every month.</p>
+                        <div style="display: flex"><label for="em"
+                                style="position: absolute; left: -9999px">Email</label><input id="em" type="email"
+                                placeholder="you@company.com"
+                                style="flex: 1; height: 42px; border: 1px solid #c9cde4; padding: 0 12px; font-size: 14px; background: #fff"><button
+                                style="height: 44px; padding: 0 16px; background: #1f3fe0; color: #fff; border: none; font-weight: 600">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mono"
+                    style="display: flex; justify-content: space-between; font-size: 10px; color: #8a90ad; letter-spacing: .1em">
+                    <span>DRAWN BY AUTOMAZE</span><span>FACTORY.AUTOMAZE.IO</span><span>REV. 2026-09</span><span>SHEET
+                        09 / 09</span></div>
+            </div>
+
+        </div>
+    </x-dc>
+    <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9700}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+
+</html>
